@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  /*border:1px solid red;*/
+}
+
+
+.header-container{
+ display: grid;
+ grid-template-columns: repeat(10,1fr);
+ grid-template-rows: auto auto;
+  width:100vw;
+}
+.header-container > * {
+  border: 1px solid black;
+}
+
+.logo-container{
+
+}
+
+.footer-container > *{
+  border: 1px solid black;
+}
