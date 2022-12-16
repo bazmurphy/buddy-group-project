@@ -9,6 +9,8 @@
   --white:#fff;
 }
 
+body{}
+
 /***Header****/
 
 .header-container{
@@ -18,9 +20,9 @@
  width: 98vw;/*there was extra space when I put 100vw, i don't how to fix it*/
  font-size: 2rem;
 }
-.header-container > * {
+/*.header-container > * {
   border: 1px solid black;
-}
+}*/
 
 .logo-container{ 
   grid-column: 1/2;
@@ -37,7 +39,6 @@
   list-style: none;
   width:100%;
   justify-self: start;
- 
 }
 
 .nav-header-list{
@@ -68,11 +69,28 @@
   grid-row: 2/3;
   justify-self: end;
 }
+/***HERO****/
 
 
+.hero-container{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  padding:2%;
 
+}
+.hero-img-container{
+  grid-column: 1/6;
+ 
+}
 
-
+.hero-img{
+  width: 100%;
+}
+.hero-content-container{
+  grid-column: 6/9;
+  justify-self: center;/*when the desktop size get smallet this css won't make sence*/
+  align-self: center;
+}
 
 
 .footer-container > *{
