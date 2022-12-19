@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 500px;
+  margin: 10px auto 0 auto;
+}
+
+#calculator {
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.preamble {
+  display: flex;
+  padding-bottom: 20px;
+  gap: 10px;
+  align-items: center;
+}
+
+.preamble-image {
+  max-width: 50%;
+}
+
+.preamble-text {
+  line-height: 1.4;
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#shower-length-display {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+#shower-litres-used {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: hsl(180, 100%, 40%);
+}
+
+#shower-cost-individual {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.top-info-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.shower-length-slider-container {
+  padding: 20px 0;
+}
+
+#shower-length-slider {
+  width: 100%;
+}
+
+#shower-length-slider-key {
+  display: flex;
+  justify-content: space-between;
+}
+
+.savings-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cost-savings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.water-savings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cost-savings-title,
+.water-savings-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#shower-cost-saving-year,
+#shower-water-saving-year {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.key {
+
+}
+
+.value {
+
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.neutral {
+  color: gray;
+}

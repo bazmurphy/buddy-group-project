@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="water-calculator.css">
+    <title>03 - Water - Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+      <div class="preamble">
+        <img class="preamble-image" src="water-washing.png" alt="">
+        <p class="preamble-text">An average shower lasts 10 minutes, by reducing the time you spend in the shower you can reduce your energy bills and reduce your water usage, to help yourself and to help the planet!</p>
+      </div>
+      <div class="top-info">
+        <div class="top-info-cell">
+            <span>Shower Length: </span><span id="shower-length-display"></span>
+        </div>
+        <div class="top-info-cell">
+            <span>Water Used: </span><span id="shower-litres-used"></span>
+        </div>
+        <div class="top-info-cell">
+            <span>Shower Cost: </span><span id="shower-cost-individual"></span>
+        </div>
+      </div>
+      <div class="shower-length-slider-container">
+          <input type="range" min="1" max="15" value="10" name="" id="shower-length-slider">
+          <div id="shower-length-slider-key"><span>1 minute</span><span>15 minutes</span></div>
+      </div>
+      <div class="savings-container">
+        <div class="cost-savings">
+          <span class="cost-savings-title">Cost Saving:</span>
+            <div><span class="key">Daily: </span><span id="shower-cost-saving" class="value neutral"></span></div>
+            <div><span class="key">Weekly: </span><span id="shower-cost-saving-week" class="value neutral"></span></div>
+            <div><span class="key">Monthly: </span><span id="shower-cost-saving-month" class="value neutral"></span></div>
+            <div><span class="key">Yearly: </span><span id="shower-cost-saving-year" class="value neutral"></span></div>
+        </div>
+        <div class="water-savings">
+            <span class="water-savings-title">Water Saving:</span>
+            <div><span class="key">Daily: </span><span id="shower-water-saving" class="value neutral"></span></div>
+            <div><span class="key">Weekly: </span><span id="shower-water-saving-week" class="value neutral"></span></div>
+            <div><span class="key">Monthly: </span><span id="shower-water-saving-month" class="value neutral"></span></div>
+            <div><span class="key">Yearly: </span><span id="shower-water-saving-year" class="value neutral"></span></div>
+        </div>
+      </div>
+    </div>
+    <script src="water-calculator.js"></script>
+</body>
+</html>

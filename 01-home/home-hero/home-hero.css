@@ -1,0 +1,74 @@
+/* CSS FROM style.css */
+/*** Hero ***/
+.hero {
+display: flex;
+flex-direction: column;
+border: 1px solid black;
+padding:2rem;
+}
+
+.hero-img-container {
+width: 100%;
+height: 30vh;
+border: 1px solid black;
+}
+
+.hero-img {
+width: 100%;
+}
+
+.hero-title {
+
+}
+
+.hero-subtitle {
+
+}
+
+
+/* CSS FROM homepage-desktop.css */
+/***HERO****/
+.hero-container{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  padding:2%;
+}
+
+.hero-img-container{
+  grid-column: 1/6;
+}
+
+.hero-img{
+  width: 100%;
+}
+
+.hero-content-container{
+  grid-column: 6/9;
+  justify-self: center;/*when the desktop size get smallet this css won't make sence*/
+  align-self: center;
+}
+
+
+/* CSS FROM homepage-mobile.css */
+/****HERO*******/
+.hero-container{
+  grid-area: hero;
+  display: grid;
+  grid-template: repeat(2,auto)/repeat(1,1fr);
+  background-color: var(--green);
+}
+
+.hero-img-container{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+}
+
+.hero-img{
+  width: 100%;
+}
+
+.hero-content-container{
+  grid-column: 1/2;
+  grid-row:2/3;
+}
