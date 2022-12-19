@@ -13,17 +13,27 @@
 		<div class="logo-img-container">
 			<img class="logo-img" src="#" alt="">
 	  	</div>
-      	<div class="header-right">
+      	<div class="header-wrapper">
         	<div class="search-container">search</div>
         	<div>
           		<nav class="nav-container">
-            		<ul>
-              			<li><a>nav-item</a></li>
-              			<li><a>nav-item</a></li>
-              			<li><a>nav-item</a></li>
-              			<li><a>nav-item</a></li>
-              			<li><a>nav-item</a></li>
-            		</ul>
+            		<ul class="navigation_list">
+                        <input type="checkbox" id="check">
+                        <span class="menu">
+              			<li class="navigation_item"><a class="navigation-link"  href="#">nav-item</a></li>
+              			<li class="navigation_item"><a class="navigation-link"  href="#">nav-item</a></li>
+              			<li class="navigation_item"><a class="navigation-link"  href="#">nav-item</a></li>
+              			<li class="navigation_item"><a class="navigation-link"  href="#">nav-item</a></li>
+              			<li class="navigation_item"><a class="navigation-link"  href="#">nav-item</a></li>
+            		    <label for="check" class="close-menu"><span class="left-close"></span><span class="right-close"></span></label>
+                    </span>
+                    <label for="check" class="open-menu"
+                    ><span class="first line"></span>
+                    <span class="second line"></span>
+                    <span class="third line"></span>
+                    </label>
+
+                    </ul>
           		</nav>
         	</div>
       	</div>
@@ -43,8 +53,8 @@
     	</section>
 
       <section class="first-section">
-    	<figure>
-            <img src="#" alt="">
+    	<figure class="=figure-first-section-home"> 
+            <img class="first-section-img-container" src="#" alt="">
             <figcaption>
                 <h3>Why do we use it?</h3>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -54,8 +64,8 @@
                 </details>
             </figcaption>
         </figure>
-        <figure>
-            <img src="#" alt="">
+        <figure class="=figure-first-section-home">
+            <img class="first-section-img-container" src="#" alt="">
             <figcaption>
                 <h3>Why do we use it?</h3>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -64,9 +74,9 @@
                     <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                 </details>
             </figcaption>
-        </figure>
-        <figure>
-            <img src="#" alt="">
+        </figure >
+        <figure class="=figure-first-section-home">
+            <img class="first-section-img-container" alt="" >
             <figcaption>
                 <h3>Why do we use it?</h3>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -79,20 +89,20 @@
       </section>
 	  
       <section class="second-section">
-           <h1>Why do we use it?</h1>
-        	<article>
+           <h1 class="second-section-title">Why do we use it?</h1>
+        	<article class="second-section-article-container">
             	<h3>Where can I get some?</h3>
             	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
         	</article>
-        	<article>
+        	<article class="second-section-article-container">
             	<h3>Where can I get some?</h3>
             	<p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         	</article>
-        	<article>
+        	<article class="second-section-article-container">
             	<h3>Where can I get some?</h3>
             	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
        		</article>
-        	<article>
+        	<article class="second-section-article-container">
             	<h3>Where can I get some?</h3>
             	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
         	</article>
@@ -118,7 +128,7 @@
 
         <div class="footer-container-site-links">
             <h4 class="footer-container-site-links-title">site links</h4>
-            <nav class="container2-nav-left">
+            <nav class="footer-site-links-navigation1">
                 <ul>
                     <li><a>link1</a></li>
                     <li><a>link2</a></li>
@@ -127,7 +137,7 @@
                     <li><a>link5</a></li>
                 </ul>
             </nav>
-            <nav class="container2-nav-right">
+            <nav class="footer-site-links-navigation2">
                 <ul>
                     <li><a>link1</a></li>
                     <li><a>link2</a></li>
@@ -141,7 +151,7 @@
         <div class="footer-container-social-media-links">
             <h4>Social Media Links</h4>
               <nav>
-                <ul class="container3-navigation">
+                <ul class="container-social-media-navigation">
                     <li><a>Facebook</a></li>
                     <li><a>Twitter</a></li>
                     <li><a>instagram</a></li>
