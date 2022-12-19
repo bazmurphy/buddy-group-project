@@ -201,3 +201,38 @@ body {
     grid-row:2/3;
  
 }
+ 
+
+/*****SECTION1*****/
+
+.section-one-container{
+ display:grid;
+ grid-template: repeat(3,aouto),repeat(1,1fr);
+
+ text-align: center;
+}
+.section-one-title-container{
+    display:none;
+}
+.first-figure-section-one{
+    grid-column: 1/2;
+    grid-row: 2/3;
+   
+}
+
+.second-figure-section-one{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.third-figure-section-one{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.section-one-img{
+ width:100%
+}
+
+
+/******SECTION-TWO*******/
