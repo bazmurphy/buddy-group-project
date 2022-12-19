@@ -19,6 +19,8 @@ body {
     grid-template: repeat(5,auto)/ repeat(1, 90%);
     grid-template-areas: "header" "hero" "section-one" "section-two" "footer";
     justify-content: center;
+    grid-gap: 15px;
+    font-family: serif;
 }
 
 .header-container{
@@ -176,4 +178,26 @@ body {
   }
   
 
-/***********/
+/****HERO*******/
+
+.hero-container{
+    grid-area: hero;
+    display: grid;
+    grid-template: repeat(2,auto)/repeat(1,1fr);
+    background-color: var(--green);
+}
+.hero-img-container{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.hero-content-container{
+    grid-column: 1/2;
+    grid-row:2/3;
+ 
+}
