@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --light-perimary: rgb(226, 224, 224);
+  --white: #fff;
+  --green: #72E572;
+  --orange: #FFA500;
+  --pink: #E499E4;
+  --yello: #FAFAA2;
+}
+
+body {
+  max-width: 500px;
+  border: 1px solid black;
+}
