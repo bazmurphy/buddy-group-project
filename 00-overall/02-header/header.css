@@ -1,144 +1,3 @@
-/* CSS FROM style.css */
-/*** Header ***/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: orange;
-  padding: 1rem;
-}
-
-.header-wrapper {
-  /* ^ let's try to rename this class to something less based on position */
-  /*i changed to header-wrapper*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.logo-img-container {
-  border: 1px solid black;
-  background-color: lightgray;
-  width: 100px;
-  /* ^temporary width */
-}
-
-.logo-img {
-  width: 100%;
-  /* ^ temporary width */
-}
-
-/****hamburger menu******/
-.nav-container{
-  position:relative
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  z-index: 100;
-  background-color: rgb(69, 191, 227);
-  transition: all 0.2s ease-in;
-}
-
-.navigation-item {
-  padding-left: 30px;
-  margin-top: 20px;
-}
-
-.navigation-link{
-  display: inline-block;
-  text-decoration: none;
-  color:white;
-  text-align: center;
-  transition: 0.15s ease-in-out;
-  position: relative;
-  text-transform: uppercase;
-  padding: 10px;
-  font-weight: 950;
-  font-family: "Quicksand", sans-serif;
-}
-
-.navigation-link::after{
-   content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: yellow;
-  transition: 0.15s ease-in-out;
-}
-
-.open-menu,
-.close-menu {
- margin: 1rem;
- position: absolute;
- display: block;
-}
-
-#check{
-  display: none;
-}
-
-.open-menu {
-  top: -15px;
-  right: -20px;
-  transform: translateY(-50%);
-}
-
-.close-menu {
-  top: 20px;
-  right: 20px;
-}
-
-#check:checked ~ .menu {
-  right: 0;
-}
-
-.line {
-  display: block;
-  width: 13px;
-  height: 3px;
-  margin-bottom: 6px;
-  background-color: black;
-}
-
-.second {
-  width: 25px;
-}
-
-.third {
-  margin-left: 12px;
-}
-
-.right-close {
-  display: block;
-  width: 25px;
-  height: 2px;
-  margin-bottom: 4px;
-  background-color: black;
-  transform: rotate(-45deg);
-}
-
-.left-close {
-  position: absolute;
-  display: block;
-  width: 25px;
-  height: 2px;
-  margin-right: 4px;
-  background-color: black;
-  transform: rotate(45deg);
-}
-
 
 /* CSS FROM homepage-mobile.css */
 .header-container{
@@ -294,11 +153,11 @@ header {
   transform: rotate(45deg);
 }
 
-
-/* CSS FROM homepage-desktop.css */
+  /*
+/* CSS FROM homepage-desktop.css 
 * {
   box-sizing: border-box;
-  /*border:1px solid red;*/
+  /*border:1px solid red;
 }
 
 :root {
@@ -306,7 +165,7 @@ header {
   --white:#fff;
 }
 
-/***Header****/
+/***Header***
 .header-container{
   display: grid;
   grid-template: repeat(2,auto) / repeat(8,1fr);
@@ -317,7 +176,7 @@ header {
 
 /*.header-container > * {
   border: 1px solid black;
-}*/
+}/
 
 .logo-container{ 
   grid-column: 1/2;
@@ -366,3 +225,4 @@ header {
   justify-self: end;
   align-self: center;
 }
+*/
