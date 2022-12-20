@@ -23,9 +23,9 @@
   grid-row:2/3;
 }
 
-
-/* CSS FROM homepage-desktop.css */
-/***HERO****/
+/*
+/* CSS FROM homepage-desktop.css /
+/***HERO/
 .hero-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -43,6 +43,6 @@
 .hero-content-container {
   grid-column: 6/9;
   justify-self: center;
-  /*when the desktop size get smallet this css won't make sence*/
+  /*when the desktop size get smallet this css won't make sence/
   align-self: center;
-}
+}*/
