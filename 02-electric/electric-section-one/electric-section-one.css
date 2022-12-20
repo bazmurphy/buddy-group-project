@@ -1,0 +1,22 @@
+
+.electric-section-one-container{
+  display: grid;
+  grid-template: repeat(2,auto) / repeat(1, 1fr);
+  text-align: center;
+
+}
+
+.electric-section-one-img-container{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.article-electric-section-one-container{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+.electric-section-one-img{
+    width: 100%;
+}
