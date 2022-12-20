@@ -1,5 +1,9 @@
 
 
+
+
+
+
 /* CSS FROM homepage-mobile.css */
 /*****FOOTER***/
 .footer-container{
@@ -63,9 +67,9 @@
   grid-row:5/6;
 }
 
-
-/* CSS FROM homepage-desktop.css */
-/*****FOOTER*****/
+/*
+/* CSS FROM homepage-desktop.css /
+/*****FOOTER/
 footer {
   width: 95%;
   background-color:  #7C8C9A;
@@ -121,4 +125,4 @@ background-color: var(--light-perimary);
 .footer-container-info{
   grid-column: 2/3;
   grid-row:4/5
-}
+}*/
