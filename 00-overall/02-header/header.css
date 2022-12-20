@@ -153,11 +153,11 @@
   transform: rotate(45deg);
 }
 
-
-/* CSS FROM homepage-desktop.css */
+  /*
+/* CSS FROM homepage-desktop.css 
 * {
   box-sizing: border-box;
-  /*border:1px solid red;*/
+  /*border:1px solid red;
 }
 
 :root {
@@ -165,7 +165,7 @@
   --white:#fff;
 }
 
-/***Header****/
+/***Header***
 .header-container{
   display: grid;
   grid-template: repeat(2,auto) / repeat(8,1fr);
@@ -176,7 +176,7 @@
 
 /*.header-container > * {
   border: 1px solid black;
-}*/
+}/
 
 .logo-container{ 
   grid-column: 1/2;
@@ -225,3 +225,4 @@
   justify-self: end;
   align-self: center;
 }
+*/
