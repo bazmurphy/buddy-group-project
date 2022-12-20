@@ -14,7 +14,7 @@ border: 1px solid black;
 }
 
 .hero-img {
-width: 100%;
+  width: 100%;
 }
 
 .hero-title {
@@ -23,29 +23,6 @@ width: 100%;
 
 .hero-subtitle {
 
-}
-
-
-/* CSS FROM homepage-desktop.css */
-/***HERO****/
-.hero-container{
-  display: grid;
-  grid-template-columns: repeat(8,1fr);
-  padding:2%;
-}
-
-.hero-img-container{
-  grid-column: 1/6;
-}
-
-.hero-img{
-  width: 100%;
-}
-
-.hero-content-container{
-  grid-column: 6/9;
-  justify-self: center;/*when the desktop size get smallet this css won't make sence*/
-  align-self: center;
 }
 
 
@@ -71,4 +48,28 @@ width: 100%;
 .hero-content-container{
   grid-column: 1/2;
   grid-row:2/3;
+}
+
+
+/* CSS FROM homepage-desktop.css */
+/***HERO****/
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 2%;
+}
+
+.hero-img-container {
+  grid-column: 1/6;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-content-container {
+  grid-column: 6/9;
+  justify-self: center;
+  /*when the desktop size get smallet this css won't make sence*/
+  align-self: center;
 }
