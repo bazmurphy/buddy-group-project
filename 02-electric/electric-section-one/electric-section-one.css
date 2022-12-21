@@ -7,6 +7,9 @@
   padding: 25px
 
 }
+.electric-section-one-container > *{
+    border: solid  1px black;
+}
 
 .electric-section-one-img-container{
     grid-column: 1/2;
