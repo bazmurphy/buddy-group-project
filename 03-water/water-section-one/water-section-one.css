@@ -1,0 +1,44 @@
+.water-section-one-container,
+.water-section-one-image-container,
+.water-section-one-image,
+.water-section-one-title,
+.water-section-one-subtitle,
+.water-section-one-paragraph {
+  border: 1px dotted black;
+}
+
+.water-section-one-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  /* ^not strictly neccessary */
+  row-gap: 10px;
+  padding: 25px;
+}
+
+.water-section-one-image-container {
+  background-color: lightblue;
+  /* ^so you can see if the image is scaling correctly */
+}
+
+.water-section-one-image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: gray;
+  /* ^placeholder colour until actual image */
+}
+
+.water-section-one-title {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.water-section-one-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.water-section-one-paragraph {
+  text-align: justify;
+}
