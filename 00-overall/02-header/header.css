@@ -27,7 +27,7 @@
   grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
-  background-color: var(--red);
+  
   border-radius: 100%;
   width: 30%;
   height: auto;
@@ -35,6 +35,19 @@
   margin: 5%;
 
 }
+ .header-mobile-container > *{
+  border: solid 1px black;
+ }
+
+
+.menu-line-container{
+  background-color: var(--red);
+  border: solid 1px black;
+  padding: 10%;
+}
+
+
+
 
 .search-container{
   display: none;
