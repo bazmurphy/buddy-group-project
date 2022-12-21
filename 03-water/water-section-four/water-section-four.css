@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: 50px;
+  row-gap: 40px;
 }
 
 .water-section-four-subcontainer {
