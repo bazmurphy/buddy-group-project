@@ -1,9 +1,15 @@
+* {
+  border: 1px solid orange;
+}
+
 
 /* CSS FROM homepage-mobile.css */
 .header-container{
   display: grid;
   grid-area: header;
-  grid-template: repeat(1,auto)/ repeat(2,1fr);
+  /* grid-template: repeat(1,auto)/ repeat(2,1fr); */
+  grid-template-columns: 30% auto 100px;
+  grid-template-rows: auto;
   background-color: var(--dark-blue);
 }
 
@@ -13,8 +19,7 @@
 
 .logo-container{
   grid-column: 1/2;
-  grid-row: 1/2;
-
+  /* grid-row: 1/2; */
 }
 
 .header-logo{
@@ -24,15 +29,15 @@
 }
 
 .header-mobile-container{
-  grid-column: 2/3;
-  grid-row: 1/2;
+  /* grid-column: 2/3; */
+  grid-column: 3/4;
+  /* grid-row: 1/2; */
   display: grid;
   background-color: var(--red);
   border-radius: 100%;
-  width: 30%;
-  height: auto;
+  /* width: 30%; */
   justify-self: end;
-  margin: 5%;
+  /* margin: 5%; */
 
 }
 
@@ -164,7 +169,7 @@
   display: grid;
   grid-template: repeat(2,auto) / repeat(8,1fr);
   background-color: var(--light-perimary);
-  width: 98vw;/*there was extra space when I put 100vw, i don't how to fix it*/
+  width: 100%;
   font-size: 2rem;
 }
 
