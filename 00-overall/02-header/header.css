@@ -27,7 +27,6 @@
   grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
-  
   border-radius: 100%;
   width: 30%;
   height: auto;
@@ -38,16 +37,6 @@
  .header-mobile-container > *{
   border: solid 1px black;
  }
-
-
-.menu-line-container{
-  background-color: var(--red);
-  border: solid 1px black;
-  padding: 10%;
-}
-
-
-
 
 .search-container{
   display: none;
@@ -118,11 +107,19 @@
 }
 
 .open-menu {
-  top: 10px;
+  top: 3px;
   right: 0px;
   transform: translateY(-50%);
 }
-
+.open-line-container{
+  background-color: var(--red);
+  border: solid 1px black;
+  border-radius: 100%;
+  align-self: center;
+}
+.second-open-line-container{
+  padding: 7px;
+}
 .close-menu {
   top: 20px;
   right: 20px;
@@ -136,7 +133,7 @@
   display: block;
   width: 25px ;
   height: 2px;
-  margin-bottom: 6px;
+  margin: 6px;
   background-color: var(--white);
 }
 
@@ -177,7 +174,7 @@
   display: grid;
   grid-template: repeat(2,auto) / repeat(8,1fr);
   background-color: var(--light-perimary);
-  width: 98vw;/*there was extra space when I put 100vw, i don't how to fix it*/
+  width: 98vw;/*there was extra space when I put 100vw, i don't how to fix it/
   font-size: 2rem;
 }
 
