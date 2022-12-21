@@ -6,11 +6,14 @@
 
 :root {
   --light-perimary: rgb(226, 224, 224);
-  --white: #fff;
+  --white: #FFFFFF;
   --green: #72E572;
   --orange: #FFA500;
   --pink: #E499E4;
   --yello: #FAFAA2;
+  --dark-blue:#004DD6;
+  --red:#FF4242;
+
 }
 
 body {
