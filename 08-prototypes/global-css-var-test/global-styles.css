@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --container-padding-mobile: 40px;
+  --container-padding-desktop: 80px;
+  --container-border-mobile: 2px solid black;
+  --container-border-desktop: 4px solid black;
+  --container-background-color-mobile: lightblue;
+  --container-background-color-desktop: lightgreen;
+  --subcontainer-padding-mobile: 15px;
+  --subcontainer-padding-desktop: 30px;
+  --subcontainer-border-mobile: 1px solid black;
+  --subcontainer-border-desktop: 2px solid black;
+  --subcontainer-background-color-mobile: coral;
+  --subcontainer-background-color-desktop: lavender;
+  --content-paragraph-mobile: 14px;
+  --content-paragraph-desktop: 20px;
+}
