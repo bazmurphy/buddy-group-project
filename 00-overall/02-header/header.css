@@ -1,3 +1,7 @@
+* {
+  border: 1px solid orange;
+}
+
 
 /* CSS FROM homepage-mobile.css */
 .header-container{
@@ -13,8 +17,7 @@
 
 .logo-container{
   grid-column: 1/2;
-  grid-row: 1/2;
-
+  /* grid-row: 1/2; */
 }
 
 .header-logo{
@@ -30,7 +33,7 @@
   border-radius: 100%;
   height: auto;
   justify-self: end;
-  margin: 5%;
+  /* margin: 5%; */
 
 }
  
@@ -170,7 +173,7 @@
   display: grid;
   grid-template: repeat(2,auto) / repeat(8,1fr);
   background-color: var(--light-perimary);
-  width: 98vw;/*there was extra space when I put 100vw, i don't how to fix it/
+  width: 100%;
   font-size: 2rem;
 }
 

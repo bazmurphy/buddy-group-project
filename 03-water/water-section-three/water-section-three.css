@@ -1,0 +1,48 @@
+.water-section-three-container,
+.water-section-three-subcontainer
+.water-section-three-title,
+.water-section-three-subtitle,
+.water-section-three-paragraph,
+.water-section-three-link {
+  border: 1px dotted black;
+}
+
+.water-section-three-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+  background-color: gray;
+}
+
+.water-section-three-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  /* ^not strictly neccessary */
+  padding: 20px;
+  gap: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.water-section-three-title {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.water-section-three-subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.water-section-three-paragraph {
+  text-align: justify;
+}
+
+.water-section-three-link {
+  padding-left: 50px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: black;
+}
