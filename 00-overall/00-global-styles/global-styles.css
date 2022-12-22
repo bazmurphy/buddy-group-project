@@ -14,6 +14,15 @@
   --yello: #FAFAA2;
   --dark-blue:#143CA4;
   --red:#FF4242;
+  --container-padding: 50px;
+  --subcontainer-padding:20px;
+  --container-items-gap:15px;
+  --container-section-gap:50px;
+  --title-width:140px;
+  --title-height:40px;
+  --button-width:140px;
+  --button-height:40px;
+
 
 }
 
