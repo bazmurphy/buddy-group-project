@@ -13,9 +13,9 @@
   --container-border-tablet: 3px solid black;
   --container-border-desktop: 4px solid black;
 
-  --container-background-color-mobile: lightblue;
+  --container-background-color-mobile: coral;
   --container-background-color-tablet: plum;
-  --container-background-color-desktop: lightgreen;
+  --container-background-color-desktop: limegreen;
 
   --subcontainer-padding-mobile: 15px;
   --subcontainer-padding-tablet: 25px;
@@ -25,9 +25,9 @@
   --subcontainer-border-tablet: 1.5px solid black;
   --subcontainer-border-desktop: 2px solid black;
 
-  --subcontainer-background-color-mobile: coral;
+  --subcontainer-background-color-mobile: lightsalmon;
   --subcontainer-background-color-tablet: pink;
-  --subcontainer-background-color-desktop: lavender;
+  --subcontainer-background-color-desktop: 	lightgreen;
 
   --title-mobile: 20px;
   --title-tablet: 24px;
