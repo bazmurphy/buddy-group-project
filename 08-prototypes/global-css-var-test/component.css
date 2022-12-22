@@ -61,3 +61,11 @@
     font-size: var(--content-paragraph-desktop);
   }
 }
+
+@media (min-width: 1400px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1400px;
+    /* ^ center container and create left-right gutter */
+  }
+}
