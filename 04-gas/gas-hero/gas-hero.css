@@ -1,0 +1,36 @@
+
+.gas-hero-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 15px;
+    padding: 50px
+  
+  }
+  .gas-hero-container > *{
+      border: solid  1px black;
+  }
+  
+  .gas-hero-img-container{
+      grid-column: 1/2;
+      
+  }
+  .gas-hero-img{
+    width: 100%;
+}
+  .gas-hero-title{
+      grid-column: 1/2;
+     text-align: center;
+  }
+
+  .gas-hero-subtitle{
+    grid-column: 1/2;
+    text-align: center;
+  }
+
+  .gas-hero-content{
+      grid-column: 1/2;
+     text-align: justify;
+  }
+  
+ 
