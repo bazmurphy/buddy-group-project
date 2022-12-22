@@ -37,6 +37,7 @@ padding: 15px;
   }
   
   .electric-section-two-btn{
+    grid-column: 1/2;
     width:90px;
     height: 40px ;
     justify-self: center;
