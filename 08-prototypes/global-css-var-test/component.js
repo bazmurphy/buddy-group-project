@@ -13,7 +13,7 @@ function getRowGapCSS(selector) {
   return `element: ${selector}\nrow-gap: ${element.rowGap}`
 }
 
-function changeTitle() {
+function changeTitleAndInfo() {
   if (window.innerWidth < 500) {
     titleElement.innerText = "Mobile 0-499px";
     infoOneElement.innerText = getPaddingCSS(".container")
@@ -32,5 +32,5 @@ function changeTitle() {
   }
 }
 
-window.addEventListener("load", changeTitle);
-window.addEventListener("resize", changeTitle);
+window.addEventListener("load", changeTitleAndInfo);
+window.addEventListener("resize", changeTitleAndInfo);
