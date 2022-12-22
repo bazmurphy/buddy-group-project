@@ -29,6 +29,10 @@
   --subcontainer-background-color-tablet: pink;
   --subcontainer-background-color-desktop: 	lightgreen;
 
+  --subcontainer-row-gap-mobile: 10px;
+  --subcontainer-row-gap-tablet: 15px;
+  --subcontainer-row-gap-desktop: 20px;
+
   --title-mobile: 20px;
   --title-tablet: 24px;
   --title-desktop: 26px;

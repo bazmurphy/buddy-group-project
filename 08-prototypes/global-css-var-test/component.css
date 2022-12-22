@@ -5,6 +5,9 @@
 }
 
 .subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
   background-color: var(--subcontainer-background-color-mobile);
   border: var(--subcontainer-border-mobile);
@@ -14,7 +17,7 @@
   font-size: var(--title-mobile);
 }
 
-.content-paragraph {
+.paragraph {
   font-size: var(--content-paragraph-mobile);
 }
 
@@ -26,6 +29,7 @@
   }
 
   .subcontainer {
+    row-gap: var(--subcontainer-row-gap-tablet);
     padding: var(--subcontainer-padding-tablet);
     background-color: var(--subcontainer-background-color-tablet);
     border: var(--subcontainer-border-tablet);
@@ -35,7 +39,7 @@
     font-size: var(--title-tablet);
   }
 
-  .content-paragraph {
+  .paragraph {
     font-size: var(--content-paragraph-tablet);
   }
 }
@@ -48,6 +52,7 @@
   }
 
   .subcontainer {
+    row-gap: var(--subcontainer-row-gap-desktop);
     padding: var(--subcontainer-padding-desktop);
     background-color: var(--subcontainer-background-color-desktop);
     border: var(--subcontainer-border-desktop);
@@ -57,7 +62,7 @@
     font-size: var(--title-desktop);
   }
 
-  .content-paragraph {
+  .paragraph {
     font-size: var(--content-paragraph-desktop);
   }
 }
@@ -68,4 +73,12 @@
     max-width: 1400px;
     /* ^ center container and create left-right gutter */
   }
+}
+
+/* Ignore This */
+.info-one, 
+.info-two,
+.info-three {
+  font-size: 12px;
+  font-weight: bold;
 }
