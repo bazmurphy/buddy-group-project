@@ -1,5 +1,5 @@
 
-.electric-section-three-container{
+.electric-section-five-container{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -7,24 +7,25 @@
     padding: 25px
   
   }
-  .electric-section-three-container > *{
+
+  .electric-section-five-container > *{
       border: solid  1px black;
   }
   
-  .electric-section-three-img-container{
-      grid-column: 1/2;
-      
-  }
-  
-  .electric-section-three-title{
+  .electric-section-five-title{
       grid-column: 1/2;
      text-align: center;
   }
-  .electric-section-three-content{
+  .electric-section-five-content{
       grid-column: 1/2;
      text-align: justify;
   }
   
-  .electric-section-three-img{
+  .electric-section-five-img{
       width: 100%;
   }
+
+  .electric-section-five-img-container{
+    grid-column: 1/2;
+    
+}
