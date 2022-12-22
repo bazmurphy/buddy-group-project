@@ -6,17 +6,34 @@
 
 :root {
   --container-padding-mobile: 40px;
+  --container-padding-tablet: 60px;
   --container-padding-desktop: 80px;
+
   --container-border-mobile: 2px solid black;
+  --container-border-tablet: 3px solid black;
   --container-border-desktop: 4px solid black;
+
   --container-background-color-mobile: lightblue;
+  --container-background-color-tablet: plum;
   --container-background-color-desktop: lightgreen;
+
   --subcontainer-padding-mobile: 15px;
-  --subcontainer-padding-desktop: 30px;
+  --subcontainer-padding-tablet: 25px;
+  --subcontainer-padding-desktop: 35px;
+
   --subcontainer-border-mobile: 1px solid black;
+  --subcontainer-border-tablet: 1.5px solid black;
   --subcontainer-border-desktop: 2px solid black;
+
   --subcontainer-background-color-mobile: coral;
+  --subcontainer-background-color-tablet: pink;
   --subcontainer-background-color-desktop: lavender;
+
+  --title-mobile: 20px;
+  --title-tablet: 24px;
+  --title-desktop: 26px;
+
   --content-paragraph-mobile: 14px;
-  --content-paragraph-desktop: 20px;
+  --content-paragraph-tablet: 16px;
+  --content-paragraph-desktop: 18px;
 }
