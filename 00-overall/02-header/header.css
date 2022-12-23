@@ -17,7 +17,7 @@
 
 .logo-container{
   grid-column: 1/2;
-  /* grid-row: 1/2; */
+  grid-row: 1/2;
 }
 
 .header-logo{
@@ -33,7 +33,7 @@
   border-radius: 100%;
   height: auto;
   justify-self: end;
-  /* margin: 5%; */
+  margin: 5%;
 
 }
  
