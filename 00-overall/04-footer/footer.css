@@ -12,8 +12,8 @@
   grid-template-rows: repeat(5,auto);
   color: var(--white);
   background-color: var(--dark-blue);
-  padding: 20px;
-  grid-gap: 10px;
+  padding: 40px;
+  grid-gap: 30px;
 
 }
 .footer-container > *{
@@ -59,6 +59,7 @@
 
 .nav-footer-list{
   list-style: none;
+  padding: 0;
 }
 
 .footer-media-links-container{
@@ -79,6 +80,7 @@
   flex-direction: row;
   list-style: none;
  justify-content: space-around;
+ padding: 0;
 }
 .nav-footer-link{
   text-decoration: none;
