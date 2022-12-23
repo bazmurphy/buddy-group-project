@@ -1,14 +1,15 @@
-* {
+/** {
   border: 1px solid orange;
-}
+}*/
 
 
 /* CSS FROM homepage-mobile.css */
 .header-container{
   display: grid;
   grid-area: header;
-  grid-template: repeat(1,auto)/ minmax(50px,100px) auto minmax(50px,100px);
+  grid-template-columns: 30px minmax(50px,100px) auto minmax(50px,100px) 30px;
   background-color: var(--dark-blue);
+  align-items: center;
 }
 
 .login-container {
@@ -16,24 +17,24 @@
 }
 
 .logo-container{
-  grid-column: 1/2;
-  grid-row: 1/2;
+  grid-column: 2/3;
+  justify-self: center;
+  /* grid-row: 1/2; */
 }
 
 .header-logo{
   color: var(--red);
-  font-size: 1rem;
-  margin-left: 1.5rem;
+  font-size: 20px;
+  font-weight: 600;
+ 
 }
 
 .header-mobile-container{
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 1/2;
-  display: grid;
-  border-radius: 100%;
   height: auto;
   justify-self: end;
-  margin: 5%;
+  /* margin: 5%; */
 
 }
  
@@ -97,8 +98,8 @@
 
 .open-menu,
 .close-menu {
-  margin: 1rem;
-  position: absolute;
+  margin: 0.5rem;
+ 
   display: block;
 }
 
@@ -107,9 +108,10 @@
 }
 
 .open-menu {
-  top: 7px;
+  top: 20px;
   right: 0px;
   transform: translateY(-50%);
+  position: relative;
 }
 .open-line-container{
   background-color: var(--red);
@@ -117,11 +119,12 @@
   align-self: center;
 }
 .second-open-line-container{
-  padding: 7px;
+  padding: 6px 3px;
 }
 .close-menu {
   top: 20px;
   right: 20px;
+  position: absolute;
 }
 
 #check:checked ~ .menu {
@@ -130,7 +133,7 @@
 
 .line {
   display: block;
-  width: 25px ;
+  width: 22px ;
   height: 2px;
   margin: 6px;
   background-color: var(--white);
