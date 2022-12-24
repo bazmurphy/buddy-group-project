@@ -130,7 +130,13 @@
   grid-column: 2/3;
   grid-row:5/6;
   justify-self: center;
+  
+}
+
+.footer-logo{
   color: var(--red);
+  font-size: 20px;
+  font-weight: 600;
 }
 /*
 /* CSS FROM homepage-desktop.css /
