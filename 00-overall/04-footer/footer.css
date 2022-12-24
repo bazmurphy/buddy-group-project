@@ -12,8 +12,8 @@
   grid-template-rows: repeat(5,auto);
   color: var(--white);
   background-color: var(--dark-blue);
-  padding: 20px;
-  grid-gap: 10px;
+  padding: 40px;
+  grid-gap: 30px;
 
 }
 .footer-container > *{
@@ -43,8 +43,7 @@
 .footer-title-links{
   grid-column: 1/2;
   grid-row: 1/2;
-  text-align: center;
-  margin:5px;
+ 
 }
 
 .nav-first-footer-links-container{
@@ -59,6 +58,7 @@
 
 .nav-footer-list{
   list-style: none;
+  padding: 0;
 }
 
 .footer-media-links-container{
@@ -78,7 +78,8 @@
   display: flex;
   flex-direction: row;
   list-style: none;
- justify-content: space-around;
+  justify-content: space-around;
+  padding: 0;
 }
 .nav-footer-link{
   text-decoration: none;
@@ -129,7 +130,13 @@
   grid-column: 2/3;
   grid-row:5/6;
   justify-self: center;
+  
+}
+
+.footer-logo{
   color: var(--red);
+  font-size: 20px;
+  font-weight: 600;
 }
 /*
 /* CSS FROM homepage-desktop.css /

@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <link rel="stylesheet" href="../00-global-styles/global-styles.css">
-  <link rel="stylesheet" href="header.css">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="../00-global-styles/global-styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  <title>00 - Header</title>
-</head>
-<body>
+    <title>00 - Header</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo-container">
+        <p class="header-logo">LOGO</p>
+      </div>
 
-  <header class="header-container">
-    <div class="logo-container">
-      <p class="header-logo" >LOGO</p>
-    </div>
-    
-    <div class="header-mobile-container">
-      <nav class="nav-header-container">
-        <ul class="nav-header-list">
-          <input type="checkbox" id="check" />
-          <span class="menu">
-            <li class="nav-header-item search-mobile-container"><i class="fa-solid fa-magnifying-glass"></i>
-              <input type="search" name="search" id="search-input" /></li>
-            <li class="nav-header-item login-mobile-container">
-              <i class="fa-solid fa-user"></i>
-              <span class="login-text">Log in</span>
-            </li>
-            <li class="nav-header-item">
-              <a class="nav-header-link" href="#">Home</a>
-            </li>
-            <li class="nav-header-item">
-              <a class="nav-header-link" href="#">Electric</a>
-            </li>
-            <li class="nav-header-item">
-              <a class="nav-header-link" href="#">Water</a>
-            </li>
-            <li class="nav-header-item">
-              <a class="nav-header-link" href="#">Gas</a>
-            </li>
-            <li class="nav-header-item">
-              <a class="nav-header-link" href="#">About Us</a>
-            </li>
-            <label for="check" class="close-menu"
-              ><span class="left-close"></span
-              ><span class="right-close"></span
-            ></label>
-          </span>
-          <label for="check" class="open-menu"
-            ><div class="open-line-container"><div class="second-open-line-container" ><span class="first line"></span>
-            <span class="second line"></span>
-            <span class="third line"></span></div></div>
-          </label>
-        </ul>
-      </nav>
-      <div class="login-container">
-        <i class="fa-solid fa-user"></i>
-        <span class="login-text">Log in</span>
+      <div class="header-mobile-container">
+        <nav class="nav-header-container">
+          <ul class="nav-header-list">
+            <input  type="checkbox" id="check" />
+            <span class="menu">
+              <li class="nav-header-item search-mobile-container">
+                <input class="mibox" type="search" name="search" id="search-input" placeholder="Search" />
+              </li>
+             
+              <li class="nav-header-item">
+                <a class="nav-header-link nav-header-link-home " href="#">Home</a>
+              </li>
+              <li class="nav-header-item">
+                <a class="nav-header-link" href="#">Electric</a>
+              </li>
+              <li class="nav-header-item">
+                <a class="nav-header-link" href="#">Water</a>
+              </li>
+              <li class="nav-header-item">
+                <a class="nav-header-link" href="#">Gas</a>
+              </li>
+              <li class="nav-header-item login-mobile-container">
+                
+                <span class="login-text-first"><i class="fa-solid fa-user"></i>  Log in</span>
+                <span class="login-text-second"><input class="mibox" type="email" ></span>
+                <span class="login-text-third">Don’t have an Account?</span>
+                <span class="login-text-fourth"> Sign Up Today!</span>
+              </li>
+              <label for="check" class="close-menu"
+                ><span class="left-close"></span
+                ><span class="right-close"></span
+              ></label>
+            </span>
+            <label for="check" class="open-menu"
+              ><div class="open-line-container">
+                <div class="second-open-line-container">
+                  <span class="first line"></span>
+                  <span class="second line"></span>
+                  <span class="third line"></span>
+                </div>
+              </div>
+            </label>
+          </ul>
+        </nav>
+        <div class="login-container">
+          <i class="fa-solid fa-user"></i>
+          <span class="login-text">Log in</span>
+        </div>
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="search" id="search-input" />
+        </div>
       </div>
-      <div class="search-container">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" name="search" id="search-input" />
-      </div>
-    </div>
-  </header>
-  
-</body>
+    </header>
+  </body>
 </html>
