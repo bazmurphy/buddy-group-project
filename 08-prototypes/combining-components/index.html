@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../00-global-styles/global-styles.css">
+  <link rel="stylesheet" href="../../00-overall/00-global-styles/global-styles.css">
   
   <link rel="stylesheet" href="../../00-overall/02-header/header.css">
   <link rel="stylesheet" href="../../00-overall/04-footer/footer.css">
@@ -14,18 +14,23 @@
   <link rel="stylesheet" href="../../03-water/water-section-three/water-section-three.css">
   <link rel="stylesheet" href="../../03-water/water-section-four/water-section-four.css">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ^ Import Font Awesome -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- ^ Import jQuery -->
 
   <script>
      $(document).ready(function(){
-        $('#header').load("../../00-overall/02-header/header.html");
-        $('#footer').load("../../00-overall/04-footer/footer.html");
+        $('#header-component').load("../../00-overall/02-header/header.html .header-container");
+        $('#footer-component').load("../../00-overall/04-footer/footer.html .footer-container");
         
-        $('#water-section-one').load("../../03-water/water-section-one/water-section-one.html");
-        $('#water-section-two').load("../../03-water/water-section-two/water-section-two.html");
-        $('#water-section-three').load("../../03-water/water-section-three/water-section-three.html");
-        $('#water-section-four').load("../../03-water/water-section-four/water-section-four.html");
+        $('#water-section-one-component').load("../../03-water/water-section-one/water-section-one.html .water-section-one-container");
+        $('#water-section-two-component').load("../../03-water/water-section-two/water-section-two.html .water-section-two-container");
+        $('#water-section-three-component').load("../../03-water/water-section-three/water-section-three.html .water-section-three-container");
+        $('#water-section-four-component').load("../../03-water/water-section-four/water-section-four.html .water-section-four-container");
      });
   </script>
   <!-- ^ Load the HTML from the various Components into the various element IDs -->
@@ -33,13 +38,13 @@
   <title>Combining Components</title>
 </head>
 <body>
-  <header id="header"></header>
-  <main>
-    <section id="water-section-one"></section>
-    <section id="water-section-two"></section>
-    <section id="water-section-three"></section>
-    <section id="water-section-four"></section>
-  </main>
-  <footer id="footer"></footer>
+  <div id="header-component"></div>
+  <div>
+    <div id="water-section-one-component"></div>
+    <div id="water-section-two-component"></div>
+    <div id="water-section-three-component"></div>
+    <div id="water-section-four-component"></div>
+    </div>
+  <div id="footer-component"></div>
 </body>
 </html>
