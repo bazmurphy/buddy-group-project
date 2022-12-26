@@ -19,33 +19,46 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- ^ Import Font Awesome -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- ^ Import jQuery -->
-
   <script>
-     $(document).ready(function(){
-        $('#header-component').load("../../00-overall/02-header/header.html .header-container");
-       
-        $('#water-section-one-component').load("../../03-water/water-section-one/water-section-one.html .water-section-one-container");
-        $('#water-section-two-component').load("../../03-water/water-section-two/water-section-two.html .water-section-two-container");
-        $('#water-section-three-component').load("../../03-water/water-section-three/water-section-three.html .water-section-three-container");
-        $('#water-section-four-component').load("../../03-water/water-section-four/water-section-four.html .water-section-four-container");
 
-        $('#footer-component').load("../../00-overall/04-footer/footer.html .footer-container");
-     });
+    function fetchComponentAndAdd(url, targetLocation) {
+      fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+          const parser = new DOMParser();
+          const importedHTML = parser.parseFromString(html, "text/html");
+
+          const importedComponent = importedHTML.querySelector("body").children[0];
+          // console.log(importedComponent);
+
+          // console.log(document.querySelector(targetLocation));
+          if (targetLocation !== "main") {
+            document.querySelector(targetLocation).replaceWith(importedComponent);
+          } else {
+            document.querySelector(targetLocation).appendChild(importedComponent);
+          }
+
+        })
+        .catch((error) => console.log("Failed to fetch:", error));
+    };
+
+    const components = [
+      ["../../00-overall/02-header/header.html", "header"],
+      ["../../03-water/water-section-one/water-section-one.html", "main"],
+      ["../../03-water/water-section-two/water-section-two.html", "main"],
+      ["../../03-water/water-section-three/water-section-three.html", "main"],
+      ["../../03-water/water-section-four/water-section-four.html", "main"],
+      ["../../00-overall/04-footer/footer.html", "footer"],
+    ];
+
+    components.forEach(component => fetchComponentAndAdd(component[0], component[1]));
+
   </script>
-  <!-- ^ Load the HTML from the various Components into the various element IDs -->
-
   <title>Combining Components</title>
 </head>
 <body>
-  <div id="header-component"></div>
-  <div id="main">
-    <div id="water-section-one-component"></div>
-    <div id="water-section-two-component"></div>
-    <div id="water-section-three-component"></div>
-    <div id="water-section-four-component"></div>
-    </div>
-  <div id="footer-component"></div>
+  <header></header>
+  <main></main>
+  <footer></footer>
 </body>
 </html>
