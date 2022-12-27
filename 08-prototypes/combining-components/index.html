@@ -21,26 +21,44 @@
 
   <script>
 
-    function fetchComponentAndAdd(url, targetLocation) {
-      fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-          const parser = new DOMParser();
-          const importedHTML = parser.parseFromString(html, "text/html");
+    // function fetchComponentAndAdd(url, targetLocation) {
+    //   fetch(url)
+    //     .then((response) => response.text())
+    //     .then((html) => {
+    //       const parser = new DOMParser();
+    //       const importedHTML = parser.parseFromString(html, "text/html");
+    //       const importedComponent = importedHTML.querySelector("body").children[0];
+    //       // console.log(importedComponent);
 
-          const importedComponent = importedHTML.querySelector("body").children[0];
-          // console.log(importedComponent);
+    //       if (targetLocation !== "main") {
+    //         document.querySelector(targetLocation).replaceWith(importedComponent);
+    //       } else {
+    //         document.querySelector(targetLocation).appendChild(importedComponent);
+    //       }
 
-          // console.log(document.querySelector(targetLocation));
-          if (targetLocation !== "main") {
-            document.querySelector(targetLocation).replaceWith(importedComponent);
-          } else {
-            document.querySelector(targetLocation).appendChild(importedComponent);
-          }
+    //     })
+    //     .catch((error) => console.log("Failed to fetch:", error));
+    // };
 
-        })
-        .catch((error) => console.log("Failed to fetch:", error));
-    };
+    async function fetchComponentAndAdd(url, targetLocation, index) {
+      try {
+        const response = await fetch(url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const importedHTML = parser.parseFromString(html, "text/html");
+
+        const importedComponent = importedHTML.querySelector("body").children[0];
+        
+        if (targetLocation !== "main") {
+          document.querySelector(targetLocation).replaceWith(importedComponent);
+        } else {
+          document.querySelector(targetLocation).appendChild(importedComponent);
+        }
+        console.log("finished index ", index);
+      } catch (error) {
+        (error) => console.log("Failed", error)
+      }
+    }
 
     const components = [
       ["../../00-overall/02-header/header.html", "header"],
@@ -51,7 +69,19 @@
       ["../../00-overall/04-footer/footer.html", "footer"],
     ];
 
-    components.forEach(component => fetchComponentAndAdd(component[0], component[1]));
+    // components.forEach(component => fetchComponentAndAdd(component[0], component[1]));
+
+    // for (let component of components) {
+    //   fetchComponentAndAdd(component[0], component[1]);
+    // }
+
+    async function addComponentsArray() {
+      for (let component of components) {
+        await fetchComponentAndAdd(component[0], component[1], components.indexOf(component))
+      }
+    }  
+    
+    addComponentsArray();
 
   </script>
   <title>Combining Components</title>
