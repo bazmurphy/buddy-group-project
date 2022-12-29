@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../00-overall/00-global-styles/global-styles.css">
+  
+  <link rel="stylesheet" href="../../00-overall/02-header/header.css">
+  <link rel="stylesheet" href="../../00-overall/04-footer/footer.css">
+ 
+  <link rel="stylesheet" href="../../03-water/water-section-one/water-section-one.css">
+  <link rel="stylesheet" href="../../03-water/water-section-two/water-section-two.css">
+  <link rel="stylesheet" href="../../03-water/water-section-three/water-section-three.css">
+  <link rel="stylesheet" href="../../03-water/water-section-four/water-section-four.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ^ Import Font Awesome -->
+
+  <script>
+
+    async function fetchComponentAndAdd(url, targetLocation) {
+      try {
+        const response = await fetch(url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const importedHTML = parser.parseFromString(html, "text/html");
+        const importedComponent = importedHTML.querySelector("body").children[0];
+        if (targetLocation !== "main") {
+          document.querySelector(targetLocation).replaceWith(importedComponent);
+        } else {
+          document.querySelector(targetLocation).appendChild(importedComponent);
+        }
+      } catch (error) {
+        (error) => console.log("Failed", error)
+      }
+    }
+
+    const components = [
+      ["../../00-overall/02-header/header.html", "header"],
+      ["../../03-water/water-section-one/water-section-one.html", "main"],
+      ["../../03-water/water-section-two/water-section-two.html", "main"],
+      ["../../03-water/water-section-three/water-section-three.html", "main"],
+      ["../../03-water/water-section-four/water-section-four.html", "main"],
+      ["../../00-overall/04-footer/footer.html", "footer"],
+    ];
+
+    async function addComponentsArray() {
+      for (let component of components) {
+        await fetchComponentAndAdd(component[0], component[1])
+      }
+    }  
+    
+    addComponentsArray();
+
+  </script>
+  <title>Combined Preview - Water</title>
+</head>
+<body>
+  <header></header>
+  <main></main>
+  <footer></footer>
+</body>
+</html>
