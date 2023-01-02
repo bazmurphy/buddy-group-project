@@ -16,7 +16,9 @@
       
   }
   .gas-hero-img{
+    display: block;
     width: 100%;
+
 }
   .gas-hero-title{
     grid-column: 1/2;
