@@ -48,6 +48,7 @@
         grid-column: 1/2;
         justify-self: center;
         align-self: center;
+        width: 100%;
       }
       
       .electric-section-four-small-prg{
