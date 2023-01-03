@@ -8,10 +8,9 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
-    /* ^ temporary values */
+  /* ^ temporary value */
   padding: var(--container-padding-mobile);
 }
-
 
 .water-section-four-title {
   text-align: center;
