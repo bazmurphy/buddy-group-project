@@ -1,17 +1,19 @@
 .water-section-three-container,
-.water-section-three-subcontainer
+.water-section-three-image-container,
+.water-section-three-image,
 .water-section-three-title,
 .water-section-three-subtitle,
-.water-section-three-paragraph,
-.water-section-three-link {
+.water-section-three-paragraph {
   border: 1px dotted black;
 }
 
 .water-section-three-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 50px;
-  background-color: gray;
+  justify-content: center;
+  /* ^not strictly neccessary */
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
 }
 
 .water-section-three-subcontainer {
@@ -19,30 +21,34 @@
   grid-template-columns: 1fr;
   justify-content: center;
   /* ^not strictly neccessary */
-  padding: 20px;
-  gap: 20px;
-  background-color: white;
+  row-gap: 15px;
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
   border: 1px solid black;
+}
+
+.water-section-three-image-container {
+  background-color: lightblue;
+  /* ^so you can see if the image is scaling correctly */
+}
+
+.water-section-three-image {
+  display: block;
+  width: 100%;
+  background-color: gray;
+  /* ^placeholder colour until actual image */
 }
 
 .water-section-three-title {
   text-align: center;
   font-size: 1.6rem;
+  font-weight: 500;
+  /* ^to offset the bolded text */
 }
 
 .water-section-three-subtitle {
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-.water-section-three-paragraph {
-  text-align: justify;
-}
-
-.water-section-three-link {
-  padding-left: 50px;
-  text-decoration: none;
-  font-size: 1.15rem;
-  font-weight: bold;
-  color: black;
+  /* text-align: center; */
+  /* font-size: 1.3rem; */
+  font-size: 1.35rem;
+  font-weight: 400;
 }
