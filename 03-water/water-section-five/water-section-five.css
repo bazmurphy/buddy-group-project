@@ -1,0 +1,49 @@
+.water-section-five-container,
+.water-section-five-image-container,
+.water-section-five-image,
+.water-section-five-title {
+  border: 1px dotted black;
+}
+
+.water-section-five-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
+}
+
+.water-section-five-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  /* ^gap between image and title */
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
+  border: 1px solid black;
+}
+
+.water-section-five-image-container {
+  background-color: lightblue;
+  /* ^so you can see if the image is scaling correctly */
+  height: 200px;
+  /* ^temporary fixed height */
+}
+
+.water-section-five-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* ^expand to full height */
+  object-fit: cover;
+  /* ^can change this later */
+  background-color: gray;
+  /* ^placeholder colour until actual image */
+}
+
+.water-section-five-title {
+  align-self: center;
+  /* text-align: center; */
+  font-size: 1.6rem;
+  font-weight: 500;
+  /* ^to offset the bolded text */
+}
