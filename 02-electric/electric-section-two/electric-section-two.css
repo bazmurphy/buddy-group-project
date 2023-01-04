@@ -1,13 +1,5 @@
 
 .electric-section-two-container{
-padding: 15px;
-}
-
-.electric-section-two-container >*{
-    border: solid  1px black;
-}
-
-.electric-section-two-subcontainer{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -15,7 +7,7 @@ padding: 15px;
     padding: 25px
   
   }
-  .electric-section-two-subcontainer > *{
+  .electric-section-two-container > *{
       border: solid  1px black;
   }
   
@@ -23,9 +15,6 @@ padding: 15px;
       grid-column: 1/2;
       
   }
-  .electric-section-two-img{
-    width: 100%;
-}
   
   .electric-section-two-title{
       grid-column: 1/2;
@@ -36,9 +25,6 @@ padding: 15px;
      text-align: justify;
   }
   
-  .electric-section-two-btn{
-    grid-column: 1/2;
-    width:90px;
-    height: 40px ;
-    justify-self: center;
+  .electric-section-two-img{
+      width: 100%;
   }
