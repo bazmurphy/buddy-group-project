@@ -2,8 +2,7 @@
 .water-section-one-image-container,
 .water-section-one-image,
 .water-section-one-title,
-.water-section-one-subtitle,
-.water-section-one-paragraph {
+.water-section-one-subtitle {
   border: 1px dotted black;
 }
 
@@ -12,8 +11,19 @@
   grid-template-columns: 1fr;
   justify-content: center;
   /* ^not strictly neccessary */
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
+}
+
+.water-section-one-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  /* ^not strictly neccessary */
   row-gap: 15px;
-  padding: 25px;
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
+  border: 1px solid black;
 }
 
 .water-section-one-image-container {
@@ -31,13 +41,13 @@
 .water-section-one-title {
   text-align: center;
   font-size: 1.6rem;
+  font-weight: 500;
+  /* ^to offset the bolded text */
 }
 
 .water-section-one-subtitle {
-  text-align: center;
-  font-size: 1.3rem;
-}
-
-.water-section-one-paragraph {
-  text-align: justify;
+  /* text-align: center; */
+  /* font-size: 1.3rem; */
+  font-size: 1.35rem;
+  font-weight: 400;
 }

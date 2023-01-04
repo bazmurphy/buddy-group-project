@@ -1,0 +1,49 @@
+.water-hero-container,
+.water-hero-image-container,
+.water-hero-image,
+.water-hero-title,
+.water-hero-subtitle,
+.water-hero-paragraph {
+  border: 1px dotted black;
+}
+
+.water-hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  /* ^not strictly neccessary */
+  row-gap: 15px;
+  padding: 25px;
+}
+
+.water-hero-image-container {
+  background-color: lightblue;
+  /* ^so you can see if the image is scaling correctly */
+}
+
+.water-hero-image {
+  display: block;
+  width: 100%;
+  background-color: gray;
+  /* ^placeholder colour until actual image */
+}
+
+.water-hero-title {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.water-hero-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* ^ to offset the bolded text */
+  padding: 0px 50px;
+  /* ^ left/right padding to push content inwards to match design */
+}
+
+.water-hero-paragraph {
+  text-align: justify;
+  padding: 0px 50px;
+  /* ^ left/right padding to push content inwards to match design  */
+}

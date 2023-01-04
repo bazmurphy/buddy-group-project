@@ -56,6 +56,10 @@ body {
 
 }
 
+.bold {
+  font-weight: bold;
+  /* ^this could be a specific font weight like 600-700-800-900 */
+}
 
 .mibox {
   width: 153px ;
