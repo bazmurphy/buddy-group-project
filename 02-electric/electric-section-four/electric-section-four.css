@@ -1,0 +1,30 @@
+.electric-section-four-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 15px;
+    padding: 25px
+}
+
+.electric-section-four-container > *{
+    border: solid  1px black;
+}
+
+.electric-section-four-title{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.electric-section-four-content{
+    grid-column: 1/2;
+    text-align: justify;
+}
+
+.electric-section-four-img{
+    width: 100%;
+}
+
+.electric-section-four-img-container{
+  grid-column: 1/2;
+    
+}
