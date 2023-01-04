@@ -24,6 +24,7 @@ padding: 15px;
       
   }
   .electric-section-two-img{
+    display: block;
     width: 100%;
 }
   

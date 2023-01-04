@@ -26,5 +26,6 @@
 }
 
 .electric-section-one-img{
+    display: block;
     width: 100%;
 }
