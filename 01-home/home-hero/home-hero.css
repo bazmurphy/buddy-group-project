@@ -1,24 +1,24 @@
 
 /* CSS FROM homepage-mobile.css */
 /****HERO*******/
-.hero-container{
+.home-hero-container{
   grid-area: hero;
   display: grid;
   grid-template: repeat(2,auto)/repeat(1,1fr);
   background-color: var(--green);
 }
 
-.hero-img-container{
+.home-hero-img-container{
   grid-column: 1/2;
   grid-row: 1/2;
   width: 100%;
 }
 
-.hero-img{
+.home-hero-img{
   width: 100%;
 }
 
-.hero-content-container{
+.home-hero-content-container{
   grid-column: 1/2;
   grid-row:2/3;
 }
