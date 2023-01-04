@@ -1,0 +1,29 @@
+.electric-section-five-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 15px;
+  padding: 25px;
+}
+
+.electric-section-five-container > * {
+  border: solid 1px black;
+}
+
+.electric-section-five-title {
+  grid-column: 1/2;
+  text-align: center;
+}
+.electric-section-five-content {
+  grid-column: 1/2;
+  text-align: justify;
+}
+
+.electric-section-five-img {
+  display: block;
+  width: 100%;
+}
+
+.electric-section-five-img-container {
+  grid-column: 1/2;
+}
