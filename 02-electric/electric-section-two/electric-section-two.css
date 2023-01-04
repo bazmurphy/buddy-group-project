@@ -15,6 +15,10 @@
       grid-column: 1/2;
       
   }
+  .electric-section-two-img{
+    display: block;
+    width: 100%;
+}
   
   .electric-section-two-title{
       grid-column: 1/2;
