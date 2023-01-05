@@ -28,10 +28,11 @@
 
 .water-section-five-subcontainer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   /* justify-content: center; */
   /* ^not strictly neccessary */
   row-gap: 15px;
+  column-gap: 15px;
   padding: 40px 30px;
   /* ^tried to emulate design padding.. maybe need global variables for this */
   border: 1px solid black;
@@ -53,6 +54,7 @@
 }
 
 .water-section-five-title {
+  align-self: center;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
