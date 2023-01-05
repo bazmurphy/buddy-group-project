@@ -21,7 +21,7 @@
   text-align: center;
   font-size: var(--title-size-mobile);
   /*width: var(--title-width-mobile);*/
-  height: var(--title-height-mobile);
+ /* height: var(--title-height-mobile);*/
   
   background-color: var(--title-background-color-mobile);
 }
