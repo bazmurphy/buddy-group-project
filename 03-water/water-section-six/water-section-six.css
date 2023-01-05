@@ -1,49 +1,129 @@
 .water-section-six-container,
 .water-section-six-image-container,
 .water-section-six-image,
-.water-section-six-title {
+.water-section-six-title,
+.water-section-six-subtitle,
+.water-section-six-collapsible-subcontainer-one,
+.water-section-six-collapsible-title,
+.water-section-six-collapsible-subtitle,
+.water-section-six-collapsible-paragraph,
+.water-section-six-collapsible-list,
+.water-section-six-collapsible-list-item,
+.water-section-six-collapsible-image-container,
+.water-section-six-collapsible-image,
+.water-section-six-collapsible-image-small-container,
+.water-section-six-collapsible-image-small {
   border: 1px dotted black;
 }
 
 .water-section-six-container {
   display: grid;
   grid-template-columns: 1fr;
+  /* justify-content: center; */
+  /* ^not strictly neccessary */
   padding: 40px 30px;
   /* ^tried to emulate design padding.. maybe need global variables for this */
+  row-gap: 30px;
 }
 
 .water-section-six-subcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  /* ^gap between image and title */
+  /* justify-content: center; */
+  /* ^not strictly neccessary */
+  row-gap: 15px;
+  column-gap: 15px;
   padding: 40px 30px;
   /* ^tried to emulate design padding.. maybe need global variables for this */
   border: 1px solid black;
+  
+  cursor: pointer;
+  /* ^neccessary to prompt user to click? UX Design? */
 }
 
 .water-section-six-image-container {
   background-color: lightblue;
   /* ^so you can see if the image is scaling correctly */
-  height: 200px;
-  /* ^temporary fixed height */
 }
 
 .water-section-six-image {
   display: block;
   width: 100%;
-  height: 100%;
-  /* ^expand to full height */
-  object-fit: cover;
-  /* ^can change this later */
   background-color: gray;
   /* ^placeholder colour until actual image */
 }
 
 .water-section-six-title {
   align-self: center;
-  /* text-align: center; */
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   /* ^to offset the bolded text */
+}
+
+.water-section-six-subtitle {
+  /* text-align: center; */
+  /* font-size: 1.3rem; */
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.water-section-six-collapsible-subcontainer-one {
+  display: none;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+  padding: 40px 30px;
+  border: 1px solid black;
+}
+
+.water-section-six-collapsible-title {
+  text-align: center;
+}
+
+.water-section-six-collapsible-subtitle {
+
+}
+
+.water-section-six-collapsible-paragraph {
+
+}
+
+.water-section-six-collapsible-list {
+
+}
+
+.water-section-six-collapsible-list-item {
+
+}
+
+.water-section-six-collapsible-image-container {
+  background-color: lightblue;
+}
+
+.water-section-six-collapsible-image {
+  display:  block;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+.water-section-six-collapsible-subtitle {
+
+}
+
+.water-section-six-collapsible-image-small-container {
+  float: right;
+  /* needed for text wrap */
+  width: 100px;
+  height: 100px;
+  /* ^temporary hardcoded size */
+  background-color: lightblue;
+}
+
+.water-section-six-collapsible-image-small {
+  display:  block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: gray;
 }
