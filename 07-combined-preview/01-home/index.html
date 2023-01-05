@@ -3,23 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../00-overall/00-global-styles/global-styles.css">
-  
-  <link rel="stylesheet" href="../../00-overall/02-header/header.css">
-  <link rel="stylesheet" href="../../00-overall/04-footer/footer.css">
- 
-  <link rel="stylesheet" href="../../01-home/home-hero/home-hero.css">
-  <link rel="stylesheet" href="../../01-home/home-section-one/home-section-one.css">
-  <link rel="stylesheet" href="../../01-home/home-section-two/home-section-two.css">
-  <link rel="stylesheet" href="../../01-home/home-section-three/home-section-three.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- ^ Import Font Awesome -->
 
   <script>
+
+    const stylesheets = [
+      "../../00-overall/00-global-styles/global-styles.css",
+      "../../00-overall/02-header/header.css",
+      "../../00-overall/04-footer/footer.css",
+      "../../01-home/home-hero/home-hero.css",
+      "../../01-home/home-section-one/home-section-one.css",
+      "../../01-home/home-section-two/home-section-two.css",
+      "../../01-home/home-section-three/home-section-three.css"
+    ];
+        
+    async function addStylesheetsArray() {
+      for (let stylesheet of stylesheets) {
+        const linkElement = document.createElement("link");
+        linkElement.rel = "stylesheet";
+        linkElement.href = stylesheet;
+        document.head.appendChild(linkElement);
+      }
+    }
 
     async function fetchComponentAndAdd(url, targetLocation) {
       try {
@@ -49,11 +58,16 @@
 
     async function addComponentsArray() {
       for (let component of components) {
-        await fetchComponentAndAdd(component[0], component[1])
+        await fetchComponentAndAdd(component[0], component[1]);
       }
     }  
     
-    addComponentsArray();
+    async function init() {
+      await addStylesheetsArray();
+      await addComponentsArray();
+    }
+
+    init();
 
   </script>
   <title>Combined Preview - Home</title>
