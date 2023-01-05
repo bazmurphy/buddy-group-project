@@ -21,10 +21,12 @@
 }
 
 .electric-section-four-img{
+    display: block;
     width: 100%;
 }
 
 .electric-section-four-img-container{
   grid-column: 1/2;
+
     
 }
