@@ -1,24 +1,78 @@
 .water-section-four-container,
+.water-section-four-subcontainer,
+.water-section-four-image-container,
+.water-section-four-image,
 .water-section-four-title,
-.water-section-four-subtitle {
+.water-section-four-subtitle,
+.water-section-four-paragraph,
+.water-section-four-list,
+.water-section-four-list-item,
+.water-section-four-link {
   border: 1px dotted black;
 }
 
 .water-section-four-container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 20px;
-  /* ^ temporary value */
-  padding: var(--container-padding-mobile);
+  /* justify-content: center; */
+  /* ^not strictly neccessary */
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
+  row-gap: 30px;
+}
+
+.water-section-four-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* justify-content: center; */
+  /* ^not strictly neccessary */
+  row-gap: 15px;
+  padding: 40px 30px;
+  /* ^tried to emulate design padding.. maybe need global variables for this */
+  border: 1px solid black;
+  
+  cursor: pointer;
+  /* ^neccessary to prompt user to click? UX Design? */
+}
+
+.water-section-four-image-container {
+  background-color: lightblue;
+  /* ^so you can see if the image is scaling correctly */
+}
+
+.water-section-four-image {
+  display: block;
+  width: 100%;
+  background-color: gray;
+  /* ^placeholder colour until actual image */
 }
 
 .water-section-four-title {
   text-align: center;
   font-size: 1.6rem;
+  font-weight: 500;
+  /* ^to offset the bolded text */
 }
 
 .water-section-four-subtitle {
   text-align: center;
-  font-size: 1.4rem;
+  /* font-size: 1.3rem; */
+  font-size: 1.35rem;
   font-weight: 400;
+}
+
+.water-section-four-paragraph {
+  text-align: justify;
+}
+
+.water-section-four-list {
+  list-style: decimal;
+}
+
+.water-section-four-list-item {
+
+}
+
+.water-section-four-link {
+  color: inherit;
 }
