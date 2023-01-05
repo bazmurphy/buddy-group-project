@@ -1,49 +1,127 @@
 .water-section-five-container,
 .water-section-five-image-container,
 .water-section-five-image,
-.water-section-five-title {
+.water-section-five-title,
+.water-section-five-subtitle,
+.water-section-five-collapsible-subcontainer-one,
+.water-section-five-collapsible-title,
+.water-section-five-collapsible-subtitle,
+.water-section-five-collapsible-paragraph,
+.water-section-five-collapsible-list,
+.water-section-five-collapsible-list-item,
+.water-section-five-collapsible-image-container,
+.water-section-five-collapsible-image,
+.water-section-five-collapsible-image-small-container,
+.water-section-five-collapsible-image-small {
   border: 1px dotted black;
 }
 
 .water-section-five-container {
   display: grid;
   grid-template-columns: 1fr;
+  /* justify-content: center; */
+  /* ^not strictly neccessary */
   padding: 40px 30px;
   /* ^tried to emulate design padding.. maybe need global variables for this */
+  row-gap: 30px;
 }
 
 .water-section-five-subcontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  /* ^gap between image and title */
+  grid-template-columns: 1fr;
+  /* justify-content: center; */
+  /* ^not strictly neccessary */
+  row-gap: 15px;
   padding: 40px 30px;
   /* ^tried to emulate design padding.. maybe need global variables for this */
   border: 1px solid black;
+  
+  cursor: pointer;
+  /* ^neccessary to prompt user to click? UX Design? */
 }
 
 .water-section-five-image-container {
   background-color: lightblue;
   /* ^so you can see if the image is scaling correctly */
-  height: 200px;
-  /* ^temporary fixed height */
 }
 
 .water-section-five-image {
   display: block;
   width: 100%;
-  height: 100%;
-  /* ^expand to full height */
-  object-fit: cover;
-  /* ^can change this later */
   background-color: gray;
   /* ^placeholder colour until actual image */
 }
 
 .water-section-five-title {
-  align-self: center;
-  /* text-align: center; */
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   /* ^to offset the bolded text */
+}
+
+.water-section-five-subtitle {
+  /* text-align: center; */
+  /* font-size: 1.3rem; */
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.water-section-five-collapsible-subcontainer-one {
+  display: none;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+  padding: 40px 30px;
+  border: 1px solid black;
+}
+
+.water-section-five-collapsible-title {
+  text-align: center;
+}
+
+.water-section-five-collapsible-subtitle {
+
+}
+
+.water-section-five-collapsible-paragraph {
+
+}
+
+.water-section-five-collapsible-list {
+
+}
+
+.water-section-five-collapsible-list-item {
+
+}
+
+.water-section-five-collapsible-image-container {
+  background-color: lightblue;
+}
+
+.water-section-five-collapsible-image {
+  display:  block;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+.water-section-five-collapsible-subtitle {
+
+}
+
+.water-section-five-collapsible-image-small-container {
+  float: right;
+  /* needed for text wrap */
+  width: 100px;
+  height: 100px;
+  /* ^temporary hardcoded size */
+  background-color: lightblue;
+}
+
+.water-section-five-collapsible-image-small {
+  display:  block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: gray;
 }
