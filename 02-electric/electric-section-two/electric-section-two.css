@@ -1,31 +1,79 @@
+.electric-section-two-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: var(--items-gap-mobile);
+  padding: var(--container-padding-mobile);
+}
+.electric-section-two-container > * {
+  border: solid 1px black;
+}
 
-.electric-section-two-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    row-gap: 15px;
-    padding: 25px
-  
-  }
-  .electric-section-two-container > *{
-      border: solid  1px black;
-  }
-  
-  .electric-section-two-img-container{
-      grid-column: 1/2;
-      
-  }
-  
-  .electric-section-two-title{
-      grid-column: 1/2;
-     text-align: center;
-  }
-  .electric-section-two-content{
-      grid-column: 1/2;
-     text-align: justify;
-  }
-  
-  .electric-section-two-img{
-    display: block;
-      width: 100%;
-  }
+.electric-section-two-title {
+  text-align: center;
+  font-size: var(--title-size-mobile);
+}
+
+/*******PART ONE*****/
+
+.electric-section-two-part-one-title {
+  text-align: center;
+  font-size: var(--title-size-mobile);
+}
+
+.electric-section-two-part-one-subtitle {
+  text-align: center;
+  font-size: var(--subtitle-size-mobile);
+}
+
+.electric-section-two-part-one-paragraph {
+  grid-column: 1/2;
+  text-align: justify;
+}
+
+.electric-section-two-part-one-img {
+  display: block;
+  width: 100%;
+}
+
+/******PART TWO****/
+
+.electric-section-two-part-two-title {
+  text-align: center;
+  font-size: var(--title-size-mobile);
+}
+
+.electric-section-two-part-two-subtitle {
+  text-align: center;
+  font-size: var(--subtitle-size-mobile);
+}
+
+.electric-section-two-part-two-paragraph {
+  text-align: justify;
+}
+
+.electric-section-two-part-two-img {
+  display: block;
+  width: 100%;
+}
+
+/*****PART TREE*****/
+
+.electric-section-two-part-three-title {
+  text-align: center;
+  font-size: var(--title-size-mobile);
+}
+
+.electric-section-two-part-one-subtitle {
+  text-align: center;
+  font-size: var(--subtitle-size-mobile);
+}
+
+.electric-section-two-part-three-paragraph {
+  text-align: justify;
+}
+
+.electric-section-two-part-three-img {
+  display: block;
+  width: 100%;
+}
