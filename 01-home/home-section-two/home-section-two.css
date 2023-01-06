@@ -1,33 +1,85 @@
-/******SECTION-TWO*******/
-
-.section-two-container{
-    display:grid ;
-    grid-template: repeat(5,auto),repeat(1,1fr);
-    text-align: center;
-   }
-
-   article{
-    background-color:var(--yello) ;
-   }
-.section-two-title{
-    grid-column: 1/2;
-    grid-row: 1/2;
+.home-section-two-container,
+.home-section-two-image-container,
+.home-section-two-content-container,
+.home-section-two-title,
+.home-section-two-subtitle,
+.home-section-two-paragraph,
+.home-section-two-button {
+  border: 1px dotted black;
 }
 
-.first-article-section-two-container{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.second-article-section-two-container{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-.third-article-section-two-container{
-    grid-column: 1/2;
-    grid-row: 4/5;
+.home-section-two-container {
+  display: grid;
+  padding: 20px;
+  /* ^add global variable for this? */
 }
 
-.fourth-article-section-two-container{
-    grid-column: 1/2;
-    grid-row: 5/6;
+.home-section-two-subcontainer {
+  display: grid;
+  row-gap: 40px;
+  /* ^add global variable for this? */
+  border-top: 2px solid black;
+  padding-top: 20px;
+  /* ^ is the right solution to compensate for no bottom border on the previous component? */
 }
+
+.home-section-two-subcontainer-subcontainer {
+  /* ^this is a terrible class name i know */
+  display: grid;
+  row-gap: 10px;
+  /* ^add global variable for this? */
+}
+
+.home-section-two-title {
+  text-align: center;
+  font-size: 1.6rem;
+  /* ^add global variable for this? */
+}
+
+.home-section-two-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  /* ^add global variable for this? */
+}
+
+.home-section-two-paragraph {
+  text-align: center;
+}
+
+
+/*
+.section-two-container {
+  display:grid ;
+  grid-template: repeat(5,auto),repeat(1,1fr);
+  text-align: center;
+}
+
+article {
+  background-color:var(--yello) ;
+}
+
+.section-two-title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.first-article-section-two-container {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.second-article-section-two-container {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.third-article-section-two-container {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.fourth-article-section-two-container {
+  grid-column: 1/2;
+  grid-row: 5/6;
+} 
+*/
