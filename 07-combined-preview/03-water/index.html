@@ -8,65 +8,32 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- ^ Import Font Awesome -->
+  <link rel="stylesheet" href="index.css">
 
-  <script>
+  <script type="module">
+    import {addComponentsArray} from '../../js/utils.js'
 
-    const stylesheets = [
-      "../../00-overall/00-global-styles/global-styles.css",
-      "../../00-overall/02-header/header.css",
-      "../../00-overall/04-footer/footer.css",
-      "../../03-water/water-hero/water-hero.css",
-      "../../03-water/water-section-one/water-section-one.css",
-      "../../03-water/water-section-two/water-section-two.css",
-      "../../03-water/water-section-three/water-section-three.css",
-      "../../03-water/water-section-four/water-section-four.css",
-      "../../03-water/water-section-five/water-section-five.css",
-      "../../03-water/water-section-six/water-section-six.css",
-    ];
+    // const stylesheets = [
+    //   "../../00-overall/00-global-styles/global-styles.css",
+    //   "../../00-overall/02-header/header.css",
+    //   "../../00-overall/04-footer/footer.css",
+    //   "../../03-water/water-hero/water-hero.css",
+    //   "../../03-water/water-section-one/water-section-one.css",
+    //   "../../03-water/water-section-two/water-section-two.css",
+    //   "../../03-water/water-section-three/water-section-three.css",
+    //   "../../03-water/water-section-four/water-section-four.css",
+    //   "../../03-water/water-section-five/water-section-five.css",
+    //   "../../03-water/water-section-six/water-section-six.css",
+    // ];
     
-    async function addStylesheetsArray() {
-      for (let stylesheet of stylesheets) {
-        const linkElement = document.createElement("link");
-        linkElement.rel = "stylesheet";
-        linkElement.href = stylesheet;
-        document.head.appendChild(linkElement);
-      }
-    }
-
-    async function fetchComponentAndAdd(url, targetLocation) {
-      try {
-        const response = await fetch(url);
-        const html = await response.text();
-        const parser = new DOMParser();
-        const importedHTML = parser.parseFromString(html, "text/html");
-        const importedComponent = importedHTML.querySelector("body").children[0];
-        if (targetLocation !== "main") {
-          document.querySelector(targetLocation).replaceWith(importedComponent);
-        } else {
-          document.querySelector(targetLocation).appendChild(importedComponent);
-        }
-      } catch (error) {
-        (error) => console.log("Failed", error);
-      }
-    }
-
-    const components = [
-      ["../../00-overall/02-header/header.html", "header"],
-      ["../../03-water/water-hero/water-hero.html", "main"],
-      ["../../03-water/water-section-one/water-section-one.html", "main"],
-      ["../../03-water/water-section-two/water-section-two.html", "main"],
-      ["../../03-water/water-section-three/water-section-three.html", "main"],
-      ["../../03-water/water-section-four/water-section-four.html", "main"],
-      ["../../03-water/water-section-five/water-section-five.html", "main"],
-      ["../../03-water/water-section-six/water-section-six.html", "main"],
-      ["../../00-overall/04-footer/footer.html", "footer"],
-    ];
-
-    async function addComponentsArray() {
-      for (let component of components) {
-        await fetchComponentAndAdd(component[0], component[1]);
-      }
-    }
+    // async function addStylesheetsArray() {
+    //   for (let stylesheet of stylesheets) {
+    //     const linkElement = document.createElement("link");
+    //     linkElement.rel = "stylesheet";
+    //     linkElement.href = stylesheet;
+    //     document.head.appendChild(linkElement);
+    //   }
+    // }
 
     const scripts = [
       ["../../03-water/water-section-one/water-section-one.js"],
@@ -86,12 +53,10 @@
     
     async function init() {
       await addStylesheetsArray();
-      await addComponentsArray();
-      await addScriptsArray();
+      // await addScriptsArray();
     }
 
     init();
-
   </script>
   <title>Combined Preview - Water</title>
 </head>
@@ -99,5 +64,6 @@
   <header></header>
   <main></main>
   <footer></footer>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>
