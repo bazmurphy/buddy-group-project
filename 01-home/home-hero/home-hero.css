@@ -1,6 +1,69 @@
+.home-hero-container,
+.home-hero-image-container,
+.home-hero-content-container,
+.home-hero-title,
+.home-hero-subtitle,
+.home-hero-paragraph,
+.home-hero-button {
+  border: 1px dotted black;
+}
 
-/* CSS FROM homepage-mobile.css */
-/****HERO*******/
+.home-hero-container {
+  display: grid;
+  padding: 20px;
+  /* ^add global variable for this? */
+}
+
+.home-hero-subcontainer {
+  display: grid;
+  row-gap: 15px;
+  /* ^add global variable for this? */
+}
+
+.home-hero-image-container {
+  background-color: lightblue;
+  /* ^so you can see if the image is scaling correctly */
+}
+
+.home-hero-image {
+  display: block;
+  width: 100%;
+  background-color: gray;
+  /* ^so you can see if the image is scaling correctly */
+}
+
+.home-hero-content-container {
+  display: grid;
+  row-gap: 5px;
+}
+
+.home-hero-title {
+  font-size: 1.6rem;
+  /* ^add global variable for this? */
+}
+
+.home-hero-subtitle {
+  font-size: 1.3rem;
+  /* ^add global variable for this? */
+}
+
+.home-hero-paragraph {
+  text-align: justify;
+}
+
+.home-hero-button {
+  font-family: inherit;
+  /* ^override default button font */
+  justify-self: start;
+  /* ^prevent the button from stretching to full width of grid cell */
+  padding: 8px 16px;
+  /* ^add global variable for this? */
+}
+
+
+/* 
+CSS FROM homepage-mobile.css
+
 .hero-container{
   grid-area: hero;
   display: grid;
@@ -22,10 +85,11 @@
   grid-column: 1/2;
   grid-row:2/3;
 }
+*/
 
-/*
-/* CSS FROM homepage-desktop.css /
-/***HERO/
+/* 
+CSS FROM homepage-desktop.css
+
 .hero-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -45,4 +109,5 @@
   justify-self: center;
   /*when the desktop size get smallet this css won't make sence/
   align-self: center;
-}*/
+}
+*/
