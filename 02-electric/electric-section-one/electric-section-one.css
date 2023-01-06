@@ -1,45 +1,81 @@
-
-.electric-section-one-container{
-padding: 15px;
+.electric-section-one-container {
+  padding: var(--container-padding-mobile);
 }
 
-.electric-section-one-container >*{
-    border: solid  1px black;
+.electric-section-one-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 15px;
+  padding: var(--subcontainer-padding-mobile);
+  border: solid 1px black;
 }
 
-.electric-section-one-subcontainer{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    row-gap: 15px;
-    padding: 25px
-  
-  }
-  .electric-section-one-subcontainer > *{
-      border: solid  1px black;
-  }
-  
-  .electric-section-one-img-container{
-      grid-column: 1/2;
-      
-  }
-  .electric-section-one-img{
-    display: block;
-    width: 100%;
+.electric-section-one-subcontainer > * {
+  border: dotted 1px black;
 }
+
+.electric-section-one-title {
+  text-align: center;
+}
+
+
+/*****PART ONE******/
+
+.electric-section-one-part-one-img {
+  display: block;
+  width: 100%;
+}
+
+.electric-section-one-part-one-title {
+  text-align: center;
+  font-size: var(--title-size-mobile);
+}
+
+.electric-section-one-part-one-paragraph {
+  text-align: justify;
+}
+
+/*****PART TWO******/
+
+.electric-section-one-part-two-img {
+  display: block;
+  width: 100%;
+}
+
+.electric-section-one-part-two-title {
+  text-align: center;
+  font-size: var(--title-size-mobile);
+}
+
+.electric-section-one-part-two-paragraph {
+  text-align: justify;
+}
+
+/*****PART THREE******/
+
+.electric-section-one-part-three-img {
+  display: block;
+  width: 100%;
+}
+
+.electric-section-one-part-three-title {
+  text-align: center;
+  font-size: var(--title-size-mobile);
   
-  .electric-section-one-title{
-      grid-column: 1/2;
-     text-align: center;
-  }
-  .electric-section-one-content{
-      grid-column: 1/2;
-     text-align: justify;
-  }
-  
-  .electric-section-one-btn{
-    grid-column: 1/2;
-    width:90px;
-    height: 40px ;
-    justify-self: center;
-  }
+}
+
+.electric-section-one-part-three-subtitle {
+  text-align: center;
+  font-size: var(--subtitle-size-mobile);
+}
+
+.electric-section-one-part-three-paragraph {
+  text-align: justify;
+}
+
+.electric-section-one-button {
+  width: 90px;
+  height: 40px;
+  justify-self: center;
+}
