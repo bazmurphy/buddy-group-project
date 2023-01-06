@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  row-gap: 15px;
+  row-gap: var(--items-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
   border: solid 1px black;
 }
@@ -16,6 +16,9 @@
 }
 
 .electric-section-one-title {
+  text-align: center;
+}
+.electric-section-one-subtitle {
   text-align: center;
 }
 
