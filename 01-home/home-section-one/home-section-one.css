@@ -10,8 +10,11 @@
 
 .home-section-one-container {
   display: grid;
-  padding: 20px;
+  /* padding: 20px; */
   /* ^add global variable for this? */
+  padding: 0 20px;
+  /* ^the padding top/bottom must be 0 to compensate for the divider lines  */
+  /* ^is this the right solution? */
 }
 
 .home-section-one-subcontainer {
