@@ -42,14 +42,14 @@
 }
 
 .water-section-five-image-container {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   /* ^so you can see if the image is scaling correctly */
 }
 
 .water-section-five-image {
   display: block;
   width: 100%;
-  background-color: gray;
+  /* background-color: gray; */
   /* ^placeholder colour until actual image */
 }
 
@@ -97,14 +97,14 @@
 }
 
 .water-section-five-collapsible-image-container {
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 .water-section-five-collapsible-image {
   display:  block;
   width: 100%;
   height: 100%;
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 .water-section-five-collapsible-subtitle {
@@ -117,7 +117,7 @@
   width: 100px;
   height: 100px;
   /* ^temporary hardcoded size */
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 .water-section-five-collapsible-image-small {
@@ -125,5 +125,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: gray;
+  /* background-color: gray; */
 }
