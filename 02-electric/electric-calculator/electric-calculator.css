@@ -1,0 +1,104 @@
+.electric-calculator-container {
+  padding: 30px;
+}
+
+.electric-calculator-subcontainer {
+  display: grid;
+  row-gap: 20px;
+}
+
+.activity-headings-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.activity-heading-description {
+  font-weight: 600;
+}
+
+.activity-heading-saving {
+  text-align: center;
+  font-weight: 600;
+}
+
+.activity-heading-toggle {
+  text-align: center;
+  font-weight: 600;
+}
+
+.activities-container {
+  display: grid;
+  row-gap: 15px;
+}
+
+.activity-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.activity-saving {
+  text-align: center;
+}
+
+.activity-switch-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px;
+}
+
+.activity-switch-on {
+  border-top: 1px solid lightgray;
+  border-bottom: 3px solid gray;
+  border-left: 1px solid lightgray;
+  text-align: center;
+  cursor: pointer;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.activity-switch-off {
+  border-top: 1px solid lightgray;
+  border-bottom: 3px solid gray;
+  border-right: 3px solid gray;
+  text-align: center;
+  cursor: pointer;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.on-activated {
+  background: radial-gradient(circle, rgba(168,251,63,1) 0%, rgba(50,195,38,1) 100%); 
+}
+
+.off-activated {
+  background: radial-gradient(circle, rgba(255,131,48,1) 0%, rgba(201,31,31,1) 100%); 
+}
+
+.on-deactivated,
+.off-deactivated {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(203,203,203,1) 100%); 
+}
+
+.total-savings-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.total-savings-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.total-savings-value {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.total-savings-positive {
+  color: green;
+}
+
+.total-savings-neutral {
+  color: inherit;
+}
