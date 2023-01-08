@@ -16,64 +16,87 @@
     <title>00 - Header</title>
   </head>
   <body>
+
     <header class="header-container">
-      <div class="logo-container">
+
+      <div class="header-logo-container">
         <p class="header-logo">LOGO</p>
       </div>
 
-      <div class="header-mobile-container">
-        <nav class="nav-header-container">
-          <ul class="nav-header-list">
-            <input  type="checkbox" id="check" />
+      <div class="header-nav-container">
+
+        <nav class="header-nav">
+
+          <ul class="header-nav-list">
+
+            <input type="checkbox" id="check" />
+
             <span class="menu">
-              <li class="nav-header-item search-mobile-container">
+            <!-- ^this is the sliding element that covers the entire screen -->
+
+              <li class="header-nav-list-item search-mobile-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <input class="mibox" type="search" name="search" id="search-input" placeholder="Search" />
               </li>
-             
-              <li class="nav-header-item">
-                <a class="nav-header-link nav-header-link-home " href="#">Home</a>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link heaver-nav-link-home " href="#">Home</a>
               </li>
-              <li class="nav-header-item">
-                <a class="nav-header-link" href="#">Electric</a>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link" href="#">Electric</a>
               </li>
-              <li class="nav-header-item">
-                <a class="nav-header-link" href="#">Water</a>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link" href="#">Water</a>
               </li>
-              <li class="nav-header-item">
-                <a class="nav-header-link" href="#">Gas</a>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link" href="#">Gas</a>
               </li>
-              <li class="nav-header-item login-mobile-container">
-                
-                <span class="login-text-first"><i class="fa-solid fa-user"></i>  Log in</span>
-                <span class="login-text-second"><input class="mibox" type="email" ></span>
-                <span class="login-text-third">Don’t have an Account?</span>
-                <span class="login-text-fourth"> Sign Up Today!</span>
+              <li class="header-nav-list-item login-mobile-container">
+                <span class="login-mobile-text-first">
+                  <i class="fa-solid fa-user"></i> Login
+                </span>
+                <span class="login-mobile-text-second">
+                  <input class="mibox" type="email">
+                </span>
+                <span class="login-mobile-text-third">Don't have an Account?</span>
+                <span class="login-mobile-text-fourth"> Sign Up Today!</span>
               </li>
-              <label for="check" class="close-menu"
-                ><span class="left-close"></span
-                ><span class="right-close"></span
-              ></label>
+
+              <label for="check" class="close-menu">
+                <span class="left-close"></span>
+                <span class="right-close"></span>
+                <!-- ^ the black X to close the sliding element -->
+              </label>
+
             </span>
-            <label for="check" class="open-menu"
-              ><div class="open-line-container">
-                <div class="second-open-line-container">
-                  <span class="first line"></span>
-                  <span class="second line"></span>
-                  <span class="third line"></span>
+
+            <label for="check" class="open-menu">
+              <div class="open-line-container-one">
+                <div class="open-line-container-two">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <!-- ^ the 3 white lines to open the menu -->
                 </div>
               </div>
             </label>
+
           </ul>
+
         </nav>
-        <div class="login-container">
+
+        <div class="header-login-container">
           <i class="fa-solid fa-user"></i>
-          <span class="login-text">Log in</span>
+          <span class="login-text">Login</span>
         </div>
-        <div class="search-container">
+
+        <div class="header-search-container">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="search" name="search" id="search-input" />
         </div>
+
       </div>
+
     </header>
+
   </body>
 </html>
