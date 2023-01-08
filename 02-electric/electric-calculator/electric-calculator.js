@@ -38,7 +38,7 @@ const activities = {
 
 let totalSavings = 0;
 
-function createActivityRow(activities) {
+function createActivityRows(activities) {
   const activitiesContainer = document.querySelector(".activities-container");
   for (const activity in activities) {
     const activityContainer = document.createElement("div");
@@ -61,16 +61,12 @@ function createActivityRow(activities) {
   }
 }
 
-createActivityRow(activities);
-
 function populateActivities(activities) {
   for (const activity in activities) {
     document.querySelector(`.activity-title.${activity}`).innerText = activities[activity].description;
     document.querySelector(`.activity-saving.${activity}`).innerText = `£${activities[activity].saving}`;
   }
 }
-
-populateActivities(activities);
 
 function toggleSwitch() {
   const individualActivity = this.classList[1];
@@ -82,24 +78,23 @@ function toggleSwitch() {
 
   if (choice === "on" && activities[individualActivity].switchStatus === false) {
     activities[individualActivity].switchStatus = true;
-    // onSwitch.style.backgroundColor = "green";
     onSwitch.classList.replace("on-deactivated", "on-activated");
-    // offSwitch.style.backgroundColor = "lightgray";
     offSwitch.classList.replace("off-activated", "off-deactivated");
     totalSavings += saving;
     totalSavingsValueElement.innerText = `£${totalSavings}`;
   } else if (choice === "off" && activities[individualActivity].switchStatus === true) {
     activities[individualActivity].switchStatus = false;
-    // onSwitch.style.backgroundColor = "lightgray";
     onSwitch.classList.replace("on-activated", "on-deactivated");
-    // offSwitch.style.backgroundColor = "red";
     offSwitch.classList.replace("off-deactivated", "off-activated");
     totalSavings -= saving;
     totalSavingsValueElement.innerText = `£${totalSavings}`;
   }
   
-  // totalSavings > 0 ? totalSavingsValueElement.style.color = "green" : totalSavingsValueElement.style.color = "inherit";
-  totalSavings > 0 ? totalSavingsValueElement.classList.replace("total-savings-neutral","total-savings-positive") : totalSavingsValueElement.classList.replace("total-savings-positive","total-savings-neutral");
+  if (totalSavings > 0) {
+    totalSavingsValueElement.classList.replace("total-savings-neutral","total-savings-positive")
+  } else if (totalSavings === 0) {
+    totalSavingsValueElement.classList.replace("total-savings-positive","total-savings-neutral");
+  }
 }
 
 function addEventListenersToSwitches() {
@@ -107,4 +102,10 @@ function addEventListenersToSwitches() {
   activitySwitches.forEach(activitySwitch => activitySwitch.addEventListener("click", toggleSwitch));
 }
 
-addEventListenersToSwitches();
+function initalise() {
+  createActivityRows(activities);
+  populateActivities(activities);
+  addEventListenersToSwitches();
+}
+
+initalise();
