@@ -1,93 +1,57 @@
-/* CSS FROM homepage-mobile.css */
-/*****FOOTER***/
 .footer-container {
   display: grid;
   grid-template-columns: minmax(100px,1fr) minmax(100px,1fr);
   grid-template-rows: repeat(5,auto);
+  grid-gap: 30px;
+  padding: 40px;
   color: var(--white);
   background-color: var(--dark-blue);
-  padding: 40px;
-  grid-gap: 30px;
 }
 
 .footer-container > * {
   border: 1px dotted black;
 }
 
-.footer-img-container {
+/* Footer Image */
+.footer-image-container {
   display: none;
 }
 
-.footer-container-company-details {
- grid-column: 1/2;
- grid-row:1/2
+.footer-image {
+  display: block;
+  width: 100%;
 }
 
-.company-email {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.footer-links-container {
-  grid-column: 1/3;
-  grid-row:3/4;
+/* Company Details */
+.footer-company-details-container {
+  grid-column: 1/2;
+  grid-row:1/2;
   display: grid;
-  grid-template-columns: minmax(100px,150px) auto minmax(100px,150px); 
-  grid-template-rows:repeat(2,auto);
 }
 
-.footer-title-links {
-  grid-column: 1/2;
-  grid-row: 1/2;
+.footer-company-details-name {
+  
 }
 
-.nav-first-footer-links-container {
-  grid-column: 1/2;
-  grid-row: 2/3;
+.footer-company-details-address {
+
 }
 
-.nav-second-footer-links-container {
-  grid-column: 3/4;
-  grid-row: 2/3;
+.footer-company-details-phone {
+
 }
 
-.nav-footer-list {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-media-links-container {
-  grid-column: 1/3;
-  grid-row:4/5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.fa-brands {
-  color: white;
-}
-
-.nav-footer-media-list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
-  padding: 0;
-}
-
-.nav-footer-link {
+.footer-company-details-email {
   text-decoration: none;
   color: var(--white);
 }
 
+/* Newsletter & Login */
 .footer-login-container {
   grid-column: 1/3;
   grid-row:2/3;
   display: grid;
   grid-template-columns: 3fr auto 2fr;
-  grid-template-rows: repeat(4,auto);
 }
 
 .footer-login-title {
@@ -95,12 +59,12 @@
   grid-row: 1/2;
 }
 
-.footer-label-input {
+.footer-login-label-input {
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
-.footer-input-login {
+.footer-login-input {
   grid-column: 1/2;
   grid-row: 3/4;
   height: 25px;
@@ -108,7 +72,7 @@
   border: none;
 }
 
-.footer-login-btn {
+.footer-login-button {
   grid-column: 3/4;
   grid-row: 3/4;
   border: none;
@@ -118,11 +82,78 @@
   height: 25px;
 }
 
-.footer-container-info {
+/* Site Links */
+.footer-links-container {
+  grid-column: 1/3;
+  grid-row:3/4;
+
+}
+
+.footer-links-title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.footer-links-nav-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-nav-list-item {
+
+}
+
+.footer-links-nav-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* Social Media */
+.footer-social-media-container {
+  grid-column: 1/3;
+  grid-row:4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-social-media-title {
+  text-align: center;
+}
+
+.footer-social-media-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.footer-social-media-list-item {
+
+}
+
+.footer-social-media-link {
+  
+}
+
+.fa-brands {
+  color: white;
+}
+
+/* Footer Copyright */
+.footer-copyright-container {
   grid-column: 1/2;
   grid-row:5/6;
 }
 
+.footer-copyright {
+
+}
+
+/* Logo */
 .footer-logo-container {
   grid-column: 2/3;
   grid-row:5/6;
@@ -138,6 +169,8 @@
 
 
 /* 
+-- CLASS NAMES AND LAYOUT HAVE BEEN CHANGED SINCE THIS --
+
 CSS FROM homepage-desktop.css
 
 footer {
@@ -145,22 +178,20 @@ footer {
   background-color:  #7C8C9A;
   text-align: center;
 }
+
 .footer-container > *{
   border: 1px solid black;
-
 }
 
 .footer-container{
-display: grid;
-grid-template: repeat(4,auto)/repeat(3,1fr);
-background-color: var(--light-perimary);
-
+  display: grid;
+  grid-template: repeat(4,auto)/repeat(3,1fr);
+  background-color: var(--light-perimary);
 }
 
 .footer-img-container{
   grid-column: 1/2;
   grid-row:1/5
-
 }
 
 .footer-container-company-details{
@@ -171,7 +202,6 @@ background-color: var(--light-perimary);
 .footer-login-container{
   grid-column: 3/4;
   grid-row:1/3;
-  
 }
 
 .nav-footer-links-container{
@@ -179,17 +209,13 @@ background-color: var(--light-perimary);
   grid-row:3/4;
   
 }
+
 .nav-footer-list{
   list-style: none;
   display: flex;
   flex-direction: row;
   gap: 10%;
   justify-content: center;
-}
-
-.nav-footer-media-links-container{
-  grid-column: 3/4;
-  grid-row:4/5;
 }
 
 .footer-container-info{
