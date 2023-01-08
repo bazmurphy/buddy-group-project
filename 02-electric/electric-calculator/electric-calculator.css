@@ -4,7 +4,17 @@
 
 .electric-calculator-subcontainer {
   display: grid;
-  row-gap: 20px;
+  row-gap: 25px;
+}
+
+/* .electric-calculator-subcontainer > * {
+  border: 1px dotted black;
+} */
+
+.electric-calculator-introduction {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
 }
 
 .activity-headings-container {
