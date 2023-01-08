@@ -17,99 +17,86 @@
 </head>
 <body>
 
-  <footer>
-    <div class="footer-container">
-    <!-- ^ we need to remove this div and make the footer element itself be the grid -->
-      <div class="footer-img-container">
-      <!-- ^ first child of the footer element grid -->
-        <img class="footer-img" src="#" alt="" />
+  <footer class="footer-container">
+
+      <div class="footer-image-container">
+        <img class="footer-image" src="../05-images/placeholder.svg" alt="" />
       </div>
-      <div class="footer-container-company-details">
-      <!-- ^ second child of the footer element grid -->
-        <p>Company Name</p>
-        <p>Address</p>
-        <p>Phone Number</p>
-        <a class="company-email" href="#">Email Address</a>
+      
+      <div class="footer-company-details-container">
+        <span class="footer-company-details-name">Company Name</span>
+        <span class="footer-company-details-address">Address</span>
+        <span class="footer-company-details-phone">Phone Number</span>
+        <a class="footer-company-details-email" href="#">Email Address</a>
       </div>
+
       <div class="footer-login-container">
-      <!-- ^ third child of the footer element grid (class name doesn't reflect function which is newsletter AND login) -->
         <h3 class="footer-login-title">Sign Up for our Newsletter</h3>
-        <label class="footer-label-input" for="email">Email</label>
-        <input class="footer-input-login" type="email" name="email" id="email" placeholder="Enter email..." />
-        <button class="footer-login-btn">Log-in</button>
+        <label class="footer-login-label-input" for="email">Email</label>
+        <input class="footer-login-input" type="email" name="email" id="email" placeholder="Enter your email..." />
+        <button class="footer-login-button">Login</button>
       </div>
+
       <div class="footer-links-container">
-      <!-- fourth child of the footer element grid (class name not descriptive enough, what type of links? to where?) -->
-        <h3 class="footer-title-links">Site Links</h3>
-      <nav class="nav-first-footer-links-container">
-      <!-- ^ if these are internal links then they can be a nav, otherwise no nav just a ul -->
-        <ul class="nav-footer-list">
-          <li class="nav-footer-item">
-            <a class="nav-footer-link" href="#">List Of Links</a>
-          </li>
-          <li class="nav-footer-item">
-            <a class="nav-footer-link" href="#">List Of Links</a>
-          </li>
-          <li class="nav-footer-item">
-            <a class="nav-footer-link" href="#">List Of Links</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="nav-second-footer-links-container">
-      <!-- ^ if these are internal links then they can be a nav, otherwise no nav just a ul -->
-        <ul class="nav-footer-list">
-          <li class="nav-footer-item">
-            <a class="nav-footer-link" href="#">List Of Links</a>
-          </li>
-          <li class="nav-footer-item">
-            <a class="nav-footer-link" href="#">List Of Links</a>
-          </li>
-          <li class="nav-footer-item">
-            <a class="nav-footer-link" href="#">List Of Links</a>
-          </li>
-         
-        </ul>
-      </nav>
+        <h3 class="footer-links-title">Site Links</h3>
+        <nav class="footer-links-nav">
+          <ul class="footer-links-nav-list">
+            <li class="footer-links-nav-list-item">
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
+            </li>
+            <li class="footer-links-nav-list-item">
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
+            </li>
+            <li class="footer-links-nav-list-item">
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
+            </li>
+            <li class="footer-links-nav-list-item">
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
+            </li>
+            <li class="footer-links-nav-list-item">
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
+            </li>
+            <li class="footer-links-nav-list-item">
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
+            </li>
+          </ul>
+        </nav>
     </div>
-    <div class="footer-media-links-container">
-    <!-- ^ fifth child of the footer element grid (class name social-media-links (?))-->
-    <h3>Social media links</h3>
-      <nav class="nav-footer-media-links-container">
-        <!-- ^ this can be removed because is not a navigation because the links go to external sites -->
-        <ul class="nav-footer-media-list">
-          <li class="nav-footer-media-item">
-            <a class="nav-footer-media-link" href="#">
-              <i class="fa-brands  fa-facebook"></i>
-            </a>
-          </li>
-          <li class="nav-footer-media-item">
-            <a class="nav-footer-media-link" href="#">
-              <i class="fa-brands fa-light fa-instagram"></i>
-            </a>
-          </li>
-          <li class="nav-footer-media-item">
-            <a class="nav-footer-media-link" href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-footer-media-item">
-            <a class="nav-footer-media-link" href="#">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- ^ this closing nav tag will also need to be removed -->
-      </div>
-      <div class="footer-container-info">
-      <!-- sixth child of the footer element grid -->
-        <p>contentinfo</p>
-      </div>
-      <div class="footer-logo-container">
-      <!-- seventh child of the footer element grid -->
-        <p class="footer-logo" >LOGO</p>
-      </div>
+
+    <div class="footer-social-media-container">
+      <h3 class="footer-social-media-title">Social Media Links</h3>
+      <ul class="footer-social-media-list">
+        <li class="footer-social-media-list-item">
+          <a class="footer-social-media-link" href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="footer-social-media-list-item">
+          <a class="footer-social-media-link" href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer-social-media-list-item">
+          <a class="footer-social-media-link" href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li class="footer-social-media-list-item">
+          <a class="footer-social-media-link" href="https://linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
     </div>
+
+    <div class="footer-copyright-container">
+      <span class="footer-copyright">&copy; copyright</span>
+    </div>
+
+    <div class="footer-logo-container">
+      <p class="footer-logo">LOGO</p>
+    </div>
+
   </footer>
 
 </body>
