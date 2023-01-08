@@ -1,2 +1,1 @@
 # buddy-group-project
-test
