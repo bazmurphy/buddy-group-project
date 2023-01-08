@@ -5,6 +5,7 @@
   row-gap: var(--items-gap-mobile);
   padding: var(--container-padding-mobile);
 }
+
 .electric-section-two-container > * {
   border: solid 1px black;
 }
@@ -27,8 +28,10 @@
 }
 
 .electric-section-two-part-one-paragraph {
-  grid-column: 1/2;
   text-align: justify;
+}
+
+.electric-section-two-part-one-img-container{
 }
 
 .electric-section-two-part-one-img {
@@ -52,6 +55,9 @@
   text-align: justify;
 }
 
+.electric-section-two-part-two-img-container{
+}
+
 .electric-section-two-part-two-img {
   display: block;
   width: 100%;
@@ -71,6 +77,9 @@
 
 .electric-section-two-part-three-paragraph {
   text-align: justify;
+}
+
+.electric-section-two-part-three-img-container{
 }
 
 .electric-section-two-part-three-img {
