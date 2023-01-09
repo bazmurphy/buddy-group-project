@@ -48,7 +48,7 @@ body {
 
   --subcontainer-row-gap-mobile: 20px;
   --subcontainer-column-gap-desktop: 50px;
-  /* ^gap between the image and text content in the desktop grid */
+  /* ^gap between the image and copy in the grid */
 
   --copy-container-padding-mobile: 20px;
   --copy-container-padding-desktop: 30px;
