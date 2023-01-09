@@ -130,6 +130,10 @@
   }
 }
 
+.home-section-one-paragraph-highlight {
+  color: var(--red);
+}
+
 .home-section-one-link {
   justify-self: center;
   text-align: center;
