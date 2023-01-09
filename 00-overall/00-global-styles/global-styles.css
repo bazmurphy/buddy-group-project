@@ -31,13 +31,20 @@ body {
   --light-blue:#CBE9FA;
 
   --container-padding-mobile: 50px;
-  --subcontainer-padding-mobile:20px;
+  --subcontainer-padding-mobile: 20px;
+
+  --container-padding-desktop: 60px;
+  --subcontainer-padding-desktop: 30px;
+  /* ^created these and gave them random numbers */
   
   --container-border-mobile: 1px solid black;
-  --subcontainer-border-mobile: 1px dotted black;
+  --container-border-desktop: 1px solid black;
 
-  --solid-border: 1px solid black;
-  --dotted-border: 1px dotted black;
+  --subcontainer-border-mobile: 1px solid black;
+  --container-border-desktop: 1px solid black;
+  /* ^we need to rethink both of these... across the whole site... */
+
+  --temporary-border: 1px dotted black;
   /* ^use temporarily to see box models and scaling */
 
   --level1-background-color: hsl(190, 55%, 85%);
@@ -45,12 +52,43 @@ body {
   --level3-background-color: hsl(190, 65%, 95%);
   /* ^use temporarily to see box models and scaling*/
 
+  --content-column-gap-desktop: 50px;
+  /* ^gap between the image and text content in the desktop grid */
+
+  --copy-container-row-gap-mobile: 20px;
+  --copy-container-row-gap-desktop: 30px;
+  /* ^gap between each element in copy-container */
+
+  --title-font-size-mobile: 20px;
+  --title-font-size-desktop: 22px;
+
+  --title-font-weight-mobile: 600;
+  --title-font-weight-desktop: 600;
+
+  --subtitle-font-size-mobile: 18px;
+  --subtitle-font-size-desktop: 20px;
+
+  --subtitle-font-weight-mobile: 500;
+  --subtitle-font-weight-desktop: 500;
+
+  --paragraph-container-row-gap-mobile: 10px;
+  --paragraph-container-row-gap-desktop: 20px;
+  /* ^changes the size of the row-gap on the paragraph-containers */
+
+  --paragraph-font-size-mobile: 14px;
+  --paragraph-font-size-desktop: 16px;
+
+  --paragraph-font-weight-mobile: 400;
+  --paragraph-font-weight-desktop: 400;
+
   --title-size-mobile: 20px;
   --subtitle-size-mobile:18px;
   --content-size-paragraph-mobile: 14px;
+  /* ^these need removing but things WILL BREAK */
 
   --items-gap-mobile:15px;
   --section-gap-mobile:50px;
+  /* ^these names aren't great this needs re-doing */
 
   --title-width-mobile:140px;
   --title-height-mobile:40px;
@@ -74,7 +112,7 @@ body {
 }
 
 .mibox {
-    /* ^this relates to mobile nav - why is this here? */
+  /* ^this relates to mobile nav - why is this here? */
   width: 153px ;
   height: 26px;
   border: none;
