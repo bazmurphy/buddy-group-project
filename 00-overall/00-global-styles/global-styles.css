@@ -12,18 +12,19 @@ body {
 }
 @media (min-width: 500px){
   body{
-  max-width: 2000px;
+    max-width: 1400px;
   }
 }
 
-
 :root {
   --light-perimary: rgb(226, 224, 224);
+  /* ^this should be "primary" */
+  /* this needs to be renamed in all the locations it is used */
   --white: #FFFFFF;
   --green: #72E572;
   --orange: #FFA500;
   --pink: #E499E4;
-  --yello: #FAFAA2;
+  --yellow: #FAFAA2;
   --dark-blue:#004DD6;
   --red:#FF4242;
   --light-gray:#D9D9D9;
@@ -34,6 +35,15 @@ body {
   
   --container-border-mobile: 1px solid black;
   --subcontainer-border-mobile: 1px dotted black;
+
+  --solid-border: 1px solid black;
+  --dotted-border: 1px dotted black;
+  /* ^use temporarily to see box models and scaling */
+
+  --level1-background-color: hsl(190, 55%, 85%);
+  --level2-background-color: hsl(190, 60%, 90%);
+  --level3-background-color: hsl(190, 65%, 95%);
+  /* ^use temporarily to see box models and scaling*/
 
   --title-size-mobile: 20px;
   --subtitle-size-mobile:18px;
@@ -52,13 +62,10 @@ body {
   --readmore-width-mobile:140px;
   --readmore-height-mobile:40px;
   --readmore-font-size-mobile:20px;
-  
-  
 
   --button-background-color-mobile:#D9D9D9;
   --title-background-color-mobile:#D9D9D9;
   --readmore-background-color-mobile:#D9D9D9;
-
 }
 
 .bold {
@@ -67,6 +74,7 @@ body {
 }
 
 .mibox {
+    /* ^this relates to mobile nav - why is this here? */
   width: 153px ;
   height: 26px;
   border: none;

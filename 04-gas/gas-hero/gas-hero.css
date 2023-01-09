@@ -1,6 +1,20 @@
+.gas-hero-container,
+.gas-hero-subcontainer,
+.gas-hero-image-container,
+.gas-hero-image,
+.gas-hero-copy-container,
+.gas-hero-title,
+.gas-hero-subtitle,
+.gas-hero-paragraph-container,
+.gas-hero-paragraph {
+  border: var(--dotted-border);
+}
+
 .gas-hero-container {
   display: grid;
   grid-template-columns: 1fr;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
 }
 
 .gas-hero-subcontainer {
@@ -9,55 +23,61 @@
   grid-template-areas:
   "gas-hero-img-container"
   "gas-hero-copy";
-  justify-content: center;
   row-gap: var(--items-gap-mobile);
-  padding: var(--container-padding-mobile);
   column-gap: 50px;
-}
-
-.gas-hero-subcontainer > *{
-  border: var(--container-border-mobile);
+  padding: 20px;
+  background-color: var(--level2-background-color);
 }
 
 @media (min-width: 500px) {
   .gas-hero-subcontainer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "gas-hero-copy gas-hero-img-container"
+    "gas-hero-copy gas-hero-img-container";
   }
+}
   
-  .gas-hero-img-container {
-   
-  }
-
-  .gas-hero-copy {
-
-  }
-}
-
-.gas-hero-img-container {
+.gas-hero-image-container {
   grid-area: gas-hero-img-container;
-  /* align-self: center; */
   display: grid;
+  /* ^this is for the image inside the container */
+  justify-content: center;
   align-content: center;
+  background-color: var(--level3-background-color);
 }
 
-.gas-hero-img{
+@media (min-width: 500px) {
+  .gas-hero-image-container {
+    
+  }
+}
+
+.gas-hero-image {
   display: block;
   width: 100%;
 }
 
-.gas-hero-copy {
-  grid-area: gas-hero-copy;
-  display: grid;
-  align-content: stretch;
-  align-content: flex-start;
-  row-gap: 20px;
-  /* ^temporary */
+@media (min-width: 500px) {
+  .gas-hero-image {
+
+  }
 }
 
-.gas-hero-copy > * {
-  border: 1px solid lime;
+.gas-hero-copy-container {
+  grid-area: gas-hero-copy;
+  display: grid;
+  align-content: start;
+  /* ^maybe change this to center? */
+  row-gap: 20px;
+  /* ^temporary */
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-copy-container {
+    row-gap: 40px;
+    /* ^is this a solution? i am not sure */
+  }
 }
 
 .gas-hero-title {
@@ -65,36 +85,41 @@
   font-size: var(--title-size-mobile);
 }
 
+@media (min-width: 500px) {
+  .gas-hero-title {
+    text-align: left;
+  }
+}
+
 .gas-hero-subtitle {
   text-align: center;
   font-size: var(--subtitle-size-mobile);
 }
 
-.gas-hero-content {
+@media (min-width: 500px) {
+  .gas-hero-subtitle {
+    text-align: left;
+  }
+}
+
+.gas-hero-paragraph-container {
+  display: grid;
+  row-gap: 10px;
+}
+
+@media (min-width: 500px) {
+  .gas-hero-paragraph-container {
+    
+  }
+}
+
+.gas-hero-paragraph {
   text-align: justify;
   font-size: var(--content-size-paragraph-mobile);
 }
 
-.gas-hero-details {
-  justify-self: center;
-  align-self: end;
-}
-
-.gas-hero-details[open] {
-  justify-self: center;
-  align-self: end;
-}
-
-.gas-hero-summary {
-  background-color: var(--readmore-background-color-mobile);
-  width: var(--readmore-width-mobile);
-  height: var(--readmore-height-mobile);
-  text-align: center;
-  align-items: center;
-}
-
-.gas-hero-details[open] > summary {
-  background-color: limegreen;
-  text-align: center;
-  align-items: center;
+@media (min-width: 500px) {
+  .gas-hero-paragraph {
+    
+  }
 }
