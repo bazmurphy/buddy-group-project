@@ -20,8 +20,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-  " electric-hero-image-container "
-  "electric-hero-copy-container";
+    "electric-hero-image-container"
+    "electric-hero-copy-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   /* ^for the media query after */
@@ -37,7 +37,7 @@
   background-color: var(--level3-background-color);
 }
 
-.electric-hero-img{
+.electric-hero-image{
   display: block;
   width: 100%;
 }
@@ -68,7 +68,7 @@
     
 }
 
-.electric-hero-img{
+.electric-hero-image{
     display: block;
     width: 100%;
 }
