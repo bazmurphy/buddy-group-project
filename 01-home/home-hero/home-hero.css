@@ -119,14 +119,16 @@
   justify-self: center;
   text-align: center;
   text-decoration: none;
-  padding: var(--link-padding);
-  color: var(--link-color);
-  background-color: var(--link-background-color);
+  padding: var(--link-padding-mobile);
+  color: var(--link-color-mobile);
+  background-color: var(--link-background-color-mobile);
 }
 
 @media (min-width: 500px) {
   .home-hero-link {
     justify-self: start;
-
+    padding: var(--link-padding-desktop);
+    color: var(--link-color-desktop);
+    background-color: var(--link-background-color-desktop);
   }
 }

@@ -79,9 +79,14 @@ body {
   --paragraph-font-weight-mobile: 400;
   --paragraph-font-weight-desktop: 400;
 
-  --link-color: #000000;
-  --link-background-color: #dcdcdc;
-  --link-padding: 5px 10px;
+  --link-color-mobile: #000000;
+  --link-color-desktop: #000000;
+
+  --link-background-color-mobile: #dcdcdc;
+  --link-background-color-desktop: #dcdcdc;
+
+  --link-padding-mobile: 5px 10px;
+  --link-padding-desktop: 8px 16px;
 
   --title-size-mobile: 20px; /* --title-font-size-mobile */
   --subtitle-size-mobile:18px; /* --subtitle-font-size-mobile */
@@ -89,7 +94,7 @@ body {
   /* ^these need removing but things WILL BREAK */
 
   --items-gap-mobile:15px;
-  /* ^these names aren't great this needs re-doing */
+  /* ^this needs removing, but converting everything that uses it before */
 
   --page-element-cssproperty-mobiledesktop: 0;
 
