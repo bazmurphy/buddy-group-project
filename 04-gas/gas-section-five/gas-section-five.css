@@ -22,7 +22,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
-    "gas-section-five-copy-container gas-section-five-img-container";
+    "gas-section-five-img-container gas-section-five-copy-container";
     }
 
 }
