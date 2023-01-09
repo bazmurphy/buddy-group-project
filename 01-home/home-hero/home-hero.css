@@ -1,113 +1,132 @@
 .home-hero-container,
+.home-hero-subcontainer,
 .home-hero-image-container,
-.home-hero-content-container,
+.home-hero-image,
+.home-hero-copy-container,
 .home-hero-title,
 .home-hero-subtitle,
+.home-hero-paragraph-container,
 .home-hero-paragraph,
-.home-hero-button {
-  border: 1px dotted black;
+.home-hero-link {
+  border: var(--temporary-border);
 }
 
 .home-hero-container {
   display: grid;
-  padding: 20px;
-  /* ^add global variable for this? */
+  grid-template-columns: 1fr;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
+
+@media (min-width: 500px) {
+  .home-hero-container {
+    padding: var(--container-padding-desktop);
+  }
 }
 
 .home-hero-subcontainer {
   display: grid;
-  row-gap: 15px;
-  /* ^add global variable for this? */
+  grid-template-columns: 1fr;
+  background-color: var(--level2-background-color);
+}
+
+@media (min-width: 500px) {
+  .home-hero-subcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--subcontainer-column-gap-desktop);
+  }
 }
 
 .home-hero-image-container {
-  background-color: lightblue;
-  /* ^so you can see if the image is scaling correctly */
+  /* ^We need to choose how to handle this */
+  background-color: var(--level3-background-color);
 }
 
 .home-hero-image {
   display: block;
   width: 100%;
-  background-color: gray;
-  /* ^so you can see if the image is scaling correctly */
+  height: 100%;
+  object-fit: cover;
+  /* ^This is not a great way to handle this */
 }
 
-.home-hero-content-container {
+.home-hero-copy-container {
   display: grid;
-  row-gap: 5px;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--copy-container-row-gap-mobile);
+  padding: var(--copy-container-padding-mobile);
+  border: 1px solid black;
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 500px) {
+  .home-hero-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+    padding: var(--copy-container-padding-desktop);
+  }
 }
 
 .home-hero-title {
-  font-size: 1.6rem;
-  /* ^add global variable for this? */
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .home-hero-title {
+    text-align: left;
+  }
 }
 
 .home-hero-subtitle {
-  font-size: 1.3rem;
-  /* ^add global variable for this? */
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .home-hero-subtitle {
+    text-align: left;
+  }
+}
+
+.home-hero-paragraph-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 500px) {
+  .home-hero-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
 }
 
 .home-hero-paragraph {
-  text-align: justify;
+  text-align: center;
+  /* are you sure you want center? */
+  /* text-align: justify; */
 }
 
-.home-hero-button {
-  font-family: inherit;
-  /* ^override default button font */
-  justify-self: start;
-  /* ^prevent the button from stretching to full width of grid cell */
-  padding: 8px 16px;
-  /* ^add global variable for this? */
+@media (min-width: 500px) {
+  .home-hero-paragraph {
+    text-align: left;
+  }
 }
 
-
-/* 
-CSS FROM homepage-mobile.css
-
-.hero-container{
-  grid-area: hero;
-  display: grid;
-  grid-template: repeat(2,auto)/repeat(1,1fr);
-  background-color: var(--green);
-}
-
-.hero-img-container{
-  grid-column: 1/2;
-  grid-row: 1/2;
-  width: 100%;
-}
-
-.hero-img{
-  width: 100%;
-}
-
-.hero-content-container{
-  grid-column: 1/2;
-  grid-row:2/3;
-}
-*/
-
-/* 
-CSS FROM homepage-desktop.css
-
-.hero-container {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  padding: 2%;
-}
-
-.hero-img-container {
-  grid-column: 1/6;
-}
-
-.hero-img {
-  width: 100%;
-}
-
-.hero-content-container {
-  grid-column: 6/9;
+.home-hero-link {
   justify-self: center;
-  /*when the desktop size get smallet this css won't make sence/
-  align-self: center;
+  text-align: center;
+  text-decoration: none;
+  padding: var(--link-padding);
+  color: var(--link-color);
+  background-color: var(--link-background-color);
 }
-*/
+
+@media (min-width: 500px) {
+  .home-hero-link {
+    justify-self: start;
+
+  }
+}
