@@ -5,6 +5,7 @@
 .electric-hero-paragraph-container,
 .electric-hero-paragraph,
 .electric-hero-container,
+.electric-hero-image-container,
 .electric-hero-image {
   border: var(--temporary-border);
 }
@@ -29,7 +30,16 @@
   background-color: var(--level2-background-color);
 }
 
-.electric-hero-img-container{
+@media (min-width:500px){
+  .electric-hero-subcontainer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "electric-hero-image-container electric-hero-copy-container";
+    column-gap: var(--subcontainer-column-gap-desktop);
+  }
+}
+
+.electric-hero-image-container{
   grid-area:electric-hero-image-container ;
   display: grid;
   justify-content: center;
@@ -37,9 +47,22 @@
   background-color: var(--level3-background-color);
 }
 
+@media (min-width: 500px) {
+  .electric-hero-image-container{
+    display: grid;
+    align-content: center;
+  }
+}
+
 .electric-hero-image{
   display: block;
   width: 100%;
+}
+
+@media (min-width:500px){
+  .electric-hero-image{
+
+  }
 }
 
 .electric-hero-copy-container {
@@ -50,6 +73,11 @@
   background-color: var(--level3-background-color);
 }
 
+@media (min-width: 500px) {
+  .electric-hero-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+  }
+}
 
 .electric-hero-title{
   text-align: center;
@@ -57,18 +85,27 @@
   font-weight: var(--title-font-weight-mobile);
 }
 
+@media (min-width: 500px) {
+  .electric-hero-title {
+    text-align: center;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
+}
+
 .gas-section-one-paragraph-container {
-  
 }
 
 .electric-hero-paragraph{
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
-    
+  font-weight: var(--paragraph-font-weight-mobile); 
 }
 
-.electric-hero-image{
-    display: block;
-    width: 100%;
+@media (min-width: 500px) {
+  .electric-hero-paragraph {
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
+  
