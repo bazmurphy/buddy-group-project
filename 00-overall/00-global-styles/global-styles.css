@@ -10,6 +10,11 @@ body {
   border: 1px solid black;
   font-family: 'Poppins', sans-serif;
 }
+@media (min-width: 500px){
+  body{
+  max-width: 2000px;
+  }
+}
 
 
 :root {
