@@ -46,8 +46,12 @@ body {
   --level3-background-color: hsl(190, 65%, 95%); /* image-container + copy-container */
   /* ^use temporarily to see box models and scaling*/
 
-  --content-column-gap-desktop: 50px;
+  --subcontainer-row-gap-mobile: 20px;
+  --subcontainer-column-gap-desktop: 50px;
   /* ^gap between the image and text content in the desktop grid */
+
+  --copy-container-padding-mobile: 20px;
+  --copy-container-padding-desktop: 30px;
 
   --copy-container-row-gap-mobile: 20px;
   --copy-container-row-gap-desktop: 30px;
@@ -74,6 +78,10 @@ body {
 
   --paragraph-font-weight-mobile: 400;
   --paragraph-font-weight-desktop: 400;
+
+  --link-color: #000000;
+  --link-background-color: #dcdcdc;
+  --link-padding: 5px 10px;
 
   --title-size-mobile: 20px; /* --title-font-size-mobile */
   --subtitle-size-mobile:18px; /* --subtitle-font-size-mobile */
