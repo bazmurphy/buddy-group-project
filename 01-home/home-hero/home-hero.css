@@ -76,6 +76,8 @@
 @media (min-width: 500px) {
   .home-hero-title {
     text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
   }
 }
 
@@ -88,6 +90,8 @@
 @media (min-width: 500px) {
   .home-hero-subtitle {
     text-align: left;
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -105,13 +109,15 @@
 
 .home-hero-paragraph {
   text-align: center;
-  /* are you sure you want center? */
-  /* text-align: justify; */
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
   .home-hero-paragraph {
     text-align: left;
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
