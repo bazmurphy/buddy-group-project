@@ -7,7 +7,7 @@
 .gas-hero-subtitle,
 .gas-hero-paragraph-container,
 .gas-hero-paragraph {
-  border: var(--dotted-border);
+  border: var(--temporary-border);
 }
 
 .gas-hero-container {
@@ -17,23 +17,32 @@
   background-color: var(--level1-background-color);
 }
 
+@media (min-width:500px) {
+  .gas-hero-container {
+    padding: var(--container-padding-desktop);
+  }
+}
+
 .gas-hero-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-  "gas-hero-img-container"
-  "gas-hero-copy";
+    "gas-hero-img-container"
+    "gas-hero-copy";
   row-gap: var(--items-gap-mobile);
-  column-gap: 50px;
-  padding: 20px;
+  column-gap: none;
+  /* ^for the media query after */
+  align-content: start;
   background-color: var(--level2-background-color);
 }
 
 @media (min-width: 500px) {
   .gas-hero-subcontainer {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
+    grid-template-areas: 
     "gas-hero-copy gas-hero-img-container";
+    column-gap: var(--content-column-gap-desktop);
+
   }
 }
   
@@ -67,59 +76,63 @@
   grid-area: gas-hero-copy;
   display: grid;
   align-content: start;
-  /* ^maybe change this to center? */
-  row-gap: 20px;
-  /* ^temporary */
+  row-gap: var(--copy-container-row-gap-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 500px) {
   .gas-hero-copy-container {
-    row-gap: 40px;
-    /* ^is this a solution? i am not sure */
+    row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
 .gas-hero-title {
   text-align: center;
-  font-size: var(--title-size-mobile);
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
   .gas-hero-title {
     text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
   }
 }
 
 .gas-hero-subtitle {
   text-align: center;
-  font-size: var(--subtitle-size-mobile);
+  font-size: var(--subtitle-font-size-mobile);
 }
 
 @media (min-width: 500px) {
   .gas-hero-subtitle {
     text-align: left;
+    font-size: var(--subtitle-font-size-desktop);
   }
 }
 
 .gas-hero-paragraph-container {
   display: grid;
-  row-gap: 10px;
+  row-gap: var(--paragraph-container-row-gap-mobile);
 }
 
 @media (min-width: 500px) {
   .gas-hero-paragraph-container {
-    
+    row-gap: var(--paragraph-container-row-gap-mobile);
   }
 }
 
 .gas-hero-paragraph {
-  text-align: justify;
-  font-size: var(--content-size-paragraph-mobile);
+  text-align: center;
+  /* ^maybe this should be "justify" on mobile ? */
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
   .gas-hero-paragraph {
-    
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
