@@ -19,6 +19,7 @@
       "../../01-home/home-section-one/home-section-one.css",
       // "../../01-home/home-section-two/home-section-two.css",
       // "../../01-home/home-section-three/home-section-three.css"
+      "../../01-home/home-section-four/home-section-four.css"
     ];
         
     async function addStylesheetsArray() {
@@ -37,9 +38,9 @@
         const parser = new DOMParser();
         const importedHTML = parser.parseFromString(html, "text/html");
         const importedComponent = importedHTML.querySelector("body").children[0];
-        if (targetLocation !== "main") {
+        if (targetLocation === "header" || targetLocation === "footer") {
           document.querySelector(targetLocation).replaceWith(importedComponent);
-        } else {
+        } else if(targetLocation === "main") {
           document.querySelector(targetLocation).appendChild(importedComponent);
         }
       } catch (error) {
@@ -53,6 +54,7 @@
       ["../../01-home/home-section-one/home-section-one.html", "main"],
       // ["../../01-home/home-section-two/home-section-two.html", "main"],
       // ["../../01-home/home-section-three/home-section-three.html", "main"],
+      ["../../01-home/home-section-four/home-section-four.css", "main"],
       ["../../00-overall/04-footer/footer.html", "footer"],
     ];
 
