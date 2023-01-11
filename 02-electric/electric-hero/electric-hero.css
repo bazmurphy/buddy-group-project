@@ -5,6 +5,7 @@
 .electric-hero-paragraph-container,
 .electric-hero-paragraph,
 .electric-hero-container,
+.electric-hero-image-container,
 .electric-hero-image {
   border: var(--temporary-border);
 }
@@ -29,12 +30,27 @@
   background-color: var(--level2-background-color);
 }
 
-.electric-hero-img-container{
-  grid-area:electric-hero-image-container ;
+@media (min-width:500px){
+  .electric-hero-subcontainer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "electric-hero-copy-container electric-hero-image-container";
+    column-gap: var(--subcontainer-column-gap-desktop);
+  }
+}
+
+.electric-hero-image-container{
+  grid-area:electric-hero-image-container;
   display: grid;
   justify-content: center;
   align-content: center;
   background-color: var(--level3-background-color);
+}
+
+@media (min-width: 500px) {
+  .electric-hero-image-container{
+    align-content: center;
+  }
 }
 
 .electric-hero-image{
@@ -42,14 +58,25 @@
   width: 100%;
 }
 
+@media (min-width:500px){
+  .electric-hero-image{
+
+  }
+}
+
 .electric-hero-copy-container {
-  grid-area:electric-hero-copy-container ;
+  grid-area:electric-hero-copy-container;
   display: grid;
-  align-content: center;
+  align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
   background-color: var(--level3-background-color);
 }
 
+@media (min-width: 500px) {
+  .electric-hero-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+  }
+}
 
 .electric-hero-title{
   text-align: center;
@@ -57,18 +84,35 @@
   font-weight: var(--title-font-weight-mobile);
 }
 
+@media (min-width: 500px) {
+  .electric-hero-title {
+    text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
+}
+
 .gas-section-one-paragraph-container {
-  
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 500px) {
+  .gas-section-one-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
 }
 
 .electric-hero-paragraph{
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
-    
+  font-weight: var(--paragraph-font-weight-mobile); 
 }
 
-.electric-hero-image{
-    display: block;
-    width: 100%;
+@media (min-width: 500px) {
+  .electric-hero-paragraph {
+    text-align: left;
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
+  
