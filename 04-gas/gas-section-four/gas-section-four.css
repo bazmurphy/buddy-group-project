@@ -1,38 +1,46 @@
 .gas-section-four-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    row-gap: var(--items-gap-mobile);
-    padding: var(--container-padding-mobile);
+  border: dotted 1px black;
+}
+
+.gas-section-four-subcontainer {
+  display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas: 
+  "gas-section-four-title-container"
+  "gas-section-four-paragraph";
+  justify-content: center;
+  row-gap: var(--items-gap-mobile);
+  padding: var(--container-padding-mobile);
+}
+
+.gas-section-four-subcontainer > * {
+  border: dotted 1px black;
+}
+
+@media (min-width:500px) {
+  .gas-section-four-subcontainer{
+   grid-template-columns: repeat(2,1fr);
+   grid-template-areas: 
+  "gas-section-four-title-container gas-section-four-paragraph";
+  }
 }
   
-.gas-section-four-container > * {
-    border: dotted 1px black;
+.gas-section-four-title-container{
+  grid-area: gas-section-four-title-container;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 }
   
 .gas-section-four-title {
-    grid-column: 1/2;
-    justify-self: center;
-    text-align: center;
-    font-size: var(--title-size-mobile);
-    /* width: var(--title-width-mobile);
-    height: var(--title-height-mobile); */
-    background-color: var(--title-background-color-mobile);
+  font-size: var(--title-size-mobile);
+  background-color: var(--title-background-color-mobile);
 }
 
-.gas-section-four-subtitle {
-    grid-column: 1/2;
-    justify-self: center;
-    text-align: center;
-    font-size: var(--title-size-mobile);
-    /* width: var(--title-width-mobile);
-    height: var(--title-height-mobile); */
-    background-color: var(--title-background-color-mobile);
-}
-
-.gas-section-four-content {
-    grid-column: 1/2;
-    text-align: justify;
-    font-size: var(--content-size-paragraph-mobile);
+.gas-section-four-paragraph {
+  grid-area: gas-section-four-paragraph;
+  text-align: justify;
+  font-size: var(--content-size-paragraph-mobile);
 }
   

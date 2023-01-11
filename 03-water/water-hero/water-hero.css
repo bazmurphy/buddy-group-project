@@ -17,14 +17,14 @@
 }
 
 .water-hero-image-container {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   /* ^so you can see if the image is scaling correctly */
 }
 
 .water-hero-image {
   display: block;
   width: 100%;
-  background-color: gray;
+  /* background-color: gray; */
   /* ^placeholder colour until actual image */
 }
 

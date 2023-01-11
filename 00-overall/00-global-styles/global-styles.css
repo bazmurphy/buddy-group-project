@@ -11,31 +11,95 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+@media (min-width: 500px){
+  body{
+    max-width: 1400px;
+  }
+}
 
 :root {
-  --light-perimary: rgb(226, 224, 224);
   --white: #FFFFFF;
-  --green: #72E572;
-  --orange: #FFA500;
-  --pink: #E499E4;
-  --yello: #FAFAA2;
   --dark-blue:#004DD6;
   --red:#FF4242;
   --light-gray:#D9D9D9;
   --light-blue:#CBE9FA;
 
   --container-padding-mobile: 50px;
-  --subcontainer-padding-mobile:20px;
+  --subcontainer-padding-mobile: 20px;
+
+  --container-padding-desktop: 60px;
+  --subcontainer-padding-desktop: 30px;
+  /* ^created these and gave them random numbers */
   
   --container-border-mobile: 1px solid black;
-  --subcontainer-border-mobile: 1px dotted black;
+  --container-border-desktop: 1px solid black;
 
-  --title-size-mobile: 20px;
-  --subtitle-size-mobile:18px;
-  --content-size-paragraph-mobile: 14px;
+  --subcontainer-border-mobile: 1px solid black;
+  --container-border-desktop: 1px solid black;
+  /* ^we need to rethink both of these... across the whole site... */
+
+  --temporary-border: 1px dotted black; /* everything */
+  /* ^use temporarily to see box models and scaling */
+
+  --level1-background-color: hsl(190, 55%, 85%); /* container */
+  --level2-background-color: hsl(190, 60%, 90%); /* subcontainer */
+  --level3-background-color: hsl(190, 65%, 95%); /* image-container + copy-container */
+  /* ^use temporarily to see box models and scaling*/
+
+  --subcontainer-row-gap-mobile: 20px;
+  --subcontainer-column-gap-desktop: 50px;
+  /* ^gap between the image and copy in the grid */
+   
+  --subsection-container-row-gap-mobile: 30px;
+  --subsection-container-column-gap-desktop: 40px;
+
+  --copy-container-padding-mobile: 20px;
+  --copy-container-padding-desktop: 30px;
+
+  --copy-container-row-gap-mobile: 20px;
+  --copy-container-row-gap-desktop: 30px;
+  /* ^gap between each element in copy-container */
+
+  --title-font-size-mobile: 20px;
+  --title-font-size-desktop: 22px;
+
+  --title-font-weight-mobile: 600;
+  --title-font-weight-desktop: 600;
+
+  --subtitle-font-size-mobile: 18px;
+  --subtitle-font-size-desktop: 20px;
+
+  --subtitle-font-weight-mobile: 500;
+  --subtitle-font-weight-desktop: 500;
+
+  --paragraph-container-row-gap-mobile: 10px;
+  --paragraph-container-row-gap-desktop: 20px;
+  /* ^changes the size of the row-gap on the paragraph-containers */
+
+  --paragraph-font-size-mobile: 14px;
+  --paragraph-font-size-desktop: 16px;
+
+  --paragraph-font-weight-mobile: 400;
+  --paragraph-font-weight-desktop: 400;
+
+  --link-color-mobile: #000000;
+  --link-color-desktop: #000000;
+
+  --link-background-color-mobile: #dcdcdc;
+  --link-background-color-desktop: #dcdcdc;
+
+  --link-padding-mobile: 5px 10px;
+  --link-padding-desktop: 8px 16px;
+
+  --title-size-mobile: 20px; /* --title-font-size-mobile */
+  --subtitle-size-mobile:18px; /* --subtitle-font-size-mobile */
+  --content-size-paragraph-mobile: 14px; /* --paragraph-font-weight-mobile */
+  /* ^these need removing but things WILL BREAK */
 
   --items-gap-mobile:15px;
-  --section-gap-mobile:50px;
+  /* ^this needs removing, but converting everything that uses it before */
+
+  --page-element-cssproperty-mobiledesktop: 0;
 
   --title-width-mobile:140px;
   --title-height-mobile:40px;
@@ -47,13 +111,10 @@ body {
   --readmore-width-mobile:140px;
   --readmore-height-mobile:40px;
   --readmore-font-size-mobile:20px;
-  
-  
 
   --button-background-color-mobile:#D9D9D9;
   --title-background-color-mobile:#D9D9D9;
   --readmore-background-color-mobile:#D9D9D9;
-
 }
 
 .bold {
@@ -62,6 +123,7 @@ body {
 }
 
 .mibox {
+  /* ^this relates to mobile nav - why is this here? */
   width: 153px ;
   height: 26px;
   border: none;

@@ -1,54 +1,126 @@
+.gas-section-one-container,
+.gas-section-one-subcontainer,
+.gas-section-one-copy-container,
+.gas-section-one-title,
+.gas-section-one-paragraph-container,
+.gas-section-one-paragraph,
+.gas-section-one-image-container,
+.gas-section-one-image {
+  border: var(--temporary-border);
+}
+
 .gas-section-one-container {
+  display: grid;
+  grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
+
+@media (min-width:500px) {
+  .gas-section-one-container {
+    padding: var(--container-padding-desktop);
+  }
 }
 
 .gas-section-one-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
+  grid-template-areas:
+    "gas-section-one-copy-container"
+    "gas-section-one-image-container";
   row-gap: var(--items-gap-mobile);
+  column-gap: none;
+  /* ^for the media query after */
   padding: var(--subcontainer-padding-mobile);
-  border: var(--container-border-mobile);
+  border: var(--subcontainer-border-mobile);
+  background-color: var(--level2-background-color);
 }
 
-.gas-section-one-subcontainer > * {
-  border: var(--subcontainer-border-mobile);
+@media (min-width:500px) {
+  .gas-section-one-subcontainer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "gas-section-one-image-container gas-section-one-copy-container";
+    column-gap: var(--content-column-gap-desktop);
+    padding: var(--subcontainer-padding-desktop);
+  }
+}
+
+.gas-section-one-copy-container {
+  grid-area: gas-section-one-copy-container;
+  display: grid;
+  align-content: start;
+  row-gap: var(--copy-container-row-gap-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 500px) {
+  .gas-section-one-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+  }
 }
 
 .gas-section-one-title {
-  grid-column: 1/2;
-  justify-self: center;
   text-align: center;
-  font-size: var(--title-size-mobile);
-  /*width: var(--title-width-mobile);*/
- /* height: var(--title-height-mobile);*/
-  
-  background-color: var(--title-background-color-mobile);
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
 }
 
-.gas-section-one-subtitle {
-  grid-column: 1/2;
-  justify-self: center;
+@media (min-width: 500px) {
+  .gas-section-one-title {
+    text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
+}
+
+.gas-section-one-paragraph-container {
+  display: grid;
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 500px) {
+  .gas-section-one-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
+}
+
+.gas-section-one-paragraph {
   text-align: center;
-  font-size: var(--title-size-mobile);
-  /*width: var(--title-width-mobile);*/
-  height: var(--title-height-mobile);
-  
-  background-color: var(--title-background-color-mobile);
+  /* ^maybe this should be "justify" on mobile ? */
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
 }
 
-.gas-section-one-content {
-  grid-column: 1/2;
-  text-align: justify;
-  font-size: var(--content-size-paragraph-mobile);
+@media (min-width: 500px) {
+  .gas-section-one-paragraph {
+    text-align: left;
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
 
-.gas-section-one-img {
+.gas-section-one-image-container {
+  grid-area: gas-section-one-image-container;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 500px) {
+  .gas-section-one-image-container {
+    
+  }
+}
+
+.gas-section-one-image {
   display: block;
   width: 100%;
-  border-radius: 30px;
 }
 
-.gas-section-one-img-container {
-  grid-column: 1/2;
+@media (min-width: 500px) {
+  .gas-section-one-image {
+
+  }
 }

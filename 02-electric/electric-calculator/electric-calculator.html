@@ -9,58 +9,46 @@
   <title>01 - Electric - Calculator</title>
 </head>
 <body>
-  <section>
-    <h1>Electricity Calculator</h1>
-    <div>
-      <label for="electricity-unit-rate">Electricity Unit Rate</label>
-      <input type="number" value="34" id="electricity-unit-rate">
-      <span>pence per kiloWattHour</span>
+
+  <section class="electric-calculator-container">
+
+    <div class="electric-calculator-subcontainer">
+
+      <div class="electric-calculator-introduction">
+        <h1 class="electric-calculator-title">Electricity Calculator</h1>
+        <p class="electric-calculator-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id inventore sint praesentium, quisquam rerum suscipit natus saepe velit quo doloremque.</p>
+      </div>
+          
+      <div class="activity-headings-container">
+        <div class="activity-heading-description">Activity</div>
+        <div class="activity-heading-saving">Saving</div>
+        <div class="activity-heading-toggle">Switch!</div>
+      </div>
+
+      <div class="activities-container">
+        <!-- 
+        FORMAT OF INJECTED ELEMENTS :
+        <div class="activity-container one">          
+          <div class="activity-description one"></div>
+          <div class="activity-saving one"></div>
+          <div class="activity-switch-container one">
+            <div class="activity-switch-on one on-deactivated">ON</div>
+            <div class="activity-switch-off one off-activated">OFF</div>
+          </div>
+        </div>
+        -->
+      </div>
+
+      <div class="total-savings-container">
+        <div class="total-savings-title">Total Savings per Year:</div>
+        <div class="total-savings-value total-savings-neutral">£0</div>
+      </div>
+
     </div>
-    <div>
-      <fieldset>
-        <legend>Grill or Oven</legend>
-        <label for="appliance-grill-oven-watts">Watts: </label>
-        <input type="number" value="2000" min="1500" max="2500" step="500" id="appliance-grill-oven-watts">
-        <label for="appliance-grill-oven-time">Minutes: </label>
-        <input type="number" value="20" min="5" max="120" step="5" id="appliance-grill-oven-time">
-        <span>Cost: </span><span id="appliance-grill-oven-cost"></span>
-      </fieldset>
-      <fieldset>
-        <legend>Hob</legend>
-        <label for="appliance-hob-watts">Watts: </label>
-        <input type="number" value="1500" min="1000" max="2500" step="500" id="appliance-hob-watts">
-        <label for="appliance-hob-time">Minutes: </label>
-        <input type="number" value="15" min="5" max="60" step="5" id="appliance-hob-time">
-        <span>Cost: </span><span id="appliance-hob-cost"></span>
-      </fieldset>
-      <fieldset>
-        <legend>Microwave</legend>
-        <label for="appliance-microwave-watts">Watts: </label>
-        <input type="number" value="900" min="700" max="1400" step="100" id="appliance-microwave-watts">
-        <label for="appliance-microwave-time">Minutes: </label>
-        <input type="number" value="5" min="1" max="30" step="1" id="appliance-microwave-time">
-        <span>Cost: </span><span id="appliance-microwave-cost"></span>
-      </fieldset>
-      <fieldset>
-        <legend>Kettle</legend>
-        <label for="appliance-kettle-watts">Watts: </label>
-        <input type="number" value="3000" min="1000" max="4000" step="500" id="appliance-kettle-watts">
-        <label for="appliance-kettle-time">Minutes: </label>
-        <input type="number" value="5" min="2" max="6" step="1" id="appliance-kettle-time">
-        <span>Cost: </span><span id="appliance-kettle-cost"></span>
-      </fieldset>
-      <!-- 
-        <fieldset>
-        <legend>Electric Shower</legend>
-        <label for="appliance-electric-shower-watts">Watts: </label>
-        <input type="number" value="10500" min="1000" max="15000" step="500" id="appliance-electric-shower-watts">
-        <label for="appliance-electric-shower-time">Minutes: </label>
-        <input type="number" value="10" min="1" max="15" step="1" id="appliance-electric-shower-time">
-        <span>Cost: </span><span id="appliance-electric-shower-cost"></span>
-      </fieldset> 
-      -->
-    </div>
+
   </section>
+
   <script src="electric-calculator.js"></script>
+
 </body>
 </html>

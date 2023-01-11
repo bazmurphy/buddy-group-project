@@ -1,53 +1,138 @@
-
-.gas-hero-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    row-gap: var(--items-gap-mobile);
-    padding: var(--container-padding-mobile)
-   
-  }
-  .gas-hero-container > *{
-      border: var(--container-border-mobile);
-  }
-  
-  .gas-hero-img-container{
-      grid-column: 1/2;
-      
-  }
-  .gas-hero-img{
-    display: block;
-    width: 100%;
-
+.gas-hero-container,
+.gas-hero-subcontainer,
+.gas-hero-image-container,
+.gas-hero-image,
+.gas-hero-copy-container,
+.gas-hero-title,
+.gas-hero-subtitle,
+.gas-hero-paragraph-container,
+.gas-hero-paragraph {
+  border: var(--temporary-border);
 }
-  .gas-hero-title{
-    grid-column: 1/2;
-    text-align: center;
-    font-size: var(--title-size-mobile);
-  }
 
-  .gas-hero-subtitle{
-    grid-column: 1/2;
-    text-align: center;
-    font-size: var(--subtitle-size-mobile);
-  }
+.gas-hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
 
-  .gas-hero-content{
-      grid-column: 1/2;
-     text-align: justify;
-     font-size: var(--content-size-paragraph-mobile);
+@media (min-width:500px) {
+  .gas-hero-container {
+    padding: var(--container-padding-desktop);
   }
-  .gas-hero-details{
-    grid-column: 1/2;
-    display: grid;
-    justify-content: center;
+}
+
+.gas-hero-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "gas-hero-img-container"
+    "gas-hero-copy";
+  row-gap: var(--items-gap-mobile);
+  column-gap: none;
+  /* ^for the media query after */
+  align-content: start;
+  background-color: var(--level2-background-color);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-subcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "gas-hero-copy gas-hero-img-container";
+    column-gap: var(--content-column-gap-desktop);
 
   }
-  .gas-hero-summary{
-    background-color: var(--readmore-background-color-mobile);
-    width: var(--readmore-width-mobile);
-    height: var(--readmore-height-mobile);
-    text-align: center;
-    align-items: center;
+}
+  
+.gas-hero-image-container {
+  grid-area: gas-hero-img-container;
+  display: grid;
+  /* ^this is for the image inside the container */
+  justify-content: center;
+  align-content: center;
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-image-container {
+    
   }
- 
+}
+
+.gas-hero-image {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .gas-hero-image {
+
+  }
+}
+
+.gas-hero-copy-container {
+  grid-area: gas-hero-copy;
+  display: grid;
+  align-content: start;
+  row-gap: var(--copy-container-row-gap-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+  }
+}
+
+.gas-hero-title {
+  text-align: center;
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-title {
+    text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
+}
+
+.gas-hero-subtitle {
+  text-align: center;
+  font-size: var(--subtitle-font-size-mobile);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-subtitle {
+    text-align: left;
+    font-size: var(--subtitle-font-size-desktop);
+  }
+}
+
+.gas-hero-paragraph-container {
+  display: grid;
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-mobile);
+  }
+}
+
+.gas-hero-paragraph {
+  text-align: center;
+  /* ^maybe this should be "justify" on mobile ? */
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
+}
+
+@media (min-width: 500px) {
+  .gas-hero-paragraph {
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
+}

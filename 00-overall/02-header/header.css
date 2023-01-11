@@ -1,10 +1,4 @@
-/** {
-  border: 1px solid orange;
-}*/
-
-
-/* CSS FROM homepage-mobile.css */
-.header-container{
+.header-container {
   display: grid;
   grid-area: header;
   grid-template-columns: 30px minmax(50px,100px) auto minmax(50px,100px) 30px;
@@ -12,42 +6,25 @@
   align-items: center;
 }
 
-.login-container {
-  display: none;
-}
-
-.logo-container{
+.header-logo-container {
   grid-column: 2/3;
-  justify-self: center;
-  /* grid-row: 1/2; */
+  /* justify-self: center; */
+  text-align: center;
 }
 
-.header-logo{
+.header-logo {
   color: var(--red);
   font-size: 20px;
   font-weight: 600;
- 
 }
 
-.header-mobile-container{
+.header-nav-container {
   grid-column: 4/5;
-  grid-row: 1/2;
-  height: auto;
   justify-self: end;
-  /* margin: 5%; */
-
-}
- 
-
-.search-container{
-  display: none;
-}
-.search-mobile-container{
-  margin-bottom: 40px;
 }
 
-.nav-header-container{
-  position:relative;
+.header-nav {
+  position: relative;
 }
 
 .menu {
@@ -66,13 +43,13 @@
   transition: all 0.2s ease-in;
 }
 
-.nav-header-item{
+.header-nav-list-item {
   padding-left: 30px;
   margin-top: 15px;
   color: #082980;
 }
 
-.nav-header-link{
+.heaver-nav-link {
   display: inline-block;
   text-decoration: none;
   color:#082980;
@@ -80,10 +57,9 @@
   transition: 0.15s ease-in-out;
   position: relative;
   font-weight: 700;
- 
 }
 
-.nav-header-link-home{
+.heaver-nav-link-home {
   color: #F92D12;
 }
 
@@ -96,19 +72,15 @@
   height: 1px;
   background-color: yellow;
   transition: 0.15s ease-in-out;
-
 }*/
-
-
 
 .open-menu,
 .close-menu {
   margin: 0.5rem;
- 
   display: block;
 }
 
-#check{
+#check {
   display: none;
 }
 
@@ -117,19 +89,17 @@
   right: 0px;
   transform: translateY(-50%);
   position: relative;
+  cursor: pointer;
 }
-.open-line-container{
+
+.open-line-container-one {
   background-color: var(--red);
   border-radius: 100%;
   align-self: center;
 }
-.second-open-line-container{
+
+.open-line-container-two {
   padding: 6px 3px;
-}
-.close-menu {
-  top: 20px;
-  right: 20px;
-  position: absolute;
 }
 
 #check:checked ~ .menu {
@@ -144,14 +114,11 @@
   background-color: var(--white);
 }
 
-
-.right-close {
-  display: block;
-  width: 25px;
-  height: 2px;
-  margin-bottom: 4px;
-  background-color: black;
-  transform: rotate(-45deg);
+.close-menu {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .left-close {
@@ -164,6 +131,16 @@
   transform: rotate(45deg);
 }
 
+.right-close {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-bottom: 4px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+
 
 .login-mobile-container{
   display: flex;
@@ -171,40 +148,42 @@
   margin-top: 40px;
   text-align: center;
   gap: 8px;
-  
 }
-.login-text-first{
+
+.login-mobile-text-first {
  font-size: 14px;
  font-weight: 700;
-
 }
 
-.login-text-third{
+.login-mobile-text-second {
+  
+}
+
+.login-mobile-text-third {
   font-size: 12px;
   font-weight: 400;
 }
 
-.login-text-fourth{
-  color:#F92D12 ;
+.login-mobile-text-fourth {
+  color:#F92D12;
   font-size: 12px;
   font-weight: 400;
 }
 
-
-  /*
-/* CSS FROM homepage-desktop.css 
-* {
-  box-sizing: border-box;
-  /*border:1px solid red;
+.header-login-container {
+  display: none;
 }
 
-:root {
-  --light-perimary:rgb(226, 224, 224);
-  --white:#fff;
+.header-search-container{
+  display: none;
 }
 
-/***Header***
-.header-container{
+/*
+-- CLASS NAMES AND LAYOUT HAVE BEEN CHANGED SINCE THIS --
+
+CSS FROM homepage-desktop.css 
+
+.header-container {
   display: grid;
   grid-template: repeat(2,auto) / repeat(8,1fr);
   background-color: var(--light-perimary);
@@ -212,11 +191,7 @@
   font-size: 2rem;
 }
 
-/*.header-container > * {
-  border: 1px solid black;
-}/
-
-.logo-container{ 
+.logo-container { 
   grid-column: 1/2;
   grid-row: 1/3;
   justify-self: start;
@@ -227,7 +202,7 @@
   background-color: var(--white);
 }
 
-.nav-header-container{
+.nav-header-container {
   grid-column: 2/7;
   grid-row: 1/3;
   list-style: none;
@@ -236,7 +211,7 @@
   align-self: center;
 }
 
-.nav-header-list{
+.header-nav-list {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -245,19 +220,19 @@
   text-decoration: none;
 }
 
-.nav-header-link{
+.nav-header-link {
   text-decoration: none;
   background-color: var(--white);
 }
 
-.login-container{
+.login-container {
   grid-column: 7/9;
   grid-row: 1/2;
   justify-self: end;
   align-self: center;
 }
 
-.search-container{
+.search-container {
   grid-column: 7/9;
   grid-row: 2/3;
   justify-self: end;
