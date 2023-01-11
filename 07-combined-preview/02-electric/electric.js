@@ -1,5 +1,5 @@
-import { electricComponents } from './../05-javascript/electricComponents';
-import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom';
+import { electricComponents } from './../05-javascript/electricComponents.js';
+import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom.js';
 
 console.log(electricComponents);
 

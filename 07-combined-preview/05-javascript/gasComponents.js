@@ -1,11 +1,11 @@
 export const gasComponents = [
   ["../../00-overall/02-header/header.html", "header"],
-  ["../../03-water/water-hero/water-hero.html", "main"],
-  ["../../03-water/water-section-one/water-section-one.html", "main"],
-  ["../../03-water/water-section-two/water-section-two.html", "main"],
-  ["../../03-water/water-section-three/water-section-three.html", "main"],
-  ["../../03-water/water-section-four/water-section-four.html", "main"],
-  ["../../03-water/water-section-five/water-section-five.html", "main"],
-  ["../../03-water/water-section-six/water-section-six.html", "main"],
+  ["../../04-gas/gas-hero/gas-hero.html", "main"],
+  ["../../04-gas/gas-section-one/gas-section-one.html", "main"],
+  ["../../04-gas/gas-section-two/gas-section-two.html", "main"],
+  ["../../04-gas/gas-section-three/gas-section-three.html", "main"],
+  ["../../04-gas/gas-section-four/gas-section-four.html", "main"],
+  ["../../04-gas/gas-section-five/gas-section-five.html", "main"],
+  ["../../04-gas/gas-section-six/gas-section-six.html", "main"],
   ["../../00-overall/04-footer/footer.html", "footer"],
 ];

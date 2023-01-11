@@ -1,5 +1,5 @@
-import { gasComponents } from "./../05-javascript/gasComponents";
-import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom';
+import { gasComponents } from "./../05-javascript/gasComponents.js";
+import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom.js';
 
 console.log(gasComponents);
 

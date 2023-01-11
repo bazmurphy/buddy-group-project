@@ -1,4 +1,4 @@
-import { waterComponents } from './../05-javascript/waterComponents';
+import { waterComponents } from './../05-javascript/waterComponents.js';
 import { 
   waterSectionOneCollapsibleTarget, 
   waterSectionOneCollapsibleSubcontainers,
@@ -10,9 +10,9 @@ import {
   waterSectionFiveCollapsibleSubcontainers,
   waterSectionSixCollapsibleTarget,
   waterSectionSixCollapsibleSubcontainers
-  } from '../05-javascript/waterCollapsibles';
-import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom';
-import { setupCollapsibleSubcontainers } from './../05-javascript/setupCollapsibleSubcontainers';
+  } from '../05-javascript/waterCollapsibles.js';
+import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom.js';
+import { setupCollapsibleSubcontainers } from './../05-javascript/setupCollapsibleSubcontainers.js';
 
 console.log(waterComponents);
 

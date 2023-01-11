@@ -1,5 +1,5 @@
-import { homeComponents } from "./../05-javascript/homeComponents";
-import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom';
+import { homeComponents } from "./../05-javascript/homeComponents.js";
+import { fetchAndAddComponentsToDom } from './../05-javascript/fetchAndAddComponentsToDom.js';
 
 console.log(homeComponents);
 
