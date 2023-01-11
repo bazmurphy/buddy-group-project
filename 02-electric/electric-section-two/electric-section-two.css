@@ -92,7 +92,7 @@
 .electric-section-two-part-one-copy-container{
   grid-area: electric-section-two-part-one-copy-container;
   display: grid;
-  align-content: statrt;
+  align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
   background-color: var(--level3-background-color);
 }
