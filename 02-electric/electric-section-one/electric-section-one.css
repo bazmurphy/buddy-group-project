@@ -1,6 +1,32 @@
+.electric-section-one-container,
+.electric-section-one-subcontainer,
+.electric-section-one-title,
+.electric-section-one-part-one-container,
+.electric-section-one-part-one-image-container,
+.electric-section-one-part-one-copy-container,
+.electric-section-one-part-one-subtitle,
+.electric-section-one-part-one-paragraph-container,
+.electric-section-one-part-one-paragraph,
+.electric-section-one-part-two-container,
+.electric-section-one-part-two-image-container,
+.electric-section-one-part-two-copy-container,
+.electric-section-one-part-two-subtitle,
+.electric-section-one-part-two-paragraph-container,
+.electric-section-one-part-two-paragraph,
+.electric-section-one-part-three-container,
+.electric-section-one-part-three-image-container,
+.electric-section-one-part-three-copy-container,
+.electric-section-one-part-three-subtitle,
+.electric-section-one-part-three-paragraph-container,
+.electric-section-one-part-three-paragraph{
+    border: dotted 1px black;
+}
+
 .electric-section-one-container {
-  padding: var(--container-padding-mobile);
   display: grid;
+  grid-template-columns: 1fr;
+  padding: var(--container-padding-mobile);
+  
 }
 
 @media (min-width:500px) {
@@ -25,10 +51,6 @@
   }
 }
 
-.electric-section-one-subcontainer > * {
-  border: dotted 1px black;
-}
-
 .electric-section-one-title {
   text-align: center;
   font-size: var(--title-font-size-mobile);
@@ -37,7 +59,6 @@
 
 @media (min-width: 500px) {
   .electric-section-one-title {
-    text-align: center;
     font-size: var(--title-font-size-desktop);
     font-weight: var(--title-font-weight-desktop);
   }
@@ -94,13 +115,9 @@
 .electric-section-one-part-one-copy-container{
   grid-area: electric-section-one-part-one-copy-container;
   display: grid;
-  align-content: center;
+  align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
   background-color: var(--level3-background-color);
-}
-
-.electric-section-one-part-one-copy-container >*{
-  border: dotted 1px black;
 }
 
 @media (min-width: 500px) {
@@ -188,13 +205,9 @@
 .electric-section-one-part-two-copy-container{
   grid-area: electric-section-one-part-two-copy-container;
   display: grid;
-  align-content: center;
+  align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
   background-color: var(--level3-background-color);
-}
-
-.electric-section-one-part-two-copy-container >*{
-  border: dotted 1px black;
 }
 
 @media (min-width: 500px) {
@@ -282,13 +295,9 @@
 .electric-section-one-part-three-copy-container{
   grid-area: electric-section-one-part-three-copy-container;
   display: grid;
-  align-content: center;
+  align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
   background-color: var(--level3-background-color);
-}
-
-.electric-section-one-part-three-copy-container >*{
-  border: dotted 1px black;
 }
 
 @media (min-width: 500px) {
