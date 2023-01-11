@@ -7,5 +7,10 @@ export const gasComponents = [
   ["../../04-gas/gas-section-four/gas-section-four.html", "main"],
   ["../../04-gas/gas-section-five/gas-section-five.html", "main"],
   ["../../04-gas/gas-section-six/gas-section-six.html", "main"],
+  ["../../04-gas/gas-section-/gas-section-.html", "main"],
+  ["../../04-gas/gas-section-/gas-section-.html", "main"],
+  ["../../04-gas/gas-section-/gas-section-.html", "main"],
+  ["../../04-gas/gas-section-/gas-section-.html", "main"],
+  ["../../04-gas/gas-section-/gas-section-.html", "main"],
   ["../../00-overall/04-footer/footer.html", "footer"],
 ];
