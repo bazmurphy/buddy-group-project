@@ -4,66 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- ^ Import Font Awesome -->
-  <link rel="stylesheet" href="index.css">
-
-  <script type="module">
-    import {addComponentsArray} from '../../js/utils.js'
-
-    // const stylesheets = [
-    //   "../../00-overall/00-global-styles/global-styles.css",
-    //   "../../00-overall/02-header/header.css",
-    //   "../../00-overall/04-footer/footer.css",
-    //   "../../03-water/water-hero/water-hero.css",
-    //   "../../03-water/water-section-one/water-section-one.css",
-    //   "../../03-water/water-section-two/water-section-two.css",
-    //   "../../03-water/water-section-three/water-section-three.css",
-    //   "../../03-water/water-section-four/water-section-four.css",
-    //   "../../03-water/water-section-five/water-section-five.css",
-    //   "../../03-water/water-section-six/water-section-six.css",
-    // ];
-    
-    // async function addStylesheetsArray() {
-    //   for (let stylesheet of stylesheets) {
-    //     const linkElement = document.createElement("link");
-    //     linkElement.rel = "stylesheet";
-    //     linkElement.href = stylesheet;
-    //     document.head.appendChild(linkElement);
-    //   }
-    // }
-
-    const scripts = [
-      ["../../03-water/water-section-one/water-section-one.js"],
-      ["../../03-water/water-section-two/water-section-two.js"],
-      ["../../03-water/water-section-three/water-section-three.js"],
-      ["../../03-water/water-section-five/water-section-five.js"],
-      ["../../03-water/water-section-six/water-section-six.js"],
-    ];
-
-    async function addScriptsArray() {
-      for (let script of scripts) {
-        const scriptElement = document.createElement("script");
-        scriptElement.src = script;
-        document.body.appendChild(scriptElement);
-      }
-    }
-    
-    async function init() {
-      await addStylesheetsArray();
-      // await addScriptsArray();
-    }
-
-    init();
-  </script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="water.css">
   <title>Combined Preview - Water</title>
 </head>
 <body>
   <header></header>
   <main></main>
   <footer></footer>
-  <script type="module" src="./index.js"></script>
+  <script type="module" src="water.js"></script>
 </body>
 </html>

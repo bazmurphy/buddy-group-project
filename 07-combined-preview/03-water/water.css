@@ -1,0 +1,14 @@
+@import url("../../00-overall/00-global-styles/global-styles.css");
+
+@import url("../../00-overall/02-header/header.css");
+@import url("../../00-overall/04-footer/footer.css");
+
+@import url("../../03-water/water-hero/water-hero.css");
+@import url("../../03-water/water-section-one/water-section-one.css");
+@import url("../../03-water/water-section-two/water-section-two.css");
+@import url("../../03-water/water-section-three/water-section-three.css");
+@import url("../../03-water/water-section-four/water-section-four.css");
+@import url("../../03-water/water-section-five/water-section-five.css");
+@import url("../../03-water/water-section-six/water-section-six.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
