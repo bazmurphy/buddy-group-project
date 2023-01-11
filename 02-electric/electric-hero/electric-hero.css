@@ -34,13 +34,13 @@
   .electric-hero-subcontainer{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "electric-hero-image-container electric-hero-copy-container";
+      "electric-hero-copy-container electric-hero-image-container";
     column-gap: var(--subcontainer-column-gap-desktop);
   }
 }
 
 .electric-hero-image-container{
-  grid-area:electric-hero-image-container ;
+  grid-area:electric-hero-image-container;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -49,7 +49,6 @@
 
 @media (min-width: 500px) {
   .electric-hero-image-container{
-    display: grid;
     align-content: center;
   }
 }
@@ -66,9 +65,9 @@
 }
 
 .electric-hero-copy-container {
-  grid-area:electric-hero-copy-container ;
+  grid-area:electric-hero-copy-container;
   display: grid;
-  align-content: center;
+  align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
   background-color: var(--level3-background-color);
 }
@@ -87,13 +86,20 @@
 
 @media (min-width: 500px) {
   .electric-hero-title {
-    text-align: center;
+    text-align: left;
     font-size: var(--title-font-size-desktop);
     font-weight: var(--title-font-weight-desktop);
   }
 }
 
 .gas-section-one-paragraph-container {
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 500px) {
+  .gas-section-one-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
 }
 
 .electric-hero-paragraph{
@@ -104,6 +110,7 @@
 
 @media (min-width: 500px) {
   .electric-hero-paragraph {
+    text-align: left;
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
