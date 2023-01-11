@@ -9,7 +9,7 @@ export const waterSectionOneCollapsibleSubcontainers = [
 export const waterSectionTwoCollapsibleTarget = ".water-section-two-subcontainer"; 
 export const waterSectionTwoCollapsibleSubcontainers = [".water-section-two-collapsible-subcontainer-one"];
 
-export const waterSectionThreeCollapsibleTarget = ".water-section-1-subcontainer"; 
+export const waterSectionThreeCollapsibleTarget = ".water-section-three-subcontainer"; 
 export const waterSectionThreeCollapsibleSubcontainers = [".water-section-three-collapsible-subcontainer-one"];
 
 export const waterSectionFiveCollapsibleTarget = ".water-section-five-subcontainer"; 
