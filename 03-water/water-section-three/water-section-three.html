@@ -20,7 +20,7 @@
         <h2 class="water-section-three-subtitle">In summer, water used outdoors can amount to 50 percent of the total used.</h2>
       <section>
 
-      <section class="water-section-three-collapsible-subcontainer-one">
+      <section class="water-section-three-collapsible-subcontainer-one visible-false">
         <h3 class="water-section-three-collapsible-subtitle">Grass</h3>
         <div class="needed-for-image-float">
           <div class="water-section-three-collapsible-image-small-container">
@@ -59,7 +59,11 @@
 
   </section>
 
-  <script src="water-section-three.js"></script>
+  <script type="module">
+    import { waterSectionThreeCollapsibleTarget, waterSectionThreeCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/waterCollapsibles";
+    import { setupCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/setupCollapsibleSubcontainers";
+    setupCollapsibleSubcontainers(waterSectionThreeCollapsibleTarget, waterSectionThreeCollapsibleSubcontainers);
+  </script>
 
 </body>
 </html>
