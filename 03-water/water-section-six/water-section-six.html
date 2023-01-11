@@ -30,7 +30,11 @@
 
   </section>
   
-  <script src="water-section-six.js"></script>
+  <script type="module">
+    import { waterSectionSixCollapsibleTarget, waterSectionSixCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/waterCollapsibles";
+    import { setupCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/setupCollapsibleSubcontainers";
+    setupCollapsibleSubcontainers(waterSectionSixCollapsibleTarget, waterSectionSixCollapsibleSubcontainers);
+  </script>
 
 </body>
 </html>

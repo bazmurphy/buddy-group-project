@@ -59,7 +59,11 @@
 
   </section>
 
-  <script src="water-section-three.js"></script>
+  <script type="module">
+    import { waterSectionThreeCollapsibleTarget, waterSectionThreeCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/waterCollapsibles";
+    import { setupCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/setupCollapsibleSubcontainers";
+    setupCollapsibleSubcontainers(waterSectionThreeCollapsibleTarget, waterSectionThreeCollapsibleSubcontainers);
+  </script>
 
 </body>
 </html>

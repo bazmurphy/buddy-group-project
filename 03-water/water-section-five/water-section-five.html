@@ -30,7 +30,11 @@
       <p class="water-section-five-collapsible-paragraph">Educate your employees on the importance and practices of water efficiency. Try and set water usage targets and encourage widespread involvement to achieve this.</p>
     </section>
     
-    <script src="water-section-five.js"></script>
+    <script type="module">
+      import { waterSectionFiveCollapsibleTarget, waterSectionFiveCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/waterCollapsibles";
+      import { setupCollapsibleSubcontainers } from "./../../07-combined-preview/05-javascript/setupCollapsibleSubcontainers";
+      setupCollapsibleSubcontainers(waterSectionFiveCollapsibleTarget, waterSectionFiveCollapsibleSubcontainers);
+    </script>
 
   </section>
 

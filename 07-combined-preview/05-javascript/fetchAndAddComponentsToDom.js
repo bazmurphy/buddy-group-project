@@ -20,7 +20,7 @@ function addToDom(html, targetLocation) {
   } else {
     console.log(`addDom function Error`);
   }
-} 
+}
 
 export async function fetchAndAddComponentsToDom(components) {
   for (let component of components) { 
@@ -28,21 +28,4 @@ export async function fetchAndAddComponentsToDom(components) {
     const html = await fetchComponent(component[0]);
     addToDom(html, component[1]);
   }
-}
-
-
-function toggleDisplayNoneAndGrid(selectors) {
-  let toggle = false;
-  selectors.forEach(selector => {
-    const element = document.querySelector(selector);
-    toggle ? element.style.display = "grid" : element.style.display = "none";
-    toggle = !toggle;
-  });
-}
-
-// parameters:
-// string - eventElement - element that has the event Listener - example ".water-section-one-subcontainer"
-// array of strings - collapsibleElements - elements that display or hide - example [".water-section-one-collapsible-subcontainer-one", ".water-section-one-collapsible-subcontainer-two", ".water-section-one-collapsible-subcontainer-three", ".water-section-one-collapsible-subcontainer-four"]
-export function addCollapsibleElements(eventElement, collapsibleElements) {
-  document.querySelector(eventElement).addEventListener("click", () => toggleDisplayNoneAndGrid(collapsibleElements));
 }
