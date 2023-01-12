@@ -17,7 +17,7 @@
   border: dotted 1px black;
 }
 
-@media (min-width:500px) {
+@media (min-width:600px) {
   .gas-section-four-subcontainer{
    grid-template-columns: repeat(2,1fr);
    grid-template-areas: 

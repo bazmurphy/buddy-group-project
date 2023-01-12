@@ -16,7 +16,7 @@
   background-color: var(--level1-background-color);
 }
 
-@media (min-width:500px) {
+@media (min-width:600px) {
   .gas-section-one-container {
     padding: var(--container-padding-desktop);
   }
@@ -36,7 +36,7 @@
   background-color: var(--level2-background-color);
 }
 
-@media (min-width:500px) {
+@media (min-width:600px) {
   .gas-section-one-subcontainer{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -54,7 +54,7 @@
   background-color: var(--level3-background-color);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .gas-section-one-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
   }
@@ -66,7 +66,7 @@
   font-weight: var(--title-font-weight-mobile);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .gas-section-one-title {
     text-align: left;
     font-size: var(--title-font-size-desktop);
@@ -79,7 +79,7 @@
   row-gap: var(--paragraph-container-row-gap-mobile);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .gas-section-one-paragraph-container {
     row-gap: var(--paragraph-container-row-gap-desktop);
   }
@@ -92,7 +92,7 @@
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .gas-section-one-paragraph {
     text-align: left;
     font-size: var(--paragraph-font-size-desktop);
@@ -108,7 +108,7 @@
   background-color: var(--level3-background-color);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .gas-section-one-image-container {
     
   }
@@ -119,7 +119,7 @@
   width: 100%;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .gas-section-one-image {
 
   }

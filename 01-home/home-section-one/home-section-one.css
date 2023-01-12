@@ -17,15 +17,15 @@
     "home-section-one-subcontainer-one"
     "home-section-one-subcontainer-two"
     "home-section-one-subcontainer-three";
-  padding: var(--container-padding-mobile);
-  row-gap: 30px;
+  row-gap: 15px;
   /* ^in this rare case the container needs a row gap for mobile */
   column-gap: none;
   /* ^in this rare case the container needs a column gap for desktop */
+  padding: var(--container-padding-mobile);
   background-color: var(--level1-background-color);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .home-section-one-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -34,6 +34,7 @@
     /* ^in this rare case the container needs a row gap for mobile */
     column-gap: 30px;
     /* ^in this rare case the container needs a column gap for desktop */
+    padding: var(--container-padding-desktop);
   }
 }
 
@@ -47,7 +48,7 @@
   background-color: var(--level2-background-color);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .home-section-one-subcontainer {
 
     padding: var(--subcontainer-padding-desktop);
@@ -82,7 +83,7 @@
   background-color: var(--level3-background-color);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .home-section-one-copy-container {
     row-gap: 30px;
     /* ^harcoded because.. */
@@ -96,7 +97,7 @@
   font-weight: var(--title-font-weight-mobile);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .home-section-one-title {
     text-align: left;
     font-size: var(--title-font-size-desktop);
@@ -110,7 +111,7 @@
   row-gap: var(--paragraph-container-row-gap-mobile);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .home-section-one-paragaph-container {
     row-gap: var(--paragraph-container-row-gap-desktop);
   }
@@ -122,7 +123,7 @@
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .home-section-one-paragraph {
     text-align: left;
     font-size: var(--paragraph-font-size-desktop);
@@ -143,7 +144,7 @@
   background-color: var(--link-background-color-mobile);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .home-section-one-link {
     justify-self: start;
     padding: var(--link-padding-desktop);
