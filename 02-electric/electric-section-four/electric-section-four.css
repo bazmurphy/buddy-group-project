@@ -1,32 +1,31 @@
 .electric-section-four-container,
 .electric-section-four-subcontainer,
 .electric-section-four-title,
-.electric-section-four-part-one-container,
-.electric-section-four-part-one-image-container,
-.electric-section-four-part-one-copy-container,
-.electric-section-four-part-one-subtitle,
-.electric-section-four-part-one-paragraph-container,
-.electric-section-four-part-one-paragraph,
-.electric-section-four-part-two-container,
-.electric-section-four-part-two-image-container,
-.electric-section-four-part-two-copy-container,
-.electric-section-four-part-two-subtitle,
-.electric-section-four-part-two-paragraph-container,
-.electric-section-four-part-two-paragraph,
-.electric-section-four-part-three-container,
-.electric-section-four-part-three-image-container,
-.electric-section-four-part-three-copy-container,
-.electric-section-four-part-three-subtitle,
-.electric-section-four-part-three-paragraph-container,
-.electric-section-four-part-three-paragraph{
-    border:var(--temporary-border)
+.electric-section-four-subsection-one-container,
+.electric-section-four-subsection-one-image-container,
+.electric-section-four-subsection-one-copy-container,
+.electric-section-four-subsection-one-subtitle,
+.electric-section-four-subsection-one-paragraph-container,
+.electric-section-four-subsection-one-paragraph,
+.electric-section-four-subsection-two-container,
+.electric-section-four-subsection-two-image-container,
+.electric-section-four-subsection-two-copy-container,
+.electric-section-four-subsection-two-subtitle,
+.electric-section-four-subsection-two-paragraph-container,
+.electric-section-four-subsection-two-paragraph,
+.electric-section-four-subsection-three-container,
+.electric-section-four-subsection-three-image-container,
+.electric-section-four-subsection-three-copy-container,
+.electric-section-four-subsection-three-subtitle,
+.electric-section-four-subsection-three-paragraph-container,
+.electric-section-four-subsection-three-paragraph{
+    border:var(--temporary-border);
 }
 
 .electric-section-four-container {
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  
 }
 
 @media (min-width:500px) {
@@ -39,10 +38,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-  "electric-section-four-title"
-  "electric-section-four-part-one-container"
-  "electric-section-four-part-two-container"
-  "electric-section-four-part-three-container";
+  "electric-section-four-title-container"
+  "electric-section-four-subsection-one-container"
+  "electric-section-four-subsection-two-container"
+  "electric-section-four-subsection-three-container";
   justify-content: center;
   row-gap: var(--subsection-container-row-gap-mobile);
   column-gap:none;
@@ -56,20 +55,25 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto 40px auto auto auto auto;
     grid-template-areas:
-    "electric-section-four-title electric-section-four-title electric-section-four-title"
-    ". electric-section-four-part-two-container ."
-    "electric-section-four-part-one-container electric-section-four-part-two-container electric-section-four-part-three-container"
-    "electric-section-four-part-one-container electric-section-four-part-two-container electric-section-four-part-three-container"
-    "electric-section-four-part-one-container electric-section-four-part-two-container electric-section-four-part-three-container"
-    "electric-section-four-part-one-container . electric-section-four-part-three-container";
+    "electric-section-four-title-container electric-section-four-title-container electric-section-four-title-container"
+    ". electric-section-four-subsection-two-container ."
+    "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
+    "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
+    "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
+    "electric-section-four-subsection-one-container . electric-section-four-subsection-three-container";
     padding: var(--subcontainer-padding-desktop);
     row-gap: var(--subsection-container-row-gap-desktop);
     column-gap:var(--subsection-container-column-gap-desktop) ;
   }
 }
 
+.electric-section-four-title-container {
+  grid-area:electric-section-four-title-container;
+  align-content: start;
+  justify-content: center;
+}
+
 .electric-section-four-title {
-  grid-area:electric-section-four-title;
   text-align: center;
   font-size: var(--title-font-size-mobile);
   font-weight: var(--title-font-weight-mobile);
@@ -82,23 +86,24 @@
   }
 }
 
-/*****PART one******/
+/*****subsection one******/
 
-.electric-section-four-part-one-container{
-  grid-area:electric-section-four-part-one-container;
+.electric-section-four-subsection-one-container{
+  grid-area:electric-section-four-subsection-one-container;
   display: grid;
   grid-template-columns: 1fr;
+  align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
   background-color: var(--level2-background-color);
 }
 
 @media (min-width:500px) {
-  .electric-section-four-part-one-container{
+  .electric-section-four-subsection-one-container{
     padding: var(--subcontainer-padding-desktop);
   }
 }
 
-.electric-section-four-part-one-image-container{
+.electric-section-four-subsection-one-image-container{
     display: grid;
     justify-content: center;
     align-content: center;
@@ -106,21 +111,21 @@
   }
   
   @media (min-width: 500px) {
-    .electric-section-four-part-one-image-container {
+    .electric-section-four-subsection-one-image-container {
     }
   }
   
-  .electric-section-four-part-one-image {
+  .electric-section-four-subsection-one-image {
     display: block;
     width: 100%;
   }
   
   @media (min-width: 500px) {
-    .electric-section-four-part-one-image {
+    .electric-section-four-subsection-one-image {
     }
   }
 
-.electric-section-four-part-one-copy-container{
+.electric-section-four-subsection-one-copy-container{
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
@@ -128,65 +133,65 @@
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-one-copy-container {
+  .electric-section-four-subsection-one-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-four-part-one-subtitle {
+.electric-section-four-subsection-one-subtitle {
   text-align: center;
   font-size: var(--subtitle-font-size-mobile);
   font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-one-subtitle {
+  .electric-section-four-subsection-one-subtitle {
     font-size: var(--subtitle-font-size-desktop);
     font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
-.electric-section-four-part-one-paragraph-container {
+.electric-section-four-subsection-one-paragraph-container {
   display: grid;
   row-gap: var(--copy-container-row-gap-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-one-paragraph-container{
+  .electric-section-four-subsection-one-paragraph-container{
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-four-part-one-paragraph {
+.electric-section-four-subsection-one-paragraph {
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-one-paragraph {
+  .electric-section-four-subsection-one-paragraph {
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
-/*****PART TWO******/
+/*****subsection TWO******/
 
-.electric-section-four-part-two-container{
-  grid-area:electric-section-four-part-two-container;
+.electric-section-four-subsection-two-container{
+  grid-area:electric-section-four-subsection-two-container;
   display: grid;
   row-gap: var(--subcontainer-row-gap-mobile);
-  border: var(--subcontainer-border-mobile);
+  align-content: start;
   background-color: var(--level2-background-color);
 }
 
 @media (min-width:500px) {
-  .electric-section-four-part-two-container{
+  .electric-section-four-subsection-two-container{
     padding: var(--subcontainer-padding-desktop);
   }
 }
 
-.electric-section-four-part-two-image-container{
+.electric-section-four-subsection-two-image-container{
   display: grid;
   justify-content: center;
   align-content: center;
@@ -194,21 +199,21 @@
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-two-image-container {
+  .electric-section-four-subsection-two-image-container {
   }
 }
 
-.electric-section-four-part-two-image {
+.electric-section-four-subsection-two-image {
   display: block;
   width: 100%;
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-two-image {
+  .electric-section-four-subsection-two-image {
   }
 }
 
-.electric-section-four-part-two-copy-container{
+.electric-section-four-subsection-two-copy-container{
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
@@ -216,65 +221,65 @@
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-two-copy-container {
+  .electric-section-four-subsection-two-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-four-part-two-subtitle {
+.electric-section-four-subsection-two-subtitle {
   text-align: center;
   font-size: var(--subtitle-font-size-mobile);
   font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-two-subtitle {
+  .electric-section-four-subsection-two-subtitle {
     font-size: var(--subtitle-font-size-desktop);
     font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
-.electric-section-four-part-two-paragraph-container {
+.electric-section-four-subsection-two-paragraph-container {
   display: grid;
   row-gap: var(--copy-container-row-gap-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-two-paragraph-container{
+  .electric-section-four-subsection-two-paragraph-container{
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-four-part-two-paragraph {
+.electric-section-four-subsection-two-paragraph {
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-two-paragraph {
+  .electric-section-four-subsection-two-paragraph {
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
-/*****PART four******/
+/*****subsection four******/
 
-.electric-section-four-part-three-container{
-  grid-area:electric-section-four-part-three-container;
+.electric-section-four-subsection-three-container{
+  grid-area:electric-section-four-subsection-three-container;
   display: grid;
   row-gap: var(--subcontainer-row-gap-mobile);
-  border: var(--subcontainer-border-mobile);
+  align-content: start;
   background-color: var(--level2-background-color);
 }
 
 @media (min-width:500px) {
-  .electric-section-four-part-three-container{
+  .electric-section-four-subsection-three-container{
     padding: var(--subcontainer-padding-desktop);
   }
 }
 
-.electric-section-four-part-three-image-container{
+.electric-section-four-subsection-three-image-container{
   display: grid;
   justify-content: center;
   align-content: center;
@@ -282,21 +287,21 @@
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-three-image-container {
+  .electric-section-four-subsection-three-image-container {
   }
 }
 
-.electric-section-four-part-three-image {
+.electric-section-four-subsection-three-image {
   display: block;
   width: 100%;
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-three-image {
+  .electric-section-four-subsection-three-image {
   }
 }
 
-.electric-section-four-part-three-copy-container{
+.electric-section-four-subsection-three-copy-container{
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
@@ -304,43 +309,43 @@
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-three-copy-container {
+  .electric-section-four-subsection-three-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-four-part-three-subtitle {
+.electric-section-four-subsection-three-subtitle {
   text-align: center;
   font-size: var(--subtitle-font-size-mobile);
   font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-three-subtitle {
+  .electric-section-four-subsection-three-subtitle {
     font-size: var(--subtitle-font-size-desktop);
     font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
-.electric-section-four-part-three-paragraph-container {
+.electric-section-four-subsection-three-paragraph-container {
   display: grid;
   row-gap: var(--copy-container-row-gap-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-three-paragraph-container{
+  .electric-section-four-subsection-three-paragraph-container{
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-four-part-three-paragraph {
+.electric-section-four-subsection-three-paragraph {
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 500px) {
-  .electric-section-four-part-three-paragraph {
+  .electric-section-four-subsection-three-paragraph {
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
