@@ -172,7 +172,7 @@
   background-color: var(--level2-background-color);
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
   .electric-section-one-subsection-two-container{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -263,7 +263,7 @@
   background-color: var(--level2-background-color);
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
   .electric-section-one-subsection-three-container{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
