@@ -18,8 +18,8 @@
 .electric-section-four-subsection-three-copy-container,
 .electric-section-four-subsection-three-subtitle,
 .electric-section-four-subsection-three-paragraph-container,
-.electric-section-four-subsection-three-paragraph {
-  border:var(--temporary-border);
+.electric-section-four-subsection-three-paragraph{
+    border:var(--temporary-border);
 }
 
 .electric-section-four-container {
@@ -28,7 +28,7 @@
   padding: var(--container-padding-mobile);
 }
 
-@media ( min-width:500px ) {
+@media (min-width:500px) {
   .electric-section-four-container {
     padding: var(--container-padding-desktop);
   }
@@ -38,13 +38,13 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "electric-section-four-title-container"
-    "electric-section-four-subsection-one-container"
-    "electric-section-four-subsection-two-container"
-    "electric-section-four-subsection-three-container";
+  "electric-section-four-title-container"
+  "electric-section-four-subsection-one-container"
+  "electric-section-four-subsection-two-container"
+  "electric-section-four-subsection-three-container";
   justify-content: center;
   row-gap: var(--subsection-container-row-gap-mobile);
-  column-gap: none;
+  column-gap:none;
   padding: var(--subcontainer-padding-mobile);
   border: solid 1px black;
   background-color: var(--level1-background-color);
@@ -53,29 +53,24 @@
 @media (min-width:500px){
   .electric-section-four-subcontainer{
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto 40px repeat(4, auto);
+    grid-template-rows: auto 40px auto auto auto auto;
     grid-template-areas:
-      "electric-section-four-title-container electric-section-four-title-container electric-section-four-title-container"
-      ". electric-section-four-subsection-two-container ."
-      "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
-      "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
-      "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
-      "electric-section-four-subsection-one-container . electric-section-four-subsection-three-container";
-    row-gap: var(--subsection-container-row-gap-desktop);
-    column-gap: var(--subsection-container-column-gap-desktop);
+    "electric-section-four-title-container electric-section-four-title-container electric-section-four-title-container"
+    ". electric-section-four-subsection-two-container ."
+    "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
+    "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
+    "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
+    "electric-section-four-subsection-one-container . electric-section-four-subsection-three-container";
     padding: var(--subcontainer-padding-desktop);
+    row-gap: var(--subsection-container-row-gap-desktop);
+    column-gap:var(--subsection-container-column-gap-desktop) ;
   }
 }
 
 .electric-section-four-title-container {
   grid-area:electric-section-four-title-container;
-  /* justify-content: center; */
   align-content: start;
-}
-
-@media (min-width: 500px) {
-  .electric-section-four-title-container {
-  }
+  justify-content: center;
 }
 
 .electric-section-four-title {
@@ -93,7 +88,7 @@
 
 /*****subsection one******/
 
-.electric-section-four-subsection-one-container {
+.electric-section-four-subsection-one-container{
   grid-area:electric-section-four-subsection-one-container;
   display: grid;
   grid-template-columns: 1fr;
