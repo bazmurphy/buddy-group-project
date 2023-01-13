@@ -1,24 +1,24 @@
 .electric-section-one-container,
 .electric-section-one-subcontainer,
 .electric-section-one-title,
-.electric-section-one-part-one-container,
-.electric-section-one-part-one-image-container,
-.electric-section-one-part-one-copy-container,
-.electric-section-one-part-one-subtitle,
-.electric-section-one-part-one-paragraph-container,
-.electric-section-one-part-one-paragraph,
-.electric-section-one-part-two-container,
-.electric-section-one-part-two-image-container,
-.electric-section-one-part-two-copy-container,
-.electric-section-one-part-two-subtitle,
-.electric-section-one-part-two-paragraph-container,
-.electric-section-one-part-two-paragraph,
-.electric-section-one-part-three-container,
-.electric-section-one-part-three-image-container,
-.electric-section-one-part-three-copy-container,
-.electric-section-one-part-three-subtitle,
-.electric-section-one-part-three-paragraph-container,
-.electric-section-one-part-three-paragraph{
+.electric-section-one-subsection-one-container,
+.electric-section-one-subsection-one-image-container,
+.electric-section-one-subsection-one-copy-container,
+.electric-section-one-subsection-one-subtitle,
+.electric-section-one-subsection-one-paragraph-container,
+.electric-section-one-subsection-one-paragraph,
+.electric-section-one-subsection-two-container,
+.electric-section-one-subsection-two-image-container,
+.electric-section-one-subsection-two-copy-container,
+.electric-section-one-subsection-two-subtitle,
+.electric-section-one-subsection-two-paragraph-container,
+.electric-section-one-subsection-two-paragraph,
+.electric-section-one-subsection-three-container,
+.electric-section-one-subsection-three-image-container,
+.electric-section-one-subsection-three-copy-container,
+.electric-section-one-subsection-three-subtitle,
+.electric-section-one-subsection-three-paragraph-container,
+.electric-section-one-subsection-three-paragraph{
     border:var(--temporary-border)
 }
 
@@ -29,7 +29,7 @@
   
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
   .electric-section-one-container {
     padding: var(--container-padding-desktop);
   }
@@ -41,11 +41,11 @@
   justify-content: center;
   row-gap: var(--subsection-container-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
-  border: solid 1px black;
+  border: var(--subcontainer-border-mobile);
   background-color: var(--level1-background-color);
 }
 
-@media (min-width:600px){
+@media (min-width: 600px){
   .electric-section-one-subcontainer{
     padding: var(--subcontainer-padding-desktop);
     row-gap: var(--subsection-container-row-gap-desktop);
@@ -65,33 +65,34 @@
   }
 }
 
-/*****PART ONE******/
+/* subsection-one */
 
-.electric-section-one-part-one-container{
+.electric-section-one-subsection-one-container{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "electric-section-one-part-one-image-container"
-    "electric-section-one-part-one-copy-container";
+    "electric-section-one-subsection-one-image-container"
+    "electric-section-one-subsection-one-copy-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   /* ^for the media query after */
+  padding: var(--subsection-container-padding-mobile);
   border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
 }
 
-@media (min-width:600px) {
-  .electric-section-one-part-one-container{
+@media (min-width: 600px) {
+  .electric-section-one-subsection-one-container{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "electric-section-one-part-one-image-container electric-section-one-part-one-copy-container";
+    "electric-section-one-subsection-one-image-container electric-section-one-subsection-one-copy-container";
     column-gap: var(--subcontainer-column-gap-desktop);
     padding: var(--subcontainer-padding-desktop);
   }
 }
 
-.electric-section-one-part-one-image-container{
-  grid-area: electric-section-one-part-one-image-container;
+.electric-section-one-subsection-one-image-container{
+  grid-area: electric-section-one-subsection-one-image-container;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -99,22 +100,22 @@
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-one-image-container {
+  .electric-section-one-subsection-one-image-container {
   }
 }
 
-.electric-section-one-part-one-image {
+.electric-section-one-subsection-one-image {
   display: block;
   width: 100%;
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-one-image {
+  .electric-section-one-subsection-one-image {
   }
 }
 
-.electric-section-one-part-one-copy-container{
-  grid-area: electric-section-one-part-one-copy-container;
+.electric-section-one-subsection-one-copy-container{
+  grid-area: electric-section-one-subsection-one-copy-container;
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
@@ -122,66 +123,67 @@
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-one-copy-container {
+  .electric-section-one-subsection-one-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-one-part-one-subtitle {
+.electric-section-one-subsection-one-subtitle {
   text-align: center;
   font-size: var(--subtitle-font-size-mobile);
   font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-one-subtitle {
+  .electric-section-one-subsection-one-subtitle {
     text-align: left;
     font-size: var(--subtitle-font-size-desktop);
     font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
-.electric-section-one-part-one-paragraph {
+.electric-section-one-subsection-one-paragraph {
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-one-paragraph {
+  .electric-section-one-subsection-one-paragraph {
     text-align: left;
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
-/*****PART TWO******/
+/* subsection-two */
 
-.electric-section-one-part-two-container{
+.electric-section-one-subsection-two-container{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "electric-section-one-part-two-image-container"
-    "electric-section-one-part-two-copy-container";
+    "electric-section-one-subsection-two-image-container"
+    "electric-section-one-subsection-two-copy-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   /* ^for the media query after */
+  padding: var(--subsection-container-padding-mobile);
   border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
 }
 
-@media (min-width:600px) {
-  .electric-section-one-part-two-container{
+@media (min-width: 600px) {
+  .electric-section-one-subsection-two-container{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "electric-section-one-part-two-image-container electric-section-one-part-two-copy-container";
+    "electric-section-one-subsection-two-image-container electric-section-one-subsection-two-copy-container";
     column-gap: var(--subcontainer-column-gap-desktop);
     padding: var(--subcontainer-padding-desktop);
   }
 }
 
-.electric-section-one-part-two-image-container{
-  grid-area: electric-section-one-part-two-image-container;
+.electric-section-one-subsection-two-image-container{
+  grid-area: electric-section-one-subsection-two-image-container;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -189,22 +191,22 @@
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-two-image-container {
+  .electric-section-one-subsection-two-image-container {
   }
 }
 
-.electric-section-one-part-two-image {
+.electric-section-one-subsection-two-image {
   display: block;
   width: 100%;
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-two-image {
+  .electric-section-one-subsection-two-image {
   }
 }
 
-.electric-section-one-part-two-copy-container{
-  grid-area: electric-section-one-part-two-copy-container;
+.electric-section-one-subsection-two-copy-container{
+  grid-area: electric-section-one-subsection-two-copy-container;
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
@@ -212,66 +214,67 @@
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-two-copy-container {
+  .electric-section-one-subsection-two-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-one-part-two-subtitle {
+.electric-section-one-subsection-two-subtitle {
   text-align: center;
   font-size: var(--subtitle-font-size-mobile);
   font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-two-subtitle {
+  .electric-section-one-subsection-two-subtitle {
     text-align: left;
     font-size: var(--subtitle-font-size-desktop);
     font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
-.electric-section-one-part-two-paragraph {
+.electric-section-one-subsection-two-paragraph {
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-two-paragraph {
+  .electric-section-one-subsection-two-paragraph {
     text-align: left;
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
-/*****PART THREE******/
+/* subsection-three */
 
-.electric-section-one-part-three-container{
+.electric-section-one-subsection-three-container{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "electric-section-one-part-three-image-container"
-    "electric-section-one-part-three-copy-container";
+    "electric-section-one-subsection-three-image-container"
+    "electric-section-one-subsection-three-copy-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   /* ^for the media query after */
+  padding: var(--subsection-container-padding-mobile);
   border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
 }
 
-@media (min-width:600px) {
-  .electric-section-one-part-three-container{
+@media (min-width: 600px) {
+  .electric-section-one-subsection-three-container{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "electric-section-one-part-three-image-container electric-section-one-part-three-copy-container";
+    "electric-section-one-subsection-three-image-container electric-section-one-subsection-three-copy-container";
     column-gap: var(--subcontainer-column-gap-desktop);
     padding: var(--subcontainer-padding-desktop);
   }
 }
 
-.electric-section-one-part-three-image-container{
-  grid-area: electric-section-one-part-three-image-container;
+.electric-section-one-subsection-three-image-container{
+  grid-area: electric-section-one-subsection-three-image-container;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -279,22 +282,22 @@
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-three-image-container {
+  .electric-section-one-subsection-three-image-container {
   }
 }
 
-.electric-section-one-part-three-image {
+.electric-section-one-subsection-three-image {
   display: block;
   width: 100%;
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-three-image {
+  .electric-section-one-subsection-three-image {
   }
 }
 
-.electric-section-one-part-three-copy-container{
-  grid-area: electric-section-one-part-three-copy-container;
+.electric-section-one-subsection-three-copy-container{
+  grid-area: electric-section-one-subsection-three-copy-container;
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
@@ -302,33 +305,33 @@
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-three-copy-container {
+  .electric-section-one-subsection-three-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
-.electric-section-one-part-three-subtitle {
+.electric-section-one-subsection-three-subtitle {
   text-align: center;
   font-size: var(--subtitle-font-size-mobile);
   font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-three-subtitle {
+  .electric-section-one-subsection-three-subtitle {
     text-align: left;
     font-size: var(--subtitle-font-size-desktop);
     font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
-.electric-section-one-part-three-paragraph {
+.electric-section-one-subsection-three-paragraph {
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .electric-section-one-part-three-paragraph {
+  .electric-section-one-subsection-three-paragraph {
     text-align: left;
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
