@@ -38,6 +38,9 @@ body {
   --container-border-desktop: 1px solid black;
   /* ^we need to rethink both of these... across the whole site... */
 
+  --subsection-container-border-mobile: 1px solid black;
+  --subsection-container-border-desktop: 1px solid black;
+
   --temporary-border: 1px dotted black; /* everything */
   /* ^use temporarily to see box models and scaling */
 
