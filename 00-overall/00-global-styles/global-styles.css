@@ -50,6 +50,9 @@ body {
   /* ^gap between the image container and copy container in the grid */
   --subcontainer-column-gap-desktop: 30px;
   /* ^gap between the image container and copy container in the grid */
+
+  --subsection-container-padding-mobile: 15px;
+  --subsection-container-padding-desktop: 30px;
    
   --subsection-container-row-gap-mobile: 15px;
   --subsection-container-row-gap-desktop: 30px;
