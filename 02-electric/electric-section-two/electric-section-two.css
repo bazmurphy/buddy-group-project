@@ -1,5 +1,6 @@
 .electric-section-two-container,
 .electric-section-two-subcontainer,
+.electric-section-two-title-container,
 .electric-section-two-title,
 .electric-section-two-subsection-one-container,
 .electric-section-two-subsection-one-image-container,
@@ -48,6 +49,16 @@
   .electric-section-two-subcontainer {
     row-gap: var(--subsection-container-row-gap-mobile);
     padding: var(--subcontainer-padding-desktop);
+  }
+}
+
+.electric-section-two-title-container {
+  
+}
+
+@media (min-width: 600px) {
+  .electric-section-two-title-container {
+
   }
 }
 

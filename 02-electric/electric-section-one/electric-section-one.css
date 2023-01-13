@@ -1,5 +1,6 @@
 .electric-section-one-container,
 .electric-section-one-subcontainer,
+.electric-section-one-title-container,
 .electric-section-one-title,
 .electric-section-one-subsection-one-container,
 .electric-section-one-subsection-one-image-container,
@@ -49,6 +50,16 @@
   .electric-section-one-subcontainer{
     padding: var(--subcontainer-padding-desktop);
     row-gap: var(--subsection-container-row-gap-desktop);
+  }
+}
+
+.electric-section-one-title-container {
+
+}
+
+@media (min-width: 600px) {
+  .electric-section-one-title-container {
+
   }
 }
 
