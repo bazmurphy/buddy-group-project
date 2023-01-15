@@ -91,13 +91,13 @@
 .gas-hero-title-container{
   display: grid;
   align-content: start;
-  row-gap: var(title-container-row-gap-mobile);
+  row-gap: var(--title-container-row-gap-mobile);
 }
 
 @media (min-width: 600px){
   .gas-hero-title-container{
     align-content: center;
-    row-gap: var(title-container-row-gap-desktop);
+    row-gap: var(--title-container-row-gap-desktop);
   }
 }
 
