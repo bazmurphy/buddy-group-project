@@ -1,6 +1,7 @@
 .gas-section-one-container,
 .gas-section-one-subcontainer,
 .gas-section-one-copy-container,
+.gas-section-one-title-container,
 .gas-section-one-title,
 .gas-section-one-paragraph-container,
 .gas-section-one-paragraph,
@@ -114,6 +115,7 @@
   grid-area: gas-section-one-image-container;
   display: grid;
   align-content: start;
+  justify-content: center;
   background-color: var(--level3-background-color);
 }
 
