@@ -115,6 +115,18 @@
   }
 }
 
+.water-hero-paragraph-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-hero-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
+}
+
 .water-hero-paragraph {
   text-align: center;
   font-size: var(--paragraph-font-size-mobile);
