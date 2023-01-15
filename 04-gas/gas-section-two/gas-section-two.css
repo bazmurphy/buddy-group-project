@@ -38,8 +38,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 
-    "gas-section-two-title-container"
-    "gas-section-two-paragraph-container";
+  "gas-section-two-title-container"
+  "gas-section-two-paragraph-container";
   align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);/*in this poin i add same row for subcontainer because of design/var(--copy-container-row-gap-mobile);*/
   padding: var(--copy-container-padding-mobile);
