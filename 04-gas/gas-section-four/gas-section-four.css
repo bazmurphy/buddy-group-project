@@ -68,6 +68,19 @@
  }
 }
 
+.gas-section-four-subtitle {
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
+  text-align: center;
+}
+
+@media (min-width:600px){
+  .gas-section-four-title {
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
+  }
+}
+
 .gas-section-four-title {
   font-size: var(--title-font-size-mobile);
   font-weight: var(--title-font-weight-mobile);
