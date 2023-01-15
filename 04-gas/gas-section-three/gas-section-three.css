@@ -1,6 +1,7 @@
 .gas-section-three-container,
 .gas-section-three-subcontainer,
 .gas-section-three-copy-container,
+.gas-section-three-title-container,
 .gas-section-three-title,
 .gas-section-three-paragraph-container,
 .gas-section-three-paragraph,
@@ -116,7 +117,8 @@
 
 @media (min-width: 600px) {
   .gas-section-three-image-container {
-    align-content: center;   
+    align-content: center;  
+    justify-content: center; 
   }
 }
 
