@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  background-color: var( --level1-background-color);
+  background-color: var(--level1-background-color);
 }
 
 @media (min-width:600px){
@@ -25,7 +25,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--subcontainer-padding-mobile);
-  background-color: var( --level2-background-color);
+  background-color: var(--level2-background-color);
 }
 
 @media (min-width:600px){
@@ -43,7 +43,7 @@
   align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--copy-container-padding-mobile);
-  background-color: var( --level3-background-color);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px){
@@ -104,4 +104,8 @@
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
+}
+
+.section-four-link-paragraph{
+  /*i need to ask for design*/
 }
