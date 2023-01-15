@@ -1,8 +1,11 @@
 .water-hero-container,
+.water-hero-subcontainer,
 .water-hero-image-container,
 .water-hero-image,
+.water-hero-copy-container,
 .water-hero-title,
 .water-hero-subtitle,
+.water-hero-paragraph-container,
 .water-hero-paragraph {
   border: 1px dotted black;
 }
@@ -10,40 +13,118 @@
 .water-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
-  /* ^not strictly neccessary */
-  row-gap: 15px;
-  padding: 25px;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-hero-container {
+    padding: var(--container-padding-desktop);
+  }
+}
+
+.water-hero-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "water-hero-image-container"
+    "water-hero-copy-container";
+  row-gap: var(--subcontainer-row-gap-mobile);
+  padding: var(--subcontainer-padding-mobile);
+  background-color: var(--level2-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-hero-subcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1.5fr 2.5fr; */
+    /* ^EXPERIMENTAL */
+    grid-template-areas:
+    "water-hero-image-container water-hero-copy-container";
+    row-gap: none;
+    column-gap: var(--subcontainer-column-gap-desktop);
+    padding: var(--subcontainer-padding-desktop);
+  }
 }
 
 .water-hero-image-container {
-  /* background-color: lightblue; */
-  /* ^so you can see if the image is scaling correctly */
+  grid-area: water-hero-image-container;
+  display: grid;
+  /* deliberately NOT applied justify-content: center */
+  align-content: center;
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-hero-image-container {
+  }
 }
 
 .water-hero-image {
   display: block;
   width: 100%;
-  /* background-color: gray; */
-  /* ^placeholder colour until actual image */
+}
+
+@media (min-width: 600px) {
+  .water-hero-image {
+  }
+}
+
+.water-hero-copy-container {
+  grid-area: water-hero-copy-container;
+  display: grid;
+  align-content: start;
+  row-gap: var(--copy-container-row-gap-mobile);
+  padding: var(--copy-container-padding-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-hero-copy-container {
+    align-content: center;
+    row-gap: var(--copy-container-row-gap-desktop);
+    padding: var(--copy-container-padding-desktop);
+  }
 }
 
 .water-hero-title {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-hero-title {
+    text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
 }
 
 .water-hero-subtitle {
   text-align: center;
-  font-size: 1.3rem;
-  font-weight: 500;
-  /* ^ to offset the bolded text */
-  padding: 0px 50px;
-  /* ^ left/right padding to push content inwards to match design */
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-hero-subtitle {
+    text-align: left;
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
+  }
 }
 
 .water-hero-paragraph {
-  text-align: justify;
-  padding: 0px 50px;
-  /* ^ left/right padding to push content inwards to match design  */
+  text-align: center;
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-hero-paragraph {
+    text-align: left;
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
