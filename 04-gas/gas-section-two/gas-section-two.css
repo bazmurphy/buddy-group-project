@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  background-color: var( --level1-background-color);
+  background-color: var(--level1-background-color);
 }
 
 @media (min-width:600px){
@@ -51,7 +51,7 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
     "gas-section-two-title-container gas-section-two-paragraph-container";
-    column-gap: var(--subcontainer-column-gap-desktop);
+    column-gap: var(--subcontainer-column-gap-desktop);/*i did same above here */
   }
 }
 
