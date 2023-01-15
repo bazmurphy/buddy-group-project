@@ -7,7 +7,7 @@
 .water-hero-subtitle,
 .water-hero-paragraph-container,
 .water-hero-paragraph {
-  border: 1px dotted black;
+  border: var(--temporary-border);
 }
 
 .water-hero-container {
