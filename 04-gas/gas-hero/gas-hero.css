@@ -28,21 +28,22 @@
   grid-template-columns: 1fr;
   grid-template-areas:
     "gas-hero-img-container"
-    "gas-hero-copy";
-  row-gap: var(--items-gap-mobile);
+    "gas-hero-copy-container";
+  row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   /* ^for the media query after */
   align-content: start;
   background-color: var(--level2-background-color);
+  padding: var(--subcontainer-padding-mobile);
 }
 
 @media (min-width: 600px) {
   .gas-hero-subcontainer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "gas-hero-copy gas-hero-img-container";
-    column-gap: var(--content-column-gap-desktop);
-
+    "gas-hero-copy-container gas-hero-img-container";
+    column-gap: var(--subcontainer-column-gap-desktop);
+    padding: var(--subcontainer-padding-desktop);
   }
 }
   
@@ -51,13 +52,13 @@
   display: grid;
   /* ^this is for the image inside the container */
   justify-content: center;
-  align-content: center;
+  align-content: start;
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .gas-hero-image-container {
-    
+    align-content: center;
   }
 }
 
@@ -73,7 +74,7 @@
 }
 
 .gas-hero-copy-container {
-  grid-area: gas-hero-copy;
+  grid-area:gas-hero-copy-container;
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
@@ -83,6 +84,20 @@
 @media (min-width: 600px) {
   .gas-hero-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
+    align-content: center;
+  }
+}
+
+.gas-hero-title-container{
+  display: grid;
+  align-content: start;
+  row-gap: var(title-container-row-gap-mobile);
+}
+
+@media (min-width: 600px){
+  .gas-hero-title-container{
+    align-content: center;
+    row-gap: var(title-container-row-gap-desktop);
   }
 }
 
@@ -103,12 +118,14 @@
 .gas-hero-subtitle {
   text-align: center;
   font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .gas-hero-subtitle {
     text-align: left;
     font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -132,6 +149,7 @@
 
 @media (min-width: 600px) {
   .gas-hero-paragraph {
+    text-align: left;
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
