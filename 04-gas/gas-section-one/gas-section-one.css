@@ -1,7 +1,10 @@
 .gas-section-one-container,
 .gas-section-one-subcontainer,
 .gas-section-one-copy-container,
+.gas-section-one-subtitle-container,
 .gas-section-one-title,
+.gas-section-one-title-span-number,
+.gas-section-one-title-span-title,
 .gas-section-one-paragraph-container,
 .gas-section-one-paragraph,
 .gas-section-one-image-container,
@@ -26,11 +29,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "gas-section-one-copy-container"
-    "gas-section-one-image-container";
-  row-gap: var(--items-gap-mobile);
+  "gas-section-one-copy-container"
+  "gas-section-one-image-container";
+  row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
-  /* ^for the media query after */
   padding: var(--subcontainer-padding-mobile);
   border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
@@ -41,7 +43,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "gas-section-one-image-container gas-section-one-copy-container";
-    column-gap: var(--content-column-gap-desktop);
+    column-gap: var(--subcontainer-column-gap-desktop);
     padding: var(--subcontainer-padding-desktop);
   }
 }
@@ -56,22 +58,44 @@
 
 @media (min-width: 600px) {
   .gas-section-one-copy-container {
+    align-content: center;
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
+.gas-section-one-title-container{
+}
+
+@media (min-width: 600px){
+  .gas-section-one-title-container{
+   
+  }
+}
+
 .gas-section-one-title {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
+  row-gap: var(--title-container-row-gap-mobile);
+  font-size: var(--gas-title-font-size-mobile);
+  font-weight: var(--gas-title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .gas-section-one-title {
+    flex-direction: row;
+    row-gap: none;
     text-align: left;
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
+    column-gap: var(--title-container-column-gap-desktop);
+    font-size: var(--gas-title-font-size-desktop);
+    font-weight: var(--gas-title-font-weight-desktop);
   }
+}
+
+.gas-section-one-title-span-number{
+}
+
+.gas-section-one-title-span-title{
 }
 
 .gas-section-one-paragraph-container {
@@ -87,7 +111,6 @@
 
 .gas-section-one-paragraph {
   text-align: center;
-  /* ^maybe this should be "justify" on mobile ? */
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
@@ -103,14 +126,14 @@
 .gas-section-one-image-container {
   grid-area: gas-section-one-image-container;
   display: grid;
+  align-content: start;
   justify-content: center;
-  align-content: center;
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .gas-section-one-image-container {
-    
+    align-content: center;   
   }
 }
 
@@ -121,6 +144,5 @@
 
 @media (min-width: 600px) {
   .gas-section-one-image {
-
   }
 }
