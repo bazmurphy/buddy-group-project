@@ -3,8 +3,8 @@
 .gas-section-one-copy-container,
 .gas-section-one-subtitle-container,
 .gas-section-one-title,
-.gas-section-one-span-number,
-.gas-section-one-span-title,
+.gas-section-one-title-span-number,
+.gas-section-one-title-span-title,
 .gas-section-one-paragraph-container,
 .gas-section-one-paragraph,
 .gas-section-one-image-container,
@@ -92,10 +92,10 @@
   }
 }
 
-.gas-section-one-span-number{
+.gas-section-one-title-span-number{
 }
 
-.gas-section-one-span-title{
+.gas-section-one-title-span-title{
 }
 
 .gas-section-one-paragraph-container {
