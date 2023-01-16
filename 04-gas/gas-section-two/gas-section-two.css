@@ -53,6 +53,7 @@
     grid-template-areas: 
     "gas-section-two-title-container gas-section-two-paragraph-container";
     column-gap: var(--subcontainer-column-gap-desktop);/*i did same above here */
+    align-items: center;
   }
 }
 
@@ -68,7 +69,6 @@
     flex-direction: row;
     column-gap: var(--title-container-column-gap-desktop);
     row-gap: none;
-    align-items: center;
   }
 }
 
