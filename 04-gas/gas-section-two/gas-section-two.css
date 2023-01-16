@@ -25,7 +25,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--subcontainer-padding-mobile);
-  background-color: var( --level2-background-color);
+  background-color: var(--level2-background-color);
 }
 
 @media (min-width:600px){
@@ -41,9 +41,9 @@
   "gas-section-two-title-container"
   "gas-section-two-paragraph-container";
   align-content: start;
-  row-gap: var(--subcontainer-row-gap-mobile);/*in this poin i add same row for subcontainer because of design/var(--copy-container-row-gap-mobile);*/
+  row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--copy-container-padding-mobile);
-  background-color: var( --level3-background-color);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px){
@@ -57,27 +57,45 @@
 
 .gas-section-two-title-container {
  grid-area: gas-section-two-title-container;
- display: grid;
- align-content: center;
+ display: flex;
+ flex-direction: column;
  row-gap: var(--title-container-row-gap-mobile);
 }
 
-@media (min-width:600px){
-.gas-section-two-title-container {
-  row-gap: var(--title-container-row-gap-desktop);
- }
+@media (min-width: 600px){
+  .gas-section-two-title-container{
+    flex-direction: row;
+    column-gap: var(--title-container-column-gap-desktop);
+    row-gap: none;
+    align-items: center;
+  }
 }
 
 .gas-section-two-title {
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
   text-align: center;
+  font-size: var(--gas-title-font-size-mobile);
+  font-weight: var(--gas-title-font-weight-mobile);
 }
 
-@media (min-width:600px){
+@media (min-width: 600px) {
   .gas-section-two-title {
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
+    text-align: left;
+    font-size: var(--gas-title-font-size-desktop);
+    font-weight: var(--gas-title-font-weight-desktop);
+  }
+}
+
+.gas-section-two-subtitle {
+  text-align: center;
+  font-size: var(--gas-subtitle-font-size-mobile);
+  font-weight: var(--gas-subtitle-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .gas-section-two-subtitle {
+    text-align: left;
+    font-size: var(--gas-subtitle-font-size-desktop);
+    font-weight: var(--gas-subtitle-font-weight-desktop);
   }
 }
 
