@@ -111,6 +111,7 @@
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-one-copy-container {
+    align-content: center;
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
@@ -212,6 +213,7 @@
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-two-copy-container {
+    align-content: center;
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }
@@ -313,6 +315,7 @@
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-three-copy-container {
+    align-content: center;
     row-gap: var(--copy-container-row-gap-desktop);
   }
 }

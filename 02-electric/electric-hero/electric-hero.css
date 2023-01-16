@@ -32,6 +32,7 @@
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   /* ^for the media query after */
+  padding: var(--subcontainer-padding-mobile);
   border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
 }
@@ -41,7 +42,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "electric-hero-copy-container electric-hero-image-container";
+    row-gap: none;
     column-gap: var(--subcontainer-column-gap-desktop);
+    padding: var(--subcontainer-padding-desktop);
   }
 }
 
@@ -55,6 +58,7 @@
 
 @media (min-width: 600px) {
   .electric-hero-image-container {
+    
   }
 }
 
@@ -65,7 +69,7 @@
 
 @media (min-width:600px) {
   .electric-hero-image{
-
+    
   }
 }
 
@@ -80,6 +84,7 @@
 
 @media (min-width: 600px) {
   .electric-hero-copy-container {
+    align-content: center;
     row-gap: var(--copy-container-row-gap-desktop);
     padding: var(--copy-container-padding-desktop);
   }

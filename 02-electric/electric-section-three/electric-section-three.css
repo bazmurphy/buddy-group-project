@@ -20,7 +20,7 @@
 .electric-section-three-subsection-three-subtitle,
 .electric-section-three-subsection-three-paragraph-container,
 .electric-section-three-subsection-three-paragraph {
-    border:var(--temporary-border);
+  border: var(--temporary-border);
 }
 
 .electric-section-three-container {
@@ -44,11 +44,10 @@
     "electric-section-three-subsection-one-container"
     "electric-section-three-subsection-two-container"
     "electric-section-three-subsection-three-container";
-  justify-content: center;
   row-gap: var(--subsection-container-row-gap-mobile);
-  column-gap:none;
+  column-gap: none;
   padding: var(--subcontainer-padding-mobile);
-  border: solid 1px black;
+  border: var(--subcontainer-border-mobile);
   background-color: var(--level1-background-color);
 }
 
@@ -128,12 +127,12 @@
 
 .electric-section-three-subsection-one-paragraph-container {
   display: grid;
-  row-gap: var(--copy-container-row-gap-mobile);
+  row-gap: var(--paragraph-container-row-gap-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-one-paragraph-container{
-    row-gap: var(--copy-container-row-gap-desktop);
+    row-gap: var(--paragraph-container-row-gap-desktop);
   }
 }
 
@@ -218,12 +217,12 @@
 
 .electric-section-three-subsection-two-paragraph-container {
   display: grid;
-  row-gap: var(--copy-container-row-gap-mobile);
+  row-gap: var(--paragraph-container-row-gap-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-two-paragraph-container{
-    row-gap: var(--copy-container-row-gap-desktop);
+    row-gap: var(--paragraph-container-row-gap-desktop);
   }
 }
 
@@ -308,12 +307,12 @@
 
 .electric-section-three-subsection-three-paragraph-container {
   display: grid;
-  row-gap: var(--copy-container-row-gap-mobile);
+  row-gap: var(--paragraph-container-row-gap-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-three-paragraph-container{
-    row-gap: var(--copy-container-row-gap-desktop);
+    row-gap: var(--paragraph-container-row-gap-desktop);
   }
 }
 
