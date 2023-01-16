@@ -4,6 +4,7 @@
 .gas-section-four-title-container,
 .gas-section-four-paragraph-container,
 .gas-section-four-title,
+.gas-section-four-subtitle,
 .gas-section-four-paragraph{
   border: var(--temporary-border);
 }
@@ -52,36 +53,72 @@
     grid-template-areas: 
     "gas-section-four-title-container gas-section-four-paragraph-container";
     column-gap: var(--subcontainer-column-gap-desktop);
+    align-items: center;
   }
 }
 
 .gas-section-four-title-container {
  grid-area: gas-section-four-title-container;
- display: grid;
- align-content: center;
+ display: flex;
+ flex-direction: column;
  row-gap: var(--title-container-row-gap-mobile);
 }
 
 @media (min-width:600px){
 .gas-section-four-title-container {
-  row-gap: var(--title-container-row-gap-desktop);
+  flex-direction: row;
+  column-gap: var(--title-container-column-gap-desktop);
+  row-gap: none;
  }
 }
 
-.gas-section-four-subtitle {
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
+.gas-section-four-title {
   text-align: center;
+  font-size: var(--gas-title-font-size-mobile);
+  font-weight: var(--gas-title-font-weight-mobile);
+}
+.gas-section-three-title-container{
+  
 }
 
-@media (min-width:600px){
-  .gas-section-four-title {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
+@media (min-width: 600px){
+  .gas-section-three-title-container{
+   
   }
 }
 
-.gas-section-four-title {
+.gas-section-three-title {
+  
+}
+
+@media (min-width: 600px) {
+  .gas-section-three-title {
+ 
+  }
+}
+
+.gas-section-three-subtitle {
+  text-align: center;
+  font-size: var(--gas-subtitle-font-size-mobile);
+  font-weight: var(--gas-subtitle-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .gas-section-three-subtitle {
+    text-align: left;
+    font-size: var(--gas-subtitle-font-size-desktop);
+    font-weight: var(--gas-subtitle-font-weight-desktop);
+  }
+}
+@media (min-width:600px){
+  .gas-section-four-title {
+    text-align: left;
+    font-size: var(--gas-title-font-size-desktop);
+    font-weight: var(--gas-title-font-weight-desktop);
+  }
+}
+
+.gas-section-four-subtitle {
   font-size: var(--title-font-size-mobile);
   font-weight: var(--title-font-weight-mobile);
   text-align: center;
