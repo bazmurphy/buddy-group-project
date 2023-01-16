@@ -4,7 +4,8 @@
 .gas-section-two-title-container,
 .gas-section-two-paragraph-container,
 .gas-section-two-title,
-.gas-section-two-subtitle,
+.gas-section-two-span-number,
+.gas-section-two-span-title,
 .gas-section-two-paragraph{
   border: var(--temporary-border);
 }
@@ -52,51 +53,40 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
     "gas-section-two-title-container gas-section-two-paragraph-container";
-    column-gap: var(--subcontainer-column-gap-desktop);/*i did same above here */
-    align-items: center;
+    column-gap: var(--subcontainer-column-gap-desktop);
+    align-content: center;
   }
 }
 
 .gas-section-two-title-container {
  grid-area: gas-section-two-title-container;
- display: flex;
- flex-direction: column;
- row-gap: var(--title-container-row-gap-mobile);
+ display: grid;
+ align-content: start;
 }
 
 @media (min-width: 600px){
   .gas-section-two-title-container{
-    flex-direction: row;
-    column-gap: var(--title-container-column-gap-desktop);
-    row-gap: none;
+    align-content: center;
   }
 }
 
 .gas-section-two-title {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  row-gap: var(--title-container-row-gap-mobile);
   font-size: var(--gas-title-font-size-mobile);
   font-weight: var(--gas-title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .gas-section-two-title {
+    flex-direction: row;
+    row-gap: none;
+    column-gap: var(--title-container-column-gap-desktop);
     text-align: left;
     font-size: var(--gas-title-font-size-desktop);
     font-weight: var(--gas-title-font-weight-desktop);
-  }
-}
-
-.gas-section-two-subtitle {
-  text-align: center;
-  font-size: var(--gas-subtitle-font-size-mobile);
-  font-weight: var(--gas-subtitle-font-weight-mobile);
-}
-
-@media (min-width: 600px) {
-  .gas-section-two-subtitle {
-    text-align: left;
-    font-size: var(--gas-subtitle-font-size-desktop);
-    font-weight: var(--gas-subtitle-font-weight-desktop);
   }
 }
 
