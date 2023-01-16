@@ -4,8 +4,8 @@
 .gas-section-four-title-container,
 .gas-section-four-paragraph-container,
 .gas-section-four-title,
-.gas-section-four-span-number,
-.gas-section-four-span-title,
+.gas-section-four-title-span-number,
+.gas-section-four-title-span-title,
 .gas-section-four-paragraph{
   border: var(--temporary-border);
 }
@@ -87,6 +87,14 @@
     font-size: var(--gas-title-font-size-desktop);
     font-weight: var(--gas-title-font-weight-desktop);
   }
+}
+
+.gas-section-four-title-span-number{
+
+}
+
+.gas-section-four-title-span-title{
+
 }
 
 .gas-section-four-paragraph-container {
