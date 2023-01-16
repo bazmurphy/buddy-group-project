@@ -3,8 +3,8 @@
 .gas-section-three-copy-container,
 .gas-section-three-title-container,
 .gas-section-three-title,
-.gas-section-three-span-number,
-.gas-section-three-span-title,
+.gas-section-three-title-span-number,
+.gas-section-three-title-span-title,
 .gas-section-three-paragraph-container,
 .gas-section-three-paragraph,
 .gas-section-three-image-container,
@@ -92,10 +92,10 @@
   }
 }
 
-.gas-section-three-span-number{
+.gas-section-three-title-span-number{
 }
 
-.gas-section-three-span-title{
+.gas-section-three-title-span-title{
 }
 
 .gas-section-three-paragraph-container {
