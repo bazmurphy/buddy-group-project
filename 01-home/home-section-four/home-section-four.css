@@ -1,6 +1,8 @@
 .home-section-four-container,
 .home-section-four-title-container,
 .home-section-four-subcontainer,
+.home-section-four-image-container,
+.home-section-four-image,
 .home-section-four-copy-container,
 .home-section-four-title,
 .home-section-four-subtitle,
@@ -31,7 +33,7 @@
       "home-section-four-subcontainer-one home-section-four-subcontainer-three"
       "home-section-four-subcontainer-two home-section-four-subcontainer-four";
     padding: var(--container-padding-desktop);
-  }  
+  }
 }
 
 .home-section-four-title-container {
@@ -44,7 +46,7 @@
 @media screen {
   .home-section-four-title-container {
     padding: 10px 10px 0 10px;
-      /* ^adjust these proportions for desktop */
+    /* ^adjust these proportions for desktop */
   }
 }
 
@@ -66,12 +68,15 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
+  row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
   background-color: var(--level2-background-color);
 }
 
 @media (min-width: 600px) {
   .home-section-four-subcontainer {
+    row-gap: var(--subcontainer-row-gap-desktop);
+    /* ^ this is a special case */
     padding: var(--subcontainer-padding-desktop);
   }
 }
@@ -96,6 +101,7 @@
 .home-section-four-subcontainer-two,
 .home-section-four-subcontainer-three {
   border-bottom: 1px solid black;
+  /* ^ this is hardcoded.. */
 }
 
 @media (min-width: 600px) {
@@ -103,6 +109,33 @@
   .home-section-four-subcontainer-two,
   .home-section-four-subcontainer-three {
     border-bottom: inherit;
+    /* ^ this is to remove the border */
+  }
+}
+
+.home-section-four-image-container {
+  display: none;
+  /* are we sure we don't want the images in mobile? */
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-section-four-image-container {
+    display: grid;
+    justify-content: start;
+  }
+}
+
+.home-section-four-image {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  /* ^this is hard coded - we need to deal with this */
+}
+
+@media (min-width: 600px) {
+  .home-section-four-image {
+    
   }
 }
 
@@ -110,6 +143,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--copy-container-row-gap-mobile);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -134,13 +168,13 @@
 }
 
 .home-section-four-paragraph-container {
-  row-gap: var(--paragraph-container-row-gap);
+  row-gap: var(--paragraph-container-row-gap-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .home-section-four-paragraph-container {
-
+    row-gap: var(--paragraph-container-row-gap-desktop);
   }
 }
 

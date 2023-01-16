@@ -38,16 +38,27 @@
 }
 
 .home-hero-image-container {
-  /* ^We need to choose how to handle this */
+  display: grid;
+  justify-content: center;
+  align-content: center;
   background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-hero-image-container {
+
+  }
 }
 
 .home-hero-image {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* ^This is not a great way to handle this */
+}
+
+@media (min-width: 600px) {
+  .home-hero-image {
+
+  }
 }
 
 .home-hero-copy-container {
@@ -62,6 +73,8 @@
 
 @media (min-width: 600px) {
   .home-hero-copy-container {
+    align-content: center;
+    /* ^I presume the copy should be centered? */
     row-gap: var(--copy-container-row-gap-desktop);
     padding: var(--copy-container-padding-desktop);
   }
