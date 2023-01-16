@@ -3,6 +3,7 @@
 .gas-hero-image-container,
 .gas-hero-image,
 .gas-hero-copy-container,
+.gas-hero-title-container,
 .gas-hero-title,
 .gas-hero-subtitle,
 .gas-hero-paragraph-container,
@@ -27,11 +28,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "gas-hero-img-container"
-    "gas-hero-copy-container";
+  "gas-hero-img-container"
+  "gas-hero-copy-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
-  /* ^for the media query after */
   align-content: start;
   background-color: var(--level2-background-color);
   padding: var(--subcontainer-padding-mobile);
@@ -50,7 +50,6 @@
 .gas-hero-image-container {
   grid-area: gas-hero-img-container;
   display: grid;
-  /* ^this is for the image inside the container */
   justify-content: center;
   align-content: start;
   background-color: var(--level3-background-color);
@@ -69,7 +68,6 @@
 
 @media (min-width: 600px) {
   .gas-hero-image {
-
   }
 }
 
@@ -142,7 +140,6 @@
 
 .gas-hero-paragraph {
   text-align: center;
-  /* ^maybe this should be "justify" on mobile ? */
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
