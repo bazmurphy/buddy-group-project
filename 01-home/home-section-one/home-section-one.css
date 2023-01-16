@@ -8,14 +8,14 @@
 .home-section-one-paragaph-container,
 .home-section-one-paragraph,
 .home-section-one-link {
-  border: 1px dotted black;
+  border: var(--temporary-border)
 }
 
 .home-section-one-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "home-section-onehome-section-one-paragraph-highlight-subcontainer-one"
+    "home-section-one-subcontainer-one"
     "home-section-one-subcontainer-two"
     "home-section-one-subcontainer-three";
   row-gap: 15px;
