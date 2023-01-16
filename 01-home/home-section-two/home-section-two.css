@@ -1,88 +1,193 @@
 .home-section-two-container,
+.home-section-two-title-container,
+.home-section-two-subcontainer,
 .home-section-two-image-container,
-.home-section-two-content-container,
+.home-section-two-image,
+.home-section-two-copy-container,
 .home-section-two-title,
 .home-section-two-subtitle,
-.home-section-two-paragraph,
-.home-section-two-button {
+.home-section-two-paragaph-container,
+.home-section-two-paragraph {
   border: 1px dotted black;
 }
 
 .home-section-two-container {
   display: grid;
-  /* padding: 20px; */
-  /* ^add global variable for this? */
-  padding: 0 20px 20px 20px;
-  /* ^the padding top must be 0 to compensate for the divider lines  */
-  /* ^is this the right solution? */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "home-section-two-title-container"
+    "home-section-two-subcontainer-one"
+    "home-section-two-subcontainer-two"
+    "home-section-two-subcontainer-three"
+    "home-section-two-subcontainer-four";
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
 }
 
-.home-section-two-subcontainer {
-  display: grid;
-  row-gap: 40px;
-  /* ^add global variable for this? */
-  border-top: 2px solid black;
-  padding-top: 20px;
-  /* ^ is the right solution to compensate for no bottom border on the previous component? */
+@media (min-width: 600px) {
+  .home-section-two-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "home-section-two-title-container home-section-two-title-container"
+      "home-section-two-subcontainer-one home-section-two-subcontainer-three"
+      "home-section-two-subcontainer-two home-section-two-subcontainer-four";
+    padding: var(--container-padding-desktop);
+  }
 }
 
-.home-section-two-subcontainer-subcontainer {
-  /* ^this is a terrible class name i know */
-  display: grid;
-  row-gap: 10px;
-  /* ^add global variable for this? */
+.home-section-two-title-container {
+  grid-area: home-section-two-title-container;
+  padding: 10px 10px 0 10px;
+  /* ^this is a very specific case */
+  background-color: var(--level2-background-color);
+}
+
+@media screen {
+  .home-section-two-title-container {
+    padding: 10px 10px 0 10px;
+    /* ^adjust these proportions for desktop */
+  }
 }
 
 .home-section-two-title {
   text-align: center;
-  font-size: 1.6rem;
-  /* ^add global variable for this? */
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-section-two-title {
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
+}
+
+.home-section-two-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--subcontainer-row-gap-mobile);
+  padding: var(--subcontainer-padding-mobile);
+  background-color: var(--level2-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-section-two-subcontainer {
+    row-gap: var(--subcontainer-row-gap-desktop);
+    /* ^ this is a special case */
+    padding: var(--subcontainer-padding-desktop);
+  }
+}
+
+.home-section-two-subcontainer-one {
+  grid-area: home-section-two-subcontainer-one;
+}
+
+.home-section-two-subcontainer-two {
+  grid-area: home-section-two-subcontainer-two;
+}
+
+.home-section-two-subcontainer-three {
+  grid-area: home-section-two-subcontainer-three;
+}
+
+.home-section-two-subcontainer-four {
+  grid-area: home-section-two-subcontainer-four;
+}
+
+.home-section-two-subcontainer-one,
+.home-section-two-subcontainer-two,
+.home-section-two-subcontainer-three {
+  border-bottom: 1px solid black;
+  /* ^ this is hardcoded.. */
+}
+
+@media (min-width: 600px) {
+  .home-section-two-subcontainer-one,
+  .home-section-two-subcontainer-two,
+  .home-section-two-subcontainer-three {
+    border-bottom: inherit;
+    /* ^ this is to remove the border */
+  }
+}
+
+.home-section-two-image-container {
+  display: none;
+  /* are we sure we don't want the images in mobile? */
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-section-two-image-container {
+    display: grid;
+    justify-content: start;
+  }
+}
+
+.home-section-two-image {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  /* ^this is hard coded - we need to deal with this */
+}
+
+@media (min-width: 600px) {
+  .home-section-two-image {
+    
+  }
+}
+
+.home-section-two-copy-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--copy-container-row-gap-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-section-two-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+  }
 }
 
 .home-section-two-subtitle {
   text-align: center;
-  font-size: 1.3rem;
-  /* ^add global variable for this? */
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-section-two-subtitle {
+    text-align: left;
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
+  }
+}
+
+.home-section-two-paragraph-container {
+  row-gap: var(--paragraph-container-row-gap-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .home-section-two-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
 }
 
 .home-section-two-paragraph {
   text-align: center;
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
 }
 
-
-/*
-.section-two-container {
-  display:grid ;
-  grid-template: repeat(5,auto),repeat(1,1fr);
-  text-align: center;
+@media (min-width: 600px) {
+  .home-section-two-paragraph {
+    text-align: left;
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
-
-article {
-  background-color:var(--yello) ;
-}
-
-.section-two-title {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.first-article-section-two-container {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.second-article-section-two-container {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.third-article-section-two-container {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-
-.fourth-article-section-two-container {
-  grid-column: 1/2;
-  grid-row: 5/6;
-} 
-*/

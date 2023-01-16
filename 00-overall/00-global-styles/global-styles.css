@@ -51,6 +51,10 @@ body {
 
   --subcontainer-row-gap-mobile: 15px;
   /* ^gap between the image container and copy container in the grid */
+
+  --subcontainer-row-gap-desktop: 30px;
+  /* ^this is needed on home-section-four */
+
   --subcontainer-column-gap-desktop: 30px;
   /* ^gap between the image container and copy container in the grid */
 
