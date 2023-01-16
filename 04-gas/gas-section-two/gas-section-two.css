@@ -4,6 +4,7 @@
 .gas-section-two-title-container,
 .gas-section-two-paragraph-container,
 .gas-section-two-title,
+.gas-section-two-subtitle,
 .gas-section-two-paragraph{
   border: var(--temporary-border);
 }
@@ -101,6 +102,7 @@
 
 .gas-section-two-paragraph-container {
   grid-area: gas-section-two-paragraph-container ;
+  display: grid;
   row-gap: var(--paragraph-container-row-gap-mobile);
 }
 
