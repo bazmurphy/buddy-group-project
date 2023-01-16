@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "home-section-one-subcontainer-one"
+    "home-section-onehome-section-one-paragraph-highlight-subcontainer-one"
     "home-section-one-subcontainer-two"
     "home-section-one-subcontainer-three";
   row-gap: 15px;
@@ -143,10 +143,6 @@
     font-size: var(--paragraph-font-size-desktop);
     font-weight: var(--paragraph-font-weight-desktop);
   }
-}
-
-.home-section-one-paragraph-highlight {
-  color: var(--red);
 }
 
 .home-section-one-link {
