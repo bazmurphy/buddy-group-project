@@ -2,8 +2,9 @@
 .gas-section-one-subcontainer,
 .gas-section-one-copy-container,
 .gas-section-one-subtitle-container,
-.gas-section-one-subtitle,
 .gas-section-one-title,
+.gas-section-one-span-number,
+.gas-section-one-span-title,
 .gas-section-one-paragraph-container,
 .gas-section-one-paragraph,
 .gas-section-one-image-container,
@@ -28,11 +29,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "gas-section-one-copy-container"
-    "gas-section-one-image-container";
+  "gas-section-one-copy-container"
+  "gas-section-one-image-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
-  /* ^for the media query after */
   padding: var(--subcontainer-padding-mobile);
   border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
@@ -56,7 +56,6 @@
   background-color: var(--level3-background-color);
 }
 
-
 @media (min-width: 600px) {
   .gas-section-one-copy-container {
     align-content: center;
@@ -65,45 +64,38 @@
 }
 
 .gas-section-one-title-container{
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--title-container-row-gap-mobile);
 }
 
 @media (min-width: 600px){
   .gas-section-one-title-container{
-    flex-direction: row;
-    column-gap: var(--title-container-column-gap-desktop);
-    row-gap: none;
+   
   }
 }
 
 .gas-section-one-title {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  row-gap: var(--title-container-row-gap-mobile);
   font-size: var(--gas-title-font-size-mobile);
   font-weight: var(--gas-title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .gas-section-one-title {
+    flex-direction: row;
+    row-gap: none;
     text-align: left;
+    column-gap: var(--title-container-column-gap-desktop);
     font-size: var(--gas-title-font-size-desktop);
     font-weight: var(--gas-title-font-weight-desktop);
   }
 }
 
-.gas-section-one-subtitle {
-  text-align: center;
-  font-size: var(--gas-subtitle-font-size-mobile);
-  font-weight: var(--gas-subtitle-font-weight-mobile);
+.gas-section-one-span-number{
 }
 
-@media (min-width: 600px) {
-  .gas-section-one-subtitle {
-    text-align: left;
-    font-size: var(--gas-subtitle-font-size-desktop);
-    font-weight: var(--gas-subtitle-font-weight-desktop);
-  }
+.gas-section-one-span-title{
 }
 
 .gas-section-one-paragraph-container {
@@ -119,7 +111,6 @@
 
 .gas-section-one-paragraph {
   text-align: center;
-  /* ^maybe this should be "justify" on mobile ? */
   font-size: var(--paragraph-font-size-mobile);
   font-weight: var(--paragraph-font-weight-mobile);
 }
