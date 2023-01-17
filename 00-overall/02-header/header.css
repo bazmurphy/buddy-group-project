@@ -182,4 +182,94 @@
   display: none;
 }
 
+.header-desktop-container{
+  display: none;
+}
 
+/*****Header Desktop*******/
+@media (min-width:600px){
+.header-mobile-container{
+  display: none;
+}
+.header-desktop-container,
+.header-desktop-logo-container,
+.header-desktop-nav-container,
+.header-desktop-login-container,
+.header-desktop-search-container{
+  border: var(--temporary-border);
+}
+
+.header-desktop-container{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(3,auto);
+  grid-template-areas: 
+  "header-desktop-logo-container . . . . header-desktop-login-container "
+  "header-desktop-logo-container header-desktop-nav-container header-desktop-nav-container header-desktop-nav-container . . "
+  "header-desktop-logo-container . . . . header-desktop-search-container";
+  background-color: var(--dark-blue);
+}
+
+.header-desktop-logo-container {
+ grid-area: header-desktop-logo-container;
+  align-self: center;
+  text-align: center;
+}
+
+.header-desktop-logo-image-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  /* ^to space them out over the central text */
+}
+
+.header-desktop-logo-image {
+  width: 16px;
+  height: 22px;
+  /* ^to maintain a decent ratio for the images */
+}
+
+.header-desktop-logo {
+  color: var(--red);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.header-desktop-logo-highlight {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.header-desktop-nav-container{
+  grid-area: header-desktop-nav-container;
+}
+
+.header-desktop-nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+.header-desktop-nav-link {
+ display: inline-block;
+ text-decoration: none;
+ color:#FFFFFF;
+ text-align: center;
+ transition: 0.15s ease-in-out;
+ position: relative;
+ font-weight: 700;
+}
+
+
+.header-desktop-login-container{
+  grid-area: header-desktop-login-container;
+}
+
+.header-desktop-search-container{
+  grid-area: header-desktop-search-container;
+  display: flex;
+  flex-direction: row;
+}
+}
