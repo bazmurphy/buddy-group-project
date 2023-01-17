@@ -50,7 +50,7 @@
 .water-hero-image-container {
   grid-area: water-hero-image-container;
   display: grid;
-  /* deliberately NOT applied justify-content: center */
+  justify-content: center;
   align-content: center;
   background-color: var(--level3-background-color);
 }
