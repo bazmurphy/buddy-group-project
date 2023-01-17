@@ -15,11 +15,14 @@
 .header-logo-image-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
+  /* ^to space them out over the central text */
 }
 
 .header-logo-image {
   width: 16px;
+  height: 22px;
+  /* ^to maintain a decent ratio for the images */
 }
 
 .header-logo {
