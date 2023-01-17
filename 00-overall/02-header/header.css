@@ -268,7 +268,14 @@
 .header-desktop-login-container{
   grid-area: header-desktop-login-container;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+.header-login-text-desktop{
+  color: #FFFFFF;
+}
+.fa-solid{
+  background-color: #FFFFFF;
 }
 
 /******SEARCH CONTAINER****/
