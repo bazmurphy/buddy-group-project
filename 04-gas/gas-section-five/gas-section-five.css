@@ -42,7 +42,7 @@
   .gas-section-five-subcontainer{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "gas-section-five-copy-container gas-section-five-image-container";
+    "gas-section-five-image-container gas-section-five-copy-container";
     column-gap: var(--subcontainer-column-gap-desktop);
     padding: var(--subcontainer-padding-desktop);
   }
