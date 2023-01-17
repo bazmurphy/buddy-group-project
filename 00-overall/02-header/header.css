@@ -1,4 +1,4 @@
-.header-container {
+.header-mobile-container {
   display: grid;
   grid-area: header;
   grid-template-columns: 30px minmax(50px,200px) auto minmax(50px,100px) 30px;
@@ -6,42 +6,42 @@
   align-items: center;
 }
 
-.header-logo-container {
+.header-mobile-logo-container {
   grid-column: 2/3;
   /* justify-self: center; */
   text-align: center;
 }
 
-.header-logo-image-container {
+.header-mobile-logo-image-container {
   display: flex;
   justify-content: center;
   gap: 12px;
   /* ^to space them out over the central text */
 }
 
-.header-logo-image {
+.header-mobile-logo-image {
   width: 16px;
   height: 22px;
   /* ^to maintain a decent ratio for the images */
 }
 
-.header-logo {
+.header-mobile-logo {
   color: var(--red);
   font-size: 20px;
   font-weight: 800;
 }
 
-.header-logo-highlight {
+.header-mobile-logo-highlight {
   color: var(--white);
   font-weight: 600;
 }
 
-.header-nav-container {
+.header-mobile-nav-container {
   grid-column: 4/5;
   justify-self: end;
 }
 
-.header-nav {
+.header-mobile-nav {
   position: relative;
 }
 
@@ -61,36 +61,25 @@
   transition: all 0.2s ease-in;
 }
 
-.header-nav-list-item {
+.header-mobile-nav-list-item {
   padding-left: 30px;
   margin-top: 15px;
   color: #082980;
 }
 
-.heaver-nav-link {
-  display: inline-block;
-  text-decoration: none;
-  color:#082980;
-  text-align: center;
-  transition: 0.15s ease-in-out;
-  position: relative;
-  font-weight: 700;
+.header-mobile-nav-link {
+ display: inline-block;
+ text-decoration: none;
+ color:#082980;
+ text-align: center;
+ transition: 0.15s ease-in-out;
+ position: relative;
+ font-weight: 700;
 }
 
-.heaver-nav-link-home {
+.header-mobile-nav-link-home {
   color: #F92D12;
 }
-
-/*.nav-header-link::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: yellow;
-  transition: 0.15s ease-in-out;
-}*/
 
 .open-menu,
 .close-menu {
@@ -158,8 +147,6 @@
   transform: rotate(-45deg);
 }
 
-
-
 .login-mobile-container{
   display: flex;
   flex-direction: column;
@@ -173,8 +160,7 @@
  font-weight: 700;
 }
 
-.login-mobile-text-second {
-  
+.login-mobile-text-second {  
 }
 
 .login-mobile-text-third {
@@ -188,72 +174,12 @@
   font-weight: 400;
 }
 
-.header-login-container {
+.header-mobile-login-container {
   display: none;
 }
 
-.header-search-container{
+.header-mobile-search-container{
   display: none;
 }
 
-/*
--- CLASS NAMES AND LAYOUT HAVE BEEN CHANGED SINCE THIS --
 
-CSS FROM homepage-desktop.css 
-
-.header-container {
-  display: grid;
-  grid-template: repeat(2,auto) / repeat(8,1fr);
-  background-color: var(--light-perimary);
-  width: 100%;
-  font-size: 2rem;
-}
-
-.logo-container { 
-  grid-column: 1/2;
-  grid-row: 1/3;
-  justify-self: start;
-  align-self: center;
-}
-
-.logo-text{
-  background-color: var(--white);
-}
-
-.nav-header-container {
-  grid-column: 2/7;
-  grid-row: 1/3;
-  list-style: none;
-  width:100%;
-  justify-self: start;
-  align-self: center;
-}
-
-.header-nav-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  grid-column-gap: 8%;
-  list-style: none;
-  text-decoration: none;
-}
-
-.nav-header-link {
-  text-decoration: none;
-  background-color: var(--white);
-}
-
-.login-container {
-  grid-column: 7/9;
-  grid-row: 1/2;
-  justify-self: end;
-  align-self: center;
-}
-
-.search-container {
-  grid-column: 7/9;
-  grid-row: 2/3;
-  justify-self: end;
-  align-self: center;
-}
-*/
