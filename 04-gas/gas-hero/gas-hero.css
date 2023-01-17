@@ -89,7 +89,7 @@
 .gas-hero-title-container{
   display: grid;
   align-content: start;
-  row-gap: var(--title-container-row-gap-mobile);
+  row-gap: var(--title-container-row-gap-mobile);/*this needs to look if its worth to have global.in this page just use once*/
 }
 
 @media (min-width: 600px){
