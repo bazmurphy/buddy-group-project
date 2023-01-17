@@ -202,7 +202,7 @@
 
 .header-desktop-container{
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-columns: 2fr 5fr 1fr 2fr;
   grid-template-rows: repeat(3,auto);
   grid-template-areas: 
   "header-desktop-logo-container . .  header-desktop-login-container "
@@ -251,7 +251,7 @@
 .header-desktop-nav-list{
  display: flex;
  flex-direction: row;
- justify-content: space-between;
+ justify-content: space-evenly;
  list-style: none;
  padding-left: 0;
 }
