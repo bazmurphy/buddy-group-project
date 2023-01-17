@@ -29,8 +29,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-  "gas-section-seven-copy-container"
-  "gas-section-seven-image-container";
+  "gas-section-seven-image-container"
+  "gas-section-seven-copy-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   padding: var(--subcontainer-padding-mobile);
