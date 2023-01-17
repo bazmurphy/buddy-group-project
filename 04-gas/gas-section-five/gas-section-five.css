@@ -42,7 +42,7 @@
   .gas-section-five-subcontainer{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "gas-section-five-copy-container gas-section-five-image-container";
+    "gas-section-five-image-container gas-section-five-copy-container";
     column-gap: var(--subcontainer-column-gap-desktop);
     padding: var(--subcontainer-padding-desktop);
   }
@@ -75,7 +75,7 @@
 .gas-section-five-title {
   display: flex;
   flex-direction: column;
-  row-gap: var(--title-container-row-gap-mobile);
+  row-gap: var(--gas-title-row-gap-mobile);
   text-align: center;
   font-size: var(--gas-title-font-size-mobile);
   font-weight: var(--gas-title-font-weight-mobile);
@@ -84,7 +84,7 @@
 @media (min-width: 600px) {
   .gas-section-five-title {
     flex-direction: row;
-    column-gap: var(--title-container-column-gap-desktop);
+    column-gap: var(--gas-title-column-gap-desktop);
     row-gap: none;
     text-align: left;
     font-size: var(--gas-title-font-size-desktop);
