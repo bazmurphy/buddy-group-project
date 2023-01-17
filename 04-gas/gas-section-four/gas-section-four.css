@@ -58,9 +58,9 @@
 }
 
 .gas-section-four-title-container {
- grid-area: gas-section-four-title-container;
- display: grid;
- align-content: start;
+  grid-area: gas-section-four-title-container;
+  display: grid;
+  align-content: start;
 }
 
 @media (min-width:600px){
@@ -72,7 +72,7 @@
 .gas-section-four-title {
   display: flex;
   flex-direction: column;
-  row-gap: var(--title-container-row-gap-mobile);
+  row-gap: var(--gas-title-row-gap-mobile);
   text-align: center;
   font-size: var(--gas-title-font-size-mobile);
   font-weight: var(--gas-title-font-weight-mobile);
@@ -81,7 +81,7 @@
 @media (min-width:600px){
   .gas-section-four-title {
     flex-direction: row;
-    column-gap: var(--title-container-column-gap-desktop);
+    column-gap: var(--gas-title-column-gap-desktop);
     row-gap: none;
     text-align: left;
     font-size: var(--gas-title-font-size-desktop);
