@@ -125,9 +125,10 @@
 .gas-section-five-image-container {
   grid-area: gas-section-five-image-container;
   display: grid;
+  justify-content: center; 
   align-content: start;
   background-color: var(--level3-background-color);
-  justify-content: center; 
+
 }
 
 @media (min-width: 600px) {
