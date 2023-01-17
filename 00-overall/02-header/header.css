@@ -194,6 +194,7 @@
 .header-desktop-container,
 .header-desktop-logo-container,
 .header-desktop-nav-container,
+.header-desktop-nav-list,
 .header-desktop-login-container,
 .header-desktop-search-container{
   border: var(--temporary-border);
@@ -201,14 +202,16 @@
 
 .header-desktop-container{
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: 1fr 3fr 1fr 1fr;
   grid-template-rows: repeat(3,auto);
   grid-template-areas: 
-  "header-desktop-logo-container . . . . header-desktop-login-container "
-  "header-desktop-logo-container header-desktop-nav-container header-desktop-nav-container header-desktop-nav-container . . "
-  "header-desktop-logo-container . . . . header-desktop-search-container";
+  "header-desktop-logo-container . .  header-desktop-login-container "
+  "header-desktop-logo-container . . header-desktop-search-container"
+  ". header-desktop-nav-container . .";
   background-color: var(--dark-blue);
 }
+
+/****LOGO CONTAINER****/
 
 .header-desktop-logo-container {
  grid-area: header-desktop-logo-container;
@@ -219,14 +222,12 @@
 .header-desktop-logo-image-container {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  /* ^to space them out over the central text */
+  gap: 12px; 
 }
 
 .header-desktop-logo-image {
   width: 16px;
   height: 22px;
-  /* ^to maintain a decent ratio for the images */
 }
 
 .header-desktop-logo {
@@ -240,36 +241,60 @@
   font-weight: 600;
 }
 
+/******NAV CONTAINER*****/
+
 .header-desktop-nav-container{
   grid-area: header-desktop-nav-container;
+  justify-content: center;
 }
 
 .header-desktop-nav-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ list-style: none;
+ padding-left: 0;
 }
 
-
 .header-desktop-nav-link {
- display: inline-block;
  text-decoration: none;
  color:#FFFFFF;
  text-align: center;
- transition: 0.15s ease-in-out;
- position: relative;
  font-weight: 700;
 }
 
+/*****LOGIN CONTAINER *****/
 
 .header-desktop-login-container{
   grid-area: header-desktop-login-container;
+  display: flex;
+  justify-content: flex-end;
 }
+
+/******SEARCH CONTAINER****/
 
 .header-desktop-search-container{
   grid-area: header-desktop-search-container;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header-form-desktop{
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+
+.fa-magnifying-glass{
+  position: absolute;
+  left: 2px;
+  color: gray;
+  align-self: center;
+}
+
+.header-input-search-desktop{
+  border: none;
+  width: 100%;
 }
 }
