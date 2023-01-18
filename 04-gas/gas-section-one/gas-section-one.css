@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  row-gap: var(--title-container-row-gap-mobile);
+  row-gap: var(--gas-title-row-gap-mobile);
   font-size: var(--gas-title-font-size-mobile);
   font-weight: var(--gas-title-font-weight-mobile);
 }
@@ -86,7 +86,7 @@
     flex-direction: row;
     row-gap: none;
     text-align: left;
-    column-gap: var(--title-container-column-gap-desktop);
+    column-gap: var(--gas-title-column-gap-desktop);
     font-size: var(--gas-title-font-size-desktop);
     font-weight: var(--gas-title-font-weight-desktop);
   }
