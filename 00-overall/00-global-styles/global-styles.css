@@ -37,6 +37,27 @@ body {
   --level2-background-color: hsl(190, 60%, 90%); /* subcontainer */
   --level3-background-color: hsl(190, 65%, 95%); /* image-container & copy-container */
 
+  /* UX/UI additions */
+
+  --home-hero-container-background-image: linear-gradient(#f9f9f9,#a3e1f2);
+  --home-hero-copy-container-background-color: #82daf2;
+
+  --container-offset-right-border-radius-desktop: 30px 0 0 30px;
+
+  --site-hero-copy-container-padding-desktop: 60px 0 60px 30px;
+  --site-hero-copy-container-padding-mobile: 0px 30px;
+  --site-hero-container-padding-mobile: 30px 30px;
+
+  --site-hero-text-container-padding-mobile: 20px 15px 20px 0;
+  --site-hero-text-container-padding-desktop: 20px 50px 10px 30px;
+  --site-hero-copy-container-border-radius-mobile: 30px;
+
+  --site-container-box-shadow-mobile: -10px 10px 10px 10px #acacb1;
+  --site-container-box-shadow-desktop: -10px 10px 10px #acacb1;
+
+  --site-container-row-gap-mobile: 20px;
+
+
   /* container */
   --container-padding-mobile: 15px;
   --container-padding-desktop: 30px;
