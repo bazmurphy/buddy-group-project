@@ -1,0 +1,195 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url("../../00-overall/00-global-styles/global-styles.css");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.header-container,
+.header-logo-container,
+.header-logo-image-container,
+.header-logo-image,
+.header-logo-text,
+.header-nav-desktop-container,
+.header-nav-desktop-list,
+.header-nav-desktop-list-item,
+.header-nav-desktop-link,
+.header-nav-mobile-container,
+.header-nav-mobile-circle,
+.header-nav-mobile-line,
+.header-functionality-container,
+.header-login-container,
+.header-login-text,
+.header-login-icon,
+.header-search-container,
+.header-search-input {
+  border: 1px dotted yellow;
+}
+
+.header-container {
+  background-color: var(--dark-blue);
+  display: grid;
+  grid-template-columns: 200px auto minmax(auto, 100px);
+  grid-template-rows: 60px;
+  grid-template-areas: 
+    "header-logo-container . header-nav-mobile-container";
+}
+
+@media (min-width: 600px) {
+  .header-container {
+    grid-template-columns: 200px auto minmax(auto, 180px);
+    grid-template-rows: 30px 30px;
+    grid-template-areas: 
+      "header-logo-container . header-functionality-container"
+      "header-logo-container header-nav-desktop-container header-functionality-container";
+  }
+}
+
+.header-logo-container {
+  grid-area: header-logo-container;
+
+  display: grid;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.header-logo-image-container {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  gap: 10px;
+}
+
+.header-logo-image {
+  display: block;
+  max-width: 100%;
+  max-height: 24px;
+  /* transform: rotate(10deg); */
+}
+
+.header-logo-text {
+  color: var(--red);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.header-logo-text-highlight {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.header-nav-mobile-container {
+  grid-area: header-nav-mobile-container;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 600px) {
+  .header-nav-mobile-container {
+    display: none;
+  }
+}
+
+.header-nav-mobile-circle {
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  row-gap: 9px;
+  cursor: pointer;
+}
+
+.header-nav-mobile-line {
+  width: 32px;
+  height: 3px;
+  background-color: var(--white);
+}
+
+.header-nav-desktop-container {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .header-nav-desktop-container {
+    grid-area: header-nav-desktop-container;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 7fr minmax(0, 2fr);
+    grid-template-areas: ". header-nav-desktop-list .";
+  }
+}
+
+.header-nav-desktop-list {
+  grid-area: header-nav-desktop-list;
+
+  list-style: none;
+  padding: 0;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.header-nav-desktop-list-item {
+  text-align: center;
+}
+
+.header-nav-desktop-link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.header-functionality-container {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .header-functionality-container {
+    grid-area: header-functionality-container;
+    display: grid;
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+}
+
+.header-login-container {
+  display: grid;
+  justify-content: center;
+}
+
+.header-login-link {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content: center;
+  column-gap: 10px;
+
+  text-decoration: none;
+}
+
+.header-login-text {
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.header-login-icon {
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.header-search-container {
+  
+}
+
+.header-search-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
