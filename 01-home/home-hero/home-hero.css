@@ -19,13 +19,13 @@
   /* background-color: var(--level1-background-color); */
   /* changes below by ux/ui */
   background-image: var(--home-hero-container-background-image);
-  padding: var(--site-hero-container-padding-mobile);
+  padding: var(--site-hero-container-padding-zero-right-mobile);
 }
 
 @media (min-width: 600px) {
   .home-hero-container {
     /* padding: var(--container-padding-desktop); */
-    padding: var(--site-hero-copy-container-padding-desktop);
+    padding: var(--site-hero-container-padding-zero-right-desktop);
   }
 }
 
@@ -38,7 +38,8 @@
 
 @media (min-width: 600px) {
   .home-hero-subcontainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
+    /* grid-template-columns: repeat(1fr, 2fr); */
     column-gap: var(--subcontainer-column-gap-desktop);
   }
 }
@@ -73,13 +74,14 @@
   align-content: start;
   /* row-gap: var(--copy-container-row-gap-mobile); */
   
-  padding: var(--copy-container-padding-mobile);
+  /* padding: var(--copy-container-padding-mobile); */
   /*border: 1px solid black;
   background-color: var(--level3-background-color); */
   /*additions made by ux/ui */
-  /* padding: var(--site-hero-copy-container-padding-mobile);*/
-  background-color: var(--home-hero-copy-container-background-color);
-  border-radius: var(--site-hero-copy-container-border-radius-mobile);
+  padding: var(--site-hero-container-padding-zero-right-mobile);
+  background-image: var(--home-hero-copy-container-background-image);
+  border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
+  box-shadow: var(--site-container-box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
@@ -88,7 +90,7 @@
     /* ^I presume the copy should be centered? */
     row-gap: var(--copy-container-row-gap-desktop);
     /* padding: var(--copy-container-padding-desktop); */
-    padding: var( --site-hero-copy-container-padding-desktop);
+    /* padding: var( --site-hero-copy-container-padding-desktop); */
     border-radius: var(--container-offset-right-border-radius-desktop);
     box-shadow: var(--site-container-box-shadow-desktop);
   }
