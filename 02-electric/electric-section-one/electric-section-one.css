@@ -27,15 +27,16 @@
 .electric-section-one-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: var(--subcontainer-container-row-gap-mobile);
+  row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
+  border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
 }
 
 @media (min-width: 600px){
   .electric-section-one-subcontainer {
-    padding: var(--subcontainer-padding-desktop);
     row-gap: var(--subcontainer-row-gap-desktop);
+    padding: var(--subcontainer-padding-desktop);
   }
 }
 
@@ -66,7 +67,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "electric-section-one-subsection-image-contasubsectioniner"
+    "electric-section-one-subsection-image-container"
     "electric-section-one-subsection-copy-container";
   row-gap: var(--subsection-container-row-gap-mobile);
   column-gap: none;
