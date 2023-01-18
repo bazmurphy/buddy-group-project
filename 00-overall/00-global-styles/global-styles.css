@@ -21,7 +21,7 @@ body {
   
   /* TEMPLATE for global variables */
   --page-element-subelement-cssproperty-mobiledesktop: 0;
-  
+
   /* site colours */
   --white: #FFFFFF;
   --dark-blue:#004DD6;
@@ -65,7 +65,7 @@ body {
   --subsection-container-border-desktop: 1px solid black;
    
   --subsection-container-row-gap-mobile: 15px;
-  --subsection-container-row-gap-desktop: 30px;
+  --subsection-container-row-gap-desktop: 25px;
   
   --subsection-container-column-gap-mobile: 15px;
   --subsection-container-column-gap-desktop: 30px;
