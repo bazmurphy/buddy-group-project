@@ -18,48 +18,51 @@ body {
 }
 
 :root {
+  
+  /* TEMPLATE for global variables */
+  --page-element-subelement-cssproperty-mobiledesktop: 0;
+  
+  /* site colours */
   --white: #FFFFFF;
   --dark-blue:#004DD6;
   --red:#FF4242;
   --light-gray:#D9D9D9;
   --light-blue:#CBE9FA;
 
+  /* use temporarily to see box models and scaling */
+  --temporary-border: 1px dotted black;
+
+  /* background colours */
+  --level1-background-color: hsl(190, 55%, 85%); /* container */
+  --level2-background-color: hsl(190, 60%, 90%); /* subcontainer */
+  --level3-background-color: hsl(190, 65%, 95%); /* image-container & copy-container */
+
+  /* container */
   --container-padding-mobile: 15px;
   --container-padding-desktop: 30px;
 
-  --subcontainer-padding-mobile: 15px;
-  --subcontainer-padding-desktop: 30px;
-  /* ^created these and gave them random numbers */
-  
   --container-border-mobile: 1px solid black;
   --container-border-desktop: 1px solid black;
 
+  /* subcontainer */
+  --subcontainer-padding-mobile: 15px;
+  --subcontainer-padding-desktop: 30px;
+
   --subcontainer-border-mobile: 1px solid black;
-  --container-border-desktop: 1px solid black;
-  /* ^we need to rethink both of these... across the whole site... */
+  --subcontainer-border-desktop: 1px solid black;
+
+  --subcontainer-row-gap-mobile: 15px;
+  --subcontainer-row-gap-desktop: 30px;
+
+  --subcontainer-row-gap-mobile: 15px;
+  --subcontainer-column-gap-desktop: 30px;
+
+  /* subsection */
+  --subsection-container-padding-mobile: 15px;
+  --subsection-container-padding-desktop: 30px;
 
   --subsection-container-border-mobile: 1px solid black;
   --subsection-container-border-desktop: 1px solid black;
-
-  --temporary-border: 1px dotted black; /* everything */
-  /* ^use temporarily to see box models and scaling */
-
-  --level1-background-color: hsl(190, 55%, 85%); /* container */
-  --level2-background-color: hsl(190, 60%, 90%); /* subcontainer */
-  --level3-background-color: hsl(190, 65%, 95%); /* image-container + copy-container */
-  /* ^use temporarily to see box models and scaling*/
-
-  --subcontainer-row-gap-mobile: 15px;
-  /* ^gap between the image container and copy container in the grid */
-
-  --subcontainer-row-gap-desktop: 30px;
-  /* ^this is needed on home-section-four */
-
-  --subcontainer-column-gap-desktop: 30px;
-  /* ^gap between the image container and copy container in the grid */
-
-  --subsection-container-padding-mobile: 15px;
-  --subsection-container-padding-desktop: 30px;
    
   --subsection-container-row-gap-mobile: 15px;
   --subsection-container-row-gap-desktop: 30px;
@@ -67,35 +70,51 @@ body {
   --subsection-container-column-gap-mobile: 15px;
   --subsection-container-column-gap-desktop: 30px;
 
+  /* copy-container */
   --copy-container-padding-mobile: 15px;
   --copy-container-padding-desktop: 30px;
 
   --copy-container-row-gap-mobile: 15px;
   --copy-container-row-gap-desktop: 30px;
-  /* ^gap between each element in copy-container */
 
+  /* title-container */
+  --title-container-row-gap-mobile: 10px;
+  --title-container-row-gap-desktop: 20px;
+
+  /* title */
   --title-font-size-mobile: 20px;
   --title-font-size-desktop: 22px;
 
   --title-font-weight-mobile: 600;
   --title-font-weight-desktop: 600;
 
+  /* subtitle */
   --subtitle-font-size-mobile: 18px;
   --subtitle-font-size-desktop: 20px;
 
   --subtitle-font-weight-mobile: 500;
   --subtitle-font-weight-desktop: 500;
 
+  /* paragraph-container */
   --paragraph-container-row-gap-mobile: 10px;
   --paragraph-container-row-gap-desktop: 20px;
-  /* ^changes the size of the row-gap on the paragraph-containers */
 
+  /* paragraph */
   --paragraph-font-size-mobile: 14px;
   --paragraph-font-size-desktop: 16px;
 
   --paragraph-font-weight-mobile: 400;
   --paragraph-font-weight-desktop: 400;
 
+  /* list */
+  
+
+
+  /* list-item */
+
+
+
+  /* link */
   --link-color-mobile: #000000;
   --link-color-desktop: #000000;
 
@@ -105,6 +124,9 @@ body {
   --link-padding-mobile: 5px 10px;
   --link-padding-desktop: 8px 16px;
 
+
+  /* TRY TO REMOVE ALL OF THESE BELOW HERE */
+  
   --title-size-mobile: 20px; /* --title-font-size-mobile */
   --subtitle-size-mobile:18px; /* --subtitle-font-size-mobile */
   --content-size-paragraph-mobile: 14px; /* --paragraph-font-weight-mobile */
@@ -112,9 +134,6 @@ body {
 
   --items-gap-mobile:15px;
   /* ^this needs removing, but converting everything that uses it before */
-
-  --page-element-cssproperty-mobiledesktop: 0;
-    /* ^ this is the template for global variables */
 
   --title-width-mobile:140px;
   --title-height-mobile:40px;
@@ -135,14 +154,6 @@ body {
 .bold {
   font-weight: bold;
   /* ^this could be a specific font weight like 600-700-800-900 */
-}
-
-.visible-true {
-  display: grid;
-}
-
-.visible-false {
-  display: none;
 }
 
 .mibox {
