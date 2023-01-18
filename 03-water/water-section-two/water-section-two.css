@@ -5,6 +5,7 @@
 .water-section-two-subtitle,
 .water-section-two-subsection-container,
 .water-section-two-subsection-image-container,
+.water-section-two-subsection-copy-container,
 .water-section-two-subsection-image,
 .water-section-two-subsection-subtitle,
 .water-section-two-subsection-list,
@@ -17,6 +18,12 @@
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
   background-color: var(--level1-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-two-container {
+    padding: var(--container-padding-desktop);
+  }
 }
 
 .water-section-two-subcontainer {
