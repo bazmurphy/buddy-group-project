@@ -44,7 +44,7 @@
     "electric-section-four-subsection-two-container"
     "electric-section-four-subsection-three-container";
   justify-content: center;
-  row-gap: var(--subcontainer-container-row-gap-mobile);
+  row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   padding: var(--subcontainer-padding-mobile);
   border: var(--subcontainer-border-mobile);

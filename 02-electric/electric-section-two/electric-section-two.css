@@ -27,7 +27,7 @@
 .electric-section-two-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: var(--subcontainer-container-row-gap-mobile);
+  row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
   border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
