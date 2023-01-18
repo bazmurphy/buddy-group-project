@@ -27,9 +27,8 @@
 .electric-section-one-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: var(--subsection-container-row-gap-mobile);
+  row-gap: var(--subcontainer-container-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
-  border: var(--subcontainer-border-mobile);
   background-color: var(--level2-background-color);
 }
 
@@ -73,7 +72,7 @@
   column-gap: none;
   /* ^for the media query after */
   padding: var(--subsection-container-padding-mobile);
-  border: var(--subsection-border-mobile);
+  /* border: var(--subsection-border-mobile); */
   background-color: var(--level3-background-color);
 }
 
