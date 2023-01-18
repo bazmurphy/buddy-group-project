@@ -1,127 +1,184 @@
 .water-section-three-container,
-.water-section-three-image-container,
-.water-section-three-image,
+.water-section-three-subcontainer,
+.water-section-three-title-container,
 .water-section-three-title,
 .water-section-three-subtitle,
-.water-section-three-collapsible-subcontainer-one,
-.water-section-three-collapsible-title,
-.water-section-three-collapsible-subtitle,
-.water-section-three-collapsible-paragraph,
-.water-section-three-collapsible-list,
-.water-section-three-collapsible-list-item,
-.water-section-three-collapsible-image-container,
-.water-section-three-collapsible-image,
-.water-section-three-collapsible-image-small-container,
-.water-section-three-collapsible-image-small {
-  border: 1px dotted black;
+.water-section-three-subsection-container,
+.water-section-three-subsection-image-container,
+.water-section-three-subsection-image,
+.water-section-three-subsection-copy-container,
+.water-section-three-subsection-subtitle,
+.water-section-three-subsection-list,
+.water-section-three-subsection-list-item {
+  border: var(--temporary-border);
 }
 
 .water-section-three-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  row-gap: 30px;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-three-container {
+    padding: var(--container-padding-desktop);
+  }
 }
 
 .water-section-three-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  row-gap: 15px;
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  border: 1px solid black;
-  
-  cursor: pointer;
-  /* ^neccessary to prompt user to click? UX Design? */
+  grid-template-areas: 
+    "water-section-three-title-container";
+  align-content: start;
+  row-gap: var(--subcontainer-row-gap-mobile);
+  padding: var(--subcontainer-padding-mobile);
+  background-color: var(--level2-background-color);
 }
 
-.water-section-three-image-container {
-  /* background-color: lightblue; */
-  /* ^so you can see if the image is scaling correctly */
+@media (min-width: 600px) {
+  .water-section-three-subcontainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "water-section-three-title-container water-section-three-title-container water-section-three-title-container";
+    row-gap: var(--subcontainer-row-gap-desktop);
+    column-gap: var(--subcontainer-column-gap-desktop);
+  }
 }
 
-.water-section-three-image {
-  display: block;
-  width: 100%;
-  /* background-color: gray; */
-  /* ^placeholder colour until actual image */
+.water-section-three-title-container {
+  grid-area: water-section-three-title-container;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--title-container-row-gap-mobile);
+  /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-three-title-container {
+    row-gap: var(--title-container-row-gap-desktop);
+      /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
+  }
 }
 
 .water-section-three-title {
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  /* ^to offset the bolded text */
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-three-title {
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
 }
 
 .water-section-three-subtitle {
-  /* text-align: center; */
-  /* font-size: 1.3rem; */
-  font-size: 1.35rem;
-  font-weight: 400;
+  text-align: center;
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
 }
 
-.water-section-three-collapsible-subcontainer-one {
-  display: none;
+@media (min-width: 600px) {
+  .water-section-three-subtitle {
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
+  }
+}
+
+.water-section-three-subsection-container {
+  display: grid;
   grid-template-columns: 1fr;
-  row-gap: 15px;
-  padding: 40px 30px;
-  border: 1px solid black;
+  align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
+  /* border: var(--subsection-container-border-mobile); */
+  /* ^ in figma this has no border */
+  background-color: var(--level3-background-color);
+  /* border-bottom: 1px solid black; */
+  /* ^ in figma they have a border on the bottom */
 }
 
-.water-section-three-collapsible-title {
-
+@media (min-width: 600px) {
+  .water-section-three-subsection-container {
+    row-gap: var(--subsection-container-row-gap-desktop);
+    padding: var(--subsection-container-padding-desktop);
+    /* border: var(--subsection-container-border-desktop); */
+    /* ^ in figma this has no border */
+  }
 }
 
-.water-section-three-collapsible-subtitle {
-
+.water-section-three-subsection-image-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
-.water-section-three-collapsible-paragraph {
+@media (min-width: 600px) {
+  .water-section-three-subsection-image-container {
 
+  }
 }
 
-.water-section-three-collapsible-list {
 
-}
-
-.water-section-three-collapsible-list-item {
-
-}
-
-.water-section-three-collapsible-image-container {
-  /* background-color: lightblue; */
-}
-
-.water-section-three-collapsible-image {
-  display:  block;
+.water-section-three-subsection-image {
+  display: block;
   width: 100%;
-  height: 100%;
-  /* background-color: gray; */
 }
 
-.water-section-three-collapsible-subtitle {
-
+@media (min-width: 600px) {
+  .water-section-three-subsection-image {
+    
+  }
 }
 
-.water-section-three-collapsible-image-small-container {
-  float: right;
-  /* needed for text wrap */
-  width: 100px;
-  height: 100px;
-  /* ^temporary hardcoded size */
-  /* background-color: lightblue; */
+.water-section-three-subsection-copy-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--subsection-container-row-gap-mobile);
 }
 
-.water-section-three-collapsible-image-small {
-  display:  block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* background-color: gray; */
+@media (min-width: 600px) {
+  .water-section-three-subsection-copy-container {
+    row-gap: var(--subsection-container-row-gap-desktop);
+  }
+}
+
+.water-section-three-subsection-subtitle {
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-three-subsection-subtitle {
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
+  }
+}
+
+.water-section-three-subsection-list {
+  /* do we want to space out the bullet points(?) */
+  padding-left: 20px;
+  /* ^ this needs to be a global variable */
+}
+
+@media (min-width: 600px) {
+  .water-section-two-subsection-list {
+
+  }
+}
+
+.water-section-three-subsection-list-item {
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-two-subsection-list-item {
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
