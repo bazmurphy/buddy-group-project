@@ -8,18 +8,20 @@
 .water-hero-paragraph-container,
 .water-hero-paragraph {
   border: var(--temporary-border);
+  border: none;
 }
 
 .water-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  padding: var(--site-hero-container-padding-zero-right-mobile);
+  /* background-color: var(--level1-background-color); */
+  background-image: var(--water-hero-container-background-image);
 }
 
 @media (min-width: 600px) {
   .water-hero-container {
-    padding: var(--container-padding-desktop);
+    padding: var(--site-hero-container-padding-zero-right-desktop);
   }
 }
 
@@ -30,8 +32,8 @@
     "water-hero-image-container"
     "water-hero-copy-container";
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  /* padding: var(--subcontainer-padding-mobile); */
+  /* background-color: var(--level2-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -43,7 +45,7 @@
     "water-hero-image-container water-hero-copy-container";
     row-gap: none;
     column-gap: var(--subcontainer-column-gap-desktop);
-    padding: var(--subcontainer-padding-desktop);
+    /* padding: var(--subcontainer-padding-desktop); */
   }
 }
 
@@ -52,7 +54,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: var(--level3-background-color);
+  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -75,15 +77,40 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  padding: var(--copy-container-padding-mobile);
-  background-color: var(--level3-background-color);
+  /* padding: var(--copy-container-padding-mobile); */
+  /*border: 1px solid black;
+  background-color: var(--level3-background-color); */
+  /*additions made by ux/ui */
+  padding: var(--site-hero-container-padding-zero-right-mobile);
+  background-image: var(--water-hero-copy-container-background-image);
+  border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
+  box-shadow: var(--site-container-box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
   .water-hero-copy-container {
     align-content: center;
     row-gap: var(--copy-container-row-gap-desktop);
-    padding: var(--copy-container-padding-desktop);
+    /* padding: var(--copy-container-padding-desktop); */
+    border-radius: var(--container-offset-right-border-radius-desktop);
+    box-shadow: var(--site-container-box-shadow-desktop);
+    background-image: var(--water-hero-copy-container-background-image);
+  }
+}
+
+.water-hero-copy-text-container {
+  padding: var(--site-hero-text-container-padding-mobile);
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .water-hero-copy-text-container {
+    padding: var(--site-hero-text-container-padding-desktop);
+    align-items: flex-start;
   }
 }
 
