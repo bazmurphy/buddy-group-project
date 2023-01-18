@@ -88,6 +88,9 @@ body {
   --title-font-weight-mobile: 600;
   --title-font-weight-desktop: 600;
 
+  --gas-title-row-gap-mobile:10px;
+  --gas-title-column-gap-desktop:15px;
+
   /* subtitle */
   --subtitle-font-size-mobile: 18px;
   --subtitle-font-size-desktop: 20px;
