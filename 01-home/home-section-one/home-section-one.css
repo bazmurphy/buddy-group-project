@@ -22,8 +22,10 @@
   /* ^in this rare case the container needs a row gap for mobile */
   column-gap: none;
   /* ^in this rare case the container needs a column gap for desktop */
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  /* padding: var(--container-padding-mobile); */
+  /* background-color: var(--level1-background-color); */
+  background-color: var(--home-section-lightblue-background-color);
+  /* padding: 30px; */
 }
 
 @media (min-width: 600px) {
@@ -35,7 +37,8 @@
     /* ^in this rare case the container needs a row gap for mobile */
     column-gap: 30px;
     /* ^in this rare case the container needs a column gap for desktop */
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: var(--home-section-one-sub-container-padding-desktop);
   }
 }
 
@@ -46,7 +49,9 @@
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
   border: var(--subcontainer-border-mobile);
-  background-color: var(--level2-background-color);
+  /* background-color: var(--level2-background-color); */
+  background-image: var(--home-section-midblue-background-image);
+  box-shadow: var( --site-container-box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
@@ -58,21 +63,32 @@
 
 .home-section-one-subcontainer-one {
   grid-area: home-section-one-subcontainer-one;
+  border-radius: var(--home-section-one-sub-container-one-border-radius);
+  padding: var(--site-hero-container-padding-zero-left-mobile); 
+  padding: var(--site-copy-container-padding-mobile);
+  border: 2px dotted red;
+  margin: 30px 30px 30px 0;
 }
 
 .home-section-one-subcontainer-two {
   grid-area: home-section-one-subcontainer-two;
+  border-radius: var(--home-section-one-sub-container-two-border-radius);
+  padding: var(--site-copy-container-padding-mobile);
+  margin: 30px 30px 30px 30px;
 }
 
 .home-section-one-subcontainer-three {
   grid-area: home-section-one-subcontainer-three;
+  border-radius: var(--home-section-one-sub-container-three-border-radius);
+  padding: var(--site-copy-container-padding-mobile);
+  margin: 30px 0 30px 30px;
 }
 
 .home-section-one-image-container {
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: var(--level3-background-color);
+  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -96,7 +112,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--subcontainer-row-gap-mobile);
-  background-color: var(--level3-background-color);
+  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {

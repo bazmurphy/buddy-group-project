@@ -81,10 +81,10 @@
   /*border: 1px solid black;
   background-color: var(--level3-background-color); */
   /*additions made by ux/ui */
-  padding: var(--site-hero-container-padding-zero-right-mobile);
   background-image: var(--water-hero-copy-container-background-image);
   border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
   box-shadow: var(--site-container-box-shadow-mobile);
+  padding: var(--site-copy-container-padding-mobile);
 }
 
 @media (min-width: 600px) {
