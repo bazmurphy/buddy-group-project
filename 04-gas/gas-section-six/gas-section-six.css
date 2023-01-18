@@ -119,7 +119,7 @@
 
 .gas-section-six-subtitle{
   text-align: center;
-  font-size: 16;
+  font-size: 16px;
   font-weight: 500;/*temporary, must be discussed with Karleen*/
 }
 
@@ -143,4 +143,13 @@
   font-size: var(--paragraph-font-size-desktop);
   font-weight: var(--paragraph-font-weight-desktop);
  }
+}
+
+.gas-link{
+  color: inherit;
+}
+
+@media (min-width: 600px) {
+  .gas-link {
+  }
 }
