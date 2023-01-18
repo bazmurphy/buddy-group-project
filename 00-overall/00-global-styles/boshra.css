@@ -1,0 +1,10 @@
+:root {
+  /* CHECK YOUR GLOBAL STYLE DOES NOT ALREADY EXIST */
+  /* THEN PUT NEW GLOBAL STYLES HERE */
+  
+  --gas-title-font-size-mobile: ;
+  --gas-title-font-size-desktop: ;
+
+  --gas-title-font-weight-desktop: ;
+  --gas-title-font-weight-mobile: ;
+}

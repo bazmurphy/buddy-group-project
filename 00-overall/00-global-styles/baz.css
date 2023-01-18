@@ -1,0 +1,13 @@
+:root {
+  /* CHECK YOUR GLOBAL STYLE DOES NOT ALREADY EXIST */
+  /* THEN PUT NEW GLOBAL STYLES HERE */
+  
+  --subsection-container-row-gap-mobile: 15px;
+  --subsection-container-column-gap-desktop: 30px;
+
+  --subsection-container-padding-mobile: 15px;
+  --subsection-container-padding-desktop: 30px;
+  
+  --subsection-container-border-mobile: 1px solid black;
+  --subsection-container-border-desktop: 1px solid black;
+}
