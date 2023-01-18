@@ -120,3 +120,12 @@
     font-weight: var(--paragraph-font-weight-desktop);
   }
 }
+
+.gas-link{
+  color: inherit;
+}
+
+@media (min-width: 600px) {
+  .gas-link {
+  }
+}
