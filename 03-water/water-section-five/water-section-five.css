@@ -1,129 +1,144 @@
 .water-section-five-container,
+.water-section-five-subcontainer,
+.water-section-five-subsection-container,
 .water-section-five-image-container,
 .water-section-five-image,
+.water-section-five-title-container,
 .water-section-five-title,
-.water-section-five-subtitle,
-.water-section-five-collapsible-subcontainer-one,
-.water-section-five-collapsible-title,
-.water-section-five-collapsible-subtitle,
-.water-section-five-collapsible-paragraph,
-.water-section-five-collapsible-list,
-.water-section-five-collapsible-list-item,
-.water-section-five-collapsible-image-container,
-.water-section-five-collapsible-image,
-.water-section-five-collapsible-image-small-container,
-.water-section-five-collapsible-image-small {
-  border: 1px dotted black;
+.water-section-five-copy-container,
+.water-section-five-paragraph-container,
+.water-section-five-paragraph {
+  border: var(--temporary-border);
 }
 
 .water-section-five-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  row-gap: 30px;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-five-container {
+    padding: var(--container-padding-desktop);
+  }
 }
 
 .water-section-five-subcontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  row-gap: 15px;
-  column-gap: 15px;
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  border: 1px solid black;
-  
-  cursor: pointer;
-  /* ^neccessary to prompt user to click? UX Design? */
+  grid-template-columns: 1fr;
+  row-gap: var(--subcontainer-row-gap-mobile);
+  padding: var(--subcontainer-padding-mobile);
+  background-color: var(--level2-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-five-subcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--subcontainer-column-gap-desktop);
+    padding: var(--subcontainer-padding-desktop);
+  }
+}
+
+.water-section-five-subsection-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
+  border: var(--subsection-container-border-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-five-subsection-container {
+    row-gap: var(--subsection-container-row-gap-desktop);
+    padding: var(--subsection-container-padding-desktop);
+    border: var(--subsection-container-border-desktop);
+  }
 }
 
 .water-section-five-image-container {
-  /* background-color: lightblue; */
-  /* ^so you can see if the image is scaling correctly */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 600px) {
+  .water-section-five-image-container {
+
+  }
 }
 
 .water-section-five-image {
   display: block;
   width: 100%;
-  /* background-color: gray; */
-  /* ^placeholder colour until actual image */
+}
+
+@media (min-width: 600px) {
+  .water-section-five-image {
+    
+  }
+}
+
+.water-section-five-title-container {
+
+}
+
+@media (min-width: 600px) {
+  .water-section-five-title-container {
+    
+  }
 }
 
 .water-section-five-title {
-  align-self: center;
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  /* ^to offset the bolded text */
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
 }
 
-.water-section-five-subtitle {
-  /* text-align: center; */
-  /* font-size: 1.3rem; */
-  font-size: 1.35rem;
-  font-weight: 400;
+@media (min-width: 600px) {
+  .water-section-five-title {
+    text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
 }
 
-.water-section-five-collapsible-subcontainer-one {
-  display: none;
+.water-section-five-copy-container {
+  display: grid;
   grid-template-columns: 1fr;
-  row-gap: 15px;
-  padding: 40px 30px;
-  border: 1px solid black;
+  row-gap: var(--copy-container-row-gap-mobile);
 }
 
-.water-section-five-collapsible-title {
+@media (min-width: 600px) {
+  .water-section-five-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+  }
+}
+
+.water-section-five-paragraph-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-five-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
+}
+
+.water-section-five-paragraph {
   text-align: center;
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
 }
 
-.water-section-five-collapsible-subtitle {
-
-}
-
-.water-section-five-collapsible-paragraph {
-
-}
-
-.water-section-five-collapsible-list {
-
-}
-
-.water-section-five-collapsible-list-item {
-
-}
-
-.water-section-five-collapsible-image-container {
-  /* background-color: lightblue; */
-}
-
-.water-section-five-collapsible-image {
-  display:  block;
-  width: 100%;
-  height: 100%;
-  /* background-color: gray; */
-}
-
-.water-section-five-collapsible-subtitle {
-
-}
-
-.water-section-five-collapsible-image-small-container {
-  float: right;
-  /* needed for text wrap */
-  width: 100px;
-  height: 100px;
-  /* ^temporary hardcoded size */
-  /* background-color: lightblue; */
-}
-
-.water-section-five-collapsible-image-small {
-  display:  block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* background-color: gray; */
+@media (min-width: 600px) {
+  .water-section-five-paragraph {
+    text-align: left;
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
