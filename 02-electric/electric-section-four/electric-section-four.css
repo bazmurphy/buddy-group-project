@@ -95,15 +95,15 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
-  row-gap: var(--subsection-row-gap-mobile);
+  row-gap: var(--subsection-container-row-gap-mobile);
   border: var(--subsection-container-border-mobile);
-  padding: var(--subsection-padding-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-one-container {
-    padding: var(--subsection-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -185,15 +185,15 @@
   grid-area: electric-section-four-subsection-two-container;
   display: grid;
   align-content: start;
-  row-gap: var(--subsection-row-gap-mobile);
-  padding: var(--subsection-padding-mobile);
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container--padding-mobile);
   border: var(--subsection-container-border-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-two-container {
-    padding: var(--subsection-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -275,15 +275,15 @@
   grid-area: electric-section-four-subsection-three-container;
   display: grid;
   align-content: start;
-  row-gap: var(--subsection-row-gap-mobile);
-  padding: var(--subsection-padding-mobile);
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   border: var(--subsection-container-border-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-three-container {
-    padding: var(--subsection-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 

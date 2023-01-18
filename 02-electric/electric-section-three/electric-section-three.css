@@ -88,14 +88,15 @@
   grid-area: electric-section-three-subsection-one-container;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: var(--subsection-row-gap-mobile);
-  align-content: start; 
+  align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px) {
   .electric-section-three-subsection-one-container{
-    padding: var(--subsection-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -155,14 +156,15 @@
 .electric-section-three-subsection-two-container {
   grid-area:electric-section-three-subsection-two-container;
   display: grid;
-  row-gap: var(--subsection-row-gap-mobile);
   align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px) {
   .electric-section-three-subsection-two-container {
-    padding: var(--subsection-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -243,14 +245,15 @@
 .electric-section-three-subsection-three-container {
   grid-area:electric-section-three-subsection-three-container;
   display: grid;
-  row-gap: var(--subsection-row-gap-mobile);
   align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px) {
   .electric-section-three-subsection-three-container{
-    padding: var(--subsection-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
