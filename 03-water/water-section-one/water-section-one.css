@@ -1,133 +1,339 @@
 .water-section-one-container,
-.water-section-one-image-container,
-.water-section-one-image,
+.water-section-one-subcontainer,
+.water-section-one-title-container,
 .water-section-one-title,
 .water-section-one-subtitle,
-.water-section-one-collapsible-subcontainer-one,
-.water-section-one-collapsible-subcontainer-two,
-.water-section-one-collapsible-subcontainer-three,
-.water-section-one-collapsible-subcontainer-four,
-.water-section-one-collapsible-title,
-.water-section-one-collapsible-subtitle,
-.water-section-one-collapsible-paragraph,
-.water-section-one-collapsible-list,
-.water-section-one-collapsible-list-item,
-.water-section-one-collapsible-image-container,
-.water-section-one-collapsible-image,
-.water-section-one-collapsible-image-small-container,
-.water-section-one-collapsible-image-small {
-  border: 1px dotted black;
+.water-section-one-subsection-container,
+.water-section-one-subsection-copy-container,
+.water-section-one-subsection-title,
+.water-section-one-subsection-subtitle,
+.water-section-one-subsection-paragraph-container,
+.water-section-one-subsection-paragraph,
+.water-section-one-subsection-list,
+.water-section-one-subsection-list-item,
+.water-section-one-subsection-image-container,
+.water-section-one-subsection-image {
+  border: var(--temporary-border);
 }
 
 .water-section-one-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  row-gap: 30px;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-one-container {
+    padding: var(--container-padding-desktop);
+  }
 }
 
 .water-section-one-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  row-gap: 15px;
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  border: 1px solid black;
-  
-  cursor: pointer;
-  /* ^neccessary to prompt user to click? UX Design? */
+  row-gap: var(--subcontainer-row-gap-mobile);
+  padding: var(--subcontainer-padding-mobile);
+  background-color: var(--level2-background-color);
 }
 
-.water-section-one-image-container {
-  /* background-color: lightblue; */
-  /* ^so you can see if the image is scaling correctly */
+@media (min-width: 600px) {
+  .water-section-one-subcontainer {
+    row-gap: var(--subcontainer-row-gap-desktop);
+  }
 }
 
-.water-section-one-image {
-  display: block;
-  width: 100%;
-  /* background-color: gray; */
-  /* ^placeholder colour until actual image */
+.water-section-one-title-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  /* ^ title-container-row-gap- global variable? */
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-one-title-container {
+    row-gap: 20px;
+    /* ^ title-container-row-gap- global variable? */
+  }
 }
 
 .water-section-one-title {
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  /* ^to offset the bolded text */
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-one-title {
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
 }
 
 .water-section-one-subtitle {
-  /* text-align: center; */
-  /* font-size: 1.3rem; */
-  font-size: 1.35rem;
-  font-weight: 400;
+  text-align: center;
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
 }
 
-.water-section-one-collapsible-subcontainer-one,
-.water-section-one-collapsible-subcontainer-two,
-.water-section-one-collapsible-subcontainer-three,
-.water-section-one-collapsible-subcontainer-four {
-  display: none;
+@media (min-width: 600px) {
+  .water-section-one-subtitle {
+  font-size: var(--subtitle-font-size-desktop);
+  font-weight: var(--subtitle-font-weight-desktop);
+  }
+}
+
+.water-section-one-subsection-one-container,
+.water-section-one-subsection-two-container,
+.water-section-one-subsection-three-container,
+.water-section-one-subsection-four-container {
+  display: grid;
   grid-template-columns: 1fr;
-  row-gap: 15px;
-  padding: 40px 30px;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   border: 1px solid black;
+  /* ^ subsection-border- global variable */
+  background-color: var(--level3-background-color);
 }
 
-.water-section-one-collapsible-title {
-
+.water-section-one-subsection-one-container {
+  grid-template-areas:
+    "water-section-one-subsection-one-copy-container-one"
+    "water-section-one-subsection-one-image-container"
+    "water-section-one-subsection-one-copy-container-two";
 }
 
-.water-section-one-collapsible-subtitle {
-
+@media (min-width: 600px) {
+  .water-section-one-subsection-one-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "water-section-one-subsection-one-image-container water-section-one-subsection-one-copy-container-one"
+      "water-section-one-subsection-one-copy-container-two water-section-one-subsection-one-copy-container-two";
+    row-gap: var(--subsection-container-row-gap-desktop);
+    column-gap: var(--subsection-container-column-gap-desktop);
+    padding: var(--subsection-container-padding-desktop);
+    /* ^ these values are too large */
+  }
 }
 
-.water-section-one-collapsible-paragraph {
-
+.water-section-one-subsection-one-copy-container-one {
+  grid-area: water-section-one-subsection-one-copy-container-one;
 }
 
-.water-section-one-collapsible-list {
-
+.water-section-one-subsection-one-image-container {
+  grid-area: water-section-one-subsection-one-image-container;
 }
 
-.water-section-one-collapsible-list-item {
-
+.water-section-one-subsection-one-copy-container-two {
+  grid-area: water-section-one-subsection-one-copy-container-two;
 }
 
-.water-section-one-collapsible-image-container {
-  /* background-color: lightblue; */
+.water-section-one-subsection-two-container {
+  grid-template-areas:
+    "water-section-one-subsection-two-image-container-one"
+    "water-section-one-subsection-two-copy-container-one"
+    "water-section-one-subsection-two-image-container-two"
+    "water-section-one-subsection-two-copy-container-two";
 }
 
-.water-section-one-collapsible-image {
+@media (min-width: 600px) {
+  .water-section-one-subsection-two-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "water-section-one-subsection-two-image-container-one water-section-one-subsection-two-image-container-two"
+      "water-section-one-subsection-two-copy-container-one water-section-one-subsection-two-copy-container-two";
+      row-gap: var(--subsection-container-row-gap-desktop);
+      column-gap: var(--subsection-container-column-gap-desktop);
+      padding: var(--subsection-container-padding-desktop);
+  }
+}
+
+.water-section-one-subsection-two-image-container-one {
+  grid-area: water-section-one-subsection-two-image-container-one;
+}
+
+.water-section-one-subsection-two-copy-container-one {
+  grid-area: water-section-one-subsection-two-copy-container-one;
+}
+
+.water-section-one-subsection-two-image-container-two {
+  grid-area: water-section-one-subsection-two-image-container-two;
+}
+
+.water-section-one-subsection-two-copy-container-two {
+  grid-area: water-section-one-subsection-two-copy-container-two;
+}
+
+.water-section-one-subsection-three-container {
+  grid-template-areas:
+    "water-section-one-subsection-three-copy-container-one"
+    "water-section-one-subsection-three-image-container"
+    "water-section-one-subsection-three-copy-container-two";
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-three-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "water-section-one-subsection-three-image-container water-section-one-subsection-three-copy-container-one"
+      "water-section-one-subsection-three-copy-container-two water-section-one-subsection-three-copy-container-two";
+      row-gap: var(--subsection-container-row-gap-desktop);
+      column-gap: var(--subsection-container-column-gap-desktop);
+      padding: var(--subsection-container-padding-desktop);
+  }
+}
+
+.water-section-one-subsection-three-copy-container-one {
+  grid-area: water-section-one-subsection-three-copy-container-one;
+}
+
+.water-section-one-subsection-three-image-container {
+  grid-area: water-section-one-subsection-three-image-container;
+}
+
+.water-section-one-subsection-three-copy-container-two {
+  grid-area: water-section-one-subsection-three-copy-container-two;
+}
+
+.water-section-one-subsection-four-container {
+  grid-template-areas:
+    "water-section-one-subsection-four-copy-container"
+    "water-section-one-subsection-four-image-container";
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-four-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "water-section-one-subsection-four-image-container water-section-one-subsection-four-copy-container";
+    row-gap: var(--subsection-container-row-gap-desktop);
+    column-gap: var(--subsection-container-column-gap-desktop);
+    padding: var(--subsection-container-padding-desktop);
+  }
+}
+
+.water-section-one-subsection-four-copy-container {
+  grid-area: water-section-one-subsection-four-copy-container;
+}
+
+.water-section-one-subsection-four-image-container {
+  grid-area: water-section-one-subsection-four-image-container;
+}
+
+.water-section-one-subsection-copy-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--copy-container-row-gap-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-copy-container  {
+    row-gap: var(--copy-container-row-gap-desktop);
+    /* ^ this value is too large */
+  }
+}
+
+.water-section-one-subsection-title {
+  text-align: center;
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+  /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-title- */
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-title  {
+    text-align: left;
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+    /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-title- */
+  }
+}
+
+.water-section-one-subsection-subtitle {
+  text-align: left;
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
+  /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-subtitle- */
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-subtitle {
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
+    /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-subtitle- */
+  }
+}
+
+.water-section-one-subsection-paragraph-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
+}
+
+.water-section-one-subsection-paragraph {
+  text-align: center;
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-paragraph {
+    text-align: left;
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
+}
+
+.water-section-one-subsection-list {
+  padding-left: 20px;
+  /* THIS NEEDS ITS OWN GLOBAL VARIABLES --subsection-list-padding */
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-list {
+
+  }
+}
+
+.water-section-one-subsection-list-item {
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-list-item {
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
+}
+
+.water-section-one-subsection-image-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 600px) {
+  .water-section-one-subsection-image-container {
+
+  }
+}
+
+.water-section-one-subsection-image {
   display: block;
   width: 100%;
-  height: 100%;
-  /* background-color: gray; */
 }
 
-.water-section-one-collapsible-subtitle {
+@media (min-width: 600px) {
+  .water-section-one-subsection-image {
 
-}
-
-.water-section-one-collapsible-image-small-container {
-  float: right;
-  /* needed for text wrap */
-  width: 100px;
-  height: 100px;
-  /* ^temporary hardcoded size */
-  /* background-color: lightblue; */
-}
-
-.water-section-one-collapsible-image-small {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* background-color: gray; */
+  }
 }
