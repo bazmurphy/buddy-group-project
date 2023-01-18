@@ -26,6 +26,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
 }
 
 @media (min-width: 600px) {
@@ -43,11 +44,11 @@
     "electric-section-four-subsection-two-container"
     "electric-section-four-subsection-three-container";
   justify-content: center;
-  row-gap: var(--subsection-container-row-gap-mobile);
+  row-gap: var(--subcontainer-container-row-gap-mobile);
   column-gap: none;
   padding: var(--subcontainer-padding-mobile);
-  border: solid 1px black;
-  background-color: var(--level1-background-color);
+  border: var(--subcontainer-border-mobile);
+  background-color: var(--level2-background-color);
 }
 
 @media (min-width: 600px) {
@@ -62,8 +63,8 @@
       "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
       "electric-section-four-subsection-one-container . electric-section-four-subsection-three-container";
     padding: var(--subcontainer-padding-desktop);
-    row-gap: var(--subsection-container-row-gap-desktop);
-    column-gap: var(--subsection-container-column-gap-desktop);
+    row-gap: var(--subcontainer-row-gap-desktop);
+    column-gap: var(--subcontainer-column-gap-desktop);
   }
 }
 
@@ -71,6 +72,7 @@
   grid-area: electric-section-four-title-container;
   align-content: start;
   justify-content: center;
+  background-color: var(--level3-background-color);
 }
 
 .electric-section-four-title {
@@ -93,15 +95,15 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
-  row-gap: var(--subcontainer-row-gap-mobile);
+  row-gap: var(--subsection-container-row-gap-mobile);
   border: var(--subsection-container-border-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  padding: var(--subsection-container-padding-mobile);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-one-container {
-    padding: var(--subcontainer-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -109,7 +111,6 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -133,7 +134,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -184,16 +184,16 @@
 .electric-section-four-subsection-two-container {
   grid-area: electric-section-four-subsection-two-container;
   display: grid;
-  row-gap: var(--subcontainer-row-gap-mobile);
   align-content: start;
-  padding: var(--subcontainer-padding-mobile);
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container--padding-mobile);
   border: var(--subsection-container-border-mobile);
-  background-color: var(--level2-background-color);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-two-container {
-    padding: var(--subcontainer-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -201,7 +201,6 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -225,7 +224,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -276,16 +274,16 @@
 .electric-section-four-subsection-three-container {
   grid-area: electric-section-four-subsection-three-container;
   display: grid;
-  row-gap: var(--subcontainer-row-gap-mobile);
   align-content: start;
-  padding: var(--subcontainer-padding-mobile);
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   border: var(--subsection-container-border-mobile);
-  background-color: var(--level2-background-color);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-three-container {
-    padding: var(--subcontainer-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -293,7 +291,6 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -317,7 +314,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {

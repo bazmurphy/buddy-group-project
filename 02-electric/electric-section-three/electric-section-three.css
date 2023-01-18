@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  
+  background-color: var(--level1-background-color);
 }
 
 @media (min-width:600px) {
@@ -44,11 +44,11 @@
     "electric-section-three-subsection-one-container"
     "electric-section-three-subsection-two-container"
     "electric-section-three-subsection-three-container";
-  row-gap: var(--subsection-container-row-gap-mobile);
+  row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
   padding: var(--subcontainer-padding-mobile);
   border: var(--subcontainer-border-mobile);
-  background-color: var(--level1-background-color);
+  background-color: var(--level2-background-color);
 }
 
 @media (min-width:600px) {
@@ -59,13 +59,14 @@
       "electric-section-three-subsection-one-container electric-section-three-subsection-one-container"
       "electric-section-three-subsection-two-container electric-section-three-subsection-three-container";
     padding: var(--subcontainer-padding-desktop);
-    row-gap: var(--subsection-container-row-gap-desktop);
-    column-gap:var(--subsection-container-column-gap-desktop) ;
+    row-gap: var(--subcontainer-row-gap-desktop);
+    column-gap:var(--subcontainer-column-gap-desktop);
   }
 }
 
 .electric-section-three-title-container {
-  grid-area:electric-section-three-title-container;
+  grid-area: electric-section-three-title-container;
+  background-color: var(--level3-background-color);
 }
 
 .electric-section-three-title {
@@ -84,17 +85,18 @@
 /* subsection-one */
 
 .electric-section-three-subsection-one-container {
-  grid-area:electric-section-three-subsection-one-container;
+  grid-area: electric-section-three-subsection-one-container;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: var(--subcontainer-row-gap-mobile);
-  align-content: start; 
-  background-color: var(--level2-background-color);
+  align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px) {
   .electric-section-three-subsection-one-container{
-    padding: var(--subcontainer-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -102,7 +104,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -155,14 +156,15 @@
 .electric-section-three-subsection-two-container {
   grid-area:electric-section-three-subsection-two-container;
   display: grid;
-  row-gap: var(--subcontainer-row-gap-mobile);
   align-content: start;
-  background-color: var(--level2-background-color);
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px) {
   .electric-section-three-subsection-two-container {
-    padding: var(--subcontainer-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -170,7 +172,6 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -192,7 +193,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -245,14 +245,15 @@
 .electric-section-three-subsection-three-container {
   grid-area:electric-section-three-subsection-three-container;
   display: grid;
-  row-gap: var(--subcontainer-row-gap-mobile);
   align-content: start;
-  background-color: var(--level2-background-color);
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
+  background-color: var(--level3-background-color);
 }
 
 @media (min-width:600px) {
   .electric-section-three-subsection-three-container{
-    padding: var(--subcontainer-padding-desktop);
+    padding: var(--subsection-container-padding-desktop);
   }
 }
 
@@ -260,7 +261,6 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -282,7 +282,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
