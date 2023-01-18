@@ -1,78 +1,193 @@
 .water-section-four-container,
 .water-section-four-subcontainer,
-.water-section-four-image-container,
-.water-section-four-image,
+.water-section-four-subsection-container,
+.water-section-four-title-container,
 .water-section-four-title,
 .water-section-four-subtitle,
+.water-section-four-copy-container,
+.water-section-four-paragraph-container,
 .water-section-four-paragraph,
 .water-section-four-list,
 .water-section-four-list-item,
+.water-section-four-image-container,
+.water-section-four-image,
 .water-section-four-link {
-  border: 1px dotted black;
+  border: var(--temporary-border);
 }
 
 .water-section-four-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  row-gap: 30px;
+  padding: var(--container-padding-mobile);
+  background-color: var(--level1-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-container {
+    padding: var(--container-padding-desktop);
+  }
 }
 
 .water-section-four-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
-  /* ^not strictly neccessary */
-  row-gap: 15px;
-  padding: 40px 30px;
-  /* ^tried to emulate design padding.. maybe need global variables for this */
-  border: 1px solid black;
-  
-  cursor: pointer;
-  /* ^neccessary to prompt user to click? UX Design? */
+  row-gap: var(--subcontainer-row-gap-mobile);
+  padding: var(--subcontainer-padding-mobile);
+  background-color: var(--level2-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-subcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--subcontainer-row-gap-desktop);
+    column-gap: var(--subcontainer-column-gap-desktop);
+  }
+}
+
+.water-section-four-subsection-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+  background-color: var(--level3-background-color);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-subsection-container {
+    row-gap: var(--subsection-container-row-gap-desktop);
+  }
+}
+
+.water-section-four-title-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--title-container-row-gap-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-title-container {
+    row-gap: var(--title-container-row-gap-desktop);
+  }
+}
+
+.water-section-four-title {
+  text-align: center;
+  font-size: var(--title-font-size-mobile);
+  font-weight: var(--title-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-title {
+    font-size: var(--title-font-size-desktop);
+    font-weight: var(--title-font-weight-desktop);
+  }
+}
+
+.water-section-four-subtitle {
+  text-align: center;
+  font-size: var(--subtitle-font-size-mobile);
+  font-weight: var(--subtitle-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-subtitle {
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
+  }
+}
+
+.water-section-four-copy-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--subsection-container-row-gap-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-copy-container {
+    row-gap: var(--copy-container-row-gap-desktop);
+  }
+}
+
+.water-section-four-paragraph-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--paragraph-container-row-gap-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-paragraph-container {
+    row-gap: var(--paragraph-container-row-gap-desktop);
+  }
+}
+
+.water-section-four-paragraph {
+  text-align: left;
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-paragraph {
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
+}
+
+.water-section-four-list {
+  padding-left: 20px;
+  list-style: decimal;
+}
+
+@media (min-width: 600px) {
+  .water-section-four-list {
+    
+  }
+}
+
+.water-section-four-list-item {
+  font-size: var(--paragraph-font-size-mobile);
+  font-weight: var(--paragraph-font-weight-mobile);
+}
+
+@media (min-width: 600px) {
+  .water-section-four-list-item {
+    font-size: var(--paragraph-font-size-desktop);
+    font-weight: var(--paragraph-font-weight-desktop);
+  }
 }
 
 .water-section-four-image-container {
-  /* background-color: lightblue; */
-  /* ^so you can see if the image is scaling correctly */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 600px) {
+  .water-section-two-subsection-image-container {
+    
+  }
 }
 
 .water-section-four-image {
   display: block;
   width: 100%;
-  /* background-color: gray; */
-  /* ^placeholder colour until actual image */
 }
 
-.water-section-four-title {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  /* ^to offset the bolded text */
-}
-
-.water-section-four-subtitle {
-  text-align: center;
-  /* font-size: 1.3rem; */
-  font-size: 1.35rem;
-  font-weight: 400;
-}
-
-.water-section-four-paragraph {
-  text-align: justify;
-}
-
-.water-section-four-list {
-  list-style: decimal;
-}
-
-.water-section-four-list-item {
-
+@media (min-width: 600px) {
+  .water-section-two-subsection-image {
+    
+  }
 }
 
 .water-section-four-link {
   color: inherit;
+}
+
+@media (min-width: 600px) {
+  .water-section-four-link {
+    
+  }
 }
