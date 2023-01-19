@@ -128,6 +128,7 @@
   list-style: none;
   padding: 0;
 }    
+
 @media (min-width:600px){
   .footer-links-second-nav-list{
      display: none;
@@ -239,6 +240,7 @@ align-self: end;
   justify-content: center;
   align-content: stretch;
 }
+
 @media (min-width:600px){
   .footer-logo-container{
     display: none;
