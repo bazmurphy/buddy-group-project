@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../00-global-styles/global-styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>Header</title>
+</head>
+<body>
+  
+  <header class="header-container">
+    
+    <div class="header-logo-container">
+      <div class="header-logo-image-container">
+        <img class="header-logo-image" src="../../00-overall/05-images/00-header-footer/electric.png" alt="">
+        <img class="header-logo-image" src="../../00-overall/05-images/00-header-footer/water.png" alt="">
+        <img class="header-logo-image" src="../../00-overall/05-images/00-header-footer/gas.png" alt="">      
+      </div>
+      <span class="header-logo-text">EM<span class="header-logo-text-highlight">POWER</span>ED</div>
+    </div>
+
+    <div class="header-nav-mobile-container">
+      <div class="header-nav-mobile-circle">
+        <span class="header-nav-mobile-line"></span>
+        <span class="header-nav-mobile-line"></span>
+        <span class="header-nav-mobile-line"></span>
+      </div>
+    </div>
+
+    <div class="header-mobile-overlay-container">
+
+      <a href="javascript:void(0)" class="header-mobile-overlay-close-button">&times;</a>
+
+      <div class="header-mobile-overlay-subcontainer">
+
+        <div class="header-mobile-overlay-search-container">
+            <input class="header-mobile-overlay-search-input" type="search" name="search" id="search-input" placeholder="&#x1F50E;&#xFE0E; Search" />
+        </div>
+        
+        <nav class="header-mobile-overlay-nav-container">
+          <ul class="header-mobile-overlay-nav-list">
+            <li class="header-mobile-overlay-nav-list-item">
+              <a class="header-mobile-overlay-nav-link" href="../../07-combined-preview/01-home/">HOME</a>
+            </li>
+            <li class="header-mobile-overlay-nav-list-item">
+              <a class="header-mobile-overlay-nav-link" href="../../07-combined-preview/02-electric/">ELECTRIC</a>
+            </li>
+            <li class="header-mobile-overlay-nav-list-item">
+              <a class="header-mobile-overlay-nav-link" href="../../07-combined-preview/03-water/">WATER</a>
+            </li>
+            <li class="header-mobile-overlay-nav-list-item">
+              <a class="header-mobile-overlay-nav-link" href="../../07-combined-preview/04-gas/">GAS</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-mobile-overlay-functionality-container">
+          <a class="header-mobile-overlay-login" href="#">Log In</a>
+          <input class="header-mobile-overlay-email-input" type="email" placeholder="Enter your email...">
+          <span class="header-mobile-overlay-account">Don't have an Account?</span>
+          <a class="header-mobile-overlay-signup" href="#">Sign Up Today!</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="header-nav-desktop-container">
+      <ul class="header-nav-desktop-list">
+        <li class="header-nav-desktop-list-item">
+          <a class="header-nav-desktop-link" href="../../07-combined-preview/01-home/">HOME</a>
+        </li>
+        <li class="header-nav-desktop-list-item">
+          <a class="header-nav-desktop-link" href="../../07-combined-preview/02-electric/">ELECTRIC</a>
+        </li>
+        <li class="header-nav-desktop-list-item">
+          <a class="header-nav-desktop-link" href="../../07-combined-preview/03-water/">WATER</a>
+        </li>
+        <li class="header-nav-desktop-list-item">
+          <a class="header-nav-desktop-link" href="../../07-combined-preview/04-gas/">GAS</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-functionality-container">
+      <div class="header-login-container">
+        <a class="header-login-link" href="#">
+          <span class="header-login-text">Log In</span>
+          <span class="header-login-icon">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </a>
+      </div>
+      <div class="header-search-container">
+        <input type="text" class="header-search-input" placeholder=" &#x1F50E;&#xFE0E; Search">
+      </div>
+    </div>
+
+  </header>
+
+  <script>
+    function openMobileNavigation() {
+      document.querySelector(".header-mobile-overlay-container").style.height = "100%";
+    }
+
+    document.querySelector(".header-nav-mobile-circle").addEventListener("click", openMobileNavigation);
+
+    function closeMobileNavigation() {
+      document.querySelector(".header-mobile-overlay-container").style.height = "0%";
+    }
+
+    document.querySelector(".header-mobile-overlay-close-button").addEventListener("click", closeMobileNavigation);
+  </script>
+
+</body>
+</html>
