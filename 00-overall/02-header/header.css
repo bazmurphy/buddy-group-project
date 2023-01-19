@@ -37,18 +37,19 @@
   background-color: var(--dark-blue);
   display: grid;
   grid-template-columns: 200px auto minmax(auto, 100px);
-  grid-template-rows: 60px;
+  grid-template-rows: 80px;
   grid-template-areas: 
     "header-logo-container . header-nav-mobile-container";
+  padding: 10px 0 5px 0;
 }
 
 @media (min-width: 600px) {
   .header-container {
     grid-template-columns: 200px auto minmax(auto, 200px);
-    grid-template-rows: 30px 30px;
+    grid-template-rows: 50px 30px;
     grid-template-areas: 
       "header-logo-container . header-functionality-container"
-      "header-logo-container header-nav-desktop-container header-functionality-container";
+      "header-logo-container header-nav-desktop-container header-functionality-container"
   }
 }
 
@@ -56,13 +57,12 @@
   grid-area: header-logo-container;
   display: grid;
   justify-content: center;
-  align-content: stretch;
+  align-content: start;
 }
 
 .header-logo-image-container {
   display: flex;
   justify-content: center;
-  align-content: stretch;
   gap: 10px;
 }
 
@@ -75,7 +75,7 @@
 
 .header-logo-text {
   color: var(--red);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -88,7 +88,8 @@
   grid-area: header-nav-mobile-container;
   display: grid;
   justify-content: center;
-  align-content: center;
+  align-content: start;
+  padding-top: 5px;
 }
 
 @media (min-width: 600px) {
@@ -262,13 +263,13 @@
 }
 
 .header-nav-desktop-list-item {
-  text-align: center;
 }
 
 .header-nav-desktop-link {
+  text-align: center;
   text-decoration: none;
   color: var(--white);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   padding: 0 10px;
 }
@@ -288,6 +289,7 @@
     display: grid;
     grid-template-columns: 0.8fr;
     justify-content: center;
+    align-content: end;
   }
 }
 
@@ -306,7 +308,6 @@
   text-decoration: none;
 
   color: var(--white);
-  font-size: 0.8rem;
 }
 
 .header-login-link:hover,
@@ -321,12 +322,11 @@
 }
 
 .header-search-container {
-  
+  padding-bottom: 8px;
 }
 
 .header-search-input {
   width: 100%;
   font-family: inherit;
-  font-size: 0.8rem;
   border-radius: 15px;
 }
