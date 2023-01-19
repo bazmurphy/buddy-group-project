@@ -15,6 +15,7 @@
   .footer-container{
     padding: 50px;
     background-color: #0F4E88;
+    max-height: 500px;
   }
 }
 
@@ -28,7 +29,7 @@
   "footer-social-media-container"
   "footer-login-container"
   "logo-copyright-container";
-  grid-gap: 30px;
+  grid-gap: 15px;
   padding: 40px;
   color:var(--white);
   background-color: var(--dark-blue);
@@ -72,8 +73,8 @@
 /****COMPANY-DETAILS-CONTAINER****/
 
 .footer-company-details-container{
-    grid-area: footer-company-details-container;
-    display: grid;
+  grid-area: footer-company-details-container;
+  display: grid;
 }
 
 .footer-company-details-email {
@@ -81,12 +82,22 @@
   color: inherit;
 }
 
+.footer-company-name-high-light{
+  color: var(--red);
+}
 /*****LINKS-CONTAINER******/
 
 .footer-links-container{
   grid-area: footer-links-container;
   display: grid;
   align-content: center;
+  padding-right: 40px;
+}
+
+@media (min-width:600px){
+  .footer-links-container{
+    border-bottom: 1.5px solid var(--white); 
+  }
 }
 
 .footer-links-title{
@@ -108,6 +119,7 @@
 @media (min-width:600px){
   .footer-links-nav-list {
     grid-template-columns: repeat(3,1fr);
+    justify-content: left;
     }
   }
 
@@ -122,17 +134,16 @@
 
 @media (min-width:600px){
   .footer-links-nav-list-item{
-    justify-self: center;
   }
 }
 
 /******SOCIAL-MEDIA-CONTAINERS*****/
 
 .footer-social-media-container{
-    grid-area: footer-social-media-container;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+  grid-area: footer-social-media-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .footer-social-media-title {
@@ -181,10 +192,10 @@ text-align: center;
 }
 
 .footer-login-details-container{
-display: grid;
-grid-template-columns: 1fr 1fr;
-align-content: center;
-justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer-email-container{
@@ -192,20 +203,20 @@ display: grid;
 }
 
 .footer-login-input {
-height: 25px;
-max-width: 150px;
-min-width: 100px;
-border: none;
-padding: 0;
+  height: 25px;
+  max-width: 150px;
+  min-width: 100px;
+  border: none;
+  padding: 0;
 }
 
 .footer-login-button {
-border: none;
-background-color: var(--red);
-width: 125px;
-height: 25px;
-align-self: end;
-justify-self: center;
+  border: none;
+  background-color: var(--red);
+  width: 125px;
+  height: 25px;
+  align-self: end;
+  justify-self: center;
 }
 
 @media (min-width:600px) {
