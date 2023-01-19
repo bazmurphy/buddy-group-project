@@ -24,7 +24,7 @@ function addToDom(html, targetLocation) {
 
 export async function fetchAndAddComponentsToDom(components) {
   for (let component of components) { 
-    console.log(component);
+    // console.log(component);
     const html = await fetchComponent(component[0]);
     addToDom(html, component[1]);
   }
