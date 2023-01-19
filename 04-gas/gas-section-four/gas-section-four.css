@@ -7,8 +7,7 @@
 .gas-section-four-title-span-number,
 .gas-section-four-title-span-title,
 .gas-section-four-paragraph{
-  border: var(--temporary-border);
-  /* border: none; */
+  /* border: var(--temporary-border); */
 }
 
 .gas-section-four-container {
@@ -33,8 +32,8 @@
   grid-template-columns: 1fr;
   
   /* padding: var(--subcontainer-padding-mobile); */
-  
   padding: 35px 20px;
+  
   /* background-color: var(--level2-background-color); */
 }
 

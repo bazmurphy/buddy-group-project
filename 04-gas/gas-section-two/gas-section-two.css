@@ -7,8 +7,7 @@
 .gas-section-two-title-span-number,
 .gas-section-two-title-span-title,
 .gas-section-two-paragraph{
-  border: var(--temporary-border);
-  /* border: none; */
+  /* border: var(--temporary-border); */
 }
 
 .gas-section-two-container {

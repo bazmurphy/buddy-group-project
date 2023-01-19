@@ -9,8 +9,7 @@
 .gas-section-three-paragraph,
 .gas-section-three-image-container,
 .gas-section-three-image {
-  border: var(--temporary-border);
-  /* border: none; */
+  /* border: var(--temporary-border); */
 }
 
 .gas-section-three-container {

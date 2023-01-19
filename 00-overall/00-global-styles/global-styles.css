@@ -9,7 +9,7 @@
 }
 
 body {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -85,7 +85,7 @@ body {
   --title-container-row-gap-desktop: 20px;
 
   /* title */
-  --title-font-size-mobile: 20px;
+  --title-font-size-mobile: 26px;
   --title-font-size-desktop: 22px;
 
   --title-font-weight-mobile: 600;

@@ -9,8 +9,7 @@
 .gas-section-one-paragraph,
 .gas-section-one-image-container,
 .gas-section-one-image {
-  border: var(--temporary-border);
-  /* border: none; */
+  /* border: var(--temporary-border); */
 }
 
 .gas-section-one-container {
@@ -21,7 +20,7 @@
   padding: 50px 30px 0 30px;
   
   /* background-color: var(--level1-background-color); */
-    background-color: #F9F9F9;
+  background-color: #F9F9F9;
 }
 
 @media (min-width:600px) {

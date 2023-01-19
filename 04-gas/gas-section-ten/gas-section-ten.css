@@ -7,14 +7,16 @@
 .gas-section-ten-title-span-number,
 .gas-section-ten-title-span-title,
 .gas-section-ten-paragraph{
-  border: var(--temporary-border);
-  border: none;
+  /* border: var(--temporary-border); */
 }
 
 .gas-section-ten-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
+  
+  /* padding: var(--container-padding-mobile); */
+  padding: 0 30px 0 30px;
+  
   /* background-color: var(--level1-background-color); */
   background-color: #F9F9F9;
 }
@@ -28,7 +30,10 @@
 .gas-section-ten-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--subcontainer-padding-mobile);
+  
+  /* padding: var(--subcontainer-padding-mobile); */
+  padding: 35px 20px;
+  
   /* background-color: var(--level2-background-color); */
 }
 
@@ -46,7 +51,7 @@
   "gas-section-ten-paragraph-container";
   align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--copy-container-padding-mobile);
+  /* padding: var(--copy-container-padding-mobile); */
   /* background-color: var(--level3-background-color); */
 }
 
