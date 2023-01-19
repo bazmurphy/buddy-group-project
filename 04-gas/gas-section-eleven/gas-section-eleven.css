@@ -10,13 +10,15 @@
   .gas-section-eleven-image-container,
   .gas-section-eleven-image {
     border: var(--temporary-border);
+    border: none;
   }
 
   .gas-section-eleven-container {
     display: grid;
     grid-template-columns: 1fr;
     padding: var(--container-padding-mobile);
-    background-color: var(--level1-background-color);
+    /* background-color: var(--level1-background-color); */
+    background-color: #F9F9F9;
   }
 
   @media (min-width:600px) {
@@ -34,8 +36,12 @@
     row-gap: var(--subcontainer-row-gap-mobile);
     column-gap: none;
     padding: var(--subcontainer-padding-mobile);
-    border: var(--subcontainer-border-mobile);
-    background-color: var(--level2-background-color);
+    /* border: var(--subcontainer-border-mobile); */
+    border: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /* background-color: var(--level2-background-color); */
+    background-image: linear-gradient(#f9f9f9, #FBABB2);
   }
 
   @media (min-width:600px) {
@@ -53,7 +59,7 @@
     display: grid;
     align-content: start;
     row-gap: var(--copy-container-row-gap-mobile);
-    background-color: var(--level3-background-color);
+    /* background-color: var(--level3-background-color); */
   }
 
   @media (min-width: 600px) {
@@ -126,7 +132,7 @@
     display: grid;
     align-content: start;
     justify-content: center; 
-    background-color: var(--level3-background-color);
+    /* background-color: var(--level3-background-color); */
   }
 
   @media (min-width: 600px) {
