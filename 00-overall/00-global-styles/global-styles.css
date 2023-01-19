@@ -13,9 +13,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   body {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }

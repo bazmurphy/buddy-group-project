@@ -25,7 +25,8 @@
 
 @media (min-width:600px) {
   .gas-section-one-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 7% 10% 0 10%;
   }
 }
 
