@@ -4,16 +4,12 @@
   /******COLOR*****/
 
   /******gas-title**********/
-
-  --gas-title-row-gap-mobile: 2px;
+  --gas-title-row-gap-mobile: 15px;
   --gas-title-column-gap-desktop: 15px;
 
-  --gas-title-font-size-mobile: ;
-  --gas-title-font-size-desktop: ;
+  --gas-title-font-size-mobile: 20px;
+  --gas-title-font-size-desktop: 24px;
 
-  --gas-title-font-weight-desktop: ;
-  --gas-title-font-weight-mobile: ;
-
-
+  --gas-title-font-weight-mobile: 600;
+  --gas-title-font-weight-desktop: 600;
 }
-
