@@ -9,7 +9,7 @@
 .home-hero-paragraph,
 .home-hero-link {
   border: none;
-  /* border: var(--temporary-border); */
+  border: var(--temporary-border);
 }
 
 .home-hero-container {
@@ -19,36 +19,93 @@
   /* background-color: var(--level1-background-color); */
   /* changes below by ux/ui */
   background-image: var(--home-hero-container-background-image);
-  padding: var(--site-hero-container-padding-zero-right-mobile);
+
+
+  /* ----------SOLUTION---------- */
+  /* REMOVE ALL PADDING ON THE CONTAINER */
+
+  /* padding: var(--site-hero-container-padding-zero-right-mobile); */
 }
 
 @media (min-width: 600px) {
   .home-hero-container {
+
+
+    /* ----------SOLUTION---------- */
+    /* REMOVE ALL PADDING ON THE CONTAINER */
+    
     /* padding: var(--container-padding-desktop); */
-    padding: var(--site-hero-container-padding-zero-right-desktop);
+    /* padding: var(--site-hero-container-padding-zero-right-desktop); */
   }
 }
 
 .home-hero-subcontainer {
-  display: grid; 
-  row-gap: var(--site-container-row-gap-mobile);
+  /* display: grid; */
+  /* row-gap: var(--site-container-row-gap-mobile); */
   /* grid-template-columns: 1fr; */
   /* background-color: var(--level2-background-color); */
+
+  
+  /* ----------SOLUTION---------- */
+  display: grid;
+  
+  /* THE FIRST COLUMN IS THE EMPTY CELL ON THE LEFT OF COPY-CONTAINER IN MOBILE */
+  grid-template-columns: 0.1fr 0.9fr;
+  grid-template-rows: auto auto;
+  
+  /* THE IMAGE CONTAINER FILLS THE FULL WIDTH */
+  /* THE COPY CONTAINER HAS AN EMPTY CELL TO ITS LEFT */
+  grid-template-areas: 
+    "home-hero-image-container home-hero-image-container"
+    ". home-hero-copy-container";
+  
+  /* USE A ROW GAP TO SEPARATE THE IMAGE AND COPY CONTAINERS IN MOBILE */
+  row-gap: 30px;
+
+  /* ADD PADDING TO THE TOP AND BOTTOM OF THE SUBCONTAINER IF NECCESSARY */
+  padding: 30px 0;
+
+  /* RED BOX IS THE SUBCONTAINER */
+  border: 2px solid red;
 }
 
 @media (min-width: 600px) {
   .home-hero-subcontainer {
-    grid-template-columns: repeat(2, 1fr); 
-    /* grid-template-columns: repeat(1fr, 2fr); */
-    column-gap: var(--subcontainer-column-gap-desktop);
+    /* grid-template-columns: repeat(2, 1fr);  */
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+
+
+    /* ----------SOLUTION---------- */
+
+    /* THESE CONTROL THE RATIOS OF IMAGE ON THE LEFT AND THE COPY ON THE RIGHT */
+    grid-template-columns: 1fr 1.5fr;
+
+    grid-template-areas: 
+    "home-hero-image-container home-hero-copy-container";
+
+    /* USE A COLUMN GAP TO SEPARATE THE IMAGE AND COPY CONTAINERS IN DESKTOP */
+    column-gap: 40px;
   }
 }
 
 .home-hero-image-container {
+  /* display: grid; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* background-color: var(--level3-background-color); */
+
+  
+  /* ----------SOLUTION---------- */
+  
   display: grid;
   justify-content: center;
   align-content: center;
-  /* background-color: var(--level3-background-color); */
+
+  /* GIVE THIS A GRID AREA NAME TO USE IN THE SUBCONTAINER GRID TEMPLATE AREAS */
+  grid-area: home-hero-image-container;
+  
+  /* GREEN BOX IS THE COPY CONTAINER */
+  border: 2px solid limegreen;
 }
 
 @media (min-width: 600px) {
@@ -69,16 +126,35 @@
 }
 
 .home-hero-copy-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr; */
   /* padding: var(--copy-container-padding-mobile); */
-  /*border: 1px solid black;
-  background-color: var(--level3-background-color); */
+  /* border: 1px solid black; */
+  /* background-color: var(--level3-background-color); */
   /*additions made by ux/ui */
-  padding: var(--site-hero-container-padding-zero-right-mobile);
+  /* padding: var(--site-hero-container-padding-zero-right-mobile); */
   background-image: var(--home-hero-copy-container-background-image);
   border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
   box-shadow: var(--site-container-box-shadow-mobile);
+
+
+  /* ----------SOLUTION---------- */
+  display: grid;
+
+  align-content: center;
+
+  /* GIVE THIS A GRID AREA NAME TO USE IN THE SUBCONTAINER GRID TEMPLATE AREAS */
+  grid-area: home-hero-copy-container;
+
+  /* PADDING IS NEEDED INSIDE THE COPY-CONTAINER TO PUSH THE TEXT INWARDS */
+  /* BUT THIS MUST BE OFFSET BASED ON THE EMPTY GRID-CELL SIZE TO KEEP THE TEXT CENTERED */
+  padding: 50px 70px 50px 50px;
+
+  /* ROW GAP SEPARATES THE VARIOUS CHILDREN OF THE COPY-CONTAINER */
+  row-gap: 15px;
+
+  /* ORANGE BOX IS THE COPY CONTAINER */
+  border: 2px solid orange;
 }
 
 @media (min-width: 600px) {
@@ -87,10 +163,15 @@
     /* padding: var( --site-hero-copy-container-padding-desktop); */
     border-radius: var(--container-offset-right-border-radius-desktop);
     box-shadow: var(--site-container-box-shadow-desktop);
+
+  /* ----------SOLUTION---------- */
+  /* PADDING IS NEEDED INSIDE THE COPY-CONTAINER TO PUSH THE TEXT INWARDS */
+  /* IN DESKTOP I BELIEVE IT IS OKAY IF ITS ALL THE SAME */
+  padding: 50px 50px 50px 50px;
   }
 }
 
-.home-hero-subcopy-container {
+/* .home-hero-subcopy-container {
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
@@ -104,7 +185,7 @@
     align-content: center;
     row-gap: var(--copy-container-row-gap-desktop);
   }
-}
+} */
 
 .home-hero-title {
   font-size: var(--title-font-size-mobile);
