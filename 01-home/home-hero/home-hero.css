@@ -55,19 +55,20 @@
     /* ----------SOLUTION---------- */
 
     /* THESE CONTROL THE RATIOS OF IMAGE ON THE LEFT AND THE COPY ON THE RIGHT */
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.3fr;
 
-    grid-template-areas: 
-    "home-hero-image-container home-hero-copy-container";
+    grid-template-areas:
+      "home-hero-image-container home-hero-copy-container";
 
     /* USE A COLUMN GAP TO SEPARATE THE IMAGE AND COPY CONTAINERS IN DESKTOP */
-    column-gap: 40px;
+    column-gap: 3%;
+
+    padding: 8% 0;
   }
 }
 
 .home-hero-image-container {
   /* ----------SOLUTION---------- */
-  
   display: grid;
   justify-content: center;
   align-content: center;
@@ -125,7 +126,7 @@
     /* ----------SOLUTION---------- */
     /* PADDING IS NEEDED INSIDE THE COPY-CONTAINER TO PUSH THE TEXT INWARDS */
     /* IN DESKTOP I BELIEVE IT IS OKAY IF ITS ALL THE SAME */
-    padding: 50px 50px 50px 50px;
+    padding: 8%;
 
     border-radius: var(--container-offset-right-border-radius-desktop);
     box-shadow: var(--site-container-box-shadow-desktop);
