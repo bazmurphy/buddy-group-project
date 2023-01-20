@@ -13,19 +13,21 @@
 
 .home-section-one-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 0.1fr 0.1fr 0.9fr 0.1fr 0.1fr;
   grid-template-areas:
-    "home-section-one-subcontainer-one"
-    "home-section-one-subcontainer-two"
-    "home-section-one-subcontainer-three";
-  row-gap: 15px;
-  /* ^in this rare case the container needs a row gap for mobile */
-  column-gap: none;
-  /* ^in this rare case the container needs a column gap for desktop */
+    "home-section-one-subcontainer-one home-section-one-subcontainer-one home-section-one-subcontainer-one . ."
+    ". home-section-one-subcontainer-two home-section-one-subcontainer-two home-section-one-subcontainer-two ."
+    ". . home-section-one-subcontainer-three home-section-one-subcontainer-three home-section-one-subcontainer-three";
+  
+  row-gap: 30px;
+
   /* padding: var(--container-padding-mobile); */
+  padding: 30px 0;
+
   /* background-color: var(--level1-background-color); */
   background-color: var(--home-section-lightblue-background-color);
-  /* padding: 30px; */
+  
+  border: 2px solid red;
 }
 
 @media (min-width: 600px) {
@@ -33,12 +35,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     "home-section-one-subcontainer-one home-section-one-subcontainer-two home-section-one-subcontainer-three";
-    row-gap: none;
-    /* ^in this rare case the container needs a row gap for mobile */
-    column-gap: 30px;
-    /* ^in this rare case the container needs a column gap for desktop */
+    column-gap: 4%;
     /* padding: var(--container-padding-desktop); */
-    padding: var(--home-section-one-sub-container-padding-desktop);
+    /* padding: var(--home-section-one-sub-container-padding-desktop); */
   }
 }
 
@@ -52,6 +51,8 @@
   /* background-color: var(--level2-background-color); */
   background-image: var(--home-section-midblue-background-image);
   box-shadow: var( --site-container-box-shadow-mobile);
+
+  border: 2px solid lime;
 }
 
 @media (min-width: 600px) {
@@ -66,22 +67,21 @@
   border-radius: var(--home-section-one-sub-container-one-border-radius);
   padding: var(--site-hero-container-padding-zero-left-mobile); 
   padding: var(--site-copy-container-padding-mobile);
-  border: 2px dotted red;
-  margin: 30px 30px 30px 0;
+  /* margin: 30px 30px 30px 0; */
 }
 
 .home-section-one-subcontainer-two {
   grid-area: home-section-one-subcontainer-two;
   border-radius: var(--home-section-one-sub-container-two-border-radius);
   padding: var(--site-copy-container-padding-mobile);
-  margin: 30px 30px 30px 30px;
+  /* margin: 30px 30px 30px 30px; */
 }
 
 .home-section-one-subcontainer-three {
   grid-area: home-section-one-subcontainer-three;
   border-radius: var(--home-section-one-sub-container-three-border-radius);
   padding: var(--site-copy-container-padding-mobile);
-  margin: 30px 0 30px 30px;
+  /* margin: 30px 0 30px 30px; */
 }
 
 .home-section-one-image-container {
