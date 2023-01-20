@@ -71,9 +71,6 @@
 .home-hero-copy-container {
   display: grid;
   grid-template-columns: 1fr;
-  align-content: start;
-  /* row-gap: var(--copy-container-row-gap-mobile); */
-  
   /* padding: var(--copy-container-padding-mobile); */
   /*border: 1px solid black;
   background-color: var(--level3-background-color); */
@@ -86,9 +83,6 @@
 
 @media (min-width: 600px) {
   .home-hero-copy-container {
-    align-content: center;
-    /* ^I presume the copy should be centered? */
-    row-gap: var(--copy-container-row-gap-desktop);
     /* padding: var(--copy-container-padding-desktop); */
     /* padding: var( --site-hero-copy-container-padding-desktop); */
     border-radius: var(--container-offset-right-border-radius-desktop);
@@ -96,19 +90,19 @@
   }
 }
 
-.home-hero-copy-text-container {
+.home-hero-subcopy-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  row-gap: var(--copy-container-row-gap-mobile);
   padding: var(--site-hero-text-container-padding-mobile);
-  display:flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (min-width: 600px) {
-  .home-hero-copy-text-container {
+  .home-hero-subcopy-container {
     padding: var(--site-hero-text-container-padding-desktop);
-    align-items: flex-start;
+    align-content: center;
+    row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 

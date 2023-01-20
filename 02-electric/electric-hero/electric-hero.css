@@ -79,8 +79,6 @@
 .electric-hero-copy-container {
   grid-area: electric-hero-copy-container;
   display: grid;
-  align-content: start;
-  row-gap: var(--copy-container-row-gap-mobile);
   /* padding: var(--copy-container-padding-mobile);
   background-color: var(--level3-background-color); */
   /*additions made by ux/ui */
@@ -92,27 +90,23 @@
 
 @media (min-width: 600px) {
   .electric-hero-copy-container {
-    align-content: center;
-    row-gap: var(--copy-container-row-gap-desktop);
     /* padding: var(--site-hero-copy-container-padding-desktop); */
     border-radius: var(--electric-hero-copy-container-offset-left-border-radius);
   }
 }
 
-
-.electric-hero-copy-text-container {
+.electric-hero-subcopy-container {
+  display: grid;
   padding: var(--site-hero-text-container-padding-mobile);
-  display:flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
+  align-content: start;
+  row-gap: var(--copy-container-row-gap-mobile);
 }
 
 @media (min-width: 600px) {
-  .electric-hero-copy-text-container {
+  .electric-hero-subcopy-container {
     padding: var(--site-hero-text-container-padding-desktop);
-    align-items: flex-start;
+    align-content: center;
+    row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 
