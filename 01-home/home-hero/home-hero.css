@@ -15,11 +15,14 @@
   display: grid;
   grid-template-columns: 1fr;
   background-image: var(--home-hero-container-background-image);
+  /* ----------SOLUTION---------- */
+  /* REMOVE ALL PADDING ON THE CONTAINER */
 }
 
 @media (min-width: 600px) {
   .home-hero-container {
-
+    /* ----------SOLUTION---------- */
+    /* REMOVE ALL PADDING ON THE CONTAINER */
   }
 }
 
@@ -62,7 +65,7 @@
   }
 }
 
-.home-hero-image-container { 
+.home-hero-image-container {
   /* ----------SOLUTION---------- */
   
   display: grid;
