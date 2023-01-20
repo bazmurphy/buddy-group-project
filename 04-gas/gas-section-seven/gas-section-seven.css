@@ -25,7 +25,8 @@
 
 @media (min-width:600px) {
  .gas-section-seven-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 0 10%;
   }
 }
 
@@ -54,8 +55,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "gas-section-seven-copy-container gas-section-seven-image-container";
-    column-gap: var(--subcontainer-column-gap-desktop);
-    padding: var(--subcontainer-padding-desktop);
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    /* padding: var(--subcontainer-padding-desktop); */
+    column-gap: 5%;
+    padding: 8% 8% 0 8%;
   }
 }
 

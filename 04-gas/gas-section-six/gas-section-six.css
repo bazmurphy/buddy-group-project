@@ -1,3 +1,4 @@
+.gas-section-six-container,
 .gas-section-six-subcontainer,
 .gas-section-six-subcontainer,
 .gas-section-six-copy-container,
@@ -21,9 +22,10 @@
   background-color: #F9F9F9;
 }
 
-@media (min-width:600px){
+@media (min-width: 600px){
   .gas-section-six-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 6% 10%;
   }
 }
 
@@ -39,8 +41,9 @@
 }
 
 @media (min-width:600px){
-  .gas-section-six-container {
-    padding: var(--subcontainer-padding-desktop);
+  .gas-section-six-subcontainer {
+    /* padding: var(--subcontainer-padding-desktop); */
+    padding: 8% 8% 8% 8%;
   }
 }
 

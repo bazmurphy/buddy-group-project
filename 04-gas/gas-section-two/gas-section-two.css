@@ -1,3 +1,4 @@
+.gas-section-two-container,
 .gas-section-two-subcontainer,
 .gas-section-two-subcontainer,
 .gas-section-two-copy-container,
@@ -15,7 +16,7 @@
   grid-template-columns: 1fr;
   
   /* padding: var(--container-padding-mobile); */
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   
   /* background-color: var(--level1-background-color); */
   background-color: #F9F9F9;
@@ -23,24 +24,23 @@
 
 @media (min-width:600px){
   .gas-section-two-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 0 10%;
   }
 }
 
 .gas-section-two-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  
+
   /* padding: var(--subcontainer-padding-mobile); */
   padding: 35px 20px;
-  /* this is specific to section-two to push it vertically away from section-one and section-three */
-  
-  /* background-color: var(--level2-background-color); */
 }
 
 @media (min-width: 600px){
   .gas-section-two-subcontainer {
-    padding: var(--subcontainer-padding-desktop);
+    /* padding: var(--subcontainer-padding-desktop); */
+    padding: 7% 8%;
   }
 }
 
@@ -51,9 +51,7 @@
   "gas-section-two-title-container"
   "gas-section-two-paragraph-container";
   align-content: start;
-  row-gap: var(--subcontainer-row-gap-mobile);
-  /* padding: var(--copy-container-padding-mobile); */
-  /* background-color: var(--level3-background-color); */
+  row-gap: var(--copy-container-row-gap-mobile);
 }
 
 @media (min-width:600px){
@@ -62,10 +60,8 @@
     grid-template-areas: 
     "gas-section-two-title-container" 
     "gas-section-two-paragraph-container";
-    column-gap: var(--subcontainer-column-gap-desktop);
     align-content: center;
-    padding: 0 15%;
-    /* ^ attempt to squish the text inwards */
+    row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 

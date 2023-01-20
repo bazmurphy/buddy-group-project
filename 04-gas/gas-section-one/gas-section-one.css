@@ -56,8 +56,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "gas-section-one-image-container gas-section-one-copy-container";
-    column-gap: var(--subcontainer-column-gap-desktop);
-    padding: var(--subcontainer-padding-desktop);
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    column-gap: 5%;
+    /* padding: var(--subcontainer-padding-desktop); */
+    padding: 8% 8% 0 8%;
   }
 }
 
