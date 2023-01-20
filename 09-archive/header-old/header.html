@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="../00-global-styles/global-styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>00 - Header</title>
+  </head>
+  <body>
+
+    <header class="header-container">
+
+      <div class="header-logo-container">
+        <div class="header-logo-image-container">
+          <img class="header-logo-image" src="../../00-overall/05-images/00-header-footer/electric.png" alt="">
+          <img class="header-logo-image" src="../../00-overall/05-images/00-header-footer/water.png" alt="">
+          <img class="header-logo-image" src="../../00-overall/05-images/00-header-footer/gas.png" alt="">
+        </div>
+        <p class="header-logo">EM<span class="header-logo-highlight">POWER</span>ED</p>
+      </div>
+
+      <div class="header-nav-container">
+
+        <nav class="header-nav">
+
+          <ul class="header-nav-list">
+
+            <input type="checkbox" id="check" />
+
+            <span class="menu">
+            <!-- ^this is the sliding element that covers the entire screen -->
+
+              <li class="header-nav-list-item search-mobile-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="mibox" type="search" name="search" id="search-input" placeholder="Search" />
+              </li>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link heaver-nav-link-home " href="../../07-combined-preview/01-home/">Home</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link" href="../../07-combined-preview/02-electric/">Electric</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link" href="../../07-combined-preview/03-water/">Water</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a class="heaver-nav-link" href="../../07-combined-preview/04-gas/index.html">Gas</a>
+              </li>
+              <li class="header-nav-list-item login-mobile-container">
+                <span class="login-mobile-text-first">
+                  <i class="fa-solid fa-user"></i> Login
+                </span>
+                <span class="login-mobile-text-second">
+                  <input class="mibox" type="email">
+                </span>
+                <span class="login-mobile-text-third">Don't have an Account?</span>
+                <span class="login-mobile-text-fourth"> Sign Up Today!</span>
+              </li>
+
+              <label for="check" class="close-menu">
+                <span class="left-close"></span>
+                <span class="right-close"></span>
+                <!-- ^ the black X to close the sliding element -->
+              </label>
+
+            </span>
+
+            <label for="check" class="open-menu">
+              <div class="open-line-container-one">
+                <div class="open-line-container-two">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <!-- ^ the 3 white lines to open the menu -->
+                </div>
+              </div>
+            </label>
+
+          </ul>
+
+        </nav>
+
+        <div class="header-login-container">
+          <i class="fa-solid fa-user"></i>
+          <span class="login-text">Login</span>
+        </div>
+
+        <div class="header-search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="search" id="search-input" />
+        </div>
+
+      </div>
+
+    </header>
+
+  </body>
+</html>

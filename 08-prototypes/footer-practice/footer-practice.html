@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../00-global-styles/global-styles.css">
-  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="footer-practice.css">
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -26,15 +25,22 @@
       </div>
       
       <div class="footer-company-details-container">
-        <span class="footer-company-details-name">EM<span class="footer-company-name-high-light">POWER</span>ED</span>
-        <span class="footer-company-details-address">29 Rulevatee Road</span>
-        <span class="footer-company-details-address">Aldwich</span>
-        <span class="footer-company-details-address">London 2EC BQ</span>
-        <span class="footer-company-details-phone">020 236 6696</span>
-        <a class="footer-company-details-email" href="#">empowered@gmail.com</a>
+        <span class="footer-company-details-name">Company Name</span>
+        <span class="footer-company-details-address">Address</span>
+        <span class="footer-company-details-phone">Phone Number</span>
+        <a class="footer-company-details-email" href="#">Email</a>
       </div>
 
-     
+      <div class="footer-login-container">
+        <h3 class="footer-login-title">Sign Up for our Newsletter</h3>
+        <form class="footer-login-details-container">
+          <div class="footer-email-container">
+            <label class="footer-login-label-input" for="email">Email</label>
+            <input class="footer-login-input" type="email" name="email" id="email" placeholder="Enter your email..." />
+          </div>          
+          <button class="footer-login-button">Login</button>
+        </form>
+      </div>
 
       <div class="footer-links-container">
 
@@ -42,24 +48,27 @@
 
         <nav class="footer-links-nav">
 
-          <ul class="footer-links-nav-list">
+          <ul class="footer-links-first-nav-list">
             <li class="footer-links-nav-list-item">
-              <a class="footer-links-nav-link" href="#">Home</a>
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
             </li>
             <li class="footer-links-nav-list-item">
-              <a class="footer-links-nav-link" href="#">Gas</a>
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
             </li>
             <li class="footer-links-nav-list-item">
-              <a class="footer-links-nav-link" href="#">Water</a>
-            </li>        
-            <li class="footer-links-nav-list-item">
-              <a class="footer-links-nav-link" href="#">Electricity</a>
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
+            </li>
+          </ul>
+
+          <ul class="footer-links-second-nav-list">
+            <li class="footer-links-second-nav-list-item">
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
             </li>
             <li class="footer-links-nav-list-item">
-              <a class="footer-links-nav-link" href="#">Water Calculator</a>
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
             </li>
             <li class="footer-links-nav-list-item">
-              <a class="footer-links-nav-link" href="#">Electric Calculator</a>
+              <a class="footer-links-nav-link" href="#">List Item Link</a>
             </li>
           </ul>
 
@@ -69,7 +78,6 @@
 
     <div class="footer-social-media-container">
       <h3 class="footer-social-media-title">Social Media Links</h3>
-      <span class="horizontal-line"></span>
       <!--i am not sure do i need to nest ul with nav?-->
       <ul class="footer-social-media-list">
         <li class="footer-social-media-list-item">
@@ -97,25 +105,12 @@
 
     </div>
 
-    <div class="footer-login-container">
-      
-      <h3 class="footer-login-title">Sign Up for our Newsletter</h3>
-      <form class="footer-login-details-container">
-        <div class="footer-email-container">
-          <label class="footer-login-label-input" for="email">Email</label>
-          <input class="footer-login-input" type="email" name="email" id="email" placeholder="Enter your email..." />
-        </div>          
-        <button class="footer-login-button">Login</button>
-      </form>
-    </div>
-    
-   
-    <div class="footer-logo-copyright-container">
-      <span class="horizontal-line"></span>
+    <div class="logo-copyright-container">
+
       <div class="footer-copyright-container">
-        
         <p class="footer-copyright">&copy; copyright</p>
       </div>
+
       <div class="footer-logo-container">
         <div class="footer-logo-image-container">
           <img class="footer-logo-image" src="../../00-overall/05-images/00-header-footer/electric.png" alt="">

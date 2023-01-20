@@ -1,3 +1,4 @@
+.gas-section-four-container,
 .gas-section-four-subcontainer,
 .gas-section-four-subcontainer,
 .gas-section-four-copy-container,
@@ -7,32 +8,39 @@
 .gas-section-four-title-span-number,
 .gas-section-four-title-span-title,
 .gas-section-four-paragraph{
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .gas-section-four-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  
+  /* padding: var(--container-padding-mobile); */
+  padding: 0 30px;
+  
+  /* background-color: var(--level1-background-color); */
+  background-color: #F9F9F9;
 }
 
 @media (min-width:600px){
   .gas-section-four-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 0 10%;
   }
 }
 
 .gas-section-four-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  
+  /* padding: var(--subcontainer-padding-mobile); */
+  padding: 35px 20px;
 }
 
 @media (min-width:600px){
-  .gas-section-four-container {
-    padding: var(--subcontainer-padding-desktop);
+  .gas-section-four-subcontainer {
+    /* padding: var(--subcontainer-padding-desktop); */
+    padding: 7% 8%;
   }
 }
 
@@ -43,17 +51,17 @@
   "gas-section-four-title-container"
   "gas-section-four-paragraph-container";
   align-content: start;
-  row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--copy-container-padding-mobile);
-  background-color: var(--level3-background-color);
+  row-gap: var(--copy-container-row-gap-mobile);
 }
 
 @media (min-width:600px){
   .gas-section-four-copy-container{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "gas-section-four-title-container gas-section-four-paragraph-container";
-    column-gap: var(--subcontainer-column-gap-desktop);
+    "gas-section-four-title-container"
+    "gas-section-four-paragraph-container";
+    align-content: center;
+    row-gap: var(--copy-container-row-gap-desktop);
   }
 }
 

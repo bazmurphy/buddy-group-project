@@ -9,19 +9,24 @@
 .gas-section-five-paragraph,
 .gas-section-five-image-container,
 .gas-section-five-image {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .gas-section-five-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  
+  /* padding: var(--container-padding-mobile); */
+  padding: 0 30px 30px 30px;
+  
+  /* background-color: var(--level1-background-color); */
+  background-color: #F9F9F9;
 }
 
 @media (min-width:600px) {
   .gas-section-five-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 0 10%;
   }
 }
 
@@ -33,9 +38,16 @@
    "gas-section-five-image-container";
   row-gap: var(--subcontainer-row-gap-mobile);
   column-gap: none;
-  padding: var(--subcontainer-padding-mobile);
-  border: var(--subcontainer-border-mobile);
-  background-color: var(--level2-background-color);
+  
+  /* padding: var(--subcontainer-padding-mobile); */
+  padding: 20px;
+  
+  /* border: var(--subcontainer-border-mobile); */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+  /* background-color: var(--level2-background-color); */
+  background-image: linear-gradient(#F9F9F9, #FACFD3);
 }
 
 @media (min-width:600px) {
@@ -43,8 +55,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "gas-section-five-image-container gas-section-five-copy-container";
-    column-gap: var(--subcontainer-column-gap-desktop);
-    padding: var(--subcontainer-padding-desktop);
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    /* padding: var(--subcontainer-padding-desktop); */
+    column-gap: 5%;
+    padding: 0% 8% 8% 8%;
   }
 }
 
@@ -53,7 +67,7 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
+  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -127,8 +141,7 @@
   display: grid;
   justify-content: center; 
   align-content: start;
-  background-color: var(--level3-background-color);
-
+  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
