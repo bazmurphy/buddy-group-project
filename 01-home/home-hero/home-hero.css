@@ -141,8 +141,10 @@
 @media (min-width: 600px) {
   .home-hero-title {
     text-align: left;
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
+    /* font-size: var(--title-font-size-desktop); */
+    font-size: 40px;
+    /* font-weight: var(--title-font-weight-desktop); */
+    font-weight: 600;
   }
 }
 
@@ -155,8 +157,10 @@
 @media (min-width: 600px) {
   .home-hero-subtitle {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
+    /* font-size: var(--subtitle-font-size-desktop); */
+    font-size: 30px;
+    /* font-weight: var(--subtitle-font-weight-desktop); */
+    font-weight: 400;
   }
 }
 
@@ -190,7 +194,10 @@
   justify-self: center;
   text-align: center;
   text-decoration: none;
-  padding: var(--link-padding-mobile);
+  /* padding: var(--link-padding-mobile); */
+  /* 10px 20px */
+  padding: 10px 40px;
+  border-radius: var(--link-border-radius-mobile);
   color: var(--link-color-mobile);
   background-color: var(--link-background-color-mobile);
 }
@@ -198,7 +205,9 @@
 @media (min-width: 600px) {
   .home-hero-link {
     justify-self: start;
-    padding: var(--link-padding-desktop);
+    /* padding: var(--link-padding-desktop); */
+    padding: 10px 40px;
+    border-radius: var(--link-border-radius-desktop);
     color: var(--link-color-desktop);
     background-color: var(--link-background-color-desktop);
   }
