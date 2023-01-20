@@ -87,8 +87,8 @@
   color: inherit;
 }
 
-.footer-company-name-high-light{
-  color: var(--red);
+.footer-company-name-highlight{
+  color: var(--yellow);
 }
 
 @media (min-width:600px){
