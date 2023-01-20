@@ -7,8 +7,9 @@
 .home-section-one-subtitle,
 .home-section-one-paragaph-container,
 .home-section-one-paragraph,
+.home-section-one-link-container,
 .home-section-one-link {
-  border: var(--temporary-border)
+  /* border: var(--temporary-border); */
 }
 
 .home-section-one-container {
@@ -19,15 +20,14 @@
     ". home-section-one-subcontainer-two home-section-one-subcontainer-two home-section-one-subcontainer-two ."
     ". . home-section-one-subcontainer-three home-section-one-subcontainer-three home-section-one-subcontainer-three";
   
-  row-gap: 30px;
+  row-gap: 75px;
 
   /* padding: var(--container-padding-mobile); */
-  padding: 30px 0;
+  padding: 75px 0;
 
   /* background-color: var(--level1-background-color); */
-  background-color: var(--home-section-lightblue-background-color);
-  
-  border: 2px solid red;
+  background-color: var(--off-white);
+  /* border: 2px solid red; */
 }
 
 @media (min-width: 600px) {
@@ -44,44 +44,64 @@
 .home-section-one-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  border: var(--subcontainer-border-mobile);
+  /* padding: var(--subcontainer-padding-mobile); */
+  padding: 0 25px 60px 25px;
+  /* border: var(--subcontainer-border-mobile); */
   /* background-color: var(--level2-background-color); */
-  background-image: var(--home-section-midblue-background-image);
+  background-image: var(--home-section-one-subcontainer-background-image);
   box-shadow: var( --site-container-box-shadow-mobile);
-
-  border: 2px solid lime;
-}
-
-@media (min-width: 600px) {
-  .home-section-one-subcontainer {
-
-    padding: var(--subcontainer-padding-desktop);
-  }
+  /* border: 2px solid lime; */
 }
 
 .home-section-one-subcontainer-one {
   grid-area: home-section-one-subcontainer-one;
   border-radius: var(--home-section-one-sub-container-one-border-radius);
-  padding: var(--site-hero-container-padding-zero-left-mobile); 
-  padding: var(--site-copy-container-padding-mobile);
+  /* padding: var(--site-hero-container-padding-zero-left-mobile);  */
+  /* padding: var(--site-copy-container-padding-mobile); */
   /* margin: 30px 30px 30px 0; */
+  padding-top: 30px;
 }
+
+/* @media (min-width: 600px) {
+  .home-section-one-subcontainer-one {
+    padding: 0;
+  }
+} */
 
 .home-section-one-subcontainer-two {
   grid-area: home-section-one-subcontainer-two;
   border-radius: var(--home-section-one-sub-container-two-border-radius);
-  padding: var(--site-copy-container-padding-mobile);
+  /* padding: var(--site-copy-container-padding-mobile); */
   /* margin: 30px 30px 30px 30px; */
+  padding-top: 55px;
 }
+
+/* @media (min-width: 600px) {
+  .home-section-one-subcontainer-two {
+    padding: 0;
+  }
+} */
 
 .home-section-one-subcontainer-three {
   grid-area: home-section-one-subcontainer-three;
   border-radius: var(--home-section-one-sub-container-three-border-radius);
-  padding: var(--site-copy-container-padding-mobile);
+  /* padding: var(--site-copy-container-padding-mobile); */
   /* margin: 30px 0 30px 30px; */
+  padding-top: 60px;
+}
+
+/* @media (min-width: 600px) {
+  .home-section-one-subcontainer-three {
+    padding: 0;
+  }
+} */
+
+@media (min-width: 600px) {
+  /* THIS MEDIA QUERY HAS TO BE HERE BELOW ALL THE SEPARATE SUBCONTAINERS BECAUSE OF SPECIFICITY*/
+  .home-section-one-subcontainer {
+    padding: 10% 10% 15% 10%;
+  }
 }
 
 .home-section-one-image-container {
@@ -161,6 +181,20 @@
   }
 }
 
+.home-section-one-link-container {
+  justify-self: center;
+  align-self: auto;
+  padding-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .home-section-one-link-container {
+    justify-self: auto;
+    align-self: end;
+    padding-top: 20px;
+  }
+}
+
 .home-section-one-link {
   justify-self: center;
   text-align: center;
@@ -168,6 +202,7 @@
   padding: var(--link-padding-mobile);
   color: var(--link-color-mobile);
   background-color: var(--link-background-color-mobile);
+  border-radius: var(--link-border-radius-mobile);
 }
 
 @media (min-width: 600px) {
@@ -176,5 +211,6 @@
     padding: var(--link-padding-desktop);
     color: var(--link-color-desktop);
     background-color: var(--link-background-color-desktop);
+    border-radius: var(--link-border-radius-desktop);
   }
 }

@@ -27,6 +27,7 @@ body {
 
   /* site colours */
   --white: #FFFFFF;
+  --off-white: #F9F9F9;
   --dark-blue:#004DD6;
   --red:#FF4242;
   --light-gray:#D9D9D9;
@@ -121,14 +122,17 @@ body {
   --list-item-font-weight-mobile: ;
 
   /* link */
-  --link-color-mobile: #000000;
-  --link-color-desktop: #000000;
+  --link-color-mobile: white;
+  --link-color-desktop: white;
 
-  --link-background-color-mobile: #dcdcdc;
-  --link-background-color-desktop: #dcdcdc;
+  --link-background-color-mobile: #004DD6;
+  --link-background-color-desktop: #004DD6;
 
-  --link-padding-mobile: 5px 10px;
-  --link-padding-desktop: 8px 16px;
+  --link-padding-mobile: 10px 20px;
+  --link-padding-desktop: 10px 20px;
+
+  --link-border-radius-mobile: 30px;
+  --link-border-radius-desktop: 30px;
 
   /* TRY TO REMOVE ALL OF THESE BELOW HERE */
   
