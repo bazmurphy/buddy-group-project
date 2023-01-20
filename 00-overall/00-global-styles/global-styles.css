@@ -94,15 +94,15 @@ body {
   --title-container-row-gap-desktop: 20px;
 
   /* title */
-  --title-font-size-mobile: 26px;
-  --title-font-size-desktop: 22px;
+  --title-font-size-mobile: 24px;
+  --title-font-size-desktop: 26px;
 
   --title-font-weight-mobile: 600;
   --title-font-weight-desktop: 600;
 
   /* subtitle */
-  --subtitle-font-size-mobile: 18px;
-  --subtitle-font-size-desktop: 20px;
+  --subtitle-font-size-mobile: 20px;
+  --subtitle-font-size-desktop: 24px;
 
   --subtitle-font-weight-mobile: 500;
   --subtitle-font-weight-desktop: 500;
@@ -171,11 +171,4 @@ body {
 .bold {
   font-weight: bold;
   /* ^this could be a specific font weight like 600-700-800-900 */
-}
-
-.mibox {
-  /* ^this relates to mobile nav - why is this here? */
-  width: 153px ;
-  height: 26px;
-  border: none;
 }
