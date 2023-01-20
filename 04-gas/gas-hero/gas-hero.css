@@ -57,6 +57,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  padding: 0 4%;
   /* background-color: var(--level3-background-color); */
 }
 
@@ -92,7 +93,7 @@
 @media (min-width: 600px) {
   .gas-hero-copy-container {
     padding: 50px;
-    border-radius: var(--container-offset-right-border-radius-desktop);
+    border-radius: var(--electric-hero-copy-container-offset-left-border-radius);
     box-shadow: var(--site-container-box-shadow-desktop);
   }
 }
