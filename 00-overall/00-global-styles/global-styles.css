@@ -28,8 +28,13 @@ body {
   /* site colours */
   --white: #FFFFFF;
   --off-white: #F9F9F9;
-  --dark-blue:#004DD6;
-  --red:#FF4242;
+  --yellow: #FFD324;
+  /* --dark-blue:#004DD6; */
+  --dark-blue: #04245C;
+  --mid-blue: #042F7A;
+  /* --red:#FF4242; */
+  /* --red: #DB0511; */
+  --red: red;
   --light-gray:#D9D9D9;
   --light-blue:#CBE9FA;
 
