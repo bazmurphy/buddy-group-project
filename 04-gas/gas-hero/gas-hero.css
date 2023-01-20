@@ -82,6 +82,7 @@
   background-image: var(--gas-hero-copy-container-background-image);
   border-radius: var(--gas-hero-copy-container-offset-left-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
+  padding: var(--site-copy-container-padding-mobile);
 }
 
 @media (min-width: 600px) {
