@@ -1,6 +1,7 @@
 .home-section-two-container,
-.home-section-two-title-container,
 .home-section-two-subcontainer,
+.home-section-two-title-container,
+.home-section-two-subsection,
 .home-section-two-image-container,
 .home-section-two-image,
 .home-section-two-copy-container,
@@ -8,49 +9,56 @@
 .home-section-two-subtitle,
 .home-section-two-paragaph-container,
 .home-section-two-paragraph {
-  border: 1px dotted black;
-  border: none;
+  border: var(--temporary-border);
 }
 
 .home-section-two-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    "home-section-two-title-container"
-    "home-section-two-subcontainer-one"
-    "home-section-two-subcontainer-two"
-    "home-section-two-subcontainer-three"
-    "home-section-two-subcontainer-four";
-  padding: var(--container-padding-mobile);
-  /* background-color: var(--level1-background-color); */
-  background-image: var(--home-section-two-container-background-image);
+  background-color: var(--off-white);
 }
 
 @media (min-width: 600px) {
   .home-section-two-container {
+    padding: 0 5% 5% 0;
+  }
+}
+
+.home-section-two-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "home-section-two-title-container"
+    "home-section-two-subsection-one"
+    "home-section-two-subsection-two"
+    "home-section-two-subsection-three"
+    "home-section-two-subsection-four";
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  background-image: var(--home-section-two-container-background-image);
+  box-shadow: var( --site-container-box-shadow-mobile);
+}
+
+@media (min-width: 600px) {
+  .home-section-two-subcontainer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
       "home-section-two-title-container home-section-two-title-container"
-      "home-section-two-subcontainer-one home-section-two-subcontainer-three"
-      "home-section-two-subcontainer-two home-section-two-subcontainer-four";
-    /* padding: var(--container-padding-desktop); */
-    padding: var(--site-hero-container-padding-zero-left-desktop);
+      "home-section-two-subsection-one home-section-two-subsection-three"
+      "home-section-two-subsection-two home-section-two-subsection-four";
   }
 }
 
 .home-section-two-title-container {
   grid-area: home-section-two-title-container;
-  padding: 10px 10px 0 10px;
-  /* ^this is a very specific case */
-  /* background-color: var(--level2-background-color); */
+  padding: 0;
   background-color: var(--home-section-two-background-color);
 }
 
 @media screen {
   .home-section-two-title-container {
-    padding: 10px 10px 0 10px;
-    /* ^adjust these proportions for desktop */
+    padding: 2% 0 0 0;
   }
 }
 
@@ -58,7 +66,6 @@
   text-align: center;
   font-size: var(--title-font-size-mobile);
   font-weight: var(--title-font-weight-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -68,51 +75,50 @@
   }
 }
 
-.home-section-two-subcontainer {
+.home-section-two-subsection {
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
-  /* background-color: var(--level2-background-color); */
   background-color: var(--home-section-two-background-color);
 }
 
 @media (min-width: 600px) {
-  .home-section-two-subcontainer {
+  .home-section-two-subsection {
     row-gap: var(--subcontainer-row-gap-desktop);
-    /* ^ this is a special case */
-    padding: var(--subcontainer-padding-desktop);
+    /* padding: var(--subcontainer-padding-desktop); */
+    padding: 10%;
   }
 }
 
-.home-section-two-subcontainer-one {
-  grid-area: home-section-two-subcontainer-one;
+.home-section-two-subsection-one {
+  grid-area: home-section-two-subsection-one;
 }
 
-.home-section-two-subcontainer-two {
-  grid-area: home-section-two-subcontainer-two;
+.home-section-two-subsection-two {
+  grid-area: home-section-two-subsection-two;
 }
 
-.home-section-two-subcontainer-three {
-  grid-area: home-section-two-subcontainer-three;
+.home-section-two-subsection-three {
+  grid-area: home-section-two-subsection-three;
 }
 
-.home-section-two-subcontainer-four {
-  grid-area: home-section-two-subcontainer-four;
+.home-section-two-subsection-four {
+  grid-area: home-section-two-subsection-four;
 }
 
-.home-section-two-subcontainer-one,
-.home-section-two-subcontainer-two,
-.home-section-two-subcontainer-three {
+.home-section-two-subsection-one,
+.home-section-two-subsection-two,
+.home-section-two-subsection-three {
   border-bottom: 1px solid black;
   /* ^ this is hardcoded.. */
 }
 
 @media (min-width: 600px) {
-  .home-section-two-subcontainer-one,
-  .home-section-two-subcontainer-two,
-  .home-section-two-subcontainer-three {
+  .home-section-two-subsection-one,
+  .home-section-two-subsection-two,
+  .home-section-two-subsection-three {
     border-bottom: inherit;
     /* ^ this is to remove the border */
   }
@@ -134,7 +140,7 @@
 .home-section-two-image {
   display: block;
   width: 100%;
-  max-width: 250px;
+  max-width: 60%
   /* ^this is hard coded - we need to deal with this */
 }
 
