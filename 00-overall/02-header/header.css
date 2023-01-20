@@ -70,17 +70,17 @@
   display: block;
   max-width: 100%;
   max-height: 24px;
-  /* transform: rotate(10deg); */
+  transform: rotate(10deg);
 }
 
 .header-logo-text {
-  color: var(--red);
+  color: var(--white);
   font-size: 22px;
   font-weight: 800;
 }
 
 .header-logo-text-highlight {
-  color: var(--white);
+  color: var(--yellow);
   font-weight: 600;
 }
 
@@ -125,7 +125,7 @@
   left: 0;
   overflow-y: hidden;
   transition: 0.5s;
-  background-color: var(--dark-blue);
+  background-color: var(--mid-blue);
   color: var(--white);
 }
 
