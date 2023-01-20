@@ -34,7 +34,10 @@ body {
   --mid-blue: #042F7A;
   /* --red:#FF4242; */
   /* --red: #DB0511; */
-  --red: red;
+  /* --red:rgb(255, 0, 0); */
+  --red: hsl(0, 100%, 45%);
+  /* --red: red; */
+  /* --red: #cf361d; */
   --light-gray:#D9D9D9;
   --light-blue:#CBE9FA;
 
@@ -127,11 +130,11 @@ body {
   --list-item-font-weight-mobile: ;
 
   /* link */
-  --link-color-mobile: white;
-  --link-color-desktop: white;
+  --link-color-mobile: var(--white);
+  --link-color-desktop: var(--white);
 
-  --link-background-color-mobile: #004DD6;
-  --link-background-color-desktop: #004DD6;
+  --link-background-color-mobile: var(--red);
+  --link-background-color-desktop: var(--red);
 
   --link-padding-mobile: 10px 20px;
   --link-padding-desktop: 10px 20px;
