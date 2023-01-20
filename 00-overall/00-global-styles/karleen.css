@@ -7,6 +7,20 @@
   --home-hero-container-background-image: linear-gradient(#f9f9f9,#a3e1f2);
   --home-hero-copy-container-background-image: linear-gradient(#f9f9f9,#51c6f1);
 
+  --home-section-one-subcontainer-background-image: linear-gradient(#f9f9f9,#a3e1f2);
+  --home-section-two-container-background-image: linear-gradient(#a3e1f2,#f9f9f9,#a3e1f2);
+  
+  --home-section-midblue-background-image: linear-gradient(#a3e1f2, #51c6f1);
+
+  --home-section-midblue-background-color: #51c6f1;
+  --home-section-lightblue-background-color: #a3e1f2;
+
+  --home-section-one-sub-container-two-border-radius: 30px;
+  --home-section-one-sub-container-one-border-radius: 0 30px 30px 0;
+  --home-section-one-sub-container-three-border-radius: 30px 0 0 30px;
+  --home-section-one-sub-container-padding-desktop: 30px 0 30px 0;
+  /* --home-section-one-sub-container-padding-desktop: 30px 0 30px 0; */
+
   --electric-hero-container-background-image: linear-gradient(#f9f9f9,#FCECAF);
   --electric-hero-copy-container-background-image: linear-gradient(#f9f9f9,#e9c741);
   --electric-hero-copy-container-offset-left-border-radius: 0 30px 30px 0;
@@ -22,18 +36,21 @@
 
 
   --container-offset-right-border-radius-desktop: 30px 0 0 30px;
+  --container-offset-left-border-radius-desktop: 0 30px 30px 0;
   --site-hero-copy-container-border-radius-left-mobile: 30px 0 0 30px;
   --site-hero-copy-container-border-radius-right-mobile: 0 30px 30px 0;
 
   --site-hero-container-padding-zero-right-desktop: 60px 0 60px 30px;
   --site-hero-container-padding-zero-left-desktop: 60px 30px 60px 0;
 
-  --site-hero-copy-container-padding-mobile: 30px 20px 30px 30px;
+  --site-copy-container-padding-mobile: 30px 50px 30px 30px;
   --site-hero-container-padding-zero-right-mobile: 30px  0 30px 30px;
   --site-hero-container-padding-zero-left-mobile: 30px 30px 30px 0;
+
+  
   
 
-  --site-hero-text-container-padding-mobile: 20px;
+  --site-hero-text-container-padding-mobile: 20px 30px 20px 20px;
   --site-hero-text-container-padding-desktop: 20px 50px 10px 30px;
   
 

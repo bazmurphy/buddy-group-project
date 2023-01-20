@@ -82,7 +82,7 @@
   /* padding: var(--copy-container-padding-mobile);
   background-color: var(--level3-background-color); */
   /*additions made by ux/ui */
-  padding: var(--site-hero-copy-container-padding-mobile);
+  padding: var(--site-copy-container-padding-mobile);
   background-image: var(--electric-hero-copy-container-background-image);
   border-radius: var(--site-hero-copy-container-border-radius-right-mobile);
   box-shadow: var(--site-container-box-shadow-mobile);

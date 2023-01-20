@@ -52,7 +52,7 @@
 
 @media (min-width: 600px) {
   .home-hero-subcontainer {
-   /* ----------SOLUTION---------- */
+    /* ----------SOLUTION---------- */
 
     /* THESE CONTROL THE RATIOS OF IMAGE ON THE LEFT AND THE COPY ON THE RIGHT */
     grid-template-columns: 1fr 1.5fr;
@@ -65,7 +65,7 @@
   }
 }
 
-.home-hero-image-container {  
+.home-hero-image-container {
   /* ----------SOLUTION---------- */
   
   display: grid;
@@ -113,7 +113,7 @@
   row-gap: 15px;
 
   /* ORANGE BOX IS THE COPY CONTAINER */
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 
   background-image: var(--home-hero-copy-container-background-image);
   border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
