@@ -10,7 +10,7 @@
 .water-section-three-subsection-subtitle,
 .water-section-three-subsection-list,
 .water-section-three-subsection-list-item {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .water-section-three-container {
@@ -24,16 +24,16 @@
 @media (min-width: 600px) {
   .water-section-three-container {
     /* padding: var(--container-padding-desktop); */
-    padding: 0 75px;
+    padding: 3% 5%;
   }
 }
 
 .water-section-three-subcontainer {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   grid-template-areas: 
     "water-section-three-title-container";
-  align-content: start;
+  /* align-content: start; */
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
   background: var(--water-section-three-subcontainer-background);
@@ -45,8 +45,12 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "water-section-three-title-container water-section-three-title-container water-section-three-title-container";
-    row-gap: var(--subcontainer-row-gap-desktop);
-    column-gap: var(--subcontainer-column-gap-desktop);
+    /* row-gap: var(--subcontainer-row-gap-desktop); */
+    row-gap: 3%;
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    column-gap: 3%;
+    /* padding: var(--subcontainer-padding-desktop) */
+    padding: 0 5% 5% 5%;
   }
 }
 
@@ -55,7 +59,6 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--title-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -105,7 +108,8 @@
 @media (min-width: 600px) {
   .water-section-three-subsection-container {
     row-gap: var(--subsection-container-row-gap-desktop);
-    padding: var(--subsection-container-padding-desktop);
+    /* padding: var(--subsection-container-padding-desktop); */
+    padding: 5%;
     /* border: var(--subsection-container-border-desktop); */
     /* ^ in figma this has no border */
   }

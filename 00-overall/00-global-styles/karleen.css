@@ -24,11 +24,15 @@
   --electric-hero-container-background-image: linear-gradient(#f9f9f9,#FCECAF);
   --electric-hero-copy-container-background-image: linear-gradient(#f9f9f9,#e9c741);
 
+
+  /* WATER HERO */
   --water-hero-container-background: linear-gradient(#f9f9f9, #8AE5FD);
   --water-hero-copy-container-background: #8AE5FD;
 
+  /* WATER SECTIONS */
   --water-section-container-background: #f9f9f9;
-  
+
+  /* WATER SECTION ONE */
   --water-section-one-subsection-one-container-background: linear-gradient(#8AE5FD,#F9F9F9);
   --water-section-one-subsection-two-container-background: linear-gradient( #F9F9F9,#8AE5FD);
   --water-section-one-subsection-three-container-background: linear-gradient(#8AE5FD,#F9F9F9);
@@ -39,17 +43,26 @@
   --water-section-one-subsection-three-border-radius: 30px 30px 0 0;
   --water-section-one-subsection-four-border-radius: 0 0 30px 30px;
 
+  /* WATER SECTION TWO */
   --water-section-two-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-two-subcontainer-border-radius: 0 0 30px 30px;
 
   --water-section-two-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-two-subsection-container-border-radius: 30px;
 
+  /* WATER SECTION THREE */
   --water-section-three-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-three-subcontainer-border-radius: 0 0 30px 30px;
 
   --water-section-three-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-three-subsection-container-border-radius: 30px;
+
+  /* WATER SECTION FOUR */
+  --water-section-four-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9, #8AE5FD);
+  --water-section-four-subcontainer-border-radius: 30px;
+
+  /* WATER SECTION FIVE */
+  
   
   --gas-hero-container-background-image: linear-gradient(#f9f9f9,#FBABB2);
   --gas-hero-copy-container-background-image: linear-gradient(#f9f9f9,#ef707a);

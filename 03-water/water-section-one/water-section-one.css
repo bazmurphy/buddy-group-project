@@ -16,12 +16,11 @@
 .water-section-one-subsection-list-item,
 .water-section-one-subsection-image-container,
 .water-section-one-subsection-image {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .water-section-one-container {
   display: grid;
-  grid-template-columns: 1fr;
   /* padding: var(--container-padding-mobile); */
   padding: 0 30px;
   background: var(--water-section-container-background);
@@ -30,13 +29,12 @@
 @media (min-width: 600px) {
   .water-section-one-container {
     /* padding: var(--container-padding-desktop); */
-    padding: 0 75px;
+    padding: 3% 5% 3% 5%;
   }
 }
 
 .water-section-one-subcontainer {
   display: grid;
-  grid-template-columns: 1fr;
   row-gap: var(--subcontainer-row-gap-mobile);
   /* ^gap between subsections in Mobile */
 }
@@ -50,7 +48,6 @@
 
 .water-section-one-title-container {
   display: grid;
-  grid-template-columns: 1fr;
   row-gap: 10px;
 }
 
@@ -81,26 +78,20 @@
 
 @media (min-width: 600px) {
   .water-section-one-subtitle {
-  font-size: var(--subtitle-font-size-desktop);
-  font-weight: var(--subtitle-font-weight-desktop);
+    font-size: var(--subtitle-font-size-desktop);
+    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
-.water-section-one-subsection-one-container,
-.water-section-one-subsection-two-container,
-.water-section-one-subsection-three-container,
-.water-section-one-subsection-four-container {
+.water-section-one-subsection-one-container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: var(--subsection-container-row-gap-mobile);
-  padding: var(--subsection-container-padding-mobile);
-}
-
-.water-section-one-subsection-one-container {
   grid-template-areas:
     "water-section-one-subsection-one-copy-container-one"
     "water-section-one-subsection-one-image-container"
     "water-section-one-subsection-one-copy-container-two";
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-one-subsection-one-container-background);
   border-radius: var(--water-section-one-subsection-one-border-radius);
 }
@@ -111,10 +102,12 @@
     grid-template-areas: 
       "water-section-one-subsection-one-image-container water-section-one-subsection-one-copy-container-one"
       "water-section-one-subsection-one-copy-container-two water-section-one-subsection-one-copy-container-two";
-    row-gap: var(--subsection-container-row-gap-desktop);
-    column-gap: var(--subsection-container-column-gap-desktop);
-    padding: var(--subsection-container-padding-desktop);
-    /* ^ these values are too large */
+    /* row-gap: var(--subsection-container-row-gap-desktop); */
+    row-gap: 5%;
+    /* column-gap: var(--subsection-container-column-gap-desktop); */
+    column-gap: 5%;
+    /* padding: var(--subsection-container-padding-desktop); */
+    padding: 5% 5%;
   }
 }
 
@@ -131,11 +124,15 @@
 }
 
 .water-section-one-subsection-two-container {
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "water-section-one-subsection-two-image-container-one"
     "water-section-one-subsection-two-copy-container-one"
     "water-section-one-subsection-two-image-container-two"
     "water-section-one-subsection-two-copy-container-two";
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-one-subsection-two-container-background);
   border-radius: var(--water-section-one-subsection-two-border-radius);
 }
@@ -146,9 +143,12 @@
     grid-template-areas:
       "water-section-one-subsection-two-image-container-one water-section-one-subsection-two-image-container-two"
       "water-section-one-subsection-two-copy-container-one water-section-one-subsection-two-copy-container-two";
-      row-gap: var(--subsection-container-row-gap-desktop);
-      column-gap: var(--subsection-container-column-gap-desktop);
-      padding: var(--subsection-container-padding-desktop);
+    /* row-gap: var(--subsection-container-row-gap-desktop); */
+    row-gap: 5%;
+    /* column-gap: var(--subsection-container-column-gap-desktop); */
+    column-gap: 5%;
+    /* padding: var(--subsection-container-padding-desktop); */
+    padding: 5% 5%;
   }
 }
 
@@ -169,10 +169,14 @@
 }
 
 .water-section-one-subsection-three-container {
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "water-section-one-subsection-three-copy-container-one"
     "water-section-one-subsection-three-image-container"
     "water-section-one-subsection-three-copy-container-two";
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-one-subsection-three-container-background);
   border-radius: var(--water-section-one-subsection-three-border-radius);
 }
@@ -183,9 +187,12 @@
     grid-template-areas:
       "water-section-one-subsection-three-image-container water-section-one-subsection-three-copy-container-one"
       "water-section-one-subsection-three-copy-container-two water-section-one-subsection-three-copy-container-two";
-      row-gap: var(--subsection-container-row-gap-desktop);
-      column-gap: var(--subsection-container-column-gap-desktop);
-      padding: var(--subsection-container-padding-desktop);
+    /* row-gap: var(--subsection-container-row-gap-desktop); */
+    row-gap: 5%;
+    /* column-gap: var(--subsection-container-column-gap-desktop); */
+    column-gap: 5%;
+    /* padding: var(--subsection-container-padding-desktop); */
+    padding: 5% 5%;
   }
 }
 
@@ -202,9 +209,13 @@
 }
 
 .water-section-one-subsection-four-container {
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "water-section-one-subsection-four-copy-container"
     "water-section-one-subsection-four-image-container";
+  row-gap: var(--subsection-container-row-gap-mobile);
+  padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-one-subsection-four-container-background);
   border-radius: var(--water-section-one-subsection-four-border-radius);
 }
@@ -213,9 +224,12 @@
   .water-section-one-subsection-four-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "water-section-one-subsection-four-image-container water-section-one-subsection-four-copy-container";
-    row-gap: var(--subsection-container-row-gap-desktop);
-    column-gap: var(--subsection-container-column-gap-desktop);
-    padding: var(--subsection-container-padding-desktop);
+        /* row-gap: var(--subsection-container-row-gap-desktop); */
+    row-gap: 5%;
+    /* column-gap: var(--subsection-container-column-gap-desktop); */
+    column-gap: 5%;
+    /* padding: var(--subsection-container-padding-desktop); */
+    padding: 5% 5%;
   }
 }
 
