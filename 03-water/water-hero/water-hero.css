@@ -13,7 +13,7 @@
 .water-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  background-image: var(--water-hero-container-background-image);
+  background: var(--water-hero-container-background);
 }
 
 @media (min-width: 600px) {
@@ -72,7 +72,7 @@
   align-content: center;
   row-gap: 15px;
   padding: 50px 75px 50px 50px;
-  background-image: var(--water-hero-copy-container-background-image);
+  background: var(--water-hero-copy-container-background);
   border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
   box-shadow: var(--site-container-box-shadow-mobile);
 }
