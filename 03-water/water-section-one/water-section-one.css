@@ -3,7 +3,10 @@
 .water-section-one-title-container,
 .water-section-one-title,
 .water-section-one-subtitle,
-.water-section-one-subsection-container,
+.water-section-one-subsection-one-container,
+.water-section-one-subsection-two-container,
+.water-section-one-subsection-three-container,
+.water-section-one-subsection-four-container,
 .water-section-one-subsection-copy-container,
 .water-section-one-subsection-title,
 .water-section-one-subsection-subtitle,
@@ -19,13 +22,14 @@
 .water-section-one-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  /* padding: var(--container-padding-mobile); */
+  padding: 0 30px;
+  background: var(--water-section-one-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-one-container {
-    padding: var(--container-padding-desktop);
+    padding: 0 75px;
   }
 }
 
@@ -33,13 +37,13 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  /* ^gap between subsections in Mobile */
 }
 
 @media (min-width: 600px) {
   .water-section-one-subcontainer {
     row-gap: var(--subcontainer-row-gap-desktop);
+    /* ^gap between subsections in Desktop */
   }
 }
 
@@ -47,14 +51,11 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 10px;
-  /* ^ title-container-row-gap- global variable? */
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .water-section-one-title-container {
     row-gap: 20px;
-    /* ^ title-container-row-gap- global variable? */
   }
 }
 
@@ -92,9 +93,6 @@
   grid-template-columns: 1fr;
   row-gap: var(--subsection-container-row-gap-mobile);
   padding: var(--subsection-container-padding-mobile);
-  border: 1px solid black;
-  /* ^ subsection-border- global variable */
-  background-color: var(--level3-background-color);
 }
 
 .water-section-one-subsection-one-container {
@@ -102,6 +100,8 @@
     "water-section-one-subsection-one-copy-container-one"
     "water-section-one-subsection-one-image-container"
     "water-section-one-subsection-one-copy-container-two";
+  background: var(--water-section-one-subsection-one-container-background);
+  border-radius: var(--water-section-one-subsection-one-border-radius);
 }
 
 @media (min-width: 600px) {
@@ -135,6 +135,8 @@
     "water-section-one-subsection-two-copy-container-one"
     "water-section-one-subsection-two-image-container-two"
     "water-section-one-subsection-two-copy-container-two";
+  background: var(--water-section-one-subsection-two-container-background);
+  border-radius: var(--water-section-one-subsection-two-border-radius);
 }
 
 @media (min-width: 600px) {
@@ -170,6 +172,8 @@
     "water-section-one-subsection-three-copy-container-one"
     "water-section-one-subsection-three-image-container"
     "water-section-one-subsection-three-copy-container-two";
+  background: var(--water-section-one-subsection-three-container-background);
+  border-radius: var(--water-section-one-subsection-three-border-radius);
 }
 
 @media (min-width: 600px) {
@@ -200,6 +204,8 @@
   grid-template-areas:
     "water-section-one-subsection-four-copy-container"
     "water-section-one-subsection-four-image-container";
+  background: var(--water-section-one-subsection-four-container-background);
+  border-radius: var(--water-section-one-subsection-four-border-radius);
 }
 
 @media (min-width: 600px) {

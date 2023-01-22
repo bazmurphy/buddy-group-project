@@ -24,11 +24,22 @@
   --electric-hero-container-background-image: linear-gradient(#f9f9f9,#FCECAF);
   --electric-hero-copy-container-background-image: linear-gradient(#f9f9f9,#e9c741);
 
-  /* --water-hero-container-background: linear-gradient(#f9f9f9,#2bbae2); */
   --water-hero-container-background: linear-gradient(#f9f9f9, #8AE5FD);
-  /* --water-hero-copy-container-background: linear-gradient(#f9f9f9,#049cc6); */
   --water-hero-copy-container-background: #8AE5FD;
 
+  --water-section-one-container-background: #f9f9f9;
+  --water-section-one-subsection-one-container-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-one-subsection-two-container-background: linear-gradient( #F9F9F9,#8AE5FD);
+  --water-section-one-subsection-three-container-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-one-subsection-four-container-background: linear-gradient( #F9F9F9,#8AE5FD);
+
+  --water-section-one-subsection-one-border-radius: 30px 30px 0 0;
+  --water-section-one-subsection-two-border-radius: 0 0 30px 30px;
+  --water-section-one-subsection-three-border-radius: 30px 30px 0 0;
+  --water-section-one-subsection-four-border-radius: 0 0 30px 30px;
+
+  
+  
   --gas-hero-container-background-image: linear-gradient(#f9f9f9,#FBABB2);
   --gas-hero-copy-container-background-image: linear-gradient(#f9f9f9,#ef707a);
 
