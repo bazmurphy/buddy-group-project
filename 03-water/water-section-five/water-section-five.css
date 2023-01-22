@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  background-color: var(--water-section-container-background);
+  background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
