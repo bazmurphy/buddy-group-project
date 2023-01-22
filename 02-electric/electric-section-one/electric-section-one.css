@@ -8,14 +8,14 @@
 .electric-section-one-subsection-subtitle,
 .electric-section-one-subsection-paragraph-container,
 .electric-section-one-subsection-paragraph {
-  border: var(--temporary-border);
+ /* border: var(--temporary-border);*/
 }
 
 .electric-section-one-container {
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  background-image: var(--electric-section-one-container-background); 
 }
 
 @media (min-width: 600px) {
@@ -29,8 +29,7 @@
   grid-template-columns: 1fr;
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
-  border: var(--subcontainer-border-mobile);
-  background-color: var(--level2-background-color);
+  /*background-color: var(--level2-background-color);*/
 }
 
 @media (min-width: 600px){
@@ -41,7 +40,7 @@
 }
 
 .electric-section-one-title-container {
-  background-color: var(--level3-background-color);
+ /* background-color: var(--level3-background-color);*/
 }
 
 @media (min-width: 600px) {
@@ -71,10 +70,7 @@
     "electric-section-one-subsection-copy-container";
   row-gap: var(--subsection-container-row-gap-mobile);
   column-gap: none;
-  /* ^for the media query after */
   padding: var(--subsection-container-padding-mobile);
-  /* border: var(--subsection-container-border-mobile); */
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
@@ -92,6 +88,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
+ /* padding: 5%;*//*for images if needs to look smaller*/
 }
 
 @media (min-width: 600px) {

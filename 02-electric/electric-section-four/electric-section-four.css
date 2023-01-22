@@ -19,52 +19,39 @@
 .electric-section-four-subsection-three-subtitle,
 .electric-section-four-subsection-three-paragraph-container,
 .electric-section-four-subsection-three-paragraph {
-  border: var(--temporary-border);
+ /*border: var(--temporary-border);*/
 }
 
 .electric-section-four-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  grid-template-areas:
+    "electric-section-four-title-container"
+    "electric-section-four-subcontainer-one"
+    "electric-section-four-subcontainer-two"
+    "electric-section-four-subcontainer-three";
+  justify-content: center;
+  row-gap: var(--subcontainer-row-gap-mobile);
+  column-gap: none;
+  padding: 30px 0;
+  background-color: var(--electric-section-four-container-background);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-container {
-    padding: var(--container-padding-desktop);
-  }
-}
-
-.electric-section-four-subcontainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "electric-section-four-title-container"
-    "electric-section-four-subsection-one-container"
-    "electric-section-four-subsection-two-container"
-    "electric-section-four-subsection-three-container";
-  justify-content: center;
-  row-gap: var(--subcontainer-row-gap-mobile);
-  column-gap: none;
-  padding: var(--subcontainer-padding-mobile);
-  border: var(--subcontainer-border-mobile);
-  background-color: var(--level2-background-color);
-}
-
-@media (min-width: 600px) {
-  .electric-section-four-subcontainer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 40px auto auto auto auto;
     grid-template-areas:
       "electric-section-four-title-container electric-section-four-title-container electric-section-four-title-container"
-      ". electric-section-four-subsection-two-container ."
-      "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
-      "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
-      "electric-section-four-subsection-one-container electric-section-four-subsection-two-container electric-section-four-subsection-three-container"
-      "electric-section-four-subsection-one-container . electric-section-four-subsection-three-container";
-    padding: var(--subcontainer-padding-desktop);
+      ". electric-section-four-subcontainer-two ."
+      "electric-section-four-subcontainer-one electric-section-four-subcontainer-two electric-section-four-subcontainer-three"
+      "electric-section-four-subcontainer-one electric-section-four-subcontainer-two electric-section-four-subcontainer-three"
+      "electric-section-four-subcontainer-one electric-section-four-subcontainer-two electric-section-four-subcontainer-three"
+      "electric-section-four-subcontainer-one electric-section-four-subcontainer-two electric-section-four-subcontainer-three";
+    /*padding: var(--subcontainer-padding-desktop);*/
     row-gap: var(--subcontainer-row-gap-desktop);
     column-gap: var(--subcontainer-column-gap-desktop);
+    padding: 10% 0;
   }
 }
 
@@ -72,7 +59,6 @@
   grid-area: electric-section-four-title-container;
   align-content: start;
   justify-content: center;
-  background-color: var(--level3-background-color);
 }
 
 .electric-section-four-title {
@@ -90,20 +76,33 @@
 
 /* subsection-one */
 
+.electric-section-four-subcontainer-one{
+  grid-area: electric-section-four-subcontainer-one;
+  padding: 30px 30px 30px 0;
+  background-color: var(--electric-section-four-subcontainer-background);
+}
+
+@media (min-width: 600px){
+  .electric-section-four-subcontainer-one{
+    padding: 0;
+  }
+}
+
 .electric-section-four-subsection-one-container {
   grid-area: electric-section-four-subsection-one-container;
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
-  border: var(--subsection-container-border-mobile);
+  border-radius: 30px 0 30px 0;
   padding: var(--subsection-container-padding-mobile);
-  background-color: var(--level3-background-color);
+  background-image: var(--electric-section-four-subsection-background);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-one-container {
     padding: var(--subsection-container-padding-desktop);
+    height: 100%;
   }
 }
 
@@ -181,19 +180,33 @@
 
 /* subsection-two */
 
+.electric-section-four-subcontainer-two{
+  grid-area: electric-section-four-subcontainer-two;
+  padding: 30px 30px 30px 30px;
+  background-color: var(--electric-section-four-subcontainer-background)
+}
+
+@media (min-width: 600px){
+  .electric-section-four-subcontainer-two{
+    padding: 0;
+  }
+}
+
 .electric-section-four-subsection-two-container {
   grid-area: electric-section-four-subsection-two-container;
   display: grid;
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
+  border-radius: 30px 30px 30px 30px;
   padding: var(--subsection-container--padding-mobile);
-  border: var(--subsection-container-border-mobile);
-  background-color: var(--level3-background-color);
+  background-image: var(--electric-section-four-subsection-background);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-two-container {
     padding: var(--subsection-container-padding-desktop);
+    height: 100%;
+    padding-bottom: 40px;
   }
 }
 
@@ -271,19 +284,32 @@
 
 /* subsection-three */
 
+.electric-section-four-subcontainer-three{
+  grid-area: electric-section-four-subcontainer-three;
+  padding: 30px 0 30px 30px;
+  background-color: var(--electric-section-four-subcontainer-background);
+}
+
+@media (min-width: 600px){
+  .electric-section-four-subcontainer-three{
+    padding: 0;
+  }
+}
+
 .electric-section-four-subsection-three-container {
-  grid-area: electric-section-four-subsection-three-container;
+  /* grid-area: electric-section-four-subsection-three-container; */
   display: grid;
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
+  border-radius: 30px 0 0 30px;
   padding: var(--subsection-container-padding-mobile);
-  border: var(--subsection-container-border-mobile);
-  background-color: var(--level3-background-color);
+  background-image:var(--electric-section-four-subsection-background);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-three-container {
     padding: var(--subsection-container-padding-desktop);
+    height: 100%;
   }
 }
 

@@ -4,16 +4,26 @@
   /******COLOR*****/
 
   /******gas-title**********/
-
-  --gas-title-row-gap-mobile: 2px;
+  --gas-title-row-gap-mobile: 15px;
   --gas-title-column-gap-desktop: 15px;
 
-  --gas-title-font-size-mobile: ;
-  --gas-title-font-size-desktop: ;
+  --gas-title-font-size-mobile: 20px;
+  --gas-title-font-size-desktop: 24px;
 
-  --gas-title-font-weight-desktop: ;
-  --gas-title-font-weight-mobile: ;
+  --gas-title-font-weight-mobile: 600;
+  --gas-title-font-weight-desktop: 600;
 
+  /******ELECTRIC*******/
+  --electric-section-one-container-background: linear-gradient(#F9F9F9,#FCECAF,#F9F9F9); 
 
+  --electric-section-two-container-background: linear-gradient(#FCECAF,#F9F9F9,#FCECAF);
+  --electric-section-two-subcontainer-background: #F9F9F9;
+
+  --electric-section-three-container-background:  #FCECAF;
+  --electric-section-three-subcontainer-background: #F9F9F9;
+
+  --electric-section-four-container-background:  #F9F9F9;
+  --electric-section-four-subcontainer-background: #F9F9F9;
+  --electric-section-four-subsection-background: linear-gradient(#F9F9F9,#FCECAF,#F6D341);
 }
 
