@@ -40,6 +40,7 @@
     grid-template-areas: 
     "gas-hero-copy-container gas-hero-img-container";
     column-gap: 40px;
+    padding: 5% 0;
   }
 }
   
@@ -74,7 +75,7 @@
   row-gap: 15px;
   padding: 50px 50px 50px 75px;
   background-image: var(--gas-hero-copy-container-background-image);
-  border-radius: var(--gas-hero-copy-container-offset-left-border-radius);
+  border-radius: var(--gas-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
 }
 

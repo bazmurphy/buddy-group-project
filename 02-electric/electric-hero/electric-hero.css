@@ -38,6 +38,7 @@
     grid-template-areas:
       "electric-hero-copy-container electric-hero-image-container";
     column-gap: 40px;
+    padding: 5% 0;
   }
 }
 
@@ -73,7 +74,7 @@
   row-gap: 15px;
   padding: 50px 50px 50px 70px;
   background-image: var(--electric-hero-copy-container-background-image);
-  border-radius: var(--site-hero-copy-container-border-radius-right-mobile);
+  border-radius: var(--electric-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
 }
 
