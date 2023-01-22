@@ -65,7 +65,7 @@
 
   /* WATER SECTION FIVE */
   --water-section-five-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9);
-  --water-section-five-subcontainer-border-radius: 30px;
+  --water-section-five-subcontainer-border-radius: 30px 30px 0 0;
 
   --water-section-five-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-five-subsection-container-border-radius: 30px;

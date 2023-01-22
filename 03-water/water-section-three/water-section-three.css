@@ -10,15 +10,14 @@
 .water-section-three-subsection-subtitle,
 .water-section-three-subsection-list,
 .water-section-three-subsection-list-item {
-  /* border: var(--temporary-border); */
+  border: var(--temporary-border);
 }
 
 .water-section-three-container {
   display: grid;
   grid-template-columns: 1fr;
-    /* padding: var(--container-padding-mobile); */
-    padding: 0 30px;
-    background: var(--water-section-container-background);
+  padding: var(--container-padding-mobile);
+  background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
@@ -35,9 +34,7 @@
     "water-section-three-title-container";
   /* align-content: start; */
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  background: var(--water-section-three-subcontainer-background);
-  border-radius: var(--water-section-three-subcontainer-border-radius);
+  padding: 0;
 }
 
 @media (min-width: 600px) {
@@ -51,6 +48,9 @@
     column-gap: 3%;
     /* padding: var(--subcontainer-padding-desktop) */
     padding: 0 5% 5% 5%;
+
+    background: var(--water-section-three-subcontainer-background);
+    border-radius: var(--water-section-three-subcontainer-border-radius);
   }
 }
 

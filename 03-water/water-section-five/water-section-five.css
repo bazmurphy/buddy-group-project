@@ -8,7 +8,7 @@
 .water-section-five-copy-container,
 .water-section-five-paragraph-container,
 .water-section-five-paragraph {
-  /* border: var(--temporary-border); */
+  border: var(--temporary-border);
 }
 
 .water-section-five-container {
@@ -21,17 +21,16 @@
 @media (min-width: 600px) {
   .water-section-five-container {
     /* padding: var(--container-padding-desktop); */
-    padding: 3% 5% 3% 5%;
+    padding: 3% 5% 0 5%;
   }
 }
 
 .water-section-five-subcontainer {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
+  /* align-content: start; */
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  background: var(--water-section-five-subcontainer-background);
-  border-radius: var(--water-section-five-subcontainer-border-radius);
+  padding: 0;
 }
 
 @media (min-width: 600px) {
@@ -41,6 +40,9 @@
     column-gap: 5%;
     /* padding: var(--subcontainer-padding-desktop); */
     padding: 5%;
+
+    background: var(--water-section-five-subcontainer-background);
+    border-radius: var(--water-section-five-subcontainer-border-radius);
   }
 }
 

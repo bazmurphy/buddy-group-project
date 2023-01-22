@@ -38,6 +38,7 @@
       "water-hero-image-container water-hero-copy-container";
     row-gap: none;
     column-gap: 40px;
+    padding: 5% 0;
   }
 }
 

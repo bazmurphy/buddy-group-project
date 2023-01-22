@@ -12,14 +12,13 @@
 .water-section-four-image-container,
 .water-section-four-image,
 .water-section-four-link {
-  /* border: var(--temporary-border); */
+  border: var(--temporary-border);
 }
 
 .water-section-four-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* padding: var(--container-padding-mobile); */
-  padding: 0 30px;
+  padding: var(--container-padding-mobile);
   background: var(--water-section-container-background);
 }
 

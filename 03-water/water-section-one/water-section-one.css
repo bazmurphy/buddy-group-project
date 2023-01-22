@@ -16,13 +16,13 @@
 .water-section-one-subsection-list-item,
 .water-section-one-subsection-image-container,
 .water-section-one-subsection-image {
-  /* border: var(--temporary-border); */
+  border: var(--temporary-border);
 }
 
 .water-section-one-container {
   display: grid;
-  /* padding: var(--container-padding-mobile); */
-  padding: 0 30px;
+  padding: var(--container-padding-mobile);
+  /* padding: 0 30px; */
   background: var(--water-section-container-background);
 }
 
