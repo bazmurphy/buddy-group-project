@@ -7,7 +7,7 @@
 .electric-hero-paragraph,
 .electric-hero-image-container,
 .electric-hero-image {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .electric-hero-container {
