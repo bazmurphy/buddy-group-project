@@ -2,58 +2,101 @@
   /* CHECK YOUR GLOBAL STYLE DOES NOT ALREADY EXIST */
   /* THEN PUT NEW GLOBAL STYLES HERE */
   
-  /* UX/UI additions */
-
-  --home-hero-container-background-image: linear-gradient(#f9f9f9,#a3e1f2);
-  --home-hero-copy-container-background-image: linear-gradient(#f9f9f9,#51c6f1);
-
-  --home-section-one-subcontainer-background-image: linear-gradient(#f9f9f9,#a3e1f2);
-  --home-section-two-container-background-image: linear-gradient(#a3e1f2,#f9f9f9,#a3e1f2);
+ 
   
-  --home-section-midblue-background-image: linear-gradient(#a3e1f2, #51c6f1);
+  /* HOME HERO */
+  --home-hero-container-background-image: linear-gradient(#f9f9f9,#a3e1f2);
+  
+  --home-hero-copy-container-background-image: linear-gradient(#f9f9f9,#51c6f1);
+  --home-hero-copy-container-border-radius: 0 30px 30px 0;
 
+  /* HOME SECTIONS */
+  --home-section-midblue-background-image: linear-gradient(#a3e1f2, #51c6f1);
   --home-section-midblue-background-color: #51c6f1;
   --home-section-lightblue-background-color: #a3e1f2;
+
+  /* HOME SECTION ONE */
+  --home-section-one-subcontainer-background-image: linear-gradient(#f9f9f9,#a3e1f2);
+  --home-section-two-container-background-image: linear-gradient(#a3e1f2,#f9f9f9,#a3e1f2);
 
   --home-section-one-sub-container-two-border-radius: 30px;
   --home-section-one-sub-container-one-border-radius: 0 30px 30px 0;
   --home-section-one-sub-container-three-border-radius: 30px 0 0 30px;
   --home-section-one-sub-container-padding-desktop: 30px 0 30px 0;
-  /* --home-section-one-sub-container-padding-desktop: 30px 0 30px 0; */
 
+
+
+  /* ELECTRIC HERO */
   --electric-hero-container-background-image: linear-gradient(#f9f9f9,#FCECAF);
+
   --electric-hero-copy-container-background-image: linear-gradient(#f9f9f9,#e9c741);
-  --electric-hero-copy-container-offset-left-border-radius: 0 30px 30px 0;
+  --electric-hero-copy-container-border-radius: 0 30px 30px 0;
 
-  --water-hero-container-background-image: linear-gradient(#f9f9f9,#2bbae2);
-  --water-hero-copy-container-background-image: linear-gradient(#f9f9f9,#049cc6);
-  --water-hero-copy-container-offset-left-border-radius: 0 30px 30px 0;
 
+
+  /* WATER HERO */
+  --water-hero-container-background: linear-gradient(#f9f9f9, #8AE5FD);
+  
+  --water-hero-copy-container-background: #8AE5FD;
+  --water-hero-copy-container-border-radius: 30px 0 0 30px;
+
+  /* WATER SECTIONS */
+  --water-section-container-background: #f9f9f9;
+
+  /* WATER SECTION ONE */
+  --water-section-one-subsection-one-container-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-one-subsection-one-border-radius: 30px 30px 0 0;
+
+  --water-section-one-subsection-two-container-background: linear-gradient( #F9F9F9,#8AE5FD);
+  --water-section-one-subsection-two-border-radius: 0 0 30px 30px;
+
+  --water-section-one-subsection-three-container-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-one-subsection-three-border-radius: 30px 30px 0 0;
+  
+  --water-section-one-subsection-four-container-background: linear-gradient( #F9F9F9,#8AE5FD);
+  --water-section-one-subsection-four-border-radius: 0 0 30px 30px;
+
+  /* WATER SECTION TWO */
+  --water-section-two-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-two-subcontainer-border-radius: 0 0 30px 30px;
+
+  --water-section-two-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-two-subsection-container-border-radius: 30px;
+
+  /* WATER SECTION THREE */
+  --water-section-three-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-three-subcontainer-border-radius: 0 0 30px 30px;
+
+  --water-section-three-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-three-subsection-container-border-radius: 30px;
+
+  /* WATER SECTION FOUR */
+  --water-section-four-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9, #8AE5FD);
+  --water-section-four-subcontainer-border-radius: 30px;
+
+  /* WATER SECTION FIVE */
+  --water-section-five-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-five-subcontainer-border-radius: 30px 30px 0 0;
+
+  --water-section-five-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-five-subsection-container-border-radius: 30px;
+
+
+  /* GAS HERO */
   --gas-hero-container-background-image: linear-gradient(#f9f9f9,#FBABB2);
+  
   --gas-hero-copy-container-background-image: linear-gradient(#f9f9f9,#ef707a);
-  --gas-hero-copy-container-offset-left-border-radius: 0 30px 30px 0;
+  --gas-hero-copy-container-border-radius: 30px 0 0 30px;
 
 
-
-  --container-offset-right-border-radius-desktop: 30px 0 0 30px;
-  --container-offset-left-border-radius-desktop: 0 30px 30px 0;
-  --site-hero-copy-container-border-radius-left-mobile: 30px 0 0 30px;
-  --site-hero-copy-container-border-radius-right-mobile: 0 30px 30px 0;
-
-  --site-hero-container-padding-zero-right-desktop: 60px 0 60px 30px;
-  --site-hero-container-padding-zero-left-desktop: 60px 30px 60px 0;
 
   --site-copy-container-padding-mobile: 30px 50px 30px 30px;
   --site-hero-container-padding-zero-right-mobile: 30px  0 30px 30px;
   --site-hero-container-padding-zero-left-mobile: 30px 30px 30px 0;
 
-  
-  
-
   --site-hero-text-container-padding-mobile: 20px 30px 20px 20px;
   --site-hero-text-container-padding-desktop: 20px 50px 10px 30px;
   
-
   --site-container-box-shadow-mobile: -3px 5px 5px 3px#acacb1;
   --site-container-box-shadow-desktop: -3px 5px 5px 3px #acacb1;
 

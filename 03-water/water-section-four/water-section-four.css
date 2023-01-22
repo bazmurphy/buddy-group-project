@@ -19,12 +19,13 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-four-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 3% 5%;
   }
 }
 
@@ -33,14 +34,18 @@
   grid-template-columns: 1fr;
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  background: var(--water-section-four-subcontainer-background);
+  border-radius: var(--water-section-four-subcontainer-border-radius);
 }
 
 @media (min-width: 600px) {
   .water-section-four-subcontainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     row-gap: var(--subcontainer-row-gap-desktop);
-    column-gap: var(--subcontainer-column-gap-desktop);
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    column-gap: 5%;
+    /* padding: var(--subcontainer-column-gap-desktop); */
+    padding: 5% 5%;
   }
 }
 
@@ -49,7 +54,6 @@
   grid-template-columns: 1fr;
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {

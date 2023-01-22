@@ -13,7 +13,7 @@
 .water-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  background-image: var(--water-hero-container-background-image);
+  background: var(--water-hero-container-background);
 }
 
 @media (min-width: 600px) {
@@ -38,6 +38,7 @@
       "water-hero-image-container water-hero-copy-container";
     row-gap: none;
     column-gap: 40px;
+    padding: 5% 0;
   }
 }
 
@@ -72,15 +73,14 @@
   align-content: center;
   row-gap: 15px;
   padding: 50px 75px 50px 50px;
-  background-image: var(--water-hero-copy-container-background-image);
-  border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
+  background: var(--water-hero-copy-container-background);
+  border-radius: var(--water-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
   .water-hero-copy-container { 
     padding: 50px;
-    border-radius: var(--container-offset-right-border-radius-desktop);
     box-shadow: var(--site-container-box-shadow-desktop);
   }
 }

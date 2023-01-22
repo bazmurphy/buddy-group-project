@@ -17,24 +17,24 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-three-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 3% 5%;
   }
 }
 
 .water-section-three-subcontainer {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   grid-template-areas: 
     "water-section-three-title-container";
-  align-content: start;
+  /* align-content: start; */
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  padding: 0;
 }
 
 @media (min-width: 600px) {
@@ -42,8 +42,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "water-section-three-title-container water-section-three-title-container water-section-three-title-container";
-    row-gap: var(--subcontainer-row-gap-desktop);
-    column-gap: var(--subcontainer-column-gap-desktop);
+    /* row-gap: var(--subcontainer-row-gap-desktop); */
+    row-gap: 3%;
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    column-gap: 3%;
+    /* padding: var(--subcontainer-padding-desktop) */
+    padding: 0 5% 5% 5%;
+
+    background: var(--water-section-three-subcontainer-background);
+    border-radius: var(--water-section-three-subcontainer-border-radius);
   }
 }
 
@@ -52,14 +59,11 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--title-container-row-gap-mobile);
-  /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .water-section-three-title-container {
     row-gap: var(--title-container-row-gap-desktop);
-      /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
   }
 }
 
@@ -95,9 +99,8 @@
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
   padding: var(--subsection-container-padding-mobile);
-  /* border: var(--subsection-container-border-mobile); */
-  /* ^ in figma this has no border */
-  background-color: var(--level3-background-color);
+  background: var(--water-section-three-subsection-container-background);
+  border-radius: var(--water-section-three-subsection-container-border-radius);
   /* border-bottom: 1px solid black; */
   /* ^ in figma they have a border on the bottom */
 }
@@ -105,7 +108,8 @@
 @media (min-width: 600px) {
   .water-section-three-subsection-container {
     row-gap: var(--subsection-container-row-gap-desktop);
-    padding: var(--subsection-container-padding-desktop);
+    /* padding: var(--subsection-container-padding-desktop); */
+    padding: 5%;
     /* border: var(--subsection-container-border-desktop); */
     /* ^ in figma this has no border */
   }
