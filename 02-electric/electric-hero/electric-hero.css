@@ -2,26 +2,23 @@
 .electric-hero-subcontainer,
 .electric-hero-copy-container,
 .electric-hero-title,
+.electric-hero-subtitle,
 .electric-hero-paragraph-container,
 .electric-hero-paragraph,
-.electric-hero-container,
 .electric-hero-image-container,
 .electric-hero-image {
   border: var(--temporary-border);
-  border: none;
 }
 
 .electric-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color); */
   background-image: var(--electric-hero-container-background-image);
 }
 
 @media (min-width: 600px) {
   .electric-hero-container {
-   
+    
   }
 }
 
@@ -31,14 +28,8 @@
   grid-template-areas:
     "electric-hero-image-container electric-hero-image-container"
     "electric-hero-copy-container .";
-  grid-template-rows: auto auto;
-  /*row-gap: var(--subcontainer-row-gap-mobile);*/
   row-gap: 30px;
   padding: 30px 0;
-  /* ^for the media query after */
-  /* padding: var(--subcontainer-padding-mobile); */
-  /* border: var(--subcontainer-border-mobile); */
-  /* background-color: var(--level2-background-color); */
 }
 
 @media (min-width:600px) {
@@ -47,18 +38,15 @@
     grid-template-areas:
       "electric-hero-copy-container electric-hero-image-container";
     column-gap: 40px;
-    /*column-gap: var(--subcontainer-column-gap-desktop);**/
-    /* padding: var(--subcontainer-padding-desktop); */
   }
 }
 
 .electric-hero-image-container {
-  grid-area:electric-hero-image-container;
+  grid-area: electric-hero-image-container;
   display: grid;
   justify-content: center;
   align-content: center;
-  padding: 0 5%;
-  /* background-color: var(--level3-background-color); */
+  padding: 0 5% 0 5%;
 }
 
 @media (min-width: 600px) {
@@ -82,21 +70,17 @@
   grid-area: electric-hero-copy-container;
   display: grid;
   align-content: center;
-  /* padding: var(--copy-container-padding-mobile);
-  background-color: var(--level3-background-color); */
-  /*additions made by ux/ui */
+  row-gap: 15px;
   padding: 50px 50px 50px 70px;
   background-image: var(--electric-hero-copy-container-background-image);
   border-radius: var(--site-hero-copy-container-border-radius-right-mobile);
   box-shadow: var(--site-container-box-shadow-mobile);
-  row-gap: 15px;
 }
 
 @media (min-width: 600px) {
   .electric-hero-copy-container {
-    /* padding: var(--site-hero-copy-container-padding-desktop); */
-    border-radius: var(--electric-hero-copy-container-offset-left-border-radius);
     padding: 50px 50px 50px 50px;
+    border-radius: var(--electric-hero-copy-container-offset-left-border-radius);
   }
 }
 
