@@ -22,7 +22,6 @@
 .water-section-one-container {
   display: grid;
   padding: var(--container-padding-mobile);
-  /* padding: 0 30px; */
   background: var(--water-section-container-background);
 }
 
