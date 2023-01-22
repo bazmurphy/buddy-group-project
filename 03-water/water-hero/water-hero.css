@@ -74,14 +74,13 @@
   row-gap: 15px;
   padding: 50px 75px 50px 50px;
   background: var(--water-hero-copy-container-background);
-  border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
+  border-radius: var(--water-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
   .water-hero-copy-container { 
     padding: 50px;
-    border-radius: var(--container-offset-right-border-radius-desktop);
     box-shadow: var(--site-container-box-shadow-desktop);
   }
 }
