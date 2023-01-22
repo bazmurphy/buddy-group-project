@@ -13,7 +13,7 @@
 .electric-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  background-image: var(--electric-hero-container-background-image);
+  background: var(--electric-hero-container-background);
 }
 
 @media (min-width: 600px) {
@@ -38,6 +38,7 @@
     grid-template-areas:
       "electric-hero-copy-container electric-hero-image-container";
     column-gap: 40px;
+    padding: 5% 0;
   }
 }
 
@@ -72,15 +73,15 @@
   align-content: center;
   row-gap: 15px;
   padding: 50px 50px 50px 70px;
-  background-image: var(--electric-hero-copy-container-background-image);
-  border-radius: var(--site-hero-copy-container-border-radius-right-mobile);
+  background: var(--electric-hero-copy-container-background);
+  border-radius: var(--electric-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-hero-copy-container {
-    padding: 50px 50px 50px 50px;
-    border-radius: var(--electric-hero-copy-container-offset-left-border-radius);
+    padding: 8%;
+    box-shadow: var(--site-container-box-shadow-desktop);
   }
 }
 

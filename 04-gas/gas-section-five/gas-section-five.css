@@ -47,7 +47,7 @@
   border-bottom-right-radius: 30px;
   
   /* background-color: var(--level2-background-color); */
-  background-image: linear-gradient(#F9F9F9, #FACFD3);
+  background: linear-gradient(#F9F9F9, #FACFD3);
 }
 
 @media (min-width:600px) {
