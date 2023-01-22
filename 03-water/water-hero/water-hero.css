@@ -7,8 +7,7 @@
 .water-hero-subtitle,
 .water-hero-paragraph-container,
 .water-hero-paragraph {
-  border: var(--temporary-border);
-  border: none;
+  /* border: var(--temporary-border); */
 }
 
 .water-hero-container {
@@ -28,20 +27,18 @@
   grid-template-areas: 
     "water-hero-image-container water-hero-image-container"
     ". water-hero-copy-container";
-  row-gap: var(--subcontainer-row-gap-mobile);
+  row-gap: 30px;
   padding: 30px 0;
-  /* padding: var(--subcontainer-padding-mobile); */
-  /* background-color: var(--level2-background-color); */
 }
 
 @media (min-width: 600px) {
   .water-hero-subcontainer {
     grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
-    "water-hero-image-container water-hero-copy-container";
+      "water-hero-image-container water-hero-copy-container";
     row-gap: none;
-    column-gap: var(--subcontainer-column-gap-desktop);
-}
+    column-gap: 40px;
+  }
 }
 
 .water-hero-image-container {
@@ -49,11 +46,12 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  /* background-color: var(--level3-background-color); */
+  padding: 0 5% 0 5%;
 }
 
 @media (min-width: 600px) {
   .water-hero-image-container {
+    padding: 0 0 0 5%;
   }
 }
 
@@ -72,16 +70,15 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  padding: 50px 70px 50px 50px;
+  row-gap: 15px;
+  padding: 50px 75px 50px 50px;
   background-image: var(--water-hero-copy-container-background-image);
   border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
   box-shadow: var(--site-container-box-shadow-mobile);
-  row-gap: 15px;
 }
 
 @media (min-width: 600px) {
   .water-hero-copy-container { 
-    /* padding: var(--copy-container-padding-desktop); */
     padding: 50px;
     border-radius: var(--container-offset-right-border-radius-desktop);
     box-shadow: var(--site-container-box-shadow-desktop);
