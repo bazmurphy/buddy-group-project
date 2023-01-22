@@ -36,7 +36,7 @@
     "home-section-two-subsection-four";
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  background-image: var(--home-section-two-container-background-image);
+  background: var(--home-section-two-container-background);
   box-shadow: var( --site-container-box-shadow-mobile);
   padding: 30px 20px;
   row-gap: 40px;

@@ -63,16 +63,16 @@
 
 @media (min-width: 600px) {
   .water-hero-image {
+
   }
 }
 
 .water-hero-copy-container {
   grid-area: water-hero-copy-container;
   display: grid;
-  grid-template-columns: 1fr;
   align-content: center;
   row-gap: 15px;
-  padding: 50px 75px 50px 50px;
+  padding: 50px 70px 50px 50px;
   background: var(--water-hero-copy-container-background);
   border-radius: var(--water-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
@@ -80,7 +80,7 @@
 
 @media (min-width: 600px) {
   .water-hero-copy-container { 
-    padding: 50px;
+    padding: 8%;
     box-shadow: var(--site-container-box-shadow-desktop);
   }
 }

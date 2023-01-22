@@ -49,7 +49,7 @@
   padding: 0 25px 60px 25px;
   /* border: var(--subcontainer-border-mobile); */
   /* background-color: var(--level2-background-color); */
-  background-image: var(--home-section-one-subcontainer-background-image);
+  background: var(--home-section-one-subcontainer-background);
   box-shadow: var( --site-container-box-shadow-mobile);
   /* border: 2px solid lime; */
 }
