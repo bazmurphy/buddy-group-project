@@ -16,13 +16,15 @@
 .water-section-three-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+    /* padding: var(--container-padding-mobile); */
+    padding: 0 30px;
+    background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-three-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 0 75px;
   }
 }
 
@@ -34,7 +36,8 @@
   align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  background: var(--water-section-three-subcontainer-background);
+  border-radius: var(--water-section-three-subcontainer-border-radius);
 }
 
 @media (min-width: 600px) {
@@ -52,14 +55,12 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--title-container-row-gap-mobile);
-  /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
   background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .water-section-three-title-container {
     row-gap: var(--title-container-row-gap-desktop);
-      /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
   }
 }
 
@@ -95,9 +96,8 @@
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
   padding: var(--subsection-container-padding-mobile);
-  /* border: var(--subsection-container-border-mobile); */
-  /* ^ in figma this has no border */
-  background-color: var(--level3-background-color);
+  background: var(--water-section-three-subsection-container-background);
+  border-radius: var(--water-section-three-subsection-container-border-radius);
   /* border-bottom: 1px solid black; */
   /* ^ in figma they have a border on the bottom */
 }
