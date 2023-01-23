@@ -2,7 +2,7 @@
 .water-section-three-subcontainer,
 .water-section-three-title-container,
 .water-section-three-title,
-.water-section-three-subtitle,
+.water-section-three-title-paragraph, 
 .water-section-three-subsection-container,
 .water-section-three-subsection-image-container,
 .water-section-three-subsection-image,
@@ -88,16 +88,16 @@
   }
 }
 
-.water-section-three-subtitle {
+.water-section-three-title-paragraph {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
+  font-size: var(--title-paragraph-font-size-mobile);
+  font-weight: var(--title-paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .water-section-three-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
+  .water-section-three-title-paragraph {
+    font-size: var(--title-paragraph-font-size-desktop);
+    font-weight: var(--title-paragraph-font-weight-desktop);
   }
 }
 

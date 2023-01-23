@@ -64,6 +64,12 @@
   /* WATER SECTIONS */
   --water-section-container-background: #f9f9f9;
 
+  --title-paragraph-font-size-mobile: 20px;
+  --title-paragraph-font-size-desktop: 22px;
+  
+  --title-paragraph-font-weight-mobile: 500;
+  --title-paragraph-font-weight-desktop: 500;
+
   /* WATER SECTION ONE */
   --water-section-one-subsection-one-container-background: linear-gradient(#8AE5FD,#F9F9F9);
   --water-section-one-subsection-one-border-radius: 30px 30px 0 0;
