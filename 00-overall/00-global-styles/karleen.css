@@ -64,6 +64,12 @@
   /* WATER SECTIONS */
   --water-section-container-background: #f9f9f9;
 
+  --title-paragraph-font-size-mobile: 20px;
+  --title-paragraph-font-size-desktop: 22px;
+  
+  --title-paragraph-font-weight-mobile: 500;
+  --title-paragraph-font-weight-desktop: 500;
+
   /* WATER SECTION ONE */
   --water-section-one-subsection-one-container-background: linear-gradient(#8AE5FD,#F9F9F9);
   --water-section-one-subsection-one-border-radius: 30px 30px 0 0;
@@ -77,12 +83,49 @@
   --water-section-one-subsection-four-container-background: linear-gradient( #F9F9F9,#8AE5FD);
   --water-section-one-subsection-four-border-radius: 0 0 30px 30px;
 
+  --water-section-one-title-font-size: ;
+  --water-section-one-title-font-weight: ;
+
+  --water-section-one-subtitle-font-size: ;
+  --water-section-one-subtitle-font-weight: ;
+
+  --water-section-one-subsection-title-font-size: ;
+  --water-section-one-subsection-title-font-weight: ;
+
+  --water-section-one-subsection-subtitle-font-size: ;
+  --water-section-one-subsection-subtitle-font-weight: ;
+
+  --water-section-one-paragraph-font-size: ;
+  --water-section-one-paragraph-font-weight: ;
+
+  --water-section-one-list-item-font-size: ;
+  --water-section-one-list-item-font-weight: ;
+
+  --water-section-one-image-max-width-mobile: ;
+  --water-section-one-image-max-width-desktop: ;
+
   /* WATER SECTION TWO */
   --water-section-two-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-two-subcontainer-border-radius: 0 0 30px 30px;
 
   --water-section-two-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-two-subsection-container-border-radius: 30px;
+  --water-section-two-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
+
+  --water-section-two-title-font-size: ;
+  --water-section-two-title-font-weight: ;
+
+  --water-section-two-subtitle-font-size: ;
+  --water-section-two-subtitle-font-weight: ;
+  
+  --water-section-two-subsection-subtitle-font-size: ;
+  --water-section-two-subsection-subtitle-font-weight: ;
+  
+  --water-section-two-subsection-list-item-font-size: ;
+  --water-section-two-subsection-list-item-font-weight: ;
+
+  --water-section-two-subsection-image-max-width-mobile: ;
+  --water-section-two-subsection-image-max-width-desktop: ;
 
   /* WATER SECTION THREE */
   --water-section-three-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
@@ -90,10 +133,38 @@
 
   --water-section-three-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-three-subsection-container-border-radius: 30px;
+  --water-section-three-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
+
+  --water-section-three-title-font-size: ;
+  --water-section-three-title-font-weight: ;
+
+  --water-section-three-subtitle-font-size: ;
+  --water-section-three-subtitle-font-weight: ;
+  
+  --water-section-three-subsection-subtitle-font-size: ;
+  --water-section-three-subsection-subtitle-font-weight: ;
+  
+  --water-section-three-subsection-list-item-font-size: ;
+  --water-section-three-subsection-list-item-font-weight: ;
+
+  --water-section-three-subsection-image-max-width-mobile: ;
+  --water-section-three-subsection-image-max-width-desktop: ;
 
   /* WATER SECTION FOUR */
   --water-section-four-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9, #8AE5FD);
   --water-section-four-subcontainer-border-radius: 30px;
+
+  --water-section-four-title-font-size: ;
+  --water-section-four-title-font-weight: ;
+
+  --water-section-four-subtitle-font-size: ;
+  --water-section-four-subtitle-font-weight: ;
+
+  --water-section-four-paragraph-font-size: ;
+  --water-section-four-list-item-font-weight: ;
+
+  --water-section-four-image-max-width-mobile: ;
+  --water-section-four-image-max-width-desktop: ;
 
   /* WATER SECTION FIVE */
   --water-section-five-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9);
@@ -101,8 +172,8 @@
 
   --water-section-five-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
   --water-section-five-subsection-container-border-radius: 30px;
-
-
+  --water-section-five-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
+  
   /* GAS HERO */
   --gas-hero-container-background: linear-gradient(#f9f9f9,#FBABB2);
   

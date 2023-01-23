@@ -2,7 +2,7 @@
 .water-section-one-subcontainer,
 .water-section-one-title-container,
 .water-section-one-title,
-.water-section-one-subtitle,
+.water-section-one-title-paragraph, 
 .water-section-one-subsection-one-container,
 .water-section-one-subsection-two-container,
 .water-section-one-subsection-three-container,
@@ -16,7 +16,7 @@
 .water-section-one-subsection-list-item,
 .water-section-one-subsection-image-container,
 .water-section-one-subsection-image {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .water-section-one-container {
@@ -28,7 +28,8 @@
 @media (min-width: 600px) {
   .water-section-one-container {
     /* padding: var(--container-padding-desktop); */
-    padding: 3% 5% 3% 5%;
+    /* padding: 3% 5% 3% 5%; */
+    padding: 3% 5% 0 5%;
   }
 }
 
@@ -40,7 +41,8 @@
 
 @media (min-width: 600px) {
   .water-section-one-subcontainer {
-    row-gap: var(--subcontainer-row-gap-desktop);
+    /* row-gap: var(--subcontainer-row-gap-desktop); */
+    row-gap: 50px;
     /* ^gap between subsections in Desktop */
   }
 }
@@ -69,16 +71,17 @@
   }
 }
 
-.water-section-one-subtitle {
+.water-section-one-title-paragraph {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
+  font-size: var(--title-paragraph-font-size-mobile);
+  font-weight: var(--title-paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .water-section-one-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
+  .water-section-one-title-paragraph {
+    font-size: var(--title-paragraph-font-size-desktop);
+    font-weight: var(--title-paragraph-font-weight-desktop);
+    padding: 0 10%;
   }
 }
 
@@ -102,11 +105,12 @@
       "water-section-one-subsection-one-image-container water-section-one-subsection-one-copy-container-one"
       "water-section-one-subsection-one-copy-container-two water-section-one-subsection-one-copy-container-two";
     /* row-gap: var(--subsection-container-row-gap-desktop); */
-    row-gap: 5%;
+    /* row-gap: 5%; */
+    row-gap: 30px;
     /* column-gap: var(--subsection-container-column-gap-desktop); */
     column-gap: 5%;
     /* padding: var(--subsection-container-padding-desktop); */
-    padding: 5% 5%;
+    padding: 10% 10% 10% 10%;
   }
 }
 
@@ -143,11 +147,12 @@
       "water-section-one-subsection-two-image-container-one water-section-one-subsection-two-image-container-two"
       "water-section-one-subsection-two-copy-container-one water-section-one-subsection-two-copy-container-two";
     /* row-gap: var(--subsection-container-row-gap-desktop); */
-    row-gap: 5%;
+    /* row-gap: 5%; */
+    row-gap: 30px;
     /* column-gap: var(--subsection-container-column-gap-desktop); */
     column-gap: 5%;
     /* padding: var(--subsection-container-padding-desktop); */
-    padding: 5% 5%;
+    padding: 0% 10% 10% 10%;
   }
 }
 
@@ -187,11 +192,12 @@
       "water-section-one-subsection-three-image-container water-section-one-subsection-three-copy-container-one"
       "water-section-one-subsection-three-copy-container-two water-section-one-subsection-three-copy-container-two";
     /* row-gap: var(--subsection-container-row-gap-desktop); */
-    row-gap: 5%;
+    /* row-gap: 5%; */
+    row-gap: 30px;
     /* column-gap: var(--subsection-container-column-gap-desktop); */
     column-gap: 5%;
     /* padding: var(--subsection-container-padding-desktop); */
-    padding: 5% 5%;
+    padding: 10% 10% 10% 10%;
   }
 }
 
@@ -224,11 +230,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "water-section-one-subsection-four-image-container water-section-one-subsection-four-copy-container";
         /* row-gap: var(--subsection-container-row-gap-desktop); */
-    row-gap: 5%;
+    /* row-gap: 5%; */
+    row-gap: 0;
     /* column-gap: var(--subsection-container-column-gap-desktop); */
     column-gap: 5%;
     /* padding: var(--subsection-container-padding-desktop); */
-    padding: 5% 5%;
+    padding: 0% 10% 10% 10%;
   }
 }
 
@@ -350,10 +357,11 @@
 .water-section-one-subsection-image {
   display: block;
   width: 100%;
+  max-width: 225px;
 }
 
 @media (min-width: 600px) {
   .water-section-one-subsection-image {
-
+    max-width: 300px;
   }
 }
