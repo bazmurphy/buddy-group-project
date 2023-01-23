@@ -10,47 +10,55 @@
 .water-section-three-subsection-subtitle,
 .water-section-three-subsection-list,
 .water-section-three-subsection-list-item {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .water-section-three-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
+  /* padding: var(--container-padding-mobile); */
+  padding: 15px 0;
+  /* ^top and bottom padding in mobile */
   background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-three-container {
-    /* padding: var(--container-padding-desktop); */
-    padding: 3% 5%;
+
   }
 }
 
 .water-section-three-subcontainer {
   display: grid;
-  /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr;
+  grid-template-columns: 0.05fr 0.05fr 0.9fr 0.05fr 0.05fr;
   grid-template-areas: 
-    "water-section-three-title-container";
-  /* align-content: start; */
+    "water-section-three-title-container water-section-three-title-container water-section-three-title-container water-section-three-title-container water-section-three-title-container"
+    "water-section-three-subsection-container-one water-section-three-subsection-container-one water-section-three-subsection-container-one . ."
+    ". water-section-three-subsection-container-two water-section-three-subsection-container-two water-section-three-subsection-container-two ."
+    ". . water-section-three-subsection-container-three water-section-three-subsection-container-three water-section-three-subsection-container-three";
+  align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: 0;
 }
 
 @media (min-width: 600px) {
   .water-section-three-subcontainer {
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, auto); */
     grid-template-areas:
-      "water-section-three-title-container water-section-three-title-container water-section-three-title-container";
+      "water-section-three-title-container water-section-three-title-container water-section-three-title-container"
+      "water-section-three-subsection-container-one water-section-three-subsection-container-two water-section-three-subsection-container-three";
     /* row-gap: var(--subcontainer-row-gap-desktop); */
-    row-gap: 3%;
+    row-gap: 70px;
+
     /* column-gap: var(--subcontainer-column-gap-desktop); */
     column-gap: 3%;
+
     /* padding: var(--subcontainer-padding-desktop) */
-    padding: 0 5% 5% 5%;
+    padding: 7% 0;
 
     background: var(--water-section-three-subcontainer-background);
-    border-radius: var(--water-section-three-subcontainer-border-radius);
+    /* border-radius: var(--water-section-three-subcontainer-border-radius); */
   }
 }
 
@@ -100,19 +108,30 @@
   row-gap: var(--subsection-container-row-gap-mobile);
   padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-three-subsection-container-background);
-  border-radius: var(--water-section-three-subsection-container-border-radius);
-  /* border-bottom: 1px solid black; */
-  /* ^ in figma they have a border on the bottom */
+  box-shadow: var(--water-section-three-subsection-container-box-shadow);
 }
 
 @media (min-width: 600px) {
   .water-section-three-subsection-container {
     row-gap: var(--subsection-container-row-gap-desktop);
     /* padding: var(--subsection-container-padding-desktop); */
-    padding: 5%;
-    /* border: var(--subsection-container-border-desktop); */
-    /* ^ in figma this has no border */
+    padding: 10%;
   }
+}
+
+.water-section-three-subsection-container-one {
+  grid-area: water-section-three-subsection-container-one;
+  border-radius: 0 30px 30px 0;
+}
+
+.water-section-three-subsection-container-two {
+  grid-area: water-section-three-subsection-container-two;
+  border-radius: 30px;
+}
+
+.water-section-three-subsection-container-three {
+  grid-area: water-section-three-subsection-container-three;
+  border-radius: 30px 0 0 30px;
 }
 
 .water-section-three-subsection-image-container {

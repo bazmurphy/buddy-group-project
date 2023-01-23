@@ -8,7 +8,7 @@
 .water-section-five-copy-container,
 .water-section-five-paragraph-container,
 .water-section-five-paragraph {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .water-section-five-container {
@@ -21,7 +21,7 @@
 @media (min-width: 600px) {
   .water-section-five-container {
     /* padding: var(--container-padding-desktop); */
-    padding: 3% 5% 0 5%;
+    padding: 5% 5% 0 5%;
   }
 }
 
@@ -39,7 +39,7 @@
     /* column-gap: var(--subcontainer-column-gap-desktop); */
     column-gap: 5%;
     /* padding: var(--subcontainer-padding-desktop); */
-    padding: 5%;
+    padding: 7% 5%;
 
     background: var(--water-section-five-subcontainer-background);
     border-radius: var(--water-section-five-subcontainer-border-radius);
@@ -54,13 +54,14 @@
   padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-five-subsection-container-background);
   border-radius: var(--water-section-five-subsection-container-border-radius);
+  box-shadow: var(--water-section-five-subsection-container-box-shadow);
 }
 
 @media (min-width: 600px) {
   .water-section-five-subsection-container {
     row-gap: var(--subsection-container-row-gap-desktop);
     /* padding: var(--subsection-container-padding-desktop); */
-    padding: 5%;
+    padding: 10%;
   }
 }
 
