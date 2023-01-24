@@ -25,5 +25,7 @@
   --electric-section-four-container-background:  #F9F9F9;
   --electric-section-four-subcontainer-background: #F9F9F9;
   --electric-section-four-subsection-background: linear-gradient(#F9F9F9,#FCECAF,#F6D341);
+
+  --electric-section-four-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
 }
 
