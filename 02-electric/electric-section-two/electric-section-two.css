@@ -22,7 +22,7 @@
    ". electric-section-two-subcontainer";
   /*padding: var(--container-padding-mobile);*/
   padding: 15px 0;
-  background-image: var(--electric-section-two-container-background);
+  background-color: var(--electric-section-two-container-background);
 }
 
 @media (min-width: 600px) {
