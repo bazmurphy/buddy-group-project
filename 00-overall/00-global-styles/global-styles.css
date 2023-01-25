@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url("boshra.css");
@@ -21,38 +22,16 @@
   --yellow: #FFD324;
   --mid-blue: #042F7A;
   --dark-blue: #04245C;
-  --red: hsl(0, 100%, 45%);
+  --red: #e60000;
   --light-gray:#D9D9D9;
   --light-blue:#CBE9FA;
 
   /* FONTS */
-  /* title */
-  /* --title-font-size-mobile: 24px; */
-  /* --title-font-size-desktop: 26px; */
 
-  /* --title-font-weight-mobile: 600; */
-  /* --title-font-weight-desktop: 600; */
-
-  /* subtitle */
-  /* --subtitle-font-size-mobile: 20px; */
-  /* --subtitle-font-size-desktop: 24px; */
-
-  /* --subtitle-font-weight-mobile: 500; */
-  /* --subtitle-font-weight-desktop: 500; */
-
-  /* paragraph */
-  /* --paragraph-font-size-mobile: 14px; */
-  /* --paragraph-font-size-desktop: 16px; */
-
-  /* --paragraph-font-weight-mobile: 400; */
-  /* --paragraph-font-weight-desktop: 400; */
-
-  /* list-item */
-  /* --list-item-font-size-mobile: ; */
-  /* --list-item-font-size-mobile: ; */
-
-  /* --list-item-font-weight-mobile: ; */
-  /* --list-item-font-weight-mobile: ; */
+  /* --font-one: "Poppins"; */
+  /* --font-two: "Poppins"; */
+  --font-one: "Raleway";
+  --font-two: "Questrial";
 
   /* container */
   --container-padding-mobile: 15px;
@@ -103,8 +82,8 @@
   --paragraph-container-row-gap-desktop: 20px;
 
   /* list */
-  --list-padding-left-mobile: ;
-  --list-padding-left-desktop: ;
+  --list-padding-left-mobile: 20px;
+  --list-padding-left-desktop: 20px;
 
   /* link */
   --link-color-mobile: var(--white);
@@ -232,7 +211,6 @@
   --gas-hero-copy-container-border-radius: 0 30px 30px 0;
 
   /* GAS SECTIONS */
-
   --gas-sections-title-font-size-mobile: 22px;
   --gas-sections-title-font-weight-mobile: 600;
   --gas-sections-title-font-size-desktop: 28px;
@@ -242,7 +220,6 @@
   --gas-sections-subtitle-font-weight-mobile: 600;
   --gas-sections-subtitle-font-size-desktoo: 20px;
   --gas-sections-subtitle-font-weight-desktop: 600;
-
 }
 
 
@@ -261,7 +238,7 @@
 /* FONTS */
 
 h1 {
-  font-family: "Raleway";
+  font-family: var(--font-one);
   font-size: 32px;
   font-weight: 600;
 }
@@ -272,7 +249,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Raleway";
+  font-family: var(--font-one);
   font-size: 28px;
   font-weight: 600;
 }
@@ -283,7 +260,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Raleway";
+  font-family: var(--font-one);
   font-size: 22px;
   font-weight: 600;
 }
@@ -294,7 +271,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Raleway";
+  font-family: var(--font-one);
   font-size: 18px;
   font-weight: 600;
 }
@@ -305,7 +282,7 @@ h4 {
 }
 
 a {
-  font-family: "Questrial";
+  font-family: var(--font-two);
   font-size: 16px;
   font-weight: 600;
 }
@@ -316,7 +293,7 @@ a {
 }
 
 p {
-  font-family: "Questrial";
+  font-family: var(--font-two);
   font-size: 16px;
   font-weight: 400;
 }
@@ -328,7 +305,7 @@ p {
 
 p a {
   /* link tags inside paragraphs */
-  font-family: "Questrial";
+  font-family: var(--font-two);
   font-size: 16px;
   font-weight: 400;
 }
@@ -339,7 +316,7 @@ p a {
 }
 
 li {
-  font-family: "Questrial";
+  font-family: var(--font-two);
   font-size: 16px;
   font-weight: 400;
 }
@@ -353,7 +330,7 @@ li {
 
 li a {
   /* link tags inside list items */
-  font-family: "Questrial";
+  font-family: var(--font-two);
   font-size: 16px;
   font-weight: 400;
 }
