@@ -19,8 +19,7 @@
   /* padding: var(--container-padding-mobile); */
   padding: 30px 30px 0px 30px;
   
-  /* background-color: var(--level1-background-color); */
-    background-color: #F9F9F9;
+  background-color: #F9F9F9;
 }
 
 @media (min-width:600px) {
@@ -45,8 +44,7 @@
   /* border: var(--subcontainer-border-mobile); */
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  
-  /* background-color: var(--level2-background-color); */
+
   background: linear-gradient(#FACFD3,#f9f9f9);
 }
 
@@ -67,7 +65,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -78,6 +75,7 @@
 }
 
 .gas-section-seven-title-container{
+
 }
 
 @media (min-width: 600px){
@@ -90,25 +88,29 @@
   flex-direction: column;
   row-gap: var(--gas-title-row-gap-mobile);
   text-align: center;
-  font-size: var(--gas-title-font-size-mobile);
-  font-weight: var(--gas-title-font-weight-mobile);
+  /* CUSTOM FONT SIZE & WEIGHT */
+  font-size: var(--gas-sections-title-font-size-mobile);
+  font-weight: var(--gas-sections-title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
 .gas-section-seven-title {
-  flex-direction: row;
-  column-gap: var(--gas-title-column-gap-desktop);
-  row-gap: none;
-  text-align: left;
-  font-size: var(--gas-title-font-size-desktop);
-  font-weight: var(--gas-title-font-weight-desktop);
- }
+    flex-direction: row;
+    column-gap: var(--gas-title-column-gap-desktop);
+    row-gap: none;
+    text-align: left;
+    /* CUSTOM FONT SIZE & WEIGHT */
+    font-size: var(--gas-sections-title-font-size-desktop);
+    font-weight: var(--gas-sections-title-font-weight-desktop);
+  }
 }
 
-.gas-section-seven-title-span-number{
+.gas-section-seven-title-span-number {
+
 }
 
-.gas-section-seven-title-span-title{
+.gas-section-seven-title-span-title {
+
 }
 
 .gas-section-seven-paragraph-container {
@@ -118,20 +120,17 @@
 
 @media (min-width: 600px) {
   .gas-section-seven-paragraph-container {
+
   }
 }
 
 .gas-section-seven-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
  .gas-section-seven-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -140,7 +139,6 @@
   display: grid;
   justify-content: center; 
   align-content: start;
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {

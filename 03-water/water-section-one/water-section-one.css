@@ -60,27 +60,19 @@
 
 .water-section-one-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-one-title {
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
 .water-section-one-title-paragraph {
   text-align: center;
-  font-size: var(--title-paragraph-font-size-mobile);
-  font-weight: var(--title-paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-one-title-paragraph {
-    font-size: var(--title-paragraph-font-size-desktop);
-    font-weight: var(--title-paragraph-font-weight-desktop);
     padding: 0 10%;
   }
 }
@@ -192,7 +184,6 @@
       "water-section-one-subsection-three-image-container water-section-one-subsection-three-copy-container-one"
       "water-section-one-subsection-three-copy-container-two water-section-one-subsection-three-copy-container-two";
     /* row-gap: var(--subsection-container-row-gap-desktop); */
-    /* row-gap: 5%; */
     row-gap: 30px;
     /* column-gap: var(--subsection-container-column-gap-desktop); */
     column-gap: 5%;
@@ -229,8 +220,7 @@
   .water-section-one-subsection-four-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "water-section-one-subsection-four-image-container water-section-one-subsection-four-copy-container";
-        /* row-gap: var(--subsection-container-row-gap-desktop); */
-    /* row-gap: 5%; */
+    /* row-gap: var(--subsection-container-row-gap-desktop); */
     row-gap: 0;
     /* column-gap: var(--subsection-container-column-gap-desktop); */
     column-gap: 5%;
@@ -263,32 +253,22 @@
 
 .water-section-one-subsection-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
   /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-title- */
 }
 
 @media (min-width: 600px) {
   .water-section-one-subsection-title  {
     text-align: left;
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
-    /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-title- */
   }
 }
 
 .water-section-one-subsection-subtitle {
   text-align: left;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
-  /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-subtitle- */
 }
 
 @media (min-width: 600px) {
   .water-section-one-subsection-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
-    /* THESE NEED THEIR OWN GLOBAL VARIABLES --subsection-subtitle- */
+
   }
 }
 
@@ -307,15 +287,11 @@
 
 .water-section-one-subsection-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-one-subsection-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -331,14 +307,12 @@
 }
 
 .water-section-one-subsection-list-item {
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
+
 }
 
 @media (min-width: 600px) {
   .water-section-one-subsection-list-item {
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
+
   }
 }
 
