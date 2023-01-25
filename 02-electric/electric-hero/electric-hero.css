@@ -87,29 +87,21 @@
 
 .electric-hero-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-hero-title {
     text-align: left;
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
 .electric-hero-subtitle {
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
   text-align: center;
 }
 
 @media (min-width: 600px) {
   .electric-hero-subtitle {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -125,14 +117,10 @@
 
 .electric-hero-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile); 
 }
 
 @media (min-width: 600px) {
   .electric-hero-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }

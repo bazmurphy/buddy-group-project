@@ -66,14 +66,10 @@
 
 .electric-section-two-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-two-title {
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
@@ -125,31 +121,23 @@
 
 .electric-section-two-subsection-title {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-title {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop); 
   }
 }
 
 .electric-section-two-subsection-subtitle {
   grid-area: electric-section-two-subsection-subtitle;
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
   padding-bottom: 30px;/*be aware of changin the name of title*/
 }
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-subtitle {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop); 
     justify-self: center;
     padding-bottom: 10%;
   }
@@ -168,15 +156,11 @@
 
 .electric-section-two-subsection-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -289,29 +273,21 @@
 
 .electric-section-two-subsection-three-subtitle-one {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-three-subtitle-one {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop); 
   }
 }
 
 .electric-section-two-subsection-three-subtitle-two {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-two-subsection-three-subtitle-two {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop); 
   }
 }
 

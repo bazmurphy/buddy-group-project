@@ -23,10 +23,6 @@
  /* border: var(--temporary-border);*/
 }
 
-
-
-
-
 .electric-section-three-container {
   display: grid;
   grid-template-columns: 0.9fr 0.1fr;
@@ -90,15 +86,11 @@
 
 .electric-section-three-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-title {
     text-align: left;
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
@@ -134,15 +126,11 @@
 
 .electric-section-three-subsection-one-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-one-subtitle {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -159,15 +147,11 @@
 
 .electric-section-three-subsection-one-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-one-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -224,15 +208,11 @@
 
 .electric-section-three-subsection-two-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-two-subtitle {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -249,8 +229,6 @@
 
 .electric-section-three-subsection-two-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
@@ -317,15 +295,11 @@
 
 .electric-section-three-subsection-three-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-three-subtitle {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -342,14 +316,10 @@
 
 .electric-section-three-subsection-three-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-three-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
