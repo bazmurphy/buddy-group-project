@@ -26,6 +26,10 @@
   --light-gray:#D9D9D9;
   --light-blue:#CBE9FA;
 
+  /* BOX-SHADOWS */
+  --box-shadow-mobile: -3px 5px 5px 3px#acacb1;
+  --box-shadow-desktop: -3px 5px 5px 3px#acacb1;
+
   /* FONTS */
 
   /* --font-one: "Poppins"; */
@@ -264,7 +268,7 @@ h3 {
   font-size: 22px;
   font-weight: 600;
 }
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   h3 {
     font-size: 28px;
   }
@@ -275,7 +279,7 @@ h4 {
   font-size: 18px;
   font-weight: 600;
 }
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   h4 {
     font-size: 24px;
   }
@@ -286,7 +290,7 @@ a {
   font-size: 16px;
   font-weight: 600;
 }
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   a {
     font-size: 18px;
   }
@@ -297,7 +301,7 @@ p {
   font-size: 16px;
   font-weight: 400;
 }
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   p {
     font-size: 18px;
   }
@@ -309,7 +313,7 @@ p a {
   font-size: 16px;
   font-weight: 400;
 }
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   p a {
     font-size: 18px;
   }
@@ -320,13 +324,11 @@ li {
   font-size: 16px;
   font-weight: 400;
 }
-
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   li {
     font-size: 18px;
   }
 }
-
 
 li a {
   /* link tags inside list items */
@@ -334,7 +336,7 @@ li a {
   font-size: 16px;
   font-weight: 400;
 }
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   li a {
     font-size: 18px;
   }

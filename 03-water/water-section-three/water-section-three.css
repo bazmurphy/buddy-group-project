@@ -99,7 +99,7 @@
   row-gap: var(--subsection-container-row-gap-mobile);
   padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-three-subsection-container-background);
-  box-shadow: var(--water-section-three-subsection-container-box-shadow);
+  box-shadow: var(--box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
