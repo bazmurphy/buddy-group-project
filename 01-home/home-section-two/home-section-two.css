@@ -37,7 +37,7 @@
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   background: var(--home-section-two-container-background);
-  box-shadow: var( --site-container-box-shadow-mobile);
+  box-shadow: var(--box-shadow-mobile);
   padding: 30px 20px;
   row-gap: 40px;
 }

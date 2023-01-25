@@ -76,14 +76,12 @@
   row-gap: 15px;
   background: var(--home-hero-copy-container-background);
   border-radius: var(--home-hero-copy-container-border-radius);
-  box-shadow: var(--site-container-box-shadow-mobile);
+  box-shadow: var(--box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
   .home-hero-copy-container {
     padding: 8%;
-
-    box-shadow: var(--site-container-box-shadow-desktop);
   }
 }
 

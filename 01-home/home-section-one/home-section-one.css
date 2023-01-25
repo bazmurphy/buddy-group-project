@@ -65,7 +65,7 @@
   padding: 0 25px 60px 25px;
   /* background-color: var(--level2-background-color); */
   background: var(--home-section-one-subcontainer-background);
-  box-shadow: var( --site-container-box-shadow-mobile);
+  box-shadow: var(--box-shadow-mobile);
 }
 
 .home-section-one-subcontainer-one {

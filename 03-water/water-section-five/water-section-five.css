@@ -54,7 +54,7 @@
   padding: var(--subsection-container-padding-mobile);
   background: var(--water-section-five-subsection-container-background);
   border-radius: var(--water-section-five-subsection-container-border-radius);
-  box-shadow: var(--water-section-five-subsection-container-box-shadow);
+  box-shadow: var(--box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
