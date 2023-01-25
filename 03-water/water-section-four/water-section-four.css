@@ -1,6 +1,8 @@
 .water-section-four-container,
 .water-section-four-subcontainer,
-.water-section-four-subsection-container,
+.water-section-four-subsection-container-one,
+.water-section-four-subsection-container-two,
+.water-section-four-subsection-container-three,
 .water-section-four-title-container,
 .water-section-four-title,
 .water-section-four-subtitle,
@@ -12,50 +14,79 @@
 .water-section-four-image-container,
 .water-section-four-image,
 .water-section-four-link {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .water-section-four-container {
   display: grid;
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-four-container {
-    padding: var(--container-padding-desktop);
+    /* padding: var(--container-padding-desktop); */
+    padding: 5% 5% 0 5%;
   }
 }
 
 .water-section-four-subcontainer {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas: 
+    "water-section-four-subsection-container-one"
+    "water-section-four-subsection-container-two"
+    "water-section-four-subsection-container-three";
   row-gap: var(--subcontainer-row-gap-mobile);
   padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
+  background: var(--water-section-four-subcontainer-background);
+  border-radius: var(--water-section-four-subcontainer-border-radius);
 }
 
 @media (min-width: 600px) {
   .water-section-four-subcontainer {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: var(--subcontainer-row-gap-desktop);
-    column-gap: var(--subcontainer-column-gap-desktop);
+    grid-template-areas: 
+      "water-section-four-subsection-container-one water-section-four-subsection-container-two"
+      "water-section-four-subsection-container-one water-section-four-subsection-container-two"
+      "water-section-four-subsection-container-three water-section-four-subsection-container-three";
+    /* row-gap: var(--subcontainer-row-gap-desktop); */
+    row-gap: 50px;
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    column-gap: 5%;
+    /* padding: var(--subcontainer-column-gap-desktop); */
+    padding: 7%;
   }
 }
 
-.water-section-four-subsection-container {
+.water-section-four-subsection-container-one {
+  grid-area: water-section-four-subsection-container-one;
   display: grid;
-  grid-template-columns: 1fr;
-  align-content: start;
-  row-gap: var(--subsection-container-row-gap-mobile);
-  background-color: var(--level3-background-color);
+  row-gap: 15px;
+  /* RARE CASE ^gap between NESTED title container and copy container */
 }
 
 @media (min-width: 600px) {
-  .water-section-four-subsection-container {
-    row-gap: var(--subsection-container-row-gap-desktop);
+  .water-section-four-subsection-container-one {
+    row-gap: 30px;
+    /* RARE CASE ^gap between NESTED title container and copy container */
   }
+}
+
+.water-section-four-subsection-container-two {
+  grid-area: water-section-four-subsection-container-two;
+}
+
+@media (min-width: 600px){
+  .water-section-four-subsection-container-two {
+    align-self: center;
+    /* RARE CASE ^image container is nested inside this */
+  }
+}
+
+.water-section-four-subsection-container-three {
+  grid-area: water-section-four-subsection-container-three;
 }
 
 .water-section-four-title-container {
@@ -73,27 +104,20 @@
 
 .water-section-four-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-four-title {
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
 .water-section-four-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-four-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
+    text-align: left;
   }
 }
 
@@ -125,14 +149,10 @@
 
 .water-section-four-paragraph {
   text-align: left;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-four-paragraph {
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -148,14 +168,10 @@
 }
 
 .water-section-four-list-item {
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-four-list-item {
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -166,7 +182,7 @@
 }
 
 @media (min-width: 600px) {
-  .water-section-two-subsection-image-container {
+  .water-section-four-image-container  {
     
   }
 }
@@ -177,7 +193,7 @@
 }
 
 @media (min-width: 600px) {
-  .water-section-two-subsection-image {
+  .water-section-four-image  {
     
   }
 }

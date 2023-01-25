@@ -46,8 +46,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   
-  /* background-color: var(--level2-background-color); */
-  background-image: linear-gradient(#FBABB2,#f9f9f9);
+  background: linear-gradient(#FBABB2,#f9f9f9);
 }
 
 @media (min-width:600px) {
@@ -67,7 +66,6 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -77,11 +75,13 @@
 }
 }
 
-.gas-section-nine-title-container{
+.gas-section-nine-title-container {
+
 }
 
 @media (min-width: 600px){
-  .gas-section-nine-title-container{
+  .gas-section-nine-title-container {
+    
   }
 }
 
@@ -90,8 +90,9 @@
   flex-direction: column;
   row-gap: var(--gas-title-row-gap-mobile);
   text-align: center;
-  font-size: var(--gas-title-font-size-mobile);
-  font-weight: var(--gas-title-font-weight-mobile);
+  /* CUSTOM FONT SIZE & WEIGHT */
+  font-size: var(--gas-sections-title-font-size-mobile);
+  font-weight: var(--gas-sections-title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
@@ -100,15 +101,18 @@
     column-gap: var(--gas-title-column-gap-desktop);
     row-gap: none;
     text-align: left;
-    font-size: var(--gas-title-font-size-desktop);
-    font-weight: var(--gas-title-font-weight-desktop);
+    /* CUSTOM FONT SIZE & WEIGHT */
+    font-size: var(--gas-sections-title-font-size-desktop);
+    font-weight: var(--gas-sections-title-font-weight-desktop);
   }
 }
 
-.gas-section-nine-title-span-number{
+.gas-section-nine-title-span-number {
+
 }
 
-.gas-section-nine-title-span-title{
+.gas-section-nine-title-span-title {
+
 }
 
 .gas-section-nine-paragraph-container {
@@ -118,20 +122,17 @@
 
 @media (min-width: 600px) {
   .gas-section-nine-paragraph-container {
+
   }
 }
 
 .gas-section-nine-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .gas-section-nine-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -140,7 +141,6 @@
   display: grid;
   align-content: start;
   justify-content: center; 
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -156,5 +156,6 @@
 
 @media (min-width: 600px) {
   .gas-section-nine-image {
+
   }
 }

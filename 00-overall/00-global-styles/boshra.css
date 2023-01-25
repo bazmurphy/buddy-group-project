@@ -1,7 +1,6 @@
 :root {
   /* CHECK YOUR GLOBAL STYLE DOES NOT ALREADY EXIST */
   /* THEN PUT NEW GLOBAL STYLES HERE */
-  /******COLOR*****/
 
   /******gas-title**********/
   --gas-title-row-gap-mobile: 15px;
@@ -28,4 +27,3 @@
 
   --electric-section-four-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
 }
-

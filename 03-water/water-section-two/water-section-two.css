@@ -2,7 +2,7 @@
 .water-section-two-subcontainer,
 .water-section-two-title-container,
 .water-section-two-title,
-.water-section-two-subtitle,
+.water-section-two-title-paragraph, 
 .water-section-two-subsection-container,
 .water-section-two-subsection-image-container,
 .water-section-two-subsection-copy-container,
@@ -10,40 +10,54 @@
 .water-section-two-subsection-subtitle,
 .water-section-two-subsection-list,
 .water-section-two-subsection-list-item {
-  border: var(--temporary-border);
+  /* border: var(--temporary-border); */
 }
 
 .water-section-two-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
-  background-color: var(--level1-background-color);
+  /* padding: var(--container-padding-mobile); */
+  padding: 15px 0;
+  /* ^top and bottom padding in mobile */
+  background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-two-container {
-    padding: var(--container-padding-desktop);
+    
   }
 }
 
 .water-section-two-subcontainer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 0.05fr 0.05fr 0.9fr 0.05fr 0.05fr;
   grid-template-areas: 
-    "water-section-two-title-container";
+    "water-section-two-title-container water-section-two-title-container water-section-two-title-container water-section-two-title-container water-section-two-title-container"
+    "water-section-two-subsection-container-one water-section-two-subsection-container-one water-section-two-subsection-container-one . ."
+    ". water-section-two-subsection-container-two water-section-two-subsection-container-two water-section-two-subsection-container-two ."
+    ". . water-section-two-subsection-container-three water-section-two-subsection-container-three water-section-two-subsection-container-three";
   align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
-  background-color: var(--level2-background-color);
 }
 
 @media (min-width: 600px) {
   .water-section-two-subcontainer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "water-section-two-title-container water-section-two-title-container water-section-two-title-container";
-    row-gap: var(--subcontainer-row-gap-desktop);
-    column-gap: var(--subcontainer-column-gap-desktop);
+      "water-section-two-title-container water-section-two-title-container water-section-two-title-container"
+      "water-section-two-subsection-container-one water-section-two-subsection-container-two water-section-two-subsection-container-three";
+    
+    /* row-gap: var(--subcontainer-row-gap-desktop); */
+    row-gap: 70px;
+    
+    /* column-gap: var(--subcontainer-column-gap-desktop); */
+    column-gap: 3%;
+    
+    /* padding: var(--subcontainer-padding-desktop) */
+    padding: 7% 0;
+
+    background: var(--water-section-two-subcontainer-background);
+    /* border-radius: var(--water-section-two-subcontainer-border-radius); */
   }
 }
 
@@ -52,40 +66,29 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--title-container-row-gap-mobile);
-  /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
-  background-color: var(--level3-background-color);
 }
 
 @media (min-width: 600px) {
   .water-section-two-title-container {
     row-gap: var(--title-container-row-gap-desktop);
-      /* ^ THIS GLOBAL VARIABLE DOESNT EXIST */
   }
 }
 
 .water-section-two-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-two-title {
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
-.water-section-two-subtitle {
+.water-section-two-title-paragraph {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
-  .water-section-two-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
+  .water-section-two-title-paragraph {
   }
 }
 
@@ -95,16 +98,31 @@
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
   padding: var(--subsection-container-padding-mobile);
-  border: var(--subsection-container-border-mobile);
-  background-color: var(--level3-background-color);
+  background: var(--water-section-two-subsection-container-background);
+  box-shadow: var(--water-section-two-subsection-container-box-shadow);
 }
 
 @media (min-width: 600px) {
   .water-section-two-subsection-container {
     row-gap: var(--subsection-container-row-gap-desktop);
-    padding: var(--subsection-container-padding-desktop);
-    border: var(--subsection-container-border-desktop);
+    /* padding: var(--subsection-container-padding-desktop); */
+    padding: 10%;
   }
+}
+
+.water-section-two-subsection-container-one {
+  grid-area: water-section-two-subsection-container-one;
+  border-radius: 0 30px 30px 0;
+}
+
+.water-section-two-subsection-container-two {
+  grid-area: water-section-two-subsection-container-two;
+  border-radius: 30px;
+}
+
+.water-section-two-subsection-container-three {
+  grid-area: water-section-two-subsection-container-three;
+  border-radius: 30px 0 0 30px;
 }
 
 .water-section-two-subsection-image-container {
@@ -143,14 +161,10 @@
 }
 
 .water-section-two-subsection-subtitle {
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-two-subsection-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -167,13 +181,9 @@
 }
 
 .water-section-two-subsection-list-item {
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-section-two-subsection-list-item {
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }

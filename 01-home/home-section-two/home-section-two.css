@@ -16,6 +16,7 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--off-white);
+  padding: 0 40px 70px 0;
 }
 
 @media (min-width: 600px) {
@@ -33,10 +34,12 @@
     "home-section-two-subsection-two"
     "home-section-two-subsection-three"
     "home-section-two-subsection-four";
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
-  background-image: var(--home-section-two-container-background-image);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: var(--home-section-two-container-background);
   box-shadow: var( --site-container-box-shadow-mobile);
+  padding: 30px 20px;
+  row-gap: 40px;
 }
 
 @media (min-width: 600px) {
@@ -47,12 +50,15 @@
       "home-section-two-title-container home-section-two-title-container"
       "home-section-two-subsection-one home-section-two-subsection-three"
       "home-section-two-subsection-two home-section-two-subsection-four";
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding: 0;
   }
 }
 
 .home-section-two-title-container {
   grid-area: home-section-two-title-container;
-  background-color: var(--home-section-two-background-color);
+  padding: 0;
 }
 
 @media screen {
@@ -63,16 +69,10 @@
 
 .home-section-two-title {
   text-align: center;
-  /* font-size: var(--title-font-size-mobile); */
-  /* font-weight: var(--title-font-weight-mobile); */
 }
 
 @media (min-width: 600px) {
   .home-section-two-title {
-    /* font-size: var(--title-font-size-desktop); */
-    font-size: 40px;
-    /* font-weight: var(--title-font-weight-desktop); */
-    font-weight: 600;
   }
 }
 
@@ -81,8 +81,9 @@
   grid-template-columns: 1fr;
   align-content: start;
   row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
+  /* padding: var(--subcontainer-padding-mobile); */
   background-color: var(--home-section-two-background-color);
+  padding: 0 15px 40px 15px;
 }
 
 @media (min-width: 600px) {
@@ -127,8 +128,6 @@
 
 .home-section-two-image-container {
   display: none;
-  /* are we sure we don't want the images in mobile? */
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -155,7 +154,6 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--copy-container-row-gap-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -166,24 +164,16 @@
 
 .home-section-two-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
   .home-section-two-subtitle {
     text-align: left;
-    /* font-size: var(--subtitle-font-size-desktop); */
-    font-size: 24px;
-    /* font-weight: var(--subtitle-font-weight-desktop); */
-    font-weight: 600;
   }
 }
 
 .home-section-two-paragraph-container {
   row-gap: var(--paragraph-container-row-gap-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -194,14 +184,10 @@
 
 .home-section-two-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .home-section-two-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }

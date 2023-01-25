@@ -192,6 +192,10 @@
   color: var(--red);
 }
 
+.header-mobile-overlay-nav-link-home {
+  color: var(--yellow);
+}
+
 .header-mobile-overlay-functionality-container {
   display: grid;
   align-content: start;
@@ -229,7 +233,7 @@
   text-decoration: none;
   font-family: inherit;
   font-size: inherit;
-  color: var(--red);
+  color: var(--yellow);
 }
 
 .header-mobile-overlay-signup:hover,

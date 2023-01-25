@@ -14,70 +14,41 @@
 .home-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  background-image: var(--home-hero-container-background-image);
-  /* ----------SOLUTION---------- */
-  /* REMOVE ALL PADDING ON THE CONTAINER */
+  background: var(--home-hero-container-background);
 }
 
 @media (min-width: 600px) {
   .home-hero-container {
-    /* ----------SOLUTION---------- */
-    /* REMOVE ALL PADDING ON THE CONTAINER */
+    
   }
 }
 
 .home-hero-subcontainer {
-  /* ----------SOLUTION---------- */
   display: grid;
-  
-  /* THE FIRST COLUMN IS THE EMPTY CELL ON THE LEFT OF COPY-CONTAINER IN MOBILE */
   grid-template-columns: 0.1fr 0.9fr;
   grid-template-rows: auto auto;
-  
-  /* THE IMAGE CONTAINER FILLS THE FULL WIDTH */
-  /* THE COPY CONTAINER HAS AN EMPTY CELL TO ITS LEFT */
   grid-template-areas: 
     "home-hero-image-container home-hero-image-container"
     ". home-hero-copy-container";
-  
-  /* USE A ROW GAP TO SEPARATE THE IMAGE AND COPY CONTAINERS IN MOBILE */
   row-gap: 30px;
-
-  /* ADD PADDING TO THE TOP AND BOTTOM OF THE SUBCONTAINER IF NECCESSARY */
   padding: 30px 0;
-
-  /* RED BOX IS THE SUBCONTAINER */
-  /* border: 2px solid red; */
 }
 
 @media (min-width: 600px) {
   .home-hero-subcontainer {
-    /* ----------SOLUTION---------- */
-
-    /* THESE CONTROL THE RATIOS OF IMAGE ON THE LEFT AND THE COPY ON THE RIGHT */
     grid-template-columns: 1fr 1.3fr;
-
     grid-template-areas:
       "home-hero-image-container home-hero-copy-container";
-
-    /* USE A COLUMN GAP TO SEPARATE THE IMAGE AND COPY CONTAINERS IN DESKTOP */
     column-gap: 3%;
-
     padding: 8% 0;
   }
 }
 
 .home-hero-image-container {
-  /* ----------SOLUTION---------- */
+  grid-area: home-hero-image-container;
   display: grid;
   justify-content: center;
   align-content: center;
-
-  /* GIVE THIS A GRID AREA NAME TO USE IN THE SUBCONTAINER GRID TEMPLATE AREAS */
-  grid-area: home-hero-image-container;
-  
-  /* GREEN BOX IS THE COPY CONTAINER */
-  /* border: 2px solid limegreen; */
 }
 
 @media (min-width: 600px) {
@@ -98,70 +69,41 @@
 }
 
 .home-hero-copy-container {
-  /* ----------SOLUTION---------- */
-  display: grid;
-
-  align-content: center;
-
-  /* GIVE THIS A GRID AREA NAME TO USE IN THE SUBCONTAINER GRID TEMPLATE AREAS */
   grid-area: home-hero-copy-container;
-
-  /* PADDING IS NEEDED INSIDE THE COPY-CONTAINER TO PUSH THE TEXT INWARDS */
-  /* BUT THIS MUST BE OFFSET BASED ON THE EMPTY GRID-CELL SIZE TO KEEP THE TEXT CENTERED */
+  display: grid;
+  align-content: center;
   padding: 50px 70px 50px 50px;
-
-  /* ROW GAP SEPARATES THE VARIOUS CHILDREN OF THE COPY-CONTAINER */
   row-gap: 15px;
-
-  /* ORANGE BOX IS THE COPY CONTAINER */
-  /* border: 2px solid orange; */
-
-  background-image: var(--home-hero-copy-container-background-image);
-  border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
+  background: var(--home-hero-copy-container-background);
+  border-radius: var(--home-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
 }
 
 @media (min-width: 600px) {
   .home-hero-copy-container {
-    /* ----------SOLUTION---------- */
-    /* PADDING IS NEEDED INSIDE THE COPY-CONTAINER TO PUSH THE TEXT INWARDS */
-    /* IN DESKTOP I BELIEVE IT IS OKAY IF ITS ALL THE SAME */
     padding: 8%;
 
-    border-radius: var(--container-offset-right-border-radius-desktop);
     box-shadow: var(--site-container-box-shadow-desktop);
   }
 }
 
 .home-hero-title {
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
   text-align: center;
 }
 
 @media (min-width: 600px) {
   .home-hero-title {
     text-align: left;
-    /* font-size: var(--title-font-size-desktop); */
-    font-size: 40px;
-    /* font-weight: var(--title-font-weight-desktop); */
-    font-weight: 600;
   }
 }
 
 .home-hero-subtitle {
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
   text-align: center;
 }
 
 @media (min-width: 600px) {
   .home-hero-subtitle {
     text-align: left;
-    /* font-size: var(--subtitle-font-size-desktop); */
-    font-size: 30px;
-    /* font-weight: var(--subtitle-font-weight-desktop); */
-    font-weight: 400;
   }
 }
 
@@ -179,15 +121,11 @@
 
 .home-hero-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .home-hero-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -196,7 +134,6 @@
   text-align: center;
   text-decoration: none;
   /* padding: var(--link-padding-mobile); */
-  /* 10px 20px */
   padding: 10px 40px;
   border-radius: var(--link-border-radius-mobile);
   color: var(--link-color-mobile);

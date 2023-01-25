@@ -7,45 +7,38 @@
 .water-hero-subtitle,
 .water-hero-paragraph-container,
 .water-hero-paragraph {
-  border: var(--temporary-border);
-  border: none;
+  /* border: var(--temporary-border); */
 }
 
 .water-hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--site-hero-container-padding-zero-right-mobile);
-  /* background-color: var(--level1-background-color); */
-  background-image: var(--water-hero-container-background-image);
+  background: var(--water-hero-container-background);
 }
 
 @media (min-width: 600px) {
   .water-hero-container {
-    padding: var(--site-hero-container-padding-zero-right-desktop);
   }
 }
 
 .water-hero-subcontainer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 0.1fr 0.9fr;
   grid-template-areas: 
-    "water-hero-image-container"
-    "water-hero-copy-container";
-  row-gap: var(--subcontainer-row-gap-mobile);
-  /* padding: var(--subcontainer-padding-mobile); */
-  /* background-color: var(--level2-background-color); */
+    "water-hero-image-container water-hero-image-container"
+    ". water-hero-copy-container";
+  row-gap: 30px;
+  padding: 30px 0;
 }
 
 @media (min-width: 600px) {
   .water-hero-subcontainer {
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: 1.5fr 2.5fr; */
-    /* ^EXPERIMENTAL */
+    grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
-    "water-hero-image-container water-hero-copy-container";
+      "water-hero-image-container water-hero-copy-container";
     row-gap: none;
-    column-gap: var(--subcontainer-column-gap-desktop);
-    /* padding: var(--subcontainer-padding-desktop); */
+    column-gap: 40px;
+    padding: 5% 0;
   }
 }
 
@@ -54,11 +47,12 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  /* background-color: var(--level3-background-color); */
+  padding: 0 5% 0 5%;
 }
 
 @media (min-width: 600px) {
   .water-hero-image-container {
+    padding: 0 0 0 5%;
   }
 }
 
@@ -69,72 +63,45 @@
 
 @media (min-width: 600px) {
   .water-hero-image {
+
   }
 }
 
 .water-hero-copy-container {
   grid-area: water-hero-copy-container;
   display: grid;
-  grid-template-columns: 1fr;
-  /* padding: var(--copy-container-padding-mobile); */
-  /*border: 1px solid black;
-  background-color: var(--level3-background-color); */
-  /*additions made by ux/ui */
-  background-image: var(--water-hero-copy-container-background-image);
-  border-radius: var(--site-hero-copy-container-border-radius-left-mobile);
+  align-content: center;
+  row-gap: 15px;
+  padding: 50px 70px 50px 50px;
+  background: var(--water-hero-copy-container-background);
+  border-radius: var(--water-hero-copy-container-border-radius);
   box-shadow: var(--site-container-box-shadow-mobile);
-  padding: var(--site-copy-container-padding-mobile);
 }
 
 @media (min-width: 600px) {
   .water-hero-copy-container { 
-    /* padding: var(--copy-container-padding-desktop); */
-    border-radius: var(--container-offset-right-border-radius-desktop);
+    padding: 8%;
     box-shadow: var(--site-container-box-shadow-desktop);
-    background-image: var(--water-hero-copy-container-background-image);
-  }
-}
-
-.water-hero-subcopy-container {
-  display: grid;
-  align-content: start;
-  row-gap: var(--copy-container-row-gap-mobile);
-  padding: var(--site-hero-text-container-padding-mobile);  
-}
-
-@media (min-width: 600px) {
-  .water-hero-subcopy-container {
-    align-content: center;
-    row-gap: var(--copy-container-row-gap-desktop);
-    padding: var(--site-hero-text-container-padding-desktop);
   }
 }
 
 .water-hero-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-hero-title {
     text-align: left;
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
 .water-hero-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-hero-subtitle {
     text-align: left;
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -152,14 +119,10 @@
 
 .water-hero-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .water-hero-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
