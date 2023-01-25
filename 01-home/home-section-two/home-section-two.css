@@ -59,7 +59,6 @@
 .home-section-two-title-container {
   grid-area: home-section-two-title-container;
   padding: 0;
-  /* border: 1px solid red; */
 }
 
 @media screen {
@@ -70,16 +69,10 @@
 
 .home-section-two-title {
   text-align: center;
-  /* font-size: var(--title-font-size-mobile); */
-  /* font-weight: var(--title-font-weight-mobile); */
 }
 
 @media (min-width: 600px) {
   .home-section-two-title {
-    /* font-size: var(--title-font-size-desktop); */
-    font-size: 40px;
-    /* font-weight: var(--title-font-weight-desktop); */
-    font-weight: 600;
   }
 }
 
@@ -135,8 +128,6 @@
 
 .home-section-two-image-container {
   display: none;
-  /* are we sure we don't want the images in mobile? */
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -163,7 +154,6 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--copy-container-row-gap-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -174,24 +164,16 @@
 
 .home-section-two-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
   .home-section-two-subtitle {
     text-align: left;
-    /* font-size: var(--subtitle-font-size-desktop); */
-    font-size: 24px;
-    /* font-weight: var(--subtitle-font-weight-desktop); */
-    font-weight: 600;
   }
 }
 
 .home-section-two-paragraph-container {
   row-gap: var(--paragraph-container-row-gap-mobile);
-  /* background-color: var(--level3-background-color); */
 }
 
 @media (min-width: 600px) {
@@ -202,14 +184,10 @@
 
 .home-section-two-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .home-section-two-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }

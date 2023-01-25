@@ -1,53 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url("boshra.css");
-@import url("karleen.css");
-@import url("baz.css");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  /* border: 1px solid black; */
-  font-family: 'Poppins', sans-serif;
-}
-
-@media (min-width: 1200px) {
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
 
 :root {
-  
-  /* TEMPLATE for global variables */
-  --page-element-subelement-cssproperty-mobiledesktop: 0;
 
-  /* site colours */
-  --white: #FFFFFF;
-  --off-white: #F9F9F9;
-  --yellow: #FFD324;
-  /* --dark-blue:#004DD6; */
-  --dark-blue: #04245C;
-  --mid-blue: #042F7A;
-  /* --red:#FF4242; */
-  /* --red: #DB0511; */
-  /* --red:rgb(255, 0, 0); */
-  --red: hsl(0, 100%, 45%);
-  /* --red: red; */
-  /* --red: #cf361d; */
-  --light-gray:#D9D9D9;
-  --light-blue:#CBE9FA;
+  /* TEMPLATE for global variables */
+  /* --page-element-subelement-cssproperty-mobiledesktop: 0; */
 
   /* use temporarily to see box models and scaling */
   --temporary-border: 1px dotted black;
 
-  /* background colours */
+  /* temporary background colours */
   --level1-background-color: hsl(190, 55%, 85%); /* container */
   --level2-background-color: hsl(190, 60%, 90%); /* subcontainer */
   --level3-background-color: hsl(190, 65%, 95%); /* image-container & copy-container */
+
+  /* COLOURS */
+  --white: #FFFFFF;
+  --off-white: #F9F9F9;
+  --yellow: #FFD324;
+  --mid-blue: #042F7A;
+  --dark-blue: #04245C;
+  --red: hsl(0, 100%, 45%);
+  --light-gray:#D9D9D9;
+  --light-blue:#CBE9FA;
+
+  /* FONTS */
+  /* title */
+  /* --title-font-size-mobile: 24px; */
+  /* --title-font-size-desktop: 26px; */
+
+  /* --title-font-weight-mobile: 600; */
+  /* --title-font-weight-desktop: 600; */
+
+  /* subtitle */
+  /* --subtitle-font-size-mobile: 20px; */
+  /* --subtitle-font-size-desktop: 24px; */
+
+  /* --subtitle-font-weight-mobile: 500; */
+  /* --subtitle-font-weight-desktop: 500; */
+
+  /* paragraph */
+  /* --paragraph-font-size-mobile: 14px; */
+  /* --paragraph-font-size-desktop: 16px; */
+
+  /* --paragraph-font-weight-mobile: 400; */
+  /* --paragraph-font-weight-desktop: 400; */
+
+  /* list-item */
+  /* --list-item-font-size-mobile: ; */
+  /* --list-item-font-size-mobile: ; */
+
+  /* --list-item-font-weight-mobile: ; */
+  /* --list-item-font-weight-mobile: ; */
 
   /* container */
   --container-padding-mobile: 15px;
@@ -93,41 +98,13 @@ body {
   --title-container-row-gap-mobile: 10px;
   --title-container-row-gap-desktop: 20px;
 
-  /* title */
-  --title-font-size-mobile: 24px;
-  --title-font-size-desktop: 26px;
-
-  --title-font-weight-mobile: 600;
-  --title-font-weight-desktop: 600;
-
-  /* subtitle */
-  --subtitle-font-size-mobile: 20px;
-  --subtitle-font-size-desktop: 24px;
-
-  --subtitle-font-weight-mobile: 500;
-  --subtitle-font-weight-desktop: 500;
-
   /* paragraph-container */
   --paragraph-container-row-gap-mobile: 10px;
   --paragraph-container-row-gap-desktop: 20px;
 
-  /* paragraph */
-  --paragraph-font-size-mobile: 14px;
-  --paragraph-font-size-desktop: 16px;
-
-  --paragraph-font-weight-mobile: 400;
-  --paragraph-font-weight-desktop: 400;
-
   /* list */
   --list-padding-left-mobile: ;
   --list-padding-left-desktop: ;
-
-  /* list-item */
-  --list-item-font-size-mobile: ;
-  --list-item-font-size-mobile: ;
-  
-  --list-item-font-weight-mobile: ;
-  --list-item-font-weight-mobile: ;
 
   /* link */
   --link-color-mobile: var(--white);
@@ -142,33 +119,251 @@ body {
   --link-border-radius-mobile: 30px;
   --link-border-radius-desktop: 30px;
 
-  /* TRY TO REMOVE ALL OF THESE BELOW HERE */
+  /* HOME HERO */
+  --home-hero-container-background: linear-gradient(#f9f9f9,#a3e1f2);
   
-  --title-size-mobile: 20px; /* --title-font-size-mobile */
-  --subtitle-size-mobile:18px; /* --subtitle-font-size-mobile */
-  --content-size-paragraph-mobile: 14px; /* --paragraph-font-weight-mobile */
-  /* ^these need removing but things WILL BREAK */
+  --home-hero-copy-container-background: linear-gradient(#f9f9f9,#51c6f1);
+  --home-hero-copy-container-border-radius: 30px 0 0 30px;
 
-  --items-gap-mobile:15px;
-  /* ^this needs removing, but converting everything that uses it before */
+  /* HOME SECTIONS */
+  --home-section-midblue-background: linear-gradient(#a3e1f2, #51c6f1);
+  --home-section-midblue-background-color: #51c6f1;
+  --home-section-lightblue-background-color: #a3e1f2;
 
-  --title-width-mobile:140px;
-  --title-height-mobile:40px;
+  /* HOME SECTION ONE */
+  --home-section-one-subcontainer-background: linear-gradient(#f9f9f9,#a3e1f2);
+  --home-section-two-container-background: linear-gradient(#a3e1f2,#f9f9f9,#a3e1f2);
 
-  --button-width-mobile:140px;
-  --button-height-mobile:40px;
-  --button-font-size-mobile:20px;
+  --home-section-one-sub-container-two-border-radius: 30px;
+  --home-section-one-sub-container-one-border-radius: 0 30px 30px 0;
+  --home-section-one-sub-container-three-border-radius: 30px 0 0 30px;
+  --home-section-one-sub-container-padding-desktop: 30px 0 30px 0;
 
-  --readmore-width-mobile:140px;
-  --readmore-height-mobile:40px;
-  --readmore-font-size-mobile:20px;
+  /* HOME SECTION TWO */
 
-  --button-background-color-mobile:#D9D9D9;
-  --title-background-color-mobile:#D9D9D9;
-  --readmore-background-color-mobile:#D9D9D9;
+
+
+  /* ELECTRIC HERO */
+  --electric-hero-container-background: linear-gradient(#f9f9f9,#FCECAF);
+
+  --electric-hero-copy-container-background: linear-gradient(#f9f9f9,#e9c741);
+  --electric-hero-copy-container-border-radius: 0 30px 30px 0;
+
+  /* ELECTRIC SECTIONS */
+
+
+
+  /* ELECTRIC SECTION ONE */
+
+
+
+  /* WATER HERO */
+  --water-hero-container-background: linear-gradient(#f9f9f9, #8AE5FD);
+  
+  --water-hero-copy-container-background: #8AE5FD;
+  --water-hero-copy-container-border-radius: 30px 0 0 30px;
+
+  /* WATER SECTIONS */
+  --water-section-container-background: #f9f9f9;
+
+  --title-paragraph-font-size-mobile: 20px;
+  --title-paragraph-font-size-desktop: 22px;
+  
+  --title-paragraph-font-weight-mobile: 500;
+  --title-paragraph-font-weight-desktop: 500;
+
+  /* WATER SECTION ONE */
+  --water-section-one-subsection-one-container-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-one-subsection-one-border-radius: 30px 30px 0 0;
+
+  --water-section-one-subsection-two-container-background: linear-gradient( #F9F9F9,#8AE5FD);
+  --water-section-one-subsection-two-border-radius: 0 0 30px 30px;
+
+  --water-section-one-subsection-three-container-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-one-subsection-three-border-radius: 30px 30px 0 0;
+  
+  --water-section-one-subsection-four-container-background: linear-gradient( #F9F9F9,#8AE5FD);
+  --water-section-one-subsection-four-border-radius: 0 0 30px 30px;
+
+  --water-section-one-image-max-width-mobile: ;
+  --water-section-one-image-max-width-desktop: ;
+
+  /* WATER SECTION TWO */
+  --water-section-two-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-two-subcontainer-border-radius: 0 0 30px 30px;
+
+  --water-section-two-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-two-subsection-container-border-radius: 30px;
+  --water-section-two-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
+
+  --water-section-two-subsection-image-max-width-mobile: ;
+  --water-section-two-subsection-image-max-width-desktop: ;
+
+  /* WATER SECTION THREE */
+  --water-section-three-subcontainer-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-three-subcontainer-border-radius: 0 0 30px 30px;
+
+  --water-section-three-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-three-subsection-container-border-radius: 30px;
+  --water-section-three-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
+
+  --water-section-three-subsection-image-max-width-mobile: ;
+  --water-section-three-subsection-image-max-width-desktop: ;
+
+  /* WATER SECTION FOUR */
+  --water-section-four-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9, #8AE5FD);
+  --water-section-four-subcontainer-border-radius: 30px;
+
+  --water-section-four-image-max-width-mobile: ;
+  --water-section-four-image-max-width-desktop: ;
+
+  /* WATER SECTION FIVE */
+  --water-section-five-subcontainer-background: linear-gradient(#8AE5FD,#F9F9F9);
+  --water-section-five-subcontainer-border-radius: 30px 30px 0 0;
+
+  --water-section-five-subsection-container-background: linear-gradient(#F9F9F9, #8AE5FD);
+  --water-section-five-subsection-container-border-radius: 30px;
+  --water-section-five-subsection-container-box-shadow: -3px 5px 5px 3px#acacb1;
+  
+  /* GAS HERO */
+  --gas-hero-container-background: linear-gradient(#f9f9f9,#FBABB2);
+  
+  --gas-hero-copy-container-background: linear-gradient(#f9f9f9,#ef707a);
+  --gas-hero-copy-container-border-radius: 0 30px 30px 0;
+
+  /* GAS SECTIONS */
+
+  --gas-sections-title-font-size-mobile: 22px;
+  --gas-sections-title-font-weight-mobile: 600;
+  --gas-sections-title-font-size-desktop: 28px;
+  --gas-sections-title-font-weight-desktop: 600;
+  
+  --gas-sections-subtitle-font-size-mobile: 18px;
+  --gas-sections-subtitle-font-weight-mobile: 600;
+  --gas-sections-subtitle-font-size-desktoo: 20px;
+  --gas-sections-subtitle-font-weight-desktop: 600;
+
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* FONTS */
+
+h1 {
+  font-family: "Raleway";
+  font-size: 32px;
+  font-weight: 600;
+}
+@media(min-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: 600;
+}
+@media(min-width: 600px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+h3 {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 600;
+}
+@media(min-width: 600px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 600;
+}
+@media(min-width: 600px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+
+a {
+  font-family: "Questrial";
+  font-size: 16px;
+  font-weight: 600;
+}
+@media(min-width: 600px) {
+  a {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-family: "Questrial";
+  font-size: 16px;
+  font-weight: 400;
+}
+@media(min-width: 600px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+p a {
+  /* link tags inside paragraphs */
+  font-family: "Questrial";
+  font-size: 16px;
+  font-weight: 400;
+}
+@media(min-width: 600px) {
+  p a {
+    font-size: 18px;
+  }
+}
+
+li {
+  font-family: "Questrial";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media(min-width: 600px) {
+  li {
+    font-size: 18px;
+  }
+}
+
+
+li a {
+  /* link tags inside list items */
+  font-family: "Questrial";
+  font-size: 16px;
+  font-weight: 400;
+}
+@media(min-width: 600px) {
+  li a {
+    font-size: 18px;
+  }
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 800;
   /* ^this could be a specific font weight like 600-700-800-900 */
 }
