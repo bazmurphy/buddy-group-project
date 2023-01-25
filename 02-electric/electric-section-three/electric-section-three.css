@@ -23,6 +23,10 @@
  /* border: var(--temporary-border);*/
 }
 
+
+
+
+
 .electric-section-three-container {
   display: grid;
   grid-template-columns: 0.9fr 0.1fr;
@@ -37,7 +41,8 @@
 @media (min-width:600px) {
   .electric-section-three-container {
     /*padding: var(--container-padding-desktop);*/
-    padding: 5% 0 10% 0;
+    grid-template-columns: 1fr;
+    padding: 0 5% 6.5% 0;
   }
 }
 
@@ -64,7 +69,8 @@
       "electric-section-three-title-container electric-section-three-title-container"
       "electric-section-three-subsection-one-container electric-section-three-subsection-one-container"
       "electric-section-three-subsection-two-container electric-section-three-subsection-three-container"; 
-    row-gap: var(--subcontainer-row-gap-desktop);
+    /*row-gap: var(--subcontainer-row-gap-desktop);*/
+    row-gap: 0;
     column-gap:var(--subcontainer-column-gap-desktop);
     border-radius: 0 30px 30px 0;
     padding: var(--subcontainer-padding-desktop);
@@ -73,11 +79,12 @@
 
 .electric-section-three-title-container {
   grid-area: electric-section-three-title-container;
+  padding-top: 60px;
 }
 
 @media (min-width: 600px){
   .electric-section-three-title-container {
-   padding: 30px;
+    padding: 6% 6% 5% 6%;
   }
 }
 
@@ -109,6 +116,7 @@
 @media (min-width:600px) {
   .electric-section-three-subsection-one-container{
     padding: var(--subsection-container-padding-desktop);
+    padding: 0 6%;
   }
 }
 
@@ -176,6 +184,8 @@
 @media (min-width:600px) {
   .electric-section-three-subsection-two-container {
     padding: var(--subsection-container-padding-desktop);
+    padding-top: 0;
+    padding-left: 12%;
   }
 }
 
@@ -264,6 +274,8 @@
 @media (min-width:600px) {
   .electric-section-three-subsection-three-container{
     padding: var(--subsection-container-padding-desktop);
+    padding-top: 0;
+    padding-right: 12%;
   }
 }
 
@@ -271,10 +283,12 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  padding: 13%;
 }
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-three-image-container {
+    padding: 11%;
   }
 }
 
@@ -285,6 +299,7 @@
 
 @media (min-width: 600px) {
   .electric-section-three-subsection-three-image {
+   
   }
 }
 
