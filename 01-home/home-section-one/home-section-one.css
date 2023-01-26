@@ -1,5 +1,5 @@
 .home-section-one-container,
-.home-section-one-BAZBAZ,
+.home-section-one-subcontainer,
 .home-section-one-title-container,
 .home-section-one-title,
 .home-section-one-subsection-container,
@@ -200,6 +200,10 @@
   color: var(--link-color-mobile);
   background-color: var(--link-background-color-mobile);
   border-radius: var(--link-border-radius-mobile);
+  font-family: var(--font-one);
+  font-weight: var(--link-font-weight);
+  font-size: var(--link-font-size-mobile);
+  /* THIS IS A SPECIAL CASE FOR THE RED PILL-SHAPED LINKS */
 }
 
 @media (min-width: 600px) {
@@ -209,5 +213,7 @@
     color: var(--link-color-desktop);
     background-color: var(--link-background-color-desktop);
     border-radius: var(--link-border-radius-desktop);
+    font-size: var(--link-font-size-desktop);
+    /* THIS IS A SPECIAL CASE FOR THE RED PILL-SHAPED LINKS */
   }
 }

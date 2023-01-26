@@ -39,7 +39,6 @@
   background: var(--home-section-two-container-background);
   box-shadow: var(--box-shadow-mobile);
   padding: 30px 20px;
-  row-gap: 40px;
 }
 
 @media (min-width: 600px) {
@@ -154,11 +153,13 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--copy-container-row-gap-mobile);
+  padding-top: 30px;
 }
 
 @media (min-width: 600px) {
   .home-section-two-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
+    padding: 0;
   }
 }
 
