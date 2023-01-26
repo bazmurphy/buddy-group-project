@@ -304,12 +304,34 @@ a {
   }
 }
 
+/* buttons */
+button {
+
+}
+@media (min-width: 600px) {
+  button {
+
+  }
+}
+
+/* inputs */
+input {
+
+}
+@media (min-width: 600px) {
+  input {
+    
+  }
+}
+
 /* paragraphs */
 /* anchor tags inside paragraphs */
+/* spans */
 /* list items */
 /* anchor tags inside list items*/
 p,
 p a,
+span,
 li,
 li a {
   font-family: var(--font-two);
@@ -320,6 +342,7 @@ li a {
 @media (min-width: 600px) {
   p,
   p a,
+  span,
   li,
   li a {
     /* font-size: 18px; */
