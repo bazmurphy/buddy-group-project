@@ -83,6 +83,7 @@
 .footer-company-details-container{
   grid-area: footer-company-details-container;
   display: grid;
+  font-size: 18px;
 }
 
 .footer-company-details-name {
@@ -110,6 +111,7 @@
 .footer-links-container{
   grid-area: footer-links-container;
   display: grid;
+  row-gap: 15px;
   align-content: center;
 }
 
@@ -146,6 +148,7 @@
 .footer-links-nav-link {
     text-decoration: none;
     color: inherit;
+    font-size: 18px;
   }
 
 .footer-links-nav-list-item{
@@ -165,7 +168,7 @@
   flex-direction: column;
   justify-content: end;
   position: relative;
-  row-gap: 10px;
+  row-gap: 20px;
   padding: 20px;
 }
 
@@ -230,16 +233,18 @@
 
 .footer-email-container{
   display: grid;
+  row-gap: 5px;
 }
 
 .footer-login-label-input {
   padding-top: 20px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 @media (min-width: 600px) {
   .footer-login-label-input {
     padding-top: 0;
+    font-weight: 800;
   }
 }
 
@@ -264,11 +269,14 @@
   background-color: var(--red);
   font-family: inherit;
   cursor: pointer;
+  font-weight: 800;
+  padding: 0;
 }
 
 @media (min-width:600px) {
   .footer-login-button {
     width: 100px;
+    font-weight: 800;
   }
 }
 
@@ -280,7 +288,7 @@
 @media (min-width:600px){
   .horizontal-line {
   width:100%;
-  height: 3px;
+  height: 1.5px;
   color: #FFFFFF;
   background-color: #FFFFFF;
   display: block;
@@ -318,6 +326,7 @@
 
 .footer-copyright {
   font-style: italic;
+  font-size: 20px;
 }
 
 @media (min-width:600px){
