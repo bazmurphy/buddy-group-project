@@ -129,7 +129,6 @@
 @media (min-width: 600px) {
   .electric-section-one-subsection-copy-container {
     row-gap: var(--copy-container-row-gap-desktop);
-    padding-right: 10%;
   }
 }
 

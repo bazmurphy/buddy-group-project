@@ -87,7 +87,6 @@
   row-gap: 30px;
   column-gap: none;
   padding: var(--subsection-container-padding-mobile);
-  padding: 30px;
 }
 
 @media (min-width: 600px) {
@@ -100,7 +99,7 @@
     row-gap: 30px;
     column-gap: var(--subsection-container-column-gap-desktop);
     padding: var(--subsection-container-padding-desktop);
-    padding: 0 6% ;
+    padding: 0 6%;
   }
 }
 

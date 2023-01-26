@@ -115,6 +115,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  padding-top: 40px;
 }
 
 @media (min-width: 600px) {
@@ -138,7 +139,7 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  padding: 40px 40px 60px 40px;
+  padding: 30px 25px 40px 25px;
 }
 
 @media (min-width: 600px) {
@@ -213,11 +214,12 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  padding-top: 12px;
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-two-image-container {
-
+    padding-top: 0; 
   }
 }
 
@@ -235,7 +237,7 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  padding: 40px 40px 60px 40px;
+  padding: 0 25px 40px 25px;
 }
 
 @media (min-width: 600px) {
@@ -311,6 +313,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  padding-top: 40px;
 }
 
 @media (min-width: 600px) {
@@ -334,7 +337,7 @@
   display: grid;
   align-content: start;
   row-gap: var(--copy-container-row-gap-mobile);
-  padding: 40px 40px 60px 40px;
+  padding: 30px 25px 40px 25px;
 }
 
 @media (min-width: 600px) {
