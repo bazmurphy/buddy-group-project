@@ -97,11 +97,15 @@
 
 .home-hero-subtitle {
   text-align: center;
+  font-size: var(--hero-subtitle-font-size-mobile);
+  font-weight: var(--hero-subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .home-hero-subtitle {
     text-align: left;
+    font-size: var(--hero-subtitle-font-size-desktop);
+    font-weight: var(--hero-subtitle-font-weight-desktop);
   }
 }
 
