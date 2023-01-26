@@ -14,7 +14,8 @@
 .water-section-five-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: var(--container-padding-mobile);
+  /* padding: var(--container-padding-mobile); */
+  padding: 0 25px 70px 25px;
   background: var(--water-section-container-background);
 }
 
@@ -29,7 +30,8 @@
   display: grid;
   /* grid-template-columns: 1fr; */
   /* align-content: start; */
-  row-gap: var(--subcontainer-row-gap-mobile);
+  /* row-gap: var(--subcontainer-row-gap-mobile); */
+  row-gap: 60px;
   padding: 0;
 }
 
@@ -50,8 +52,10 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
-  row-gap: var(--subsection-container-row-gap-mobile);
-  padding: var(--subsection-container-padding-mobile);
+  /* row-gap: var(--subsection-container-row-gap-mobile); */
+  row-gap: 25px;
+  /* padding: var(--subsection-container-padding-mobile); */
+  padding: 40px 20px;
   background: var(--water-section-five-subsection-container-background);
   border-radius: var(--water-section-five-subsection-container-border-radius);
   box-shadow: var(--box-shadow-mobile);

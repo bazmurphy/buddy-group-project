@@ -17,27 +17,29 @@
   display: grid;
   grid-template-columns: 1fr;
   /* padding: var(--container-padding-mobile); */
-  padding: 15px 0;
+  padding: 0 0 70px 0;
   /* ^top and bottom padding in mobile */
   background: var(--water-section-container-background);
 }
 
 @media (min-width: 600px) {
   .water-section-two-container {
-    
+    padding: 0;
   }
 }
 
 .water-section-two-subcontainer {
   display: grid;
-  grid-template-columns: 0.05fr 0.05fr 0.9fr 0.05fr 0.05fr;
+  grid-template-columns: 0.05fr 0.05fr 0.8fr 0.05fr 0.05fr;
   grid-template-areas: 
     "water-section-two-title-container water-section-two-title-container water-section-two-title-container water-section-two-title-container water-section-two-title-container"
     "water-section-two-subsection-container-one water-section-two-subsection-container-one water-section-two-subsection-container-one . ."
     ". water-section-two-subsection-container-two water-section-two-subsection-container-two water-section-two-subsection-container-two ."
     ". . water-section-two-subsection-container-three water-section-two-subsection-container-three water-section-two-subsection-container-three";
   align-content: start;
-  row-gap: var(--subcontainer-row-gap-mobile);
+  /* row-gap: var(--subcontainer-row-gap-mobile); */
+  row-gap: 60px;
+  /* ^gap between cascading cards in mobile */
 }
 
 @media (min-width: 600px) {
@@ -66,11 +68,13 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--title-container-row-gap-mobile);
+  padding: 0 5%;
 }
 
 @media (min-width: 600px) {
   .water-section-two-title-container {
     row-gap: var(--title-container-row-gap-desktop);
+    padding: 0;
   }
 }
 
@@ -97,9 +101,12 @@
   grid-template-columns: 1fr;
   align-content: start;
   row-gap: var(--subsection-container-row-gap-mobile);
-  padding: var(--subsection-container-padding-mobile);
+  /* padding: var(--subsection-container-padding-mobile); */
+  padding: 60px 25px 60px 25px;
   background: var(--water-section-two-subsection-container-background);
   box-shadow: var(--box-shadow-mobile);
+  /* border: 2px solid red; */
+
 }
 
 @media (min-width: 600px) {

@@ -22,6 +22,7 @@
   grid-template-columns: 1fr;
   padding: var(--container-padding-mobile);
   background: var(--water-section-container-background);
+  padding: 0px 30px 70px 30px;
 }
 
 @media (min-width: 600px) {
@@ -38,8 +39,10 @@
     "water-section-four-subsection-container-one"
     "water-section-four-subsection-container-two"
     "water-section-four-subsection-container-three";
-  row-gap: var(--subcontainer-row-gap-mobile);
-  padding: var(--subcontainer-padding-mobile);
+  /* row-gap: var(--subcontainer-row-gap-mobile); */
+  row-gap: 50px;
+  /* padding: var(--subcontainer-padding-mobile); */
+  padding: 40px 20px;
   background: var(--water-section-four-subcontainer-background);
   border-radius: var(--water-section-four-subcontainer-border-radius);
 }
@@ -93,7 +96,8 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
-  row-gap: var(--title-container-row-gap-mobile);
+  /* row-gap: var(--title-container-row-gap-mobile); */
+  row-gap: 25px;
 }
 
 @media (min-width: 600px) {
