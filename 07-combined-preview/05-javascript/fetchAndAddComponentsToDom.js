@@ -13,12 +13,16 @@ function addToDom(html, targetLocation) {
   const importedHTML = parser.parseFromString(html, "text/html");
   const importedComponent = importedHTML.querySelector("body").children[0];
 
-  if (targetLocation === "header" || targetLocation === "footer") {
+  if (!document.querySelector(targetLocation)) {
+    // console.log(`no ${targetLocation} found, creating it..`);
+    const element = document.createElement(targetLocation);
+    document.body.appendChild(element);
+  }
+
+  if (targetLocation !== "main") {
     document.querySelector(targetLocation).replaceWith(importedComponent);
-  } else if (targetLocation === "main") {
-    document.querySelector(targetLocation).appendChild(importedComponent);
   } else {
-    console.log(`addDom function Error`);
+    document.querySelector(targetLocation).appendChild(importedComponent);
   }
 }
 
