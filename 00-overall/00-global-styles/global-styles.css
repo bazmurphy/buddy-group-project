@@ -292,6 +292,7 @@ h4 {
   }
 }
 
+/* links that are not inside text */
 a {
   font-family: var(--font-two);
   font-size: 16px;
@@ -303,49 +304,26 @@ a {
   }
 }
 
-p {
-  font-family: var(--font-two);
-  font-size: 16px;
-  font-weight: 400;
-}
-@media (min-width: 600px) {
-  p {
-    font-size: 18px;
-  }
-}
-
-p a {
-  /* link tags inside paragraphs */
-  font-family: var(--font-two);
-  font-size: 16px;
-  font-weight: 400;
-}
-@media (min-width: 600px) {
-  p a {
-    font-size: 18px;
-  }
-}
-
-li {
-  font-family: var(--font-two);
-  font-size: 16px;
-  font-weight: 400;
-}
-@media (min-width: 600px) {
-  li {
-    font-size: 18px;
-  }
-}
-
+/* paragraphs */
+/* anchor tags inside paragraphs */
+/* list items */
+/* anchor tags inside list items*/
+p,
+p a,
+li,
 li a {
-  /* link tags inside list items */
   font-family: var(--font-two);
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5em;
 }
 @media (min-width: 600px) {
+  p,
+  p a,
+  li,
   li a {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 22px;
   }
 }
 
