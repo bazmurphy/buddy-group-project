@@ -102,6 +102,13 @@
   --link-border-radius-mobile: 30px;
   --link-border-radius-desktop: 30px;
 
+  /* HEROS SUBTITLE FONT */
+  --hero-subtitle-font-size-mobile: 22px;
+  --hero-subtitle-font-weight-mobile: 600;
+
+  --hero-subtitle-font-size-desktop: 28px;
+  --hero-subtitle-font-weight-desktop: 600;
+
   /* HOME HERO */
   --home-hero-container-background: linear-gradient(#f9f9f9,#a3e1f2);
   
@@ -114,7 +121,7 @@
   --home-section-lightblue-background-color: #a3e1f2;
 
   /* HOME SECTION ONE */
-  --home-section-one-subcontainer-background: linear-gradient(#f9f9f9,#a3e1f2);
+  --home-section-one-subsection-container-background: linear-gradient(#f9f9f9,#a3e1f2);
   --home-section-two-container-background: linear-gradient(#a3e1f2,#f9f9f9,#a3e1f2);
 
   --home-section-one-sub-container-two-border-radius: 30px;
