@@ -234,8 +234,6 @@
 @media (min-width: 600px) {
   .electric-section-three-subsection-two-paragraph {
     text-align: left;
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
