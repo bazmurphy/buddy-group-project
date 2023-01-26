@@ -70,14 +70,10 @@
 
 .electric-section-four-title {
   text-align: center;
-  font-size: var(--title-font-size-mobile);
-  font-weight: var(--title-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-title {
-    font-size: var(--title-font-size-desktop);
-    font-weight: var(--title-font-weight-desktop);
   }
 }
 
@@ -104,14 +100,14 @@
   border-radius: 0 30px 30px 0;
   padding: var(--subsection-container-padding-mobile);
   background-image: var(--electric-section-four-subsection-background);
-  box-shadow: var(--electric-section-four-subsection-container-box-shadow)
+  box-shadow: var(--box-shadow-mobile)
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-one-container {
     padding: var(--subsection-container-padding-desktop);
     height: 100%;
-   
+    box-shadow: var(--box-shadow-desktop)
   }
 }
 
@@ -154,14 +150,10 @@
 
 .electric-section-four-subsection-one-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-one-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -178,14 +170,10 @@
 
 .electric-section-four-subsection-one-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-one-paragraph {
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -259,14 +247,10 @@
 
 .electric-section-four-subsection-two-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-two-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -283,14 +267,10 @@
 
 .electric-section-four-subsection-two-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-two-paragraph {
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
 
@@ -366,14 +346,10 @@
 
 .electric-section-four-subsection-three-subtitle {
   text-align: center;
-  font-size: var(--subtitle-font-size-mobile);
-  font-weight: var(--subtitle-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-three-subtitle {
-    font-size: var(--subtitle-font-size-desktop);
-    font-weight: var(--subtitle-font-weight-desktop);
   }
 }
 
@@ -390,13 +366,9 @@
 
 .electric-section-four-subsection-three-paragraph {
   text-align: center;
-  font-size: var(--paragraph-font-size-mobile);
-  font-weight: var(--paragraph-font-weight-mobile);
 }
 
 @media (min-width: 600px) {
   .electric-section-four-subsection-three-paragraph {
-    font-size: var(--paragraph-font-size-desktop);
-    font-weight: var(--paragraph-font-weight-desktop);
   }
 }
